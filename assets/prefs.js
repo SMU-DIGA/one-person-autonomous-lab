@@ -17,8 +17,16 @@
   try { lang = new URLSearchParams(location.search).get("lang"); } catch (e) {}
   if (lang !== "zh" && lang !== "en") lang = get("opal-lang");
   if (lang !== "zh" && lang !== "en") lang = /^zh\b/i.test(navigator.language || "") ? "zh" : "en";
-  // Pages written in one language (the manifestos) declare it and are not toggled.
+  // Pages written in one language (the homepage, one file per language) declare it and are not toggled.
+  // The Chinese homepage at / sends a reader who wants English to its English twin; reading either
+  // edition makes its language the choice the other pages follow.
   var fixed = root.getAttribute("data-fixed-lang");
+  var alt = root.getAttribute("data-lang-alt");
+  if (fixed && alt && lang !== fixed) {
+    location.replace(alt + location.search + location.hash);
+    return;
+  }
+  if (fixed) set("opal-lang", fixed);
   if (!fixed) {
     root.classList.add("lang-" + lang);
     root.lang = lang === "zh" ? "zh-CN" : "en";

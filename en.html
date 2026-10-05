@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en" class="lang-en" data-fixed-lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OPAL — One-Person Autonomous Lab</title>
+<meta name="description" content="OPAL is an accountability and evidence control plane for computational research: one person, N autonomous agents, and the infrastructure that makes research execution at scale delegable, traceable, verifiable, and accountable.">
+<link rel="icon" href="assets/mark.svg?v=b634ebd78c" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css?v=b634ebd78c">
+<script src="assets/prefs.js?v=b634ebd78c"></script>
+</head>
+<body>
+<nav class="bar" aria-label="Site">
+  <div class="wrap">
+    <a class="brand" href="en.html?v=b634ebd78c"><svg class="mark" viewBox="0 0 64 64" aria-hidden="true"><path class="facet" d="M32 3 L61 32 L32 61 L3 32 Z"/><g class="fan"><path d="M32 26 L8 36"/><path d="M32 26 L18 46"/><path d="M32 26 L32 57"/><path d="M32 26 L46 46"/><path d="M32 26 L56 36"/></g><path class="stem" d="M32 26 L32 8"/><circle class="node" cx="32" cy="26" r="5.5"/></svg><span>OPAL</span></a>
+    <div class="nav">
+      <a href="en.html?v=b634ebd78c" aria-current="page">Manifesto</a>
+      <a href="lab.html?v=b634ebd78c" class="hide-sm">The Lab</a>
+      <a href="funding.html?v=b634ebd78c">Funding</a>
+    </div>
+    <div class="tools">
+      <a class="toggle" href="./?v=b634ebd78c" lang="zh-CN" data-set-lang="zh">中文</a>
+      <button class="toggle theme" type="button" data-toggle-theme aria-label="Toggle light / dark"><svg class="moon" viewBox="0 0 24 24"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></svg><svg class="sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></button>
+    </div>
+  </div>
+</nav>
+<header class="hero" style="padding:56px 0 44px">
+  <div class="wrap">
+    <span class="eyebrow">Manifesto · Position Note v1.0 · 2026</span>
+    <h1>OPAL</h1>
+    <p class="sub">One-Person Autonomous Lab</p>
+  </div>
+</header>
+<main>
+<div class="wrap doc-grid">
+<ol class="toc"><li class="k">Contents</li><li><a href="#the-name">The Name</a></li><li><a href="#the-problem">The Problem</a></li><li><a href="#scope">Scope</a></li><li><a href="#six-layers-of-responsibility">Six Layers of Responsibility</a></li><li><a href="#hypothesis-lifecycle">Hypothesis Lifecycle</a></li><li><a href="#evidence-assurance-levels">Evidence Assurance Levels</a></li><li><a href="#control-loops">Control Loops</a></li><li><a href="#capture-gates-and-threat-model">Capture, Gates, and Threat Model</a></li><li><a href="#portfolio-planner-the-core-open-research-problem">Portfolio Planner (The Core Open Research Problem)</a></li><li><a href="#product-path">Product Path</a></li><li><a href="#open-questions">Open Questions</a></li></ol>
+<div class="doc">
+<blockquote>
+<p>Governance is not a brake on speed. It is the precondition under which autonomous execution can be allowed to scale.</p>
+</blockquote>
+<p>OPAL is an accountability and evidence control plane for <strong>computational research</strong>: one person, N autonomous agents, and the infrastructure that makes research execution at scale delegable, traceable, verifiable, and accountable.</p>
+<h2 id="the-name">The Name</h2>
+<div class="tablewrap"><table>
+<tbody>
+<tr>
+<td><strong>One-Person</strong></td>
+<td>The unit of accountability. The system ultimately serves one person who understands the work and is willing to sign for it — not automation that leaves no one responsible.</td>
+</tr>
+<tr>
+<td><strong>Autonomous</strong></td>
+<td>The form of execution. Agents iterate freely inside an enforceable contract boundary, with no step-by-step approval; crossing the boundary halts execution rather than filing a report afterwards.</td>
+</tr>
+<tr>
+<td><strong>Lab</strong></td>
+<td>The form of organization. Budget discipline, evidence chains, failure memory, and compounding assets — not a chat tool.</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-problem">The Problem</h2>
+<p>The marginal cost of executing many kinds of computational research has fallen sharply. A single agent can run hundreds of experiments overnight, generate multiple analyses, and draft several versions. The attention of advisors, reviewers, and authors has not expanded to match.</p>
+<p>The bottleneck therefore moves from <em>who does the work</em> to <em>who reads it, who believes it, who is responsible for it</em>. Existing quality mechanisms were designed in units of person-months. When output speed rises by an order of magnitude, they do not merely slow down — they <strong>lose coverage</strong>.</p>
+<ul>
+<li><strong>North star metric:</strong> Signed claims per attention-hour — the number of material claims a single researcher can fully understand and sign per hour, at a given standard of accountability.</li>
+<li><strong>Costs to drive down:</strong> execution-level supervision, evidence retrieval, provenance checking, reproducibility checks, and low-level quality screening.</li>
+</ul>
+<pre><code>execution supervision ≈ O(checkpoints)
+scientific judgment   ≈ O(material claims)
+</code></pre>
+<h2 id="scope">Scope</h2>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>In Scope</th>
+<th>Out of First Scope</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Research execution that can be expressed as code and replayed: model training, algorithmic experiments, simulation, data analysis, benchmarks. Covers the full linkage between code, data, config, environment, runs, artifacts, automated gates, claims, and sign-off.</td>
+<td>Experimental work that cannot be fully digitized: wet-lab, clinical, field, and hardware research can feed partial records, but "zero additional manual entry" is not a first-release promise.</td>
+</tr>
+</tbody>
+</table></div>
+<blockquote>
+<p>OPAL does not promise to replace the researcher's judgment of what is true. It promises that every important judgment can be interrogated, expanded, and replayed.</p>
+</blockquote>
+<h2 id="six-layers-of-responsibility">Six Layers of Responsibility</h2>
+<p>Top to bottom, human involvement decreases and automation increases. Every new feature must be attributable to exactly one layer, or it should not exist.</p>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Responsibility</th>
+<th>Owner</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>L1 · Taste</strong></td>
+<td>Choosing problems, judging whether a result matters, deciding whether and how to publish.</td>
+<td>Human (ultimately accountable)</td>
+</tr>
+<tr>
+<td><strong>L2 · Portfolio</strong></td>
+<td>Under compute, budget, time, and attention constraints: which hypotheses to test, how much to invest, when to cut losses.</td>
+<td>Human sets policy / system executes</td>
+</tr>
+<tr>
+<td><strong>L3 · Execution</strong></td>
+<td>Writing code, running experiments, sweeps, ablations, debugging, reproducing baselines. This layer will keep commoditizing.</td>
+<td>Agent</td>
+</tr>
+<tr>
+<td><strong>L4 · Evidence</strong></td>
+<td>Linking claims back to code versions, data snapshots, configs, environments, actual runs, and artifacts.</td>
+<td>System (passive capture)</td>
+</tr>
+<tr>
+<td><strong>L5 · Review &amp; Sign-off</strong></td>
+<td>The system surfaces evidence, limitations, and automated check results; the human judges method, sufficiency, and importance, then signs.</td>
+<td>Human</td>
+</tr>
+<tr>
+<td><strong>L6 · Memory</strong></td>
+<td>Accumulating failures, dead ends, reusable components, anomaly patterns, and recurring risks across projects.</td>
+<td>System (continuous)</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="hypothesis-lifecycle">Hypothesis Lifecycle</h2>
+<p>A project charter is not an executable specification. It is a <em>living hypothesis tree</em>.</p>
+<p><code>Propose → Approve → Execute → Gate → Branch → Compile → Sign</code></p>
+<ul>
+<li><strong>Propose (human)</strong> — write the claim, expected evidence, falsifier, budget ceiling, and kill criteria. <em>A hypothesis whose failure condition cannot be stated is not approved.</em></li>
+<li><strong>Approve (human)</strong> — signing the charter consumes one portfolio slot and one unit of attention budget.</li>
+<li><strong>Execute (agent)</strong> — iterate inside the contract; everything lands in an append-only event log.</li>
+<li><strong>Gate (machine)</strong> — check baselines, leakage, variance, budget, and pre-registered statistical thresholds.</li>
+<li><strong>Branch</strong> — Continue / Pivot / Kill / Escalate. Every escalation draws on its own attention budget.</li>
+<li><strong>Compile</strong> — build a claim bundle from the evidence graph, rather than only a fluent narrative.</li>
+<li><strong>Sign (human)</strong> — judge method, strength of support, and significance; sign the material claims.</li>
+</ul>
+<blockquote>
+<p><strong>Kill executes automatically.</strong> No override can revive the original project — it can only create a child hypothesis with new evidence, a new budget, and a new falsifier.</p>
+</blockquote>
+<h3 id="data-structure">Data Structure</h3>
+<pre><code>Hypothesis {
+  id, parent
+  claim        : { text, scope, materiality }
+  falsifier    : failure condition, automatically or semi-automatically decidable
+  budget       : { gpu_h, wall_clock, tokens, attention }
+  gates        : [ baseline, leakage, variance, preregistered_tests ]
+  kill         : predicate evaluated at checkpoints
+  override     : may only spawn a new child node; never mutates history
+  status       : proposed | running | pivoted | killed | signed
+}
+</code></pre>
+<h3 id="chartering-is-grant-making-an-internal-funding-mechanism">Chartering Is Grant-Making: An Internal Funding Mechanism</h3>
+<p>Once a hypothesis must declare its claim, expected evidence, falsifier, and budget ceiling before work starts, Propose stops being a task description and becomes a <strong>proposal</strong>. The isomorphism is structural, not rhetorical: a planner allocating a fixed pool across a set of heterogeneous, risky applications is solving the program officer's problem.</p>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Grant Mechanism</th>
+<th>OPAL Object</th>
+<th>Where It Differs</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Specific aims</td>
+<td>claim + scope + materiality</td>
+<td>must be machine-evaluable, not a natural-language goal</td>
+</tr>
+<tr>
+<td>Preliminary results</td>
+<td>signed evidence chains and lab-memory references</td>
+<td>automatically verifiable; no need to trust the applicant's account</td>
+</tr>
+<tr>
+<td>Go / no-go criteria</td>
+<td>falsifier + kill predicate</td>
+<td>evaluated automatically at checkpoints, not in annual review</td>
+</tr>
+<tr>
+<td>Funding request</td>
+<td>budget: GPU-h, wall-clock, tokens, attention</td>
+<td>attention is a budget of its own, alongside compute</td>
+</tr>
+<tr>
+<td>Stage gate / tranched disbursement</td>
+<td>tranche release + Successive Halving</td>
+<td>budget allocation and scheduling are the same mechanism</td>
+</tr>
+<tr>
+<td>Track record</td>
+<td>calibration: predicted cost / effect size vs. actual</td>
+<td>a computable prior, not a reviewer's impression</td>
+</tr>
+<tr>
+<td>Final report</td>
+<td>claim bundle + sign-off</td>
+<td>failed runs and exclusions are recorded by default</td>
+</tr>
+</tbody>
+</table></div>
+<p>The price is importing the <strong>principal–agent problem</strong> into the lab. When budget must be requested, applicants have a systematic optimism bias: understating cost, overstating effect size. Agents will be worse, because winning budget is the only path to any reward — this is metric gaming upstream, at the stage where <em>no evidence exists to check against</em>. And proposals are cheap for an agent: it can produce a hundred a day, making approval itself the new attention bottleneck — exactly what OPAL exists to eliminate.</p>
+<p>Countermeasures: <strong>tranche release</strong> (milestone-gated disbursement), <strong>calibration priors</strong> (chronic over-estimators are automatically discounted), <strong>scoring rules</strong> (agents report expected uncertainty reduction at budget B, settled after the fact against realized information gain, making honest reporting dominant), and <strong>application costs</strong> (capped concurrent slots, or one attention unit per proposal).</p>
+<p><strong>The boundary to hold:</strong> real funding systems perform worst on exactly the metric OPAL optimizes — slow, conservative, reviewer-attention-limited, rewarding incremental safe bets. The difference is what the human does: the human does not review proposals one by one, the human <strong>writes the call</strong> — setting the funding rules (what counts as material, which risk tiers auto-approve, per-node budget ceilings). The planner executes desk rejects and tranche releases by rule; only applications outside the rules escalate. Human cost is therefore <code>O(policy)</code>, not <code>O(proposals)</code>.</p>
+<h2 id="evidence-assurance-levels">Evidence Assurance Levels</h2>
+<p><strong>Traceable ≠ automatically true.</strong> No level can be inferred automatically from the one below it.</p>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Level</th>
+<th>Guarantee</th>
+<th>Decided By</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>L1 · Integrity</strong></td>
+<td>Hashes of code, data, config, and artifacts verify; history cannot be silently overwritten.</td>
+<td>Machine</td>
+</tr>
+<tr>
+<td><strong>L2 · Provenance</strong></td>
+<td>Which run, environment, model, prompt, and toolchain produced each result.</td>
+<td>Machine</td>
+</tr>
+<tr>
+<td><strong>L3 · Reproducibility</strong></td>
+<td>A third party can re-execute key runs in a specified environment within tolerance.</td>
+<td>Machine</td>
+</tr>
+<tr>
+<td><strong>L4 · Validity checks</strong></td>
+<td>Pre-defined baseline, leakage, variance, budget, and statistical checks pass.</td>
+<td>Machine (upper bound of gates)</td>
+</tr>
+<tr>
+<td><strong>L5 · Claim support</strong></td>
+<td>Whether the evidence is sufficient to support the claim.</td>
+<td>Machine-assisted + human</td>
+</tr>
+<tr>
+<td><strong>L6 · Significance</strong></td>
+<td>Whether the result matters and is worth publishing.</td>
+<td>Human (where signing responsibility lives)</td>
+</tr>
+</tbody>
+</table></div>
+<p>A full evidence chain for one claim looks like:</p>
+<pre><code>Claim       claim:a17f3c · scope: preregistered subset
+Run set     runset:2026-06-14 · seeds 0–9 · failed runs included
+Config      cfg:9d0e14 · sweep/logistic_fit.yaml
+Data        snap:bench-v2@4b81aa · frozen · access policy attached
+Code &amp; env  git:7f2c9be · clean tree · container:sha256:…
+Agent trace model + prompt + tool calls · policy decisions retained
+Gates       baseline ✓ · leakage ✓ · variance ✓ · budget 480/500 GPU-h
+</code></pre>
+<blockquote>
+<p>Reproducibility proves that the same procedure yields comparable results. It does not prove that the experimental design was sound, that the statistics were appropriate, or that the claim stayed inside its evidence.</p>
+</blockquote>
+<h2 id="control-loops">Control Loops</h2>
+<p>Three loops running at different clock rates: the outer loop issues a contract, the inner loop is autonomous inside it, and the outer loop wakes only when the contract is triggered.</p>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Clock</th>
+<th>Loop</th>
+<th>Responsibility</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Days–weeks</td>
+<td><strong>L0 · Intent</strong> (human)</td>
+<td>Turn taste into a hypothesis tree: claims, falsifiers, budgets, kill criteria, acceptable risk.</td>
+</tr>
+<tr>
+<td>Hours</td>
+<td><strong>L1 · Planner</strong> (system)</td>
+<td>Expand, prune, and re-price the tree; allocate compute and attention; issue contracts; evaluate rules at checkpoints.</td>
+</tr>
+<tr>
+<td>Seconds–minutes</td>
+<td><strong>L2 · Agent</strong> (autonomous)</td>
+<td>edit → run → observe → repeat, only within the action space the contract allows. Out of bounds halts.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The six fields of a contract</strong> — what an agent receives is not a list of steps but a closed action space:</p>
+<p><code>Objective</code> (computable metric and threshold) · <code>Budget</code> (hard caps on GPU-h, wall-clock, tokens, external calls) · <code>Write scope</code> (writable paths, network allowlist, read-only dataset mounts, key permissions — enforced at runtime) · <code>Stop condition</code> · <code>Artifact schema</code> · <code>Escalation policy</code></p>
+<blockquote>
+<p>Supervision bandwidth comes from a structural fact: the number of human interventions tracks important checkpoints and material claims, not agent iterations.</p>
+</blockquote>
+<h2 id="capture-gates-and-threat-model">Capture, Gates, and Threat Model</h2>
+<p>For computational runs, evidence should be captured passively at an execution layer the researcher <strong>cannot bypass</strong>, rather than depending on diligent note-taking. The event log is the primary data; the evidence graph is an evolvable materialized view.</p>
+<pre><code>git      → commit sha + diff; reject unregistered working trees by policy
+model    → provider / model id / version / decoding params
+prompt   → content hash of system + user + tool schema
+agent    → tool calls / policy decisions / intermediate artifacts
+data     → content-addressed manifest; permissions and privacy policy travel with the snapshot
+env      → lockfile + container digest + hardware metadata
+runner   → run_id; stdout / metrics / artifact hash / resource usage
+store    → append-only event log; signed checkpoints cannot be overwritten
+graph    → derive claim ↔ artifact ↔ run ↔ code/data/config from the event log
+</code></pre>
+<p><strong>Gates check only what a machine can decide unambiguously:</strong> baseline · leakage · variance · selective reporting · budget &amp; policy · novelty within lab memory.</p>
+<p><strong>Threat model:</strong></p>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>Threat</th>
+<th>Countermeasure</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>01</td>
+<td>Metric gaming</td>
+<td>Read-only evaluation code, independent evaluator, held-out tests, policy isolation</td>
+</tr>
+<tr>
+<td>02</td>
+<td>Selective reporting</td>
+<td>Scheduler-level logging of every task; claim bundles show exclusions by default</td>
+</tr>
+<tr>
+<td>03</td>
+<td>Tampered logs and artifacts</td>
+<td>Content addressing, append-only log, signed checkpoints, external timestamps</td>
+</tr>
+<tr>
+<td>04</td>
+<td>Privacy and data exfiltration</td>
+<td>Network allowlist, key isolation, least privilege, data policy recorded in run attestation</td>
+</tr>
+<tr>
+<td>05</td>
+<td>Gate failure itself</td>
+<td>Versioned gates, gate test sets, independent replay, explicit assurance boundaries</td>
+</tr>
+<tr>
+<td>06</td>
+<td>Sign-off as a formality</td>
+<td>Materiality tiers, mandatory spot checks, bounded open sign-off queue, recorded review time</td>
+</tr>
+<tr>
+<td>07</td>
+<td>Optimism bias at budget time</td>
+<td>Tranche release, calibration-prior discounting, future quota settled on realized information gain</td>
+</tr>
+<tr>
+<td>08</td>
+<td>Proposals flooding approval</td>
+<td>Capped concurrent slots, attention cost per proposal, rule-based automatic desk reject</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="portfolio-planner-the-core-open-research-problem">Portfolio Planner (The Core Open Research Problem)</h2>
+<p>Resource allocation cannot be reduced to ranking by estimated ROI, because the value and feasibility of a research hypothesis usually surface only after investment. Its real shape: under a bounded budget, run exploration/exploitation over a set of unknown hypotheses with mutable structure and heterogeneous reveal costs, and cut losses at the right moment.</p>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Dimension</th>
+<th>Classic Bandit / Hyperband</th>
+<th>OPAL's Setting</th>
+<th>Resulting Requirement</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Candidate set</td>
+<td>Fixed set of arms</td>
+<td>Pivots split off new sub-hypotheses</td>
+<td>Dynamic decisions on a tree, expandable online</td>
+</tr>
+<tr>
+<td>Reveal cost</td>
+<td>Roughly homogeneous</td>
+<td>From 1 GPU-h to hundreds</td>
+<td>Objective must include information gain per unit budget</td>
+</tr>
+<tr>
+<td>Budget</td>
+<td>A single resource</td>
+<td>Compute + human attention (independent constraints)</td>
+<td>Dual-budget scheduling; escalation explicitly priced</td>
+</tr>
+<tr>
+<td>Reward</td>
+<td>Single scalar, stationary</td>
+<td>Multi-objective, non-stationary, partly human-only</td>
+<td>Preserve multi-objective structure and human preference</td>
+</tr>
+</tbody>
+</table></div>
+<p>There is also a <strong>budget elicitation</strong> problem: an applicant's cost function and success probability cannot be verified ex ante by the principal. The core question is how to design elicitation such that truthful reporting is dominant (DSIC) and compatible with tranche release and calibration priors.</p>
+<blockquote>
+<p>The planner's academic goal is not to decide automatically what is worth researching, but — inside policy boundaries set by a human — to buy information more efficiently, expose failure sooner, and protect attention.</p>
+</blockquote>
+<p><strong>Starting point:</strong> Successive Halving and Hyperband as the budget skeleton, extended to handle dynamic branching, heterogeneous reveal costs, dual budget constraints, and non-stationary value functions. <strong>A second line</strong> follows from chartering being structurally a proposal: the planner is also a mechanism design problem, where Successive Halving <em>is</em> tranched disbursement, calibration priors <em>are</em> track record, and scoring rules <em>are</em> the incentive-compatibility condition.</p>
+<h2 id="product-path">Product Path</h2>
+<p>Ship the accountability infrastructure first; attack the planner second.</p>
+<div class="tablewrap"><table>
+<tbody>
+<tr>
+<td><strong>First users</strong></td>
+<td>Leads of computational research teams — running many model experiments, evaluations, or analyses, and answerable for published, audited, or delivered results</td>
+</tr>
+<tr>
+<td><strong>Trigger event</strong></td>
+<td>Agent output exceeds the team's capacity to check it</td>
+</tr>
+<tr>
+<td><strong>Reason to buy</strong></td>
+<td>Lower accountability risk — fewer unreplayable results, wrong conclusions, selective reports, and "the author didn't actually understand it" — while raising effective throughput</td>
+</tr>
+<tr>
+<td><strong>Wedge</strong></td>
+<td>Embed in the existing research stack (Git, Jupyter, Slurm / K8s, object storage, LaTeX); no migration to a closed workbench</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="milestones">Milestones</h3>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Milestone</th>
+<th>Deliverable</th>
+<th>Acceptance Signal</th>
+<th>Depends On</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>M1 · Capture</strong></td>
+<td>Non-invasive recording of run provenance, model / prompt / tool traces, resource usage, and artifacts</td>
+<td>Capture coverage and added manual-entry time on real projects</td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>M2 · Gate</strong></td>
+<td>Baseline, leakage, variance, budget, permission, and selective-reporting checks</td>
+<td>Retroactively catches real problems in historical projects</td>
+<td>M1</td>
+</tr>
+<tr>
+<td><strong>M3 · Sign-off</strong></td>
+<td>Claim bundles, materiality tiers, review queue, signing record</td>
+<td>Signed claims per attention-hour becomes measurable</td>
+<td>M1 + M2</td>
+</tr>
+<tr>
+<td><strong>M4 · Contract</strong></td>
+<td>Bring autonomous agents under enforceable budgets, permissions, and stop conditions</td>
+<td>Out-of-bounds behavior is blocked at runtime, not discovered afterwards</td>
+<td>M2</td>
+</tr>
+<tr>
+<td><strong>M5 · Planner</strong></td>
+<td>Learn portfolio allocation and attention scheduling from real run data</td>
+<td>Failed hypotheses surface earlier at equal budget</td>
+<td>M1–M4</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="architecture">Architecture</h3>
+<ul>
+<li><strong>Control plane — Portfolio Planner:</strong> budget and attention allocation, kill enforcement, pivot re-pricing. The long-horizon research component.</li>
+<li><strong>Runtime — Agent Contract Runtime:</strong> sandbox, permissions, budget, stop conditions, and trace injection points. Deliberately model-agnostic.</li>
+<li><strong>Evidence — Event Log &amp; Evidence Graph:</strong> append-only events plus an evolvable claim ↔ run ↔ artifact view, accumulating into lab memory.</li>
+<li><strong>Trust — Gate &amp; Attestation:</strong> automated checks, independent replay credentials, signed checkpoints, third-party verification interface.</li>
+</ul>
+<h2 id="open-questions">Open Questions</h2>
+<p>These decide whether OPAL is an internal tool, general infrastructure, or an over-designed idea. They need prototypes and real teams, not assertions.</p>
+<ol>
+<li>How many material claims can one researcher reliably sign?</li>
+<li>What is the minimal sufficient set for third-party attestation?</li>
+<li>Can the real friction of evidence capture approach zero?</li>
+<li>Do customers pay for efficiency first, or for accountability risk?</li>
+<li>When models begin to participate in taste, how is human responsibility redefined?</li>
+</ol>
+<blockquote>
+<p>The goal is not to let one person produce more, but to let one person <strong>be genuinely accountable for autonomous research at scale</strong> — because it is traceable, stoppable, verifiable, and signed, it can be allowed to scale.</p>
+</blockquote>
+</div></div>
+</main>
+<footer>
+  <div class="wrap">
+    <span>OPAL · One-Person Autonomous Lab · SMU-DIGA, Singapore Management University</span>
+    <span>Chinese Edition: <a href="./?v=b634ebd78c" data-set-lang="zh">中文 v1.0</a></span>
+  </div>
+</footer>
+</body>
+</html>
