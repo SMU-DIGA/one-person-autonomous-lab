@@ -8,40 +8,45 @@
 <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/site.css">
-<script src="assets/lang.js"></script>
+<script src="assets/prefs.js"></script>
 </head>
 <body>
 
 <nav class="bar" aria-label="Site">
   <div class="wrap">
-    <a class="brand" href="./"><svg class="mark" viewBox="0 0 64 64" aria-hidden="true"><path class="facet" d="M32 3 L61 32 L32 61 L3 32 Z"/><g class="fan"><path d="M32 26 L8 36"/><path d="M32 26 L18 46"/><path d="M32 26 L32 57"/><path d="M32 26 L46 46"/><path d="M32 26 L56 36"/></g><path class="stem" d="M32 26 L32 8"/><circle class="node" cx="32" cy="26" r="5"/></svg><span>OPAL</span></a>
+    <a class="brand" href="./"><svg class="mark" viewBox="0 0 64 64" aria-hidden="true"><path class="facet" d="M32 3 L61 32 L32 61 L3 32 Z"/><g class="fan"><path d="M32 26 L8 36"/><path d="M32 26 L18 46"/><path d="M32 26 L32 57"/><path d="M32 26 L46 46"/><path d="M32 26 L56 36"/></g><path class="stem" d="M32 26 L32 8"/><circle class="node" cx="32" cy="26" r="5.5"/></svg><span>OPAL</span></a>
     <div class="nav">
       <a class="hide-sm" href="./#lab"><span class="zh">实验室</span><span class="en">The Lab</span></a>
-      <a href="manifesto/zh.html" class="zh">纲领</a><a href="manifesto/en.html" class="en">Manifesto</a>
+      <a href="manifesto/zh.html" class="zh" data-set-lang="zh">纲领</a><a href="manifesto/en.html" class="en" data-set-lang="en">Manifesto</a>
       <a href="funding.html" aria-current="page"><span class="zh">资助机会</span><span class="en">Funding</span></a>
     </div>
-    <button class="toggle" type="button" data-toggle-lang aria-label="Switch language / 切换语言"><span class="zh">English</span><span class="en">中文</span></button>
+    <div class="tools">
+      <button class="toggle" type="button" data-toggle-lang aria-label="Switch language / 切换语言"><span class="zh">EN</span><span class="en">中文</span></button>
+      <button class="toggle theme" type="button" data-toggle-theme aria-label="Toggle light / dark"><svg class="moon" viewBox="0 0 24 24"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></svg><svg class="sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></button>
+    </div>
   </div>
 </nav>
 
-<header class="hero" style="padding-bottom:56px">
+<header class="hero" style="padding:32px 0 24px">
   <div class="wrap">
     <span class="eyebrow"><span class="zh">由 Scout 发现 · 由 Manager 按规则筛选</span><span class="en">Found by the Scout · Filtered by Rule</span></span>
-    <h1><span class="zh">资助机会</span><span class="en">Funding Board</span></h1>
-    <p class="lede">
-      <span class="zh">OPAL 可以申请的外部资助：新加坡公共科研资助、产业界研究项目与算力 / API 额度。每个截止日期、金额与资格条件都逐字引自资助方网页，并由程序对照存档的网页文本核对；无法核对的事实会被清除或标记，从不默认可信。</span>
-      <span class="en">External funding OPAL could apply for: Singapore public research calls, industry research programmes, and compute or API credits. Every deadline, amount and eligibility condition is quoted verbatim from the funder's page and checked by program against a stored copy of that page; a fact that cannot be checked is cleared or flagged, never trusted.</span>
+    <h1 style="font-size:clamp(30px,4vw,40px)"><span class="zh">资助机会</span><span class="en">Funding Board</span></h1>
+    <p class="lede" style="margin-top:8px">
+      <span class="zh">OPAL 可以申请的外部资助：新加坡公共科研资助、产业界研究项目与算力 / API 额度。截止日期、金额与资格条件都逐字引自资助方网页，并由程序对照存档的网页文本核对；无法核对的事实会被清除或标记。</span>
+      <span class="en">External funding OPAL could apply for: Singapore public calls, industry research programmes, and compute or API credits. Deadlines, amounts and eligibility are quoted verbatim from the funder's page and checked by program against a stored copy; anything that cannot be checked is cleared or flagged.</span>
     </p>
   </div>
 </header>
 
 <main>
-<section style="padding-top:56px">
+<section style="padding-top:20px">
   <div class="wrap">
-    <div class="stats" id="summary" aria-live="polite"></div>
-    <div class="filters" id="filters" role="group" aria-label="Filter"></div>
+    <div class="board-head">
+      <div class="stats" id="summary" aria-live="polite"></div>
+      <div class="filters" id="filters" role="group" aria-label="Filter"></div>
+    </div>
     <div class="opps" id="cards"><div class="empty"><span class="zh">加载中…</span><span class="en">Loading…</span></div></div>
   </div>
 </section>
@@ -54,15 +59,15 @@
     </div>
     <div class="cards">
       <div class="card"><span class="tag">Scout · Agent</span><h3><span class="zh">搜索与阅读</span><span class="en">Search and Read</span></h3>
-        <p><span class="zh">按人写好的申请人画像与检索词搜索，抓取网页并按哈希存档，再列出页面上的机会，附上截止日期、金额与资格条件的原文引文。</span><span class="en">Searches with the applicant profile and queries a human wrote, fetches each page and stores it by hash, then lists the opportunities on it with verbatim quotes for the deadline, amount and eligibility.</span></p></div>
+        <p><span class="zh">按人写好的申请人画像与检索词搜索，抓取网页并按哈希存档，列出页面上的机会并附上原文引文。</span><span class="en">Searches with the applicant profile and queries a human wrote, stores each page by hash, and lists its opportunities with verbatim quotes.</span></p></div>
       <div class="card"><span class="tag"><span class="zh">程序 · 无 LLM</span><span class="en">Program · No LLM</span></span><h3><span class="zh">核对</span><span class="en">Ground</span></h3>
-        <p><span class="zh">每条引文必须出现在存档网页中，截止日期必须就是引文写明的那一天；未通过的金额被丢弃，未通过的资格判断降为“不明确”。</span><span class="en">Every quote must occur in the stored page, and the deadline must be the date the quote states. An ungrounded amount is dropped; an ungrounded eligibility verdict becomes "unclear".</span></p></div>
+        <p><span class="zh">引文必须出现在存档网页中，截止日期必须就是引文写明的那一天；未通过的金额被丢弃，资格判断降为“不明确”。</span><span class="en">Every quote must occur in the stored page and the deadline must be the date it states. An ungrounded amount is dropped; an ungrounded eligibility verdict becomes "unclear".</span></p></div>
       <div class="card"><span class="tag"><span class="zh">Manager · 规则</span><span class="en">Manager · Rules</span></span><h3><span class="zh">筛选</span><span class="en">Filter</span></h3>
-        <p><span class="zh">只有已核实截止日期、资格不被排除、契合度达标的机会，以及有原文支持的滚动申请，才会出现在这里。过期、不合格与低契合度的记录留在账本中。</span><span class="en">Only calls with a verified deadline, eligibility not excluded and fit above the threshold — plus rolling calls backed by a quote — appear here. Closed, ineligible and low-fit records stay in the ledger.</span></p></div>
+        <p><span class="zh">只发布已核实截止日期、资格未被排除、契合度达标的机会和有原文支持的滚动申请；同一机会出现在多个网页时只保留一条。</span><span class="en">Only calls with a verified deadline, eligibility not excluded and enough fit — plus quoted rolling calls — are published; a call found on several pages appears once.</span></p></div>
     </div>
-    <p class="muted" style="margin-top:24px;font-size:14px;max-width:80ch">
-      <span class="zh">“契合度”与“资格判断”是 Scout 的解读，已单独标注。标为“非官方页面”的条目来自聚合网站，申请前请到资助方官网核实。本页不构成任何资助方的背书。</span>
-      <span class="en">Fit and the eligibility verdict are the scout's interpretation and are marked as such. Entries marked "Unofficial Page" come from aggregators — check at the funder's own site before applying. Nothing here is endorsed by any funder.</span>
+    <p class="muted" style="margin:12px 0 0;font-size:13.5px">
+      <span class="zh">“契合度”与“资格判断”是 Scout 的解读。标为“非官方页面”的条目来自聚合网站，申请前请到资助方官网核实。本页不构成任何资助方的背书。</span>
+      <span class="en">Fit and the eligibility verdict are the scout's interpretation. Entries marked "Unofficial Page" come from aggregators — check at the funder's own site before applying. Nothing here is endorsed by any funder.</span>
     </p>
   </div>
 </section>
