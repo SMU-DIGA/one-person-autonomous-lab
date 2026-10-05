@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OPAL — How the Lab Works</title>
+<meta name="description" content="OPAL is an accountability and evidence control plane for computational research: one person, N autonomous agents, and the infrastructure that makes research execution at scale delegable, traceable, verifiable, and accountable.">
+<meta property="og:title" content="OPAL — One-Person Autonomous Lab">
+<meta property="og:description" content="Letting one person be genuinely accountable for autonomous research at scale.">
+<link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+<script src="assets/prefs.js"></script>
+</head>
+<body>
+
+<nav class="bar" aria-label="Site">
+  <div class="wrap">
+    <a class="brand" href="./"><svg class="mark" viewBox="0 0 64 64" aria-hidden="true"><path class="facet" d="M32 3 L61 32 L32 61 L3 32 Z"/><g class="fan"><path d="M32 26 L8 36"/><path d="M32 26 L18 46"/><path d="M32 26 L32 57"/><path d="M32 26 L46 46"/><path d="M32 26 L56 36"/></g><path class="stem" d="M32 26 L32 8"/><circle class="node" cx="32" cy="26" r="5.5"/></svg><span>OPAL</span></a>
+    <div class="nav">
+      <a class="hide-sm" href="lab.html" aria-current="page"><span class="zh">实验室</span><span class="en">The Lab</span></a>
+      <a href="manifesto/zh.html" class="zh" data-set-lang="zh">纲领</a><a href="manifesto/en.html" class="en" data-set-lang="en">Manifesto</a>
+      <a href="funding.html"><span class="zh">资助机会</span><span class="en">Funding</span></a>
+    </div>
+    <div class="tools">
+      <button class="toggle" type="button" data-toggle-lang aria-label="Switch language / 切换语言"><span class="zh">EN</span><span class="en">中文</span></button>
+      <button class="toggle theme" type="button" data-toggle-theme aria-label="Toggle light / dark"><svg class="moon" viewBox="0 0 24 24"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></svg><svg class="sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></button>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" style="padding:56px 0 44px">
+  <div class="wrap">
+    <span class="eyebrow"><span class="zh">实验室</span><span class="en">The Lab</span></span>
+    <h1 style="font-size:clamp(30px,4vw,40px)"><span class="zh">实验室如何运转</span><span class="en">How the Lab Works</span></h1>
+    <p class="lede" style="margin-top:14px"><span class="zh">一个人撰写规则；agent 在规则内提出、执行与审计研究；Manager 按规则拨款、分档与止损。人的注意力只花在规则之外的事项和最终签署上。</span><span class="en">One person writes the rules. Agents propose, execute and audit research inside them, and a rule-bound manager funds, tranches and stops the work. Human attention goes only to exceptions and to the final signature.</span></p>
+  </div>
+</header>
+
+<main>
+
+<section id="roles">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow"><span class="zh">角色</span><span class="en">Roles</span></span>
+      <h2><span class="zh">实验室里的角色</span><span class="en">Who Does What in the Lab</span></h2>
+      <p class="lede"><span class="zh">人不逐份审阅 proposal，而是撰写 call：资助规则、预算上限与注意力配额。其余角色在规则内运转，规则之外的事项才升级给人；人的成本是 O(policy)，而不是 O(proposals)。</span><span class="en">The human does not review proposals one by one — the human writes the call: funding rules, budget ceilings, the attention budget. Every other role works inside those rules and only exceptions escalate, so human cost is O(policy), not O(proposals).</span></p>
+    </div>
+    <div class="cards four">
+      <div class="card"><span class="tag human"><span class="zh">人 · L1 / L5</span><span class="en">Human · L1 / L5</span></span><h3>One Person</h3>
+        <p><span class="zh">选题、写 call（policy）、批准超出规则的申请、签署 material claims。</span><span class="en">Chooses the problem, writes the call, approves what falls outside the rules, signs material claims.</span></p></div>
+      <div class="card"><span class="tag">Agent · L2</span><h3>PI</h3>
+        <p><span class="zh">阅读文献、产生想法、撰写 proposal：预注册的 claim 与 falsifier、预算申请，以及事后计分的成功概率预测。</span><span class="en">Reads the literature and writes proposals: a pre-registered claim and falsifier, a budget request, and a forecast scored afterwards.</span></p></div>
+      <div class="card"><span class="tag"><span class="zh">规则 · L2 · 无 LLM</span><span class="en">Rules · L2 · No LLM</span></span><h3>Manager</h3>
+        <p><span class="zh">desk review、按 calibration 折价拨款、分档释放、Successive Halving、kill、并发槽位、总预算与注意力配额。不做科学判断。</span><span class="en">Desk review, calibrated grants, tranche release, successive halving, kills, slots, the lab budget and attention. No scientific judgments.</span></p></div>
+      <div class="card"><span class="tag">Agent · L3</span><h3>Researcher</h3>
+        <p><span class="zh">把预算分档转化为实验（树搜索 → 多种子 / 测试 / 消融）、claim 与论文，每条 claim 都带证据链。</span><span class="en">Turns funded tranches into experiments (tree search → seeds, tests, ablations), claims, and a paper with an evidence chain per claim.</span></p></div>
+      <div class="card"><span class="tag">System · L4 / L5</span><h3>Verify</h3>
+        <p><span class="zh">Gate 与独立审计：baseline、泄漏、方差、选择性报告、引用核验与重跑。只评估，从不训练。</span><span class="en">Gates and independent audit: baselines, leakage, variance, selective reporting, citations, reruns. Evaluates only; never trains.</span></p></div>
+      <div class="card"><span class="tag">Agent · L2</span><h3>Scout</h3>
+        <p><span class="zh">寻找可申请的外部资助，每个日期、金额与资格条件都引自存档网页并经程序核对。<a href="funding.html">资助机会 →</a></span><span class="en">Finds external funding; every deadline, amount and condition is quoted from a stored page and checked by program. <a href="funding.html">The Board →</a></span></p></div>
+      <div class="card"><span class="tag">System · L6</span><h3><span class="zh">长期记忆</span><span class="en">Long-Term Memory</span></h3>
+        <p><span class="zh">跨实验室记录失败与成功的 proposal 和想法，以及有据可查的复盘，让失败的想法不被重复。</span><span class="en">Failed and successful proposals across labs, with a grounded post-mortem, so failed ideas are not repeated.</span></p></div>
+      <div class="card"><span class="tag">System · L4</span><h3><span class="zh">事件日志</span><span class="en">Event Log</span></h3>
+        <p><span class="zh">每个动作都进入 append-only、哈希链接的事件日志；证据图是它的可演化视图。</span><span class="en">Every action lands in an append-only, hash-chained log; the evidence graph is an evolvable view over it.</span></p></div>
+    </div>
+  </div>
+</section>
+
+<section id="lifecycle">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow"><span class="zh">生命周期</span><span class="en">Lifecycle</span></span>
+      <h2><span class="zh">一棵会分叉、也会被终止的假设树</span><span class="en">A Hypothesis Tree That Branches — and Gets Killed</span></h2>
+    </div>
+    <div class="steps">
+      <div class="step"><span class="who human"><span class="zh">人</span><span class="en">Human</span></span><h3>Propose</h3><p><span class="zh">claim、预期证据、falsifier、预算上限与 kill criteria。说不清何为失败，不予立项。</span><span class="en">Claim, expected evidence, falsifier, budget ceiling, kill criteria. No stated failure condition, no approval.</span></p></div>
+      <div class="step"><span class="who human"><span class="zh">人 / 规则</span><span class="en">Human / Rules</span></span><h3>Approve</h3><p><span class="zh">消耗一份 portfolio 配额与一份注意力配额；规则内自动批准。</span><span class="en">Costs one portfolio slot and one unit of attention; within the rules, automatic.</span></p></div>
+      <div class="step"><span class="who">Agent</span><h3>Execute</h3><p><span class="zh">在 contract 内迭代，一切进入 append-only event log。</span><span class="en">Iterate inside the contract; everything lands in the event log.</span></p></div>
+      <div class="step"><span class="who"><span class="zh">机器</span><span class="en">Machine</span></span><h3>Gate</h3><p><span class="zh">baseline、泄漏、方差、预算与预注册的统计阈值。</span><span class="en">Baselines, leakage, variance, budget, pre-registered thresholds.</span></p></div>
+      <div class="step"><span class="who"><span class="zh">规则</span><span class="en">Rules</span></span><h3>Branch</h3><p><span class="zh">Continue、Pivot、Kill 或 Escalate；escalate 消耗注意力预算。</span><span class="en">Continue, Pivot, Kill, or Escalate; escalation costs attention.</span></p></div>
+      <div class="step"><span class="who"><span class="zh">系统</span><span class="en">System</span></span><h3>Compile</h3><p><span class="zh">claim bundle：证据链、限制、失败 run 与检查结果。</span><span class="en">A claim bundle: evidence chain, limits, failed runs, checks.</span></p></div>
+      <div class="step"><span class="who human"><span class="zh">人</span><span class="en">Human</span></span><h3>Sign</h3><p><span class="zh">判断方法、支持强度与 significance，签署 material claims。</span><span class="en">Judge method, support, and significance; sign material claims.</span></p></div>
+    </div>
+    <p class="note"><span class="zh">Kill 自动执行。任何 override 都不能恢复原项目，只能创建一个具备新证据、新预算与新 falsifier 的子假设。完整纲领还包括证据保证等级、控制回路、威胁模型与 Portfolio Planner：<a href="manifesto/zh.html">阅读纲领 →</a></span><span class="en">Kill executes automatically. No override revives the original project — it can only create a child hypothesis with new evidence, budget, and falsifier. Assurance levels, control loops, the threat model and the Portfolio Planner are in the <a href="manifesto/en.html">full manifesto →</a></span></p>
+  </div>
+</section>
+
+<section id="grants">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow"><span class="zh">立项即申请</span><span class="en">Chartering Is Grant-Making</span></span>
+      <h2><span class="zh">实验室内部的资助机制</span><span class="en">An Internal Funding Mechanism</span></h2>
+      <p class="lede"><span class="zh">一旦假设必须在开工前声明 claim、预期证据、falsifier 与预算上限，Propose 就不再是任务描述，而是一份 proposal。Manager 在固定总盘子下给风险与成本各异的申请配置预算，解决的正是 program officer 的问题。</span><span class="en">Once a hypothesis must declare its claim, expected evidence, falsifier and budget ceiling before work starts, proposing becomes applying for a grant. Allocating a fixed pool across risky, heterogeneous applications is the program officer's problem — and the manager's.</span></p>
+    </div>
+    <div class="tablewrap"><table>
+      <thead><tr><th><span class="zh">资助机制</span><span class="en">Grant Mechanism</span></th><th><span class="zh">OPAL 对象</span><span class="en">OPAL Object</span></th><th><span class="zh">差异所在</span><span class="en">Where It Differs</span></th></tr></thead>
+      <tbody>
+        <tr><td><span class="zh">Specific Aims</span><span class="en">Specific Aims</span></td><td>claim + scope + materiality</td><td><span class="zh">必须机器可求值，而非自然语言目标</span><span class="en">Must be machine-evaluable, not a natural-language goal</span></td></tr>
+        <tr><td><span class="zh">Preliminary Results</span><span class="en">Preliminary Results</span></td><td><span class="zh">已签署的证据链与 lab memory 引用</span><span class="en">Signed evidence chains and lab-memory references</span></td><td><span class="zh">可自动核验，无需信任申请者的自述</span><span class="en">Automatically verifiable; no need to trust the applicant's account</span></td></tr>
+        <tr><td><span class="zh">Go / No-Go 标准</span><span class="en">Go / No-Go Criteria</span></td><td>falsifier + kill predicate</td><td><span class="zh">在 checkpoint 上自动求值，而非年度评审</span><span class="en">Evaluated automatically at checkpoints, not in annual review</span></td></tr>
+        <tr><td><span class="zh">经费申请</span><span class="en">Funding Request</span></td><td><span class="zh">预算：GPU-h、wall-clock、token、attention</span><span class="en">Budget: GPU-h, wall-clock, tokens, attention</span></td><td><span class="zh">注意力是与算力并列的独立预算</span><span class="en">Attention is a budget of its own, alongside compute</span></td></tr>
+        <tr><td><span class="zh">拨款分期 / Stage Gate</span><span class="en">Stage Gate / Tranched Disbursement</span></td><td><span class="zh">tranche 释放 + Successive Halving</span><span class="en">Tranche release + Successive Halving</span></td><td><span class="zh">预算分配与资源调度是同一件事</span><span class="en">Budget allocation and scheduling are the same mechanism</span></td></tr>
+        <tr><td><span class="zh">Track Record</span><span class="en">Track Record</span></td><td><span class="zh">calibration：预测成本 / 效应量 vs 实际值</span><span class="en">Calibration: predicted cost / effect size vs. actual</span></td><td><span class="zh">可计算的先验，而非评审人的印象</span><span class="en">A computable prior, not a reviewer's impression</span></td></tr>
+        <tr><td><span class="zh">结题报告</span><span class="en">Final Report</span></td><td>claim bundle + sign-off</td><td><span class="zh">失败 run 与被排除项默认进入记录</span><span class="en">Failed runs and exclusions are recorded by default</span></td></tr>
+      </tbody>
+    </table></div>
+    <p class="lede" style="margin:28px 0 16px"><span class="zh">代价是把 principal–agent 问题请进实验室：申请者系统性地低估成本、高估效应量，而 proposal 对 agent 几乎没有成本。四项对策：</span><span class="en">The price is the principal–agent problem: applicants understate cost and overstate effect size, and proposals cost an agent almost nothing. Four countermeasures:</span></p>
+    <div class="cards four">
+      <div class="card"><span class="tag"><span class="zh">对策</span><span class="en">Countermeasure</span></span><h3><span class="zh">分档释放</span><span class="en">Tranche Release</span></h3><p><span class="zh">不一次性批复全额预算；milestone 达成才释放下一档。</span><span class="en">No grant is paid in full up front; each tranche is released when the last milestone is met.</span></p></div>
+      <div class="card"><span class="tag"><span class="zh">对策</span><span class="en">Countermeasure</span></span><h3><span class="zh">Calibration 先验</span><span class="en">Calibration Priors</span></h3><p><span class="zh">累积每个 PI 的预测偏差，长期高估者的申请自动折价。</span><span class="en">Each PI's forecast error accumulates; chronic over-estimators are discounted automatically.</span></p></div>
+      <div class="card"><span class="tag"><span class="zh">对策</span><span class="en">Countermeasure</span></span><h3><span class="zh">Scoring Rule</span><span class="en">Scoring Rules</span></h3><p><span class="zh">预测事后计分并按实际结果结算，使诚实上报成为占优策略。</span><span class="en">Forecasts are scored against what actually happened, so honest reporting is the dominant strategy.</span></p></div>
+      <div class="card"><span class="tag"><span class="zh">对策</span><span class="en">Countermeasure</span></span><h3><span class="zh">申请成本</span><span class="en">Application Costs</span></h3><p><span class="zh">限制并发申请槽位，或令每份 proposal 消耗一份注意力配额。</span><span class="en">Capped concurrent slots, or one attention unit per proposal, so cheap proposals cannot flood approval.</span></p></div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>OPAL · One-Person Autonomous Lab · SMU-DIGA, Singapore Management University</span>
+    <span><a href="manifesto/zh.html">中文纲领</a> · <a href="manifesto/en.html">English Manifesto</a> · © 2026</span>
+  </div>
+</footer>
+</body>
+</html>

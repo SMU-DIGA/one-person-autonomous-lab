@@ -226,3 +226,8 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-betw
 }
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 @media print{.bar,.filters,.tools{display:none}}
+
+/* a whole card as a link */
+a.link-card{display:block;text-decoration:none;color:inherit;transition:border-color .15s,background .15s}
+a.link-card:hover{border-color:var(--accent);background:var(--surface-2)}
+a.link-card:hover h3{color:var(--accent-text)}
