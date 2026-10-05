@@ -286,19 +286,37 @@
     .mark .facet{opacity:1}
   }
 </style>
+<style>
+  :root{--paper:#FFFFFF;--card:#F7F7F8;--ink:#0D0D0D;--soft:#6E6E80;--rule:#E5E5E5;--stamp:#0A7D61;--trace:#10A37F;
+    --display:"Inter","PingFang SC","Hiragino Sans GB","Noto Sans CJK SC",system-ui,sans-serif;
+    --body:"Inter","PingFang SC","Hiragino Sans GB","Noto Sans CJK SC",system-ui,sans-serif}
+  body{background-image:none}
+  h1,h2,h3,h4{font-weight:600;letter-spacing:-.02em}
+  h1 .alt{font-style:normal}
+  a{text-decoration-color:rgba(16,163,127,.5)}
+  .stamp{transform:none;border-radius:999px;border-width:1px;font-family:var(--body);text-transform:none;letter-spacing:0;font-size:13px;padding:3px 12px}
+  .site-bar{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.88);backdrop-filter:saturate(1.6) blur(12px);border-bottom:1px solid var(--rule);font:500 14.5px var(--body)}
+  .site-bar .in{max-width:1080px;margin:0 auto;padding:0 30px;display:flex;gap:24px;align-items:center;height:64px}
+  .site-bar a{text-decoration:none;color:var(--soft)}
+  .site-bar a:hover{color:var(--ink)}
+  .site-bar .home{color:var(--ink);font-weight:600;font-size:17px;margin-right:auto}
+  .site-bar .pill{border:1px solid var(--rule);border-radius:999px;padding:6px 14px;color:var(--ink);font-size:13px}
+  @media (max-width:820px){.site-bar .in{padding:0 16px;gap:16px}}
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-<nav style="position:sticky;top:0;z-index:20;background:var(--paper);border-bottom:1px solid var(--rule);font-family:var(--mono);font-size:11px;letter-spacing:.1em">
-  <div class="wrap" style="display:flex;gap:18px;align-items:center;height:40px">
-    <a href="../" style="text-decoration:none">← OPAL</a>
-    <a href="../funding.html" style="text-decoration:none;margin-left:auto">资助机会</a>
-    <a href="en.html" lang="en" style="text-decoration:none" onclick="try{localStorage.setItem('opal-lang','en')}catch(e){}">English</a>
+<nav class="site-bar" aria-label="站点">
+  <div class="in">
+    <a class="home" href="../">OPAL</a>
+    <a href="../funding.html">资助机会</a>
+    <a class="pill" href="en.html" lang="en" onclick="try{localStorage.setItem('opal-lang','en')}catch(e){}">English</a>
   </div>
 </nav>
 <a class="skip" href="#main">跳到正文</a>
 <div class="wrap">
 <header>
-  <span class="stamp">Position note · v1.0 · 2026.07</span>
+  <span class="stamp">Position Note · v1.0 · 2026.07</span>
   <div class="lockup">
     <svg class="mark" viewBox="0 0 64 64" role="img" aria-label="OPAL 标志">
       <title>OPAL</title>

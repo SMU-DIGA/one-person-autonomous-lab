@@ -1,6 +1,6 @@
 {
   "generated": "2026-10-05",
-  "last_scan": null,
+  "last_scan": "2026-10-05T03:09:30Z",
   "applicant": {
     "country": "Singapore",
     "institution": "Singapore Management University",
@@ -21,11 +21,12 @@
     ]
   },
   "counts": {
-    "open": 2,
-    "rolling": 3,
-    "unverified": 9,
+    "open": 4,
+    "rolling": 4,
+    "unverified": 12,
     "low_fit": 2,
-    "closed": 11
+    "ineligible": 1,
+    "closed": 16
   },
   "opportunities": [
     {
@@ -56,7 +57,8 @@
       "first_seen": "2026-10-05T02:55:11Z",
       "last_seen": "2026-10-05T02:55:11Z",
       "flags": [],
-      "page_sha": "6565839adc9e"
+      "page_sha": "6565839adc9e",
+      "also_seen_at": []
     },
     {
       "gid": "G87ce54e5",
@@ -86,7 +88,41 @@
       "first_seen": "2026-10-05T02:58:12Z",
       "last_seen": "2026-10-05T02:58:12Z",
       "flags": [],
-      "page_sha": "a151b97fe127"
+      "page_sha": "a151b97fe127",
+      "also_seen_at": [
+        "https://www.globalsouthopportunities.com/2026/10/02/amazon-2/"
+      ]
+    },
+    {
+      "gid": "G9910dc0e",
+      "program": "Singapore-Horizon Europe (SG-HE) Complementary Fund",
+      "funder": "National Research Foundation (NRF) of Singapore",
+      "funder_type": "government",
+      "kind": "grant",
+      "summary": "A unilateral funding arrangement by Singapore to support research and innovation activities conducted in Singapore by eligible Singapore entities participating in Horizon Europe Pillar II projects in priority areas for Singapore.",
+      "status": "open",
+      "days_left": 452,
+      "status_on_page": "open",
+      "deadline": "2027-12-31",
+      "deadline_check": "exact",
+      "deadline_quote": "The Singapore-Horizon Europe (SG-HE) Complementary Fund 2026-2027 Call for Submission of Proposals will be open on the Research Grant Portal (RGP) from 30 Apr 2026 (09:00 SGT) to 31 Dec 2027 (16:00 SGT).",
+      "rolling": true,
+      "amount": null,
+      "amount_quote": "",
+      "eligible": "yes",
+      "eligibility_quote": "Singapore entities will need to join a consortium formed by entities from EU Member States / Associated Countries to Horizon Europe, in order to jointly submit a proposal to the Horizon Europe Pillar II grant call.",
+      "eligibility_reason": "The applicant is a faculty member at Singapore Management University (an eligible Singapore entity) and can apply provided they participate as part of an eligible Horizon Europe Pillar II consortium.",
+      "fit": 0.7,
+      "fit_rationale": "Provides complementary funding if the lab joins a Horizon Europe Pillar II consortium working on relevant digital, AI safety, or research integrity topics aligned with Singapore's priority areas.",
+      "url": "https://www.rgp.gov.sg/nrf-ar/sg-he",
+      "apply_url": "https://www.rgp.gov.sg/nrf-ar/sg-he",
+      "host": "www.rgp.gov.sg",
+      "official": true,
+      "first_seen": "2026-10-05T03:09:27Z",
+      "last_seen": "2026-10-05T03:09:27Z",
+      "flags": [],
+      "page_sha": "722e93dbefc5",
+      "also_seen_at": []
     },
     {
       "gid": "G43dd9833",
@@ -116,7 +152,8 @@
       "first_seen": "2026-10-05T03:01:00Z",
       "last_seen": "2026-10-05T03:01:00Z",
       "flags": [],
-      "page_sha": "ee8661380005"
+      "page_sha": "ee8661380005",
+      "also_seen_at": []
     },
     {
       "gid": "G6347ea30",
@@ -124,59 +161,63 @@
       "funder": "Anthropic",
       "funder_type": "industry",
       "kind": "compute_credits",
-      "summary": "Anthropic's External Researcher Access Program provides free Claude API credits ($1,000 standard allocation, or higher in rare special cases) to researchers working on high-priority AI safety and alignment topics.",
+      "summary": "Anthropic provides free API credits for standard Claude models to researchers working on AI safety and alignment topics prioritized by the company.",
       "status": "rolling",
       "days_left": null,
       "status_on_page": "open",
       "deadline": null,
       "deadline_check": null,
-      "deadline_quote": "We evaluate submissions on the first Monday of each month.",
+      "deadline_quote": "Applications are reviewed on the first Monday of each month.",
       "rolling": true,
-      "amount": "$1,000 in API credits",
-      "amount_quote": "If successful, we will apply $1000 in API credits to the account. For rare special cases, we may approve a higher quantity of credit.",
-      "eligible": "unclear",
-      "eligibility_quote": "If you are an alignment researcher and are interested in receiving free API credits for AI safety and alignment research purposes, you might qualify for our External Researcher Access Program.",
-      "eligibility_reason": "The applicant conducts AI safety and agent governance research, but the page does not specify which safety/alignment topics Anthropic considers high priority, nor does it list which countries have official Claude availability.",
-      "fit": 0.8,
-      "fit_rationale": "The lab investigates AI safety and agent governance for autonomous agents, which aligns well with Anthropic's alignment focus, and API credits are needed for LLM agent runtime experiments.",
-      "url": "https://support.claude.com/en/articles/9125743-what-is-the-external-researcher-access-program",
-      "apply_url": "https://support.claude.com/en/articles/9125743-what-is-the-external-researcher-access-program",
-      "host": "support.claude.com",
+      "amount": null,
+      "amount_quote": "",
+      "eligible": "yes",
+      "eligibility_quote": "Researchers working on AI safety and alignment topics Anthropic considers high priority",
+      "eligibility_reason": "The applicant is an academic researcher and faculty member whose research program directly covers AI safety and agent governance.",
+      "fit": 0.85,
+      "fit_rationale": "The lab requires API access to evaluate agent contracts, governance, and autonomous research workflows, which aligns well with Anthropic's focus on AI safety and alignment.",
+      "url": "https://taku.ai/blog/how-to-get-claude-free-api",
+      "apply_url": "https://taku.ai/blog/how-to-get-claude-free-api",
+      "host": "taku.ai",
       "official": false,
       "first_seen": "2026-10-05T03:00:42Z",
-      "last_seen": "2026-10-05T03:00:42Z",
+      "last_seen": "2026-10-05T03:07:00Z",
       "flags": [],
-      "page_sha": "372af433e07d"
+      "page_sha": "93d2dce4785b",
+      "also_seen_at": []
     },
     {
-      "gid": "Gba65ecd3",
-      "program": "Researcher Access Program",
+      "gid": "G94934101",
+      "program": "OpenAI Researcher Access Program",
       "funder": "OpenAI",
       "funder_type": "industry",
       "kind": "compute_credits",
-      "summary": "OpenAI provides subsidized API credits to researchers studying areas related to the responsible deployment of AI, mitigating associated risks, alignment, misuse potential, and understanding the societal impact of AI systems.",
+      "summary": "The OpenAI Researcher Access Program offers subsidized API access for the study of responsible AI deployment, risk mitigation, and societal impacts, providing researchers with up to $1,000 in OpenAI API credits valid for 12 months.",
       "status": "rolling",
       "days_left": null,
       "status_on_page": "open",
       "deadline": null,
       "deadline_check": null,
-      "deadline_quote": "applications are reviewed once every 3 months (in March, June, September, and December).",
+      "deadline_quote": "You can submit your application at any time during the year.",
       "rolling": true,
-      "amount": "$1,000",
+      "amount": "up to $1,000",
       "amount_quote": "Researchers can apply for up to $1,000 of OpenAI API credits to support their work.",
-      "eligible": "unclear",
-      "eligibility_quote": "We encourage applications from early stage researchers in countries supported by our API",
-      "eligibility_reason": "The program encourages early stage researchers from API-supported countries (which includes Singapore) with limited institutional resources; as a faculty member, it is unclear whether the applicant meets these preferred criteria, though there is no strict prohibition.",
-      "fit": 0.8,
-      "fit_rationale": "OPAL's focus on autonomous agent governance, accountability, and human-AI interaction closely aligns with OpenAI's interest in alignment, misuse potential, and human-AI interaction.",
-      "url": "https://openai.com/form/researcher-access-program/",
-      "apply_url": "https://openai.com/form/researcher-access-program/",
-      "host": "openai.com",
+      "eligible": "yes",
+      "eligibility_quote": "Researcher(s) with an active affiliation to an academic institution or other research organization, as well as nonprofits conducting research activities (not operational support) are eligible to apply. Applicants must be based in countries supported by our API ⁠(opens in a new window).",
+      "eligibility_reason": "The applicant is a faculty member affiliated with an academic institution (Singapore Management University) in Singapore, an OpenAI API-supported country.",
+      "fit": 0.85,
+      "fit_rationale": "The grant supports work on responsible AI deployment, risk mitigation, and societal impacts, which matches OPAL's agenda on agent governance, safety, and accountability infrastructure.",
+      "url": "https://help.openai.com/en/articles/10139500-researcher-access-program-faq",
+      "apply_url": "https://help.openai.com/en/articles/10139500-researcher-access-program-faq",
+      "host": "help.openai.com",
       "official": true,
-      "first_seen": "2026-10-05T03:00:29Z",
-      "last_seen": "2026-10-05T03:00:29Z",
+      "first_seen": "2026-10-05T03:06:47Z",
+      "last_seen": "2026-10-05T03:06:47Z",
       "flags": [],
-      "page_sha": "f0e15fcdf223"
+      "page_sha": "f59bad11bb30",
+      "also_seen_at": [
+        "https://openai.com/form/researcher-access-program/"
+      ]
     }
   ]
 }
