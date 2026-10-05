@@ -56,8 +56,9 @@ html.lang-zh .en,html.lang-en .zh{display:none !important}
 .brand{display:flex;align-items:center;gap:8px;text-decoration:none;font-weight:600;font-size:16px}
 .brand svg{width:20px;height:20px}
 .nav{display:flex;gap:24px;margin-left:auto;font-size:14px}
-.nav a{text-decoration:none;color:var(--soft)}
-.nav a:hover,.nav a[aria-current="page"]{color:var(--ink)}
+.nav a{text-decoration:none;color:var(--soft);font-weight:500}
+.nav a:hover{color:var(--ink)}
+.nav a[aria-current="page"]{color:var(--ink);font-weight:600;text-decoration:underline 2px var(--accent);text-underline-offset:7px}
 .tools{display:flex;gap:6px}
 .toggle{display:inline-flex;align-items:center;justify-content:center;gap:4px;height:30px;min-width:30px;font:500 12.5px var(--sans);border:1px solid var(--line);background:transparent;color:var(--ink);padding:0 10px;border-radius:999px;cursor:pointer;text-decoration:none}
 .toggle:hover{background:var(--surface);color:var(--ink)}
