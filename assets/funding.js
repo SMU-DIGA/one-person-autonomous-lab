@@ -5,7 +5,7 @@
   var T = {
     status: {
       tight: ["即将截止", "Closing Soon"], open: ["开放申请", "Open"],
-      rolling: ["滚动申请", "Rolling"], upcoming: ["即将开放", "Upcoming"],
+      rolling: ["滚动申请", "Rolling"],
       results: ["结果已公布", "Results Out"], awaiting_results: ["等待结果", "Awaiting Results"]
     },
     kind: {
@@ -18,7 +18,7 @@
     },
     eligible: { yes: ["符合", "Yes"], unclear: ["不明确", "Unclear"], no: ["不符合", "No"] }
   };
-  var ORDER = ["tight", "open", "rolling", "upcoming"];
+  var ORDER = ["tight", "open", "rolling"];   // only calls open for applications are listed
   var state = { status: "all", funder: "all" };
   var data = null;
 
@@ -218,7 +218,7 @@
            biRaw("本周新发现", "New This Week")) +
       stat(n("open") + n("tight"), biRaw("可申请", "Open Now")) +
       stat(n("tight"), biRaw("即将截止", "Closing Soon")) +
-      stat(n("rolling") + n("upcoming"), biRaw("滚动 / 即将开放", "Rolling / Upcoming")) +
+      stat(n("rolling"), biRaw("滚动申请", "Rolling")) +
       stat(data.results.length, biRaw("结果已公布", "Results Out")) +
       stat(recorded, biRaw("共记录", "Recorded")) +
       '<span>' + biRaw("最近扫描 ", "Last Scan ") + '<span class="mono">' + esc(scanned) + "</span></span>";
@@ -238,7 +238,7 @@
     .then(function (doc) {
       var rules = doc.rules || { min_days_to_deadline: 14 };
       var all = (doc.opportunities || []).map(function (o) { return live(o, rules); });
-      var rows = all.filter(function (r) { return r.status !== "awaiting_results"; })
+      var rows = all.filter(function (r) { return ORDER.indexOf(r.status) >= 0; })
         .sort(function (a, b) {
           var s = ORDER.indexOf(a.status) - ORDER.indexOf(b.status);
           if (s) return s;

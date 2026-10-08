@@ -5,22 +5,23 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>OPAL Funding Board</title>
 <meta name="description" content="Funding calls OPAL could apply for, found by the lab's grant scout and filtered by the manager's rules. Every deadline, amount and eligibility condition is quoted from the funder's page.">
-<link rel="icon" href="assets/mark.svg?v=fbb4810bb0" type="image/svg+xml">
+<link rel="icon" href="assets/mark.svg?v=10d96bc74f" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/site.css?v=fbb4810bb0">
-<script src="assets/prefs.js?v=fbb4810bb0"></script>
+<link rel="stylesheet" href="assets/site.css?v=10d96bc74f">
+<script src="assets/prefs.js?v=10d96bc74f"></script>
 </head>
 <body>
 
 <nav class="bar" aria-label="Site">
   <div class="wrap">
-    <a class="brand" href="./?v=fbb4810bb0"><svg class="mark" viewBox="0 0 64 64" aria-hidden="true"><path class="facet" d="M32 3 L61 32 L32 61 L3 32 Z"/><g class="fan"><path d="M32 26 L8 36"/><path d="M32 26 L18 46"/><path d="M32 26 L32 57"/><path d="M32 26 L46 46"/><path d="M32 26 L56 36"/></g><path class="stem" d="M32 26 L32 8"/><circle class="node" cx="32" cy="26" r="5.5"/></svg><span>OPAL</span></a>
+    <a class="brand" href="./?v=10d96bc74f"><svg class="mark" viewBox="0 0 64 64" aria-hidden="true"><path class="facet" d="M32 3 L61 32 L32 61 L3 32 Z"/><g class="fan"><path d="M32 26 L8 36"/><path d="M32 26 L18 46"/><path d="M32 26 L32 57"/><path d="M32 26 L46 46"/><path d="M32 26 L56 36"/></g><path class="stem" d="M32 26 L32 8"/><circle class="node" cx="32" cy="26" r="5.5"/></svg><span>OPAL</span></a>
     <div class="nav">
-      <a href="./?v=fbb4810bb0" class="zh" data-set-lang="zh">纲领</a><a href="en.html?v=fbb4810bb0" class="en" data-set-lang="en">Manifesto</a>
-      <a class="hide-sm" href="lab.html?v=fbb4810bb0"><span class="zh">实验室</span><span class="en">The Lab</span></a>
-      <a href="funding.html?v=fbb4810bb0" aria-current="page"><span class="zh">资助机会</span><span class="en">Funding</span></a>
+      <a href="./?v=10d96bc74f" class="zh" data-set-lang="zh">纲领</a><a href="en.html?v=10d96bc74f" class="en" data-set-lang="en">Manifesto</a>
+      <a class="hide-sm" href="lab.html?v=10d96bc74f"><span class="zh">实验室</span><span class="en">The Lab</span></a>
+      <a href="funding.html?v=10d96bc74f" aria-current="page"><span class="zh">资助机会</span><span class="en">Funding</span></a>
+      <a href="digest.html?v=10d96bc74f"><span class="zh">动态</span><span class="en">Digest</span></a>
     </div>
     <div class="tools">
       <button class="toggle" type="button" data-toggle-lang aria-label="Switch language / 切换语言"><span class="zh">EN</span><span class="en">中文</span></button>
@@ -59,24 +60,24 @@
   </div>
 </section>
 
-<section id="results">
-  <div class="wrap">
-    <div class="head">
-      <span class="eyebrow"><span class="zh">已截止申请的去向</span><span class="en">After the Deadline</span></span>
-      <h2><span class="zh">结果公布</span><span class="en">Results Announced</span></h2>
-      <p class="lede"><span class="zh">近六个月内公布了结果的申请。Scout 每周重读已截止申请的网页并搜索其结果；公布内容与日期逐字引自网页，并按规则（同一资助方、同一项目、同一轮次或年份、公布日期晚于截止日期）对应到申请。</span><span class="en">Calls whose results were announced in the last six months. Each week the scout re-reads the pages of closed calls and searches for their results; the announcement and its date are quoted from the page and tied to the call by rule: same funder, same programme, same round or year, dated after the deadline.</span></p>
-    </div>
-    <div class="opps" id="results-list"><div class="empty"><span class="zh">加载中…</span><span class="en">Loading…</span></div></div>
-  </div>
-</section>
-
 <section id="awaiting">
   <div class="wrap">
     <div class="head">
+      <span class="eyebrow"><span class="zh">已截止申请的去向</span><span class="en">After the Deadline</span></span>
       <h2><span class="zh">等待结果</span><span class="en">Awaiting Results</span></h2>
       <p class="lede"><span class="zh">已截止、尚未找到结果公布的申请。截止一年后仍无公布的不再跟踪。</span><span class="en">Closed calls whose results have not been found yet. A call is followed for a year after its deadline.</span></p>
     </div>
     <div class="opps" id="awaiting-list"><div class="empty"><span class="zh">加载中…</span><span class="en">Loading…</span></div></div>
+  </div>
+</section>
+
+<section id="results">
+  <div class="wrap">
+    <div class="head">
+      <h2><span class="zh">结果公布</span><span class="en">Results Announced</span></h2>
+      <p class="lede"><span class="zh">近六个月内公布了结果的申请。Scout 每周重读已截止申请的网页并搜索其结果；公布内容与日期逐字引自网页，并按规则（同一资助方、同一项目、同一轮次或年份、公布日期晚于截止日期）对应到申请。</span><span class="en">Calls whose results were announced in the last six months. Each week the scout re-reads the pages of closed calls and searches for their results; the announcement and its date are quoted from the page and tied to the call by rule: same funder, same programme, same round or year, dated after the deadline.</span></p>
+    </div>
+    <div class="opps" id="results-list"><div class="empty"><span class="zh">加载中…</span><span class="en">Loading…</span></div></div>
   </div>
 </section>
 
@@ -108,6 +109,6 @@
     <span id="stamp"></span>
   </div>
 </footer>
-<script src="assets/funding.js?v=fbb4810bb0"></script>
+<script src="assets/funding.js?v=10d96bc74f"></script>
 </body>
 </html>

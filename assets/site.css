@@ -219,3 +219,83 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-betw
 a.link-card{display:block;text-decoration:none;color:inherit;transition:border-color .15s,background .15s}
 a.link-card:hover{border-color:var(--accent);background:var(--surface-2)}
 a.link-card:hover h3{color:var(--accent-text)}
+
+/* AI research digest (digest.html, digest/*.html): issue index, themes with trend numbers, papers, news */
+.issue-week{margin:0 0 26px}
+.issue-week h3{font-size:16px;margin:0 0 10px}
+.issue-week h3 .muted{font:500 12.5px var(--mono);margin-left:6px}
+.issue-rows{border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+.issue-row{display:grid;grid-template-columns:180px 70px 100px minmax(0,1fr);gap:6px 18px;align-items:baseline;padding:13px 20px;border-bottom:1px solid var(--line);text-decoration:none;background:var(--bg)}
+.issue-row:nth-child(odd){background:var(--surface)}
+.issue-row:last-child{border-bottom:0}
+.issue-row:hover{background:var(--surface-2)}
+.issue-row .when{font:600 14.5px var(--sans)}
+.issue-row .count{font:13.5px var(--sans);color:var(--soft)}
+.issue-row .themes{font-size:14.5px;color:var(--soft);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.issue-row .badge{justify-self:start}
+.badge.weekly{color:var(--accent-text)}
+.badge.daily{color:var(--faint)}
+.badge.trend.rising{color:var(--accent-text)}
+.badge.trend.new{color:var(--blue-text)}
+.badge.trend.steady,.badge.trend.unmeasured{color:var(--faint)}
+.badge.trend.falling{color:var(--green-text)}
+.disclosure{margin:14px 0 0;max-width:80ch;font:13px/1.6 var(--sans);color:var(--faint);border-left:2px solid var(--line);padding-left:12px}
+.digest .label{display:block;font:500 11.5px var(--sans);color:var(--faint);margin-bottom:2px}
+.digest-grid{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:44px}
+.digest-grid aside{position:sticky;top:84px;align-self:start}
+.digest h2.side{font-size:16px;margin:0 0 12px}
+.themes{display:grid;gap:14px}
+.theme{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:18px 22px}
+.theme-head{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:4px 16px}
+.theme h3{font-size:17px}
+.theme .count{font:500 13px var(--sans);color:var(--soft)}
+.theme p{margin:10px 0 8px;color:var(--soft);font-size:15px;line-height:1.65}
+.trend-row{display:flex;flex-wrap:wrap;align-items:center;gap:6px 16px;margin-top:8px;font:12.5px var(--sans);color:var(--soft)}
+.trend-row .tn .label{display:inline;margin-right:5px}
+.terms{font:12.5px var(--sans);color:var(--soft)}
+.terms .label{display:inline;margin-right:6px}
+.theme details,.paper details{margin-top:8px}
+.theme summary,.paper summary{cursor:pointer;font:500 12.5px var(--sans);color:var(--faint);width:max-content;max-width:100%}
+.theme summary:hover,.paper summary:hover{color:var(--ink)}
+.plist{margin:8px 0 0;padding-left:1.4em;font-size:14px;line-height:1.55}
+.plist li{margin-bottom:4px}
+.plist a{text-decoration:none}
+.plist a:hover{text-decoration:underline}
+.cats{display:grid;gap:7px;font:13px var(--sans)}
+.cat{display:grid;grid-template-columns:64px minmax(0,1fr) 40px;gap:4px 10px;align-items:center}
+.cat .meter{height:6px;background:var(--surface-2);border-radius:999px;overflow:hidden}
+.cat .meter i{display:block;height:100%;background:var(--accent);border-radius:999px}
+.cat .n{text-align:right;font-weight:600}
+.cat .p{grid-column:2/-1;font-size:11.5px;margin-top:-4px}
+.cats.days .cat{grid-template-columns:minmax(0,1fr) 54px}
+.cats.days .p{grid-column:1/-1}
+.papers,.news{border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+.paper,.news-item{padding:18px 22px;border-bottom:1px solid var(--line);background:var(--bg)}
+.paper:nth-child(odd),.news-item:nth-child(odd){background:var(--surface)}
+.paper:last-child,.news-item:last-child{border-bottom:0}
+.paper h3,.news-item h3{font-size:16.5px;line-height:1.35}
+.paper h3 a,.news-item h3 a{text-decoration:none}
+.paper h3 a:hover,.news-item h3 a:hover{text-decoration:underline}
+.paper .meta,.news-item .meta{font:12.5px var(--sans);color:var(--faint);margin:4px 0 6px;overflow-wrap:anywhere}
+.paper .kr{margin:8px 0 6px;font-size:15px}
+.paper .why{margin:0;color:var(--soft);font-size:14.5px}
+.paper blockquote{margin:8px 0 0;padding:10px 14px;border-left:3px solid var(--line);background:var(--bg);font-size:13.5px;color:var(--soft);border-radius:0 8px 8px 0;overflow-wrap:anywhere}
+.paper:nth-child(even) blockquote{background:var(--surface)}
+.plinks{margin-top:8px;font:12.5px var(--sans);color:var(--faint)}
+.plinks a{color:var(--soft)}
+.news-item p{margin:6px 0 0;color:var(--soft);font-size:15px}
+.note.synthesis{margin:0 0 36px}
+.note.synthesis p{margin:4px 0 0}
+.small{font-size:13px;margin:12px 0 0}
+.issue-nav{font:500 14px var(--sans);display:flex;flex-wrap:wrap;gap:8px}
+@media (max-width:960px){
+  .digest-grid{grid-template-columns:minmax(0,1fr);gap:28px}
+  .digest-grid aside{position:static}
+  .issue-row{grid-template-columns:150px 64px minmax(0,1fr)}
+  .issue-row .themes{grid-column:1/-1;white-space:normal}
+}
+@media (max-width:640px){
+  .issue-row{grid-template-columns:minmax(0,1fr) auto;padding:12px 14px}
+  .issue-row .count{grid-column:1/-1}
+  .theme,.paper,.news-item{padding:16px}
+}
