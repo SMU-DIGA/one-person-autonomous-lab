@@ -3,6 +3,7 @@
 //   digest.html       searches every issue's papers through data/digest/search.json, results grouped by issue
 // A paper matches when every term of the query occurs in its title, id, authors, key result, or the names and terms
 // of its themes and keywords, in either language; "quoted words" are one term. The query is kept in ?q=.
+// digest.html also filters by issue type and date range, alone or with a query (?type=, ?range= or ?from=&to=).
 (function () {
   "use strict";
   var form = document.querySelector("form.dsearch");
@@ -246,6 +247,96 @@
     }
     input.addEventListener("focus", load, {once: true});
 
+    // the filters (site/digest.py: filters): the issue type, and a date range, either a preset counted back from the last
+    // day an issue covers or from-to; a weekly is in the range when any day of its week is. Kept in ?type=&range=&from=&to=.
+    var fbox = form.querySelector(".ds-filters");
+    var fromIn = document.getElementById("ds-from"), toIn = document.getElementById("ds-to");
+    var none = document.getElementById("ds-none");
+    var issueRows = [].slice.call(list.querySelectorAll(".issue-row[data-kind]"));
+    var weeks = [].slice.call(list.querySelectorAll(".issue-week"));
+    var FIRST = fbox ? fbox.getAttribute("data-first") : "", LAST = fbox ? fbox.getAttribute("data-last") : "";
+    var BACK = {"1w": [0, 7], "1m": [1, 0], "3m": [3, 0]};   // [months, days] back from the last day
+    var DAY = /^\d{4}-\d{2}-\d{2}$/;
+    var f = {type: "", range: "", from: "", to: ""};
+    function preset(r) {
+      var b = BACK[r];
+      if (!b || !LAST) return ["", ""];
+      var d = new Date(LAST + "T00:00:00Z");
+      if (b[0]) d.setUTCMonth(d.getUTCMonth() - b[0]); else d.setUTCDate(d.getUTCDate() - b[1]);
+      d.setUTCDate(d.getUTCDate() + 1);
+      return [d.toISOString().slice(0, 10), LAST];
+    }
+    function span() {   // [from, to]; "" is open
+      var w = f.range ? preset(f.range) : [f.from, f.to];
+      return w[0] && w[1] && w[0] > w[1] ? [w[1], w[0]] : w;
+    }
+    function active() { return !!(f.type || f.range || f.from || f.to); }
+    function keep(kind, s, e) {
+      if (f.type && kind !== f.type) return false;
+      var w = span();
+      return (!w[0] || e >= w[0]) && (!w[1] || s <= w[1]);
+    }
+    function keepIssue(is) { return keep(is.kind, is.s || is.date, is.e || is.date); }
+    function clamp(x) { return !x ? "" : FIRST && x < FIRST ? FIRST : LAST && x > LAST ? LAST : x; }
+    function syncFilters() {   // the buttons and the date fields show the state
+      if (!fbox) return;
+      [].forEach.call(fbox.querySelectorAll("button[data-type]"), function (b) {
+        b.setAttribute("aria-pressed", String(b.getAttribute("data-type") === f.type));
+      });
+      [].forEach.call(fbox.querySelectorAll("button[data-range]"), function (b) {
+        var r = b.getAttribute("data-range");
+        b.setAttribute("aria-pressed", String(r ? r === f.range : !f.range && !f.from && !f.to));
+      });
+      var w = f.range ? preset(f.range).map(clamp) : [f.from, f.to];
+      if (document.activeElement !== fromIn) fromIn.value = w[0];   // not under the reader's typing
+      if (document.activeElement !== toIn) toIn.value = w[1];
+      toIn.min = fromIn.value || FIRST;
+      fromIn.max = toIn.value || LAST;
+    }
+    function filterList() {
+      var n = 0;
+      issueRows.forEach(function (r) {
+        var ok = keep(r.getAttribute("data-kind"), r.getAttribute("data-s"), r.getAttribute("data-e"));
+        r.hidden = !ok;
+        if (ok) n++;
+      });
+      weeks.forEach(function (w) { w.hidden = !w.querySelector(".issue-row:not([hidden])"); });
+      if (none) none.hidden = n > 0 || !issueRows.length;
+      return n;
+    }
+    function changed() {
+      syncFilters();
+      run(input.value);
+      writeURL();
+    }
+    if (fbox) {
+      fbox.addEventListener("click", function (ev) {
+        var b = ev.target.closest("button[data-type],button[data-range]");
+        if (!b) return;
+        if (b.hasAttribute("data-type")) f.type = b.getAttribute("data-type");
+        else { f.range = b.getAttribute("data-range"); f.from = f.to = ""; }
+        changed();
+      });
+      [fromIn, toIn].forEach(function (el) {
+        el.addEventListener("change", function () {
+          f.range = "";
+          f.from = DAY.test(fromIn.value) ? fromIn.value : "";
+          f.to = DAY.test(toIn.value) ? toIn.value : "";
+          changed();
+        });
+      });
+      try {
+        var sp = new URLSearchParams(location.search);
+        f.type = /^(daily|weekly)$/.test(sp.get("type") || "") ? sp.get("type") : "";
+        f.range = BACK[sp.get("range")] ? sp.get("range") : "";
+        if (!f.range) {
+          f.from = DAY.test(sp.get("from") || "") ? sp.get("from") : "";
+          f.to = DAY.test(sp.get("to") || "") ? sp.get("to") : "";
+        }
+      } catch (e) {}
+      syncFilters();
+    }
+
     function href(id, q, pid) {
       return "digest/" + encodeURIComponent(id) + ".html?" + (version ? "v=" + version + "&" : "") + "q=" + encodeURIComponent(q) +
         (pid ? "#p-" + encodeURIComponent(pid) : "");
@@ -253,11 +344,13 @@
     function run(q) {
       pending = q;
       var ts = terms(q);
-      if (!ts.length) {
+      if (!ts.length) {      // the list of issues, filtered
         results.hidden = true;
         results.innerHTML = "";
         list.hidden = false;
-        count.innerHTML = "";
+        var n = filterList();
+        count.innerHTML = !active() ? "" : !n ? bi("没有符合筛选条件的一期", "No issue matches") :
+          bi("共 " + issueRows.length + " 期中的 " + n + " 期", n + " of " + issueRows.length + " " + plural(issueRows.length, "issue", "issues"));
         return;
       }
       if (!data) {
@@ -266,8 +359,9 @@
         return;
       }
       var groups = {}, order = [], pids = {};
+      var inIssue = data.issues.map(keepIssue);
       rows.forEach(function (r) {
-        if (!hit(r.doc, ts)) return;
+        if (!inIssue[r.issue] || !hit(r.doc, ts)) return;
         if (!groups[r.issue]) { groups[r.issue] = []; order.push(r.issue); }
         groups[r.issue].push(r);
         pids[r.p.id] = true;
@@ -277,7 +371,9 @@
       list.hidden = true;
       results.hidden = false;
       if (!order.length) {
-        results.innerHTML = '<div class="empty">' + bi("没有匹配的论文。试试更少或更短的词。", "No paper matches. Try fewer or shorter words.") + "</div>";
+        results.innerHTML = '<div class="empty">' + (active() ? bi("在筛选的各期中没有匹配的论文。试试更少的词，或放宽筛选。",
+          "No paper matches in the filtered issues. Try fewer words, or widen the filters.") :
+          bi("没有匹配的论文。试试更少或更短的词。", "No paper matches. Try fewer or shorter words.")) + "</div>";
         count.innerHTML = bi("没有匹配", "Nothing matches");
         return;
       }
@@ -310,6 +406,10 @@
       var re = markRe(ts);
       [].forEach.call(results.querySelectorAll(".ds-group li"), function (li) { mark(li, re); });
     }
+    run.params = function () {
+      return {type: f.type, range: f.range, from: f.range ? "" : f.from, to: f.range ? "" : f.to};
+    };
+    if (active()) run("");
     return run;
   }
 
@@ -324,13 +424,20 @@
       if (q === last) return;
       last = q;
       run(q);
-      try {
-        var u = new URL(location.href);
-        if (q.trim()) u.searchParams.set("q", q.trim()); else u.searchParams.delete("q");
-        history.replaceState(history.state, "", u.pathname + u.search + u.hash);
-      } catch (e) {}
+      writeURL();
     };
     if (now) go(); else timer = setTimeout(go, 120);
+  }
+  // the query, and on digest.html the filters, in the address: a link restores them
+  function writeURL() {
+    try {
+      var u = new URL(location.href), ps = run.params ? run.params() : {};
+      ps.q = input.value.trim();
+      ["q", "type", "range", "from", "to"].forEach(function (k) {
+        if (ps[k]) u.searchParams.set(k, ps[k]); else u.searchParams.delete(k);
+      });
+      history.replaceState(history.state, "", u.pathname + u.search + u.hash);
+    } catch (e) {}
   }
   input.addEventListener("input", function () { apply(false); });
   form.addEventListener("submit", function (ev) { ev.preventDefault(); apply(true); });
