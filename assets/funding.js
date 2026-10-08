@@ -59,8 +59,11 @@
     return Object.assign({}, o, { status: status, days_left: days });
   }
 
+  // The lower list holds what was found in earlier weeks; this week's finds are in the block above it.
+  function earlier() { return data.rows.filter(function (r) { return !r.new; }); }
+
   function chips() {
-    var rows = data.rows;
+    var rows = earlier();
     function count(k, v) { return rows.filter(function (r) { return v === "all" || r[k] === v; }).length; }
     function chip(k, v, label, n) {
       return '<button class="chip" type="button" data-k="' + k + '" data-v="' + v + '" aria-pressed="' + (state[k] === v) + '">' + label + " · " + n + "</button>";
@@ -200,11 +203,13 @@
 
   function render() {
     chips();
-    var rows = data.rows.filter(function (r) {
+    var rows = earlier().filter(function (r) {
       return (state.status === "all" || r.status === state.status) && (state.funder === "all" || r.funder_type === state.funder);
     });
-    document.getElementById("cards").innerHTML = rows.length ? rows.map(card).join("") :
-      '<div class="empty">' + biRaw("当前没有符合条件的机会。", "No opportunities match right now.") + "</div>";
+    document.getElementById("cards").innerHTML = rows.length ? rows.map(card).join("") : '<div class="empty">' +
+      (earlier().length ? biRaw("当前没有符合条件的机会。", "No opportunities match right now.")
+                        : biRaw("之前几周发现的机会都已截止；仍可申请的都在上面的本周新发现里。",
+                                "Nothing found in earlier weeks is still open; every open call is in New This Week above.")) + "</div>";
   }
 
   function summary() {
@@ -240,6 +245,8 @@
       var all = (doc.opportunities || []).map(function (o) { return live(o, rules); });
       var rows = all.filter(function (r) { return ORDER.indexOf(r.status) >= 0; })
         .sort(function (a, b) {
+          // official sources first; a call known only from another site is listed after them, marked as such
+          if (!a.official !== !b.official) return a.official ? -1 : 1;
           var s = ORDER.indexOf(a.status) - ORDER.indexOf(b.status);
           if (s) return s;
           var da = a.days_left == null ? 1e6 : a.days_left, db = b.days_left == null ? 1e6 : b.days_left;

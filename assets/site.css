@@ -162,6 +162,8 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-betw
 .badge.new{color:#fff;background:var(--accent);border-color:var(--accent)}
 .opp.is-new{box-shadow:inset 3px 0 0 var(--accent)}
 .new-block{margin-bottom:44px}
+.board-stats{margin-bottom:32px;padding-bottom:18px;border-bottom:1px solid var(--line)}
+.earlier-head{margin-top:8px}
 .new-block .opps{border:1.5px solid var(--accent);border-radius:var(--r);overflow:hidden}
 .new-block[hidden]{display:none}
 .fit{display:flex;align-items:center;gap:8px}

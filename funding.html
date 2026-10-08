@@ -5,23 +5,23 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>OPAL Funding Board</title>
 <meta name="description" content="Funding calls OPAL could apply for, found by the lab's grant scout and filtered by the manager's rules. Every deadline, amount and eligibility condition is quoted from the funder's page.">
-<link rel="icon" href="assets/mark.svg?v=10d96bc74f" type="image/svg+xml">
+<link rel="icon" href="assets/mark.svg?v=c148863187" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/site.css?v=10d96bc74f">
-<script src="assets/prefs.js?v=10d96bc74f"></script>
+<link rel="stylesheet" href="assets/site.css?v=c148863187">
+<script src="assets/prefs.js?v=c148863187"></script>
 </head>
 <body>
 
 <nav class="bar" aria-label="Site">
   <div class="wrap">
-    <a class="brand" href="./?v=10d96bc74f"><svg class="mark" viewBox="0 0 64 64" aria-hidden="true"><path class="facet" d="M32 3 L61 32 L32 61 L3 32 Z"/><g class="fan"><path d="M32 26 L8 36"/><path d="M32 26 L18 46"/><path d="M32 26 L32 57"/><path d="M32 26 L46 46"/><path d="M32 26 L56 36"/></g><path class="stem" d="M32 26 L32 8"/><circle class="node" cx="32" cy="26" r="5.5"/></svg><span>OPAL</span></a>
+    <a class="brand" href="./?v=c148863187"><svg class="mark" viewBox="0 0 64 64" aria-hidden="true"><path class="facet" d="M32 3 L61 32 L32 61 L3 32 Z"/><g class="fan"><path d="M32 26 L8 36"/><path d="M32 26 L18 46"/><path d="M32 26 L32 57"/><path d="M32 26 L46 46"/><path d="M32 26 L56 36"/></g><path class="stem" d="M32 26 L32 8"/><circle class="node" cx="32" cy="26" r="5.5"/></svg><span>OPAL</span></a>
     <div class="nav">
-      <a href="./?v=10d96bc74f" class="zh" data-set-lang="zh">纲领</a><a href="en.html?v=10d96bc74f" class="en" data-set-lang="en">Manifesto</a>
-      <a class="hide-sm" href="lab.html?v=10d96bc74f"><span class="zh">实验室</span><span class="en">The Lab</span></a>
-      <a href="funding.html?v=10d96bc74f" aria-current="page"><span class="zh">资助机会</span><span class="en">Funding</span></a>
-      <a href="digest.html?v=10d96bc74f"><span class="zh">动态</span><span class="en">Digest</span></a>
+      <a href="./?v=c148863187" class="zh" data-set-lang="zh">纲领</a><a href="en.html?v=c148863187" class="en" data-set-lang="en">Manifesto</a>
+      <a class="hide-sm" href="lab.html?v=c148863187"><span class="zh">实验室</span><span class="en">The Lab</span></a>
+      <a href="funding.html?v=c148863187" aria-current="page"><span class="zh">资助机会</span><span class="en">Funding</span></a>
+      <a href="digest.html?v=c148863187"><span class="zh">动态</span><span class="en">Digest</span></a>
     </div>
     <div class="tools">
       <button class="toggle" type="button" data-toggle-lang aria-label="Switch language / 切换语言"><span class="zh">EN</span><span class="en">中文</span></button>
@@ -44,6 +44,7 @@
 <main>
 <section style="padding-top:40px">
   <div class="wrap">
+    <div class="stats board-stats" id="summary" aria-live="polite"></div>
     <div class="new-block" id="new-block" hidden>
       <div class="head">
         <span class="eyebrow"><span class="zh">每周扫描</span><span class="en">Weekly Scan</span></span>
@@ -52,8 +53,12 @@
       </div>
       <div class="opps" id="new-list"></div>
     </div>
+    <div class="head earlier-head">
+      <span class="eyebrow"><span class="zh">仍可申请</span><span class="en">Still Open</span></span>
+      <h2><span class="zh">之前发现的机会</span><span class="en">Found in Earlier Weeks</span></h2>
+      <p class="lede"><span class="zh">前几周扫描发现、现在仍然可以申请的机会。官方网页上的排在前面，只在其他网站上找到的排在后面并标明；各自按截止日期排列，滚动申请的放在最后。</span><span class="en">Calls found in earlier weekly scans that are still open for applications. Those on the funder's own pages come first; calls found only on other sites follow, marked as such. Each group is ordered by deadline, rolling programmes last.</span></p>
+    </div>
     <div class="board-head">
-      <div class="stats" id="summary" aria-live="polite"></div>
       <div class="filters" id="filters" role="group" aria-label="Filter"></div>
     </div>
     <div class="opps" id="cards"><div class="empty"><span class="zh">加载中…</span><span class="en">Loading…</span></div></div>
@@ -109,6 +114,6 @@
     <span id="stamp"></span>
   </div>
 </footer>
-<script src="assets/funding.js?v=10d96bc74f"></script>
+<script src="assets/funding.js?v=c148863187"></script>
 </body>
 </html>
