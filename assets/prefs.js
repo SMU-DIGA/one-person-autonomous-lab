@@ -2,6 +2,7 @@
 // Language: ?lang= wins, then the saved choice, then the browser. Theme: the saved choice, else the system's.
 (function () {
   var root = document.documentElement;
+  root.classList.add("js");  // controls that only work with scripts (the digest's search box) show only then
   function get(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
   function set(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
 
