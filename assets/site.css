@@ -76,42 +76,11 @@ html.lang-zh .en,html.lang-en .zh{display:none !important}
 .mark .facet,.mark .fan path,.mark .stem{fill:none;stroke:currentColor;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
 .mark .node{fill:var(--accent)}
 
-/* the homepage lockup: the mark animated as on the Chinese note — drawn in (node, stem, branches, frame), then
-   contracts pulse down the branches and the node emits; scoped to .lockup so the nav bar's mark stays still */
-.lockup{display:flex;align-items:center;gap:clamp(14px,2.4vw,24px)}
-.lockup .mark{width:clamp(48px,7vw,76px);height:clamp(48px,7vw,76px);flex:none;overflow:visible;color:var(--ink)}
-.lockup .mark .facet,.lockup .mark .fan path,.lockup .mark .stem{stroke-width:1.6;stroke-dasharray:1;stroke-dashoffset:1;animation:markDraw .7s ease-out forwards}
-.lockup .mark .stem{animation-duration:.5s;animation-delay:.36s}
-.lockup .mark .fan path:nth-child(1){animation-delay:.62s}
-.lockup .mark .fan path:nth-child(2){animation-delay:.70s}
-.lockup .mark .fan path:nth-child(3){animation-delay:.78s}
-.lockup .mark .fan path:nth-child(4){animation-delay:.86s}
-.lockup .mark .fan path:nth-child(5){animation-delay:.94s}
-.lockup .mark .facet{animation-duration:1.5s;animation-delay:1.08s}
-.lockup .mark .node{transform-box:fill-box;transform-origin:center;animation:markNode .5s cubic-bezier(.2,.8,.3,1) both}
-.lockup .mark .pulse path{fill:none;stroke:var(--accent);stroke-width:2.2;stroke-linecap:round;stroke-dasharray:.09 1;stroke-dashoffset:0;opacity:0;animation:markPulse 3.2s linear infinite}
-.lockup .mark .pulse path:nth-child(1){animation-delay:1.7s}
-.lockup .mark .pulse path:nth-child(2){animation-delay:1.84s}
-.lockup .mark .pulse path:nth-child(3){animation-delay:1.98s}
-.lockup .mark .pulse path:nth-child(4){animation-delay:2.12s}
-.lockup .mark .pulse path:nth-child(5){animation-delay:2.26s}
-.lockup .mark .ring{fill:none;stroke:var(--accent);stroke-width:1.2;transform-box:fill-box;transform-origin:center;opacity:0;animation:markRing 3.2s ease-out 1.5s infinite}
-@keyframes markDraw{to{stroke-dashoffset:0}}
-@keyframes markNode{from{transform:scale(.2);opacity:0}to{transform:scale(1);opacity:1}}
-@keyframes markPulse{0%{stroke-dashoffset:0;opacity:0}6%{opacity:1}46%{stroke-dashoffset:-1;opacity:1}52%{stroke-dashoffset:-1;opacity:0}100%{stroke-dashoffset:-1;opacity:0}}
-@keyframes markRing{0%{transform:scale(1);opacity:.55}40%{transform:scale(2.6);opacity:0}100%{transform:scale(2.6);opacity:0}}
-@media (prefers-reduced-motion:reduce){
-  .lockup .mark .facet,.lockup .mark .fan path,.lockup .mark .stem{animation:none;stroke-dashoffset:0}
-  .lockup .mark .node{animation:none}
-  .lockup .mark .pulse,.lockup .mark .ring{display:none}
-}
-
 /* hero: one compact band */
 .hero{padding:72px 0 60px;border-bottom:1px solid var(--line)}
 .hero-grid{display:grid;grid-template-columns:1.25fr 1fr;gap:56px;align-items:end}
 .eyebrow{display:block;font:500 13px var(--sans);color:var(--accent-text);margin-bottom:14px;letter-spacing:.01em}
 .hero h1{font-size:clamp(36px,5vw,54px);letter-spacing:-.025em}
-.hero .sub{font:500 18px var(--sans);color:var(--soft);margin-top:10px}
 .hero .lede{margin-top:20px}
 .lede{font-size:16.5px;color:var(--soft);max-width:68ch}
 .thesis{margin:0;padding:24px 26px;background:var(--surface);border-left:3px solid var(--accent);border-radius:0 var(--r) var(--r) 0;font-size:18px;line-height:1.5}
@@ -160,31 +129,8 @@ main section:last-child{border-bottom:0}
 .step p{margin:0;color:var(--soft);font-size:14px;line-height:1.6}
 .note{margin-top:16px;padding:18px 22px;border-left:3px solid var(--accent);background:var(--surface);border-radius:0 var(--r) var(--r) 0;font-size:15px}
 
-table{width:100%;border-collapse:collapse;font-size:14px;margin:12px 0;border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
-th,td{text-align:left;vertical-align:top;padding:11px 14px;border-bottom:1px solid var(--line)}
-th{font:600 12.5px var(--sans);color:var(--soft);background:var(--surface-2)}
-tr:nth-child(even) td{background:var(--surface)}
-td:first-child{font-weight:600}
-.tablewrap{overflow-x:auto}
-
 footer{border-top:1px solid var(--line);padding:32px 0 44px;color:var(--faint);font:13px var(--sans)}
 footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between}
-
-/* long-form (English manifesto) */
-.doc-grid{display:grid;grid-template-columns:230px minmax(0,1fr);gap:56px;padding-top:44px;padding-bottom:64px}
-.doc{max-width:760px;font-size:16.5px;line-height:1.75}
-.doc h2{font-size:26px;margin:56px 0 16px;padding-top:32px;border-top:1px solid var(--line)}
-.doc h2:first-of-type{margin-top:8px}
-.doc h3{font-size:19px;margin:32px 0 10px}
-.doc ul{padding-left:1.2em;margin:0 0 .8em}
-.doc li{margin-bottom:.3em}
-.doc blockquote{margin:22px 0;padding:16px 22px;border-left:3px solid var(--accent);background:var(--surface);border-radius:0 var(--r) var(--r) 0}
-.doc blockquote p{margin:0}
-.toc{position:sticky;top:84px;align-self:start;list-style:none;margin:0;padding:0;font:13.5px/1.5 var(--sans)}
-.toc li{padding:5px 0 5px 12px;border-left:2px solid var(--line)}
-.toc a{text-decoration:none;color:var(--soft)}
-.toc a:hover{color:var(--ink)}
-.toc .k{font-weight:600;color:var(--ink);border-left:0;padding-left:0;margin-bottom:6px}
 
 /* funding board */
 .board-head{display:flex;flex-wrap:wrap;gap:14px 28px;align-items:center;justify-content:space-between;margin-bottom:20px}
@@ -236,8 +182,6 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-betw
   .step{border-bottom:1px solid var(--line)}
   .opp{grid-template-columns:1fr 1fr 1fr}
   .opp .title-cell{grid-column:1/-1}
-  .doc-grid{grid-template-columns:minmax(0,1fr);gap:16px}  /* minmax: a wide table or code block scrolls inside, not the page */
-  .toc{position:static;display:none}
 }
 @media (max-width:640px){
   .wrap{padding:0 16px}
