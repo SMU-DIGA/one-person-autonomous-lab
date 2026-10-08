@@ -76,6 +76,36 @@ html.lang-zh .en,html.lang-en .zh{display:none !important}
 .mark .facet,.mark .fan path,.mark .stem{fill:none;stroke:currentColor;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
 .mark .node{fill:var(--accent)}
 
+/* the homepage lockup: the mark animated as on the Chinese note — drawn in (node, stem, branches, frame), then
+   contracts pulse down the branches and the node emits; scoped to .lockup so the nav bar's mark stays still */
+.lockup{display:flex;align-items:center;gap:clamp(14px,2.4vw,24px)}
+.lockup .mark{width:clamp(48px,7vw,76px);height:clamp(48px,7vw,76px);flex:none;overflow:visible;color:var(--ink)}
+.lockup .mark .facet,.lockup .mark .fan path,.lockup .mark .stem{stroke-width:1.6;stroke-dasharray:1;stroke-dashoffset:1;animation:markDraw .7s ease-out forwards}
+.lockup .mark .stem{animation-duration:.5s;animation-delay:.36s}
+.lockup .mark .fan path:nth-child(1){animation-delay:.62s}
+.lockup .mark .fan path:nth-child(2){animation-delay:.70s}
+.lockup .mark .fan path:nth-child(3){animation-delay:.78s}
+.lockup .mark .fan path:nth-child(4){animation-delay:.86s}
+.lockup .mark .fan path:nth-child(5){animation-delay:.94s}
+.lockup .mark .facet{animation-duration:1.5s;animation-delay:1.08s}
+.lockup .mark .node{transform-box:fill-box;transform-origin:center;animation:markNode .5s cubic-bezier(.2,.8,.3,1) both}
+.lockup .mark .pulse path{fill:none;stroke:var(--accent);stroke-width:2.2;stroke-linecap:round;stroke-dasharray:.09 1;stroke-dashoffset:0;opacity:0;animation:markPulse 3.2s linear infinite}
+.lockup .mark .pulse path:nth-child(1){animation-delay:1.7s}
+.lockup .mark .pulse path:nth-child(2){animation-delay:1.84s}
+.lockup .mark .pulse path:nth-child(3){animation-delay:1.98s}
+.lockup .mark .pulse path:nth-child(4){animation-delay:2.12s}
+.lockup .mark .pulse path:nth-child(5){animation-delay:2.26s}
+.lockup .mark .ring{fill:none;stroke:var(--accent);stroke-width:1.2;transform-box:fill-box;transform-origin:center;opacity:0;animation:markRing 3.2s ease-out 1.5s infinite}
+@keyframes markDraw{to{stroke-dashoffset:0}}
+@keyframes markNode{from{transform:scale(.2);opacity:0}to{transform:scale(1);opacity:1}}
+@keyframes markPulse{0%{stroke-dashoffset:0;opacity:0}6%{opacity:1}46%{stroke-dashoffset:-1;opacity:1}52%{stroke-dashoffset:-1;opacity:0}100%{stroke-dashoffset:-1;opacity:0}}
+@keyframes markRing{0%{transform:scale(1);opacity:.55}40%{transform:scale(2.6);opacity:0}100%{transform:scale(2.6);opacity:0}}
+@media (prefers-reduced-motion:reduce){
+  .lockup .mark .facet,.lockup .mark .fan path,.lockup .mark .stem{animation:none;stroke-dashoffset:0}
+  .lockup .mark .node{animation:none}
+  .lockup .mark .pulse,.lockup .mark .ring{display:none}
+}
+
 /* hero: one compact band */
 .hero{padding:72px 0 60px;border-bottom:1px solid var(--line)}
 .hero-grid{display:grid;grid-template-columns:1.25fr 1fr;gap:56px;align-items:end}
@@ -206,7 +236,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-betw
   .step{border-bottom:1px solid var(--line)}
   .opp{grid-template-columns:1fr 1fr 1fr}
   .opp .title-cell{grid-column:1/-1}
-  .doc-grid{grid-template-columns:1fr;gap:16px}
+  .doc-grid{grid-template-columns:minmax(0,1fr);gap:16px}  /* minmax: a wide table or code block scrolls inside, not the page */
   .toc{position:static;display:none}
 }
 @media (max-width:640px){
