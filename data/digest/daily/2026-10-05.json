@@ -927,7 +927,9 @@
   "2610.02274": "Awomo-SimDataEngine: Agentic Simulation-ReadyWorld Generation",
   "2610.02278": "CLEAN: Psychometrically Consistent Incremental Cognitive Diagnosis under Concept-Space Expansion via Architectural Isolation",
   "2610.02283": "MuLoRA: Spectrally Balanced Low-Rank Adaptation for Continual Learning",
+  "2610.02293": "HakemBench: A Turkish Benchmark of Typed Decisions",
   "2610.02298": "EditHero: A Benchmark for Long-Horizon Part-Level 3D Editing and Vibe Modeling",
+  "2610.02300": "Keep It CALM: Analyzing the Limits of Global Unsafety in Text-to-Image Generation",
   "2610.02302": "Intent-Hiding Jailbreaks: An Information-Theoretic Framework for Compositional Attacks",
   "2610.02303": "PowerBench: Measuring Language Model Bias in Power-shifting Requests",
   "2610.02304": "SimuVerity: Benchmarking Agents for Engineering-Grade Simulink Model Generation",
@@ -1057,6 +1059,7 @@
   "2610.02664": "A GHOST in Long-Horizon Agents: Governance Hazard from Overlooked Safety Constraints across Turns",
   "2610.02665": "Large Language Continuous Diffusion Models",
   "2610.02666": "CHASE-VLA: Post-Training Quantization Framework for Vision-Language-Action Models with Chunk-Aware Scale Estimation",
+  "2610.02668": "A Passive AI System for Verifying Physical State on Automated Liquid Handlers",
   "2610.02670": "LEAP: Learning Efficient Action Proposals For LLM Agents",
   "2610.02678": "Spend Teacher Tokens Where They Matter: Success-Referenced On-Policy Distillation",
   "2610.02684": "Large language models exhibit unreliable updating of clinical judgment as patient evidence evolves",
@@ -1080,6 +1083,7 @@
   "2610.02728": "Around the World: Unified Learned Locomotion on a 270 g Continuous-Rotation Quadruped",
   "2610.02736": "TPBench: A Turning-Point Benchmark for Dialogue Compression",
   "2610.02739": "Beyond Correctness: Resolving Underspecification in Agentic Text-to-SQL",
+  "2610.02740": "Prospective Hindsight: Self-Calibrating Reinforcement Learning via Prediction-Reality Gaps",
   "2610.02741": "On the Chain-of-Thought Monitorability of Looped Language Models",
   "2610.02744": "EpiWorld: Grounding LLM Policy Agents in Epidemiological World Models",
   "2610.02749": "Learning Query Encoders Can Be Hard Even When Vector Retrieval Is Geometrically Easy",
@@ -1161,6 +1165,7 @@
   "2610.02909": "Constraint-Aware Training",
   "2610.02910": "Frequency Is Not Sensitivity Identifying Safety-Sensitive Experts in Sparse MoE LLM",
   "2610.02911": "Probe the Harness: Setup Checks for Stale-Data RL Comparisons in Language Models",
+  "2610.02914": "Custom Forcing: Training-Free Subject Customization for Autoregressive Video Generation",
   "2610.02920": "HASTE: Evolving Agent Harnesses Against Emerging Attacks Using Sparse Evidence",
   "2610.02924": "Evaluator-in-the-Loop Monte Carlo Tree Search via LLM Agents for Motif Scaffolding in Protein Design",
   "2610.02925": "Positive-Unlabeled Learning for Agent Safety False Alarm Auditing",
@@ -1174,6 +1179,7 @@
   "2610.02953": "SlimKV: Joint Token-Feature KV Cache Compression with Reconstruction-Free Beacon Attention",
   "2610.02954": "Hyperparameter selection for equation learning with biologically-informed neural networks",
   "2610.02957": "Understanding Trajectory Heterogeneity in Federated World Model Learning",
+  "2610.02959": "TerraVis: Towards Evaluation of World-Grounded Visual Consistency in Text-to-Image Generation via MLLM Workflows",
   "2610.02960": "Dirac-Interconnected Neural Elements: Discovering Modularity in Physical Systems Without Reduction",
   "2610.02967": "Post-Training Frontier Text-to-Image Models by Composing Preference and Rubric Rewards",
   "2610.02968": "Reasoning with Evidence, Not Merely Rationales: Verifiable Preference Proofs for LLM-Based Recommendation",
@@ -1222,12 +1228,15 @@
   "2610.03079": "RIFAR: Reliability and Forgetting-Aware Replay for Continual Robot Learning",
   "2610.03080": "MintEval: Do LLMs Implement the Trading Strategy You Asked For? A Behavioural-Equivalence Benchmark for Natural-Language-to-Strategy Code",
   "2610.03082": "Smart Sensing for Safer Bridges: From Sensor Signals to AI-Driven Anomaly Detection",
+  "2610.03084": "NegT2IBench: When Negation Changes the Picture. A Polarity Benchmark for Text-to-Image Models",
   "2610.03089": "Securing Computer-Use Agents Against Branch Steering Attacks",
   "2610.03092": "ULTRADISCOVERY: Abductive Exploration in an Interconnected, Epistemically Open Universe",
   "2610.03095": "Peer Influence across Heterogeneous AI Models",
   "2610.03101": "Invariance of Clustering Operations in Causal Effect Identification",
   "2610.03102": "Ask, Relax, or Act? Evaluating Actionable Indeterminacy in LLM Preference Reasoning",
+  "2610.03105": "A Benchmark for Spatially Grounded Gesture Generation",
   "2610.03106": "S2S-JEPA: Predicting the Predictable at Subseasonal-to-Seasonal Timescales",
+  "2610.03109": "Emergent Structure in the Marginal Attention Space of Language Models",
   "2610.03110": "Ontological Instability and Statistical Amplification: The Paradox of \"Humanizing\" LLM-Generated Text",
   "2610.03112": "Building Interpretable Feature Representations for Resume-Vacancy Matching by Distilling Production LLM Signals",
   "2610.03117": "Exploring the Trade-Off Between Structured Pruning and Fault Tolerance in Deep Neural Networks for Space Applications",
@@ -1235,6 +1244,8 @@
   "2610.03120": "In-Distribution Forcing for Long Video Generation at Test Time",
   "2610.03123": "Foresight: planning future perception in streaming VLMs without retraining",
   "2610.03124": "The Fragility of Trigger-Tag Mechanisms for Misuse Detection in Open-Weight LLMs",
+  "2610.03125": "ParaGeo: Decomposing Paralinguistic Variation into a Shared Latent Geometry",
+  "2610.03128": "Trading Strategy Optimization via Textual Gradient",
   "2610.03130": "Benchmarking Literature Retrieval for a Model Organism: A Dictyostelium Case Study",
   "2610.03132": "Safe Streaming Flow Planning by Aligning Sampling Dynamics with Execution Dynamics",
   "2610.03135": "Page-EntroKV: Hardware-Aligned, Entropy-Weighted KV-Cache Eviction under Grouped-Query Attention",
@@ -1480,6 +1491,467 @@
    "days_4w": 20,
    "vs_avg": 0.88
   },
+  "keywords": [
+   {
+    "name": "Few-Step Diffusion Distillation",
+    "about": "Distillation and trajectory reparameterization cut denoising steps for video, motion and weather generation.",
+    "terms": [
+     "Few-Step",
+     "denoising steps"
+    ],
+    "paper_ids": [
+     "2610.03543",
+     "2610.02427",
+     "2610.02611",
+     "2610.02867",
+     "2610.03665",
+     "2610.02323",
+     "2610.02660",
+     "2610.02666",
+     "2610.02753",
+     "2610.02774",
+     "2610.02832",
+     "2610.03221",
+     "2610.03390",
+     "2610.03414",
+     "2610.03483",
+     "2610.03577",
+     "2610.03641"
+    ],
+    "count": 17,
+    "trend": {
+     "label": "rising",
+     "n": 17,
+     "of": 675,
+     "per_1k": 25.19,
+     "baseline": {
+      "n": 252,
+      "papers": 36311,
+      "per_1k": 6.94,
+      "weeks": 12
+     },
+     "lift": 3.62,
+     "score": 7.705
+    }
+   },
+   {
+    "name": "Robot Manipulation",
+    "about": "VLA policies and world-action models are evaluated on LIBERO and sim-to-real dexterous manipulation.",
+    "terms": [
+     "LIBERO",
+     "robot control",
+     "robot manipulation"
+    ],
+    "paper_ids": [
+     "2610.02840",
+     "2610.02788",
+     "2610.02360",
+     "2610.02366",
+     "2610.02508",
+     "2610.03391",
+     "2610.03607",
+     "2610.02459",
+     "2610.01939",
+     "2610.02368",
+     "2610.02398",
+     "2610.02428",
+     "2610.02469",
+     "2610.02626",
+     "2610.02666",
+     "2610.02668",
+     "2610.02691",
+     "2610.02706",
+     "2610.02717",
+     "2610.02759",
+     "2610.02784",
+     "2610.02802",
+     "2610.02832",
+     "2610.02898",
+     "2610.03079",
+     "2610.03498",
+     "2610.03516",
+     "2610.03538",
+     "2610.03587",
+     "2610.03615",
+     "2610.03717"
+    ],
+    "count": 31,
+    "trend": {
+     "label": "rising",
+     "n": 31,
+     "of": 675,
+     "per_1k": 45.93,
+     "baseline": {
+      "n": 819,
+      "papers": 36311,
+      "per_1k": 22.56,
+      "weeks": 12
+     },
+     "lift": 2.03,
+     "score": 7.592
+    }
+   },
+   {
+    "name": "Flow Matching",
+    "about": "Flow matching trains generative models for single-cell perturbation, constrained generation and scientific retrieval.",
+    "terms": [
+     "flow-matching"
+    ],
+    "paper_ids": [
+     "2610.02232",
+     "2610.02260",
+     "2610.02245",
+     "2610.03391",
+     "2609.38506",
+     "2610.02323",
+     "2610.02377",
+     "2610.02398",
+     "2610.02554",
+     "2610.02651",
+     "2610.02663",
+     "2610.02722",
+     "2610.02726",
+     "2610.02780",
+     "2610.03047",
+     "2610.03105",
+     "2610.03132",
+     "2610.03202",
+     "2610.03390",
+     "2610.03396",
+     "2610.03476",
+     "2610.03483",
+     "2610.03503",
+     "2610.03691"
+    ],
+    "count": 24,
+    "trend": {
+     "label": "rising",
+     "n": 24,
+     "of": 675,
+     "per_1k": 35.56,
+     "baseline": {
+      "n": 550,
+      "papers": 36311,
+      "per_1k": 15.15,
+      "weeks": 12
+     },
+     "lift": 2.35,
+     "score": 7.45
+    }
+   },
+   {
+    "name": "KV Cache Compression",
+    "about": "Token eviction, low-rank and quantized KV caches cut memory and speed up long-context inference.",
+    "terms": [
+     "eviction",
+     "KV Cache",
+     "key-value"
+    ],
+    "paper_ids": [
+     "2610.02235",
+     "2610.02815",
+     "2610.02953",
+     "2610.03027",
+     "2610.02713",
+     "2610.03120",
+     "2610.03123",
+     "2610.02233",
+     "2610.02383",
+     "2610.02413",
+     "2610.02736",
+     "2610.02800",
+     "2610.02914",
+     "2610.02952",
+     "2610.03007",
+     "2610.03109",
+     "2610.03125",
+     "2610.03135",
+     "2610.03198",
+     "2610.03394"
+    ],
+    "count": 20,
+    "trend": {
+     "label": "rising",
+     "n": 20,
+     "of": 675,
+     "per_1k": 29.63,
+     "baseline": {
+      "n": 488,
+      "papers": 36311,
+      "per_1k": 13.44,
+      "weeks": 12
+     },
+     "lift": 2.2,
+     "score": 6.755
+    }
+   },
+   {
+    "name": "World-Action Models",
+    "about": "Agents learn action-conditioned world models that plan and act in embodied, manipulable environments.",
+    "terms": [
+     "World Models",
+     "World-Action Model",
+     "WAM"
+    ],
+    "paper_ids": [
+     "2610.02508",
+     "2610.03391",
+     "2610.02840",
+     "2610.02368",
+     "2610.02521",
+     "2610.03632",
+     "2610.02331",
+     "2610.02274",
+     "2610.02398",
+     "2610.02515",
+     "2610.02542",
+     "2610.02622",
+     "2610.02660",
+     "2610.02691",
+     "2610.02726",
+     "2610.02744",
+     "2610.02832",
+     "2610.02860",
+     "2610.02957",
+     "2610.03079",
+     "2610.03137",
+     "2610.03154",
+     "2610.03234",
+     "2610.03356",
+     "2610.03374",
+     "2610.03516",
+     "2610.03587",
+     "2610.03713"
+    ],
+    "count": 28,
+    "trend": {
+     "label": "rising",
+     "n": 28,
+     "of": 675,
+     "per_1k": 41.48,
+     "baseline": {
+      "n": 936,
+      "papers": 36311,
+      "per_1k": 25.78,
+      "weeks": 12
+     },
+     "lift": 1.61,
+     "score": 6.475
+    }
+   },
+   {
+    "name": "On-Policy Distillation",
+    "about": "Students learn from teacher rollouts, with multi-teacher and rubric-based variants preserving capability.",
+    "terms": [
+     "On-Policy Distillation"
+    ],
+    "paper_ids": [
+     "2610.02381",
+     "2610.02781",
+     "2610.02324",
+     "2610.02359",
+     "2610.02858",
+     "2610.02678",
+     "2610.02700",
+     "2610.02703",
+     "2610.02740",
+     "2610.02832",
+     "2610.03185",
+     "2610.03372",
+     "2610.03515",
+     "2610.03529"
+    ],
+    "count": 14,
+    "trend": {
+     "label": "rising",
+     "n": 14,
+     "of": 675,
+     "per_1k": 20.74,
+     "baseline": {
+      "n": 289,
+      "papers": 36311,
+      "per_1k": 7.96,
+      "weeks": 12
+     },
+     "lift": 2.6,
+     "score": 6.245
+    }
+   },
+   {
+    "name": "Typed Decisions",
+    "about": "Fast typed classifiers replace full LLM reasoning for routing, moderation and agent harness decisions.",
+    "terms": [
+     "Typed Decisions",
+     "Decision Models",
+     "Jev"
+    ],
+    "paper_ids": [
+     "2610.02486",
+     "2610.02586",
+     "2610.02267",
+     "2610.03324",
+     "2610.02293",
+     "2610.02516",
+     "2610.03073",
+     "2610.03387"
+    ],
+    "count": 8,
+    "trend": {
+     "label": "rising",
+     "n": 8,
+     "of": 675,
+     "per_1k": 11.85,
+     "baseline": {
+      "n": 94,
+      "papers": 36311,
+      "per_1k": 2.59,
+      "weeks": 12
+     },
+     "lift": 4.55,
+     "score": 5.477
+    }
+   },
+   {
+    "name": "Reward Hacking",
+    "about": "Detecting and mitigating reward hacking in code generation, rubric RL and image post-training.",
+    "terms": [
+     "reward hacking"
+    ],
+    "paper_ids": [
+     "2610.03055",
+     "2610.03185",
+     "2610.02967",
+     "2610.02588",
+     "2610.02781",
+     "2610.03196",
+     "2610.03458",
+     "2610.03641"
+    ],
+    "count": 8,
+    "trend": {
+     "label": "rising",
+     "n": 8,
+     "of": 675,
+     "per_1k": 11.85,
+     "baseline": {
+      "n": 97,
+      "papers": 36311,
+      "per_1k": 2.67,
+      "weeks": 12
+     },
+     "lift": 4.41,
+     "score": 5.44
+    }
+   },
+   {
+    "name": "Time Series Forecasting",
+    "about": "Forecasting benchmarks, conformal prediction and foundation models for electricity, EMG and climate series.",
+    "terms": [
+     "Time Series"
+    ],
+    "paper_ids": [
+     "2610.02255",
+     "2610.02256",
+     "2610.02357",
+     "2610.02497",
+     "2610.02515",
+     "2610.02608",
+     "2610.02704",
+     "2610.02763",
+     "2610.02865",
+     "2610.02866",
+     "2610.03065",
+     "2610.03128",
+     "2610.03147",
+     "2610.03282",
+     "2610.03452",
+     "2610.03491",
+     "2610.03494"
+    ],
+    "count": 17,
+    "trend": {
+     "label": "hot",
+     "n": 17,
+     "of": 675,
+     "per_1k": 25.19,
+     "baseline": {
+      "n": 625,
+      "papers": 36311,
+      "per_1k": 17.21,
+      "weeks": 12
+     },
+     "lift": 1.46,
+     "score": 5.184
+    }
+   },
+   {
+    "name": "Text-to-Image Alignment",
+    "about": "Text-to-image generation is scored for prompt alignment, diversity and world-grounded visual consistency.",
+    "terms": [
+     "Text-to-Image"
+    ],
+    "paper_ids": [
+     "2610.03617",
+     "2610.02372",
+     "2610.02959",
+     "2610.02300",
+     "2610.02753",
+     "2610.02967",
+     "2610.03068",
+     "2610.03084",
+     "2610.03483",
+     "2610.03512"
+    ],
+    "count": 10,
+    "trend": {
+     "label": "rising",
+     "n": 10,
+     "of": 675,
+     "per_1k": 14.81,
+     "baseline": {
+      "n": 265,
+      "papers": 36311,
+      "per_1k": 7.3,
+      "weeks": 12
+     },
+     "lift": 2.03,
+     "score": 4.842
+    }
+   },
+   {
+    "name": "Continual Learning",
+    "about": "Continual learners adapt LLMs and policies without forgetting, using memory and architectural isolation.",
+    "terms": [
+     "Continual Learning"
+    ],
+    "paper_ids": [
+     "2610.02283",
+     "2610.02687",
+     "2610.02793",
+     "2610.02278",
+     "2610.02569",
+     "2610.03079",
+     "2610.03119",
+     "2610.03476",
+     "2610.03713"
+    ],
+    "count": 9,
+    "trend": {
+     "label": "rising",
+     "n": 9,
+     "of": 675,
+     "per_1k": 13.33,
+     "baseline": {
+      "n": 221,
+      "papers": 36311,
+      "per_1k": 6.09,
+      "weeks": 12
+     },
+     "lift": 2.19,
+     "score": 4.735
+    }
+   }
+  ],
   "themes": [
    {
     "name": "World-action models for embodied AI",
@@ -2801,6 +3273,467 @@
    "days_4w": 20,
    "vs_avg": 0.88
   },
+  "keywords": [
+   {
+    "name": "少步扩散蒸馏",
+    "about": "蒸馏和轨迹重参数化减少了视频、运动和天气生成中的去噪步骤。",
+    "terms": [
+     "Few-Step",
+     "denoising steps"
+    ],
+    "paper_ids": [
+     "2610.03543",
+     "2610.02427",
+     "2610.02611",
+     "2610.02867",
+     "2610.03665",
+     "2610.02323",
+     "2610.02660",
+     "2610.02666",
+     "2610.02753",
+     "2610.02774",
+     "2610.02832",
+     "2610.03221",
+     "2610.03390",
+     "2610.03414",
+     "2610.03483",
+     "2610.03577",
+     "2610.03641"
+    ],
+    "count": 17,
+    "trend": {
+     "label": "rising",
+     "n": 17,
+     "of": 675,
+     "per_1k": 25.19,
+     "baseline": {
+      "n": 252,
+      "papers": 36311,
+      "per_1k": 6.94,
+      "weeks": 12
+     },
+     "lift": 3.62,
+     "score": 7.705
+    }
+   },
+   {
+    "name": "机器人操作",
+    "about": "VLA策略和世界-动作模型在LIBERO和仿真到真实灵巧操作上进行了评估。",
+    "terms": [
+     "LIBERO",
+     "robot control",
+     "robot manipulation"
+    ],
+    "paper_ids": [
+     "2610.02840",
+     "2610.02788",
+     "2610.02360",
+     "2610.02366",
+     "2610.02508",
+     "2610.03391",
+     "2610.03607",
+     "2610.02459",
+     "2610.01939",
+     "2610.02368",
+     "2610.02398",
+     "2610.02428",
+     "2610.02469",
+     "2610.02626",
+     "2610.02666",
+     "2610.02668",
+     "2610.02691",
+     "2610.02706",
+     "2610.02717",
+     "2610.02759",
+     "2610.02784",
+     "2610.02802",
+     "2610.02832",
+     "2610.02898",
+     "2610.03079",
+     "2610.03498",
+     "2610.03516",
+     "2610.03538",
+     "2610.03587",
+     "2610.03615",
+     "2610.03717"
+    ],
+    "count": 31,
+    "trend": {
+     "label": "rising",
+     "n": 31,
+     "of": 675,
+     "per_1k": 45.93,
+     "baseline": {
+      "n": 819,
+      "papers": 36311,
+      "per_1k": 22.56,
+      "weeks": 12
+     },
+     "lift": 2.03,
+     "score": 7.592
+    }
+   },
+   {
+    "name": "流匹配",
+    "about": "流匹配训练用于单细胞扰动、约束生成和科学检索的生成模型。",
+    "terms": [
+     "flow-matching"
+    ],
+    "paper_ids": [
+     "2610.02232",
+     "2610.02260",
+     "2610.02245",
+     "2610.03391",
+     "2609.38506",
+     "2610.02323",
+     "2610.02377",
+     "2610.02398",
+     "2610.02554",
+     "2610.02651",
+     "2610.02663",
+     "2610.02722",
+     "2610.02726",
+     "2610.02780",
+     "2610.03047",
+     "2610.03105",
+     "2610.03132",
+     "2610.03202",
+     "2610.03390",
+     "2610.03396",
+     "2610.03476",
+     "2610.03483",
+     "2610.03503",
+     "2610.03691"
+    ],
+    "count": 24,
+    "trend": {
+     "label": "rising",
+     "n": 24,
+     "of": 675,
+     "per_1k": 35.56,
+     "baseline": {
+      "n": 550,
+      "papers": 36311,
+      "per_1k": 15.15,
+      "weeks": 12
+     },
+     "lift": 2.35,
+     "score": 7.45
+    }
+   },
+   {
+    "name": "KV缓存压缩",
+    "about": "Token淘汰、低秩和量化KV缓存减少了内存占用并加速了长上下文推理。",
+    "terms": [
+     "eviction",
+     "KV Cache",
+     "key-value"
+    ],
+    "paper_ids": [
+     "2610.02235",
+     "2610.02815",
+     "2610.02953",
+     "2610.03027",
+     "2610.02713",
+     "2610.03120",
+     "2610.03123",
+     "2610.02233",
+     "2610.02383",
+     "2610.02413",
+     "2610.02736",
+     "2610.02800",
+     "2610.02914",
+     "2610.02952",
+     "2610.03007",
+     "2610.03109",
+     "2610.03125",
+     "2610.03135",
+     "2610.03198",
+     "2610.03394"
+    ],
+    "count": 20,
+    "trend": {
+     "label": "rising",
+     "n": 20,
+     "of": 675,
+     "per_1k": 29.63,
+     "baseline": {
+      "n": 488,
+      "papers": 36311,
+      "per_1k": 13.44,
+      "weeks": 12
+     },
+     "lift": 2.2,
+     "score": 6.755
+    }
+   },
+   {
+    "name": "世界-动作模型",
+    "about": "智能体学习动作条件化的世界模型，在具身、可操作环境中进行规划与行动。",
+    "terms": [
+     "World Models",
+     "World-Action Model",
+     "WAM"
+    ],
+    "paper_ids": [
+     "2610.02508",
+     "2610.03391",
+     "2610.02840",
+     "2610.02368",
+     "2610.02521",
+     "2610.03632",
+     "2610.02331",
+     "2610.02274",
+     "2610.02398",
+     "2610.02515",
+     "2610.02542",
+     "2610.02622",
+     "2610.02660",
+     "2610.02691",
+     "2610.02726",
+     "2610.02744",
+     "2610.02832",
+     "2610.02860",
+     "2610.02957",
+     "2610.03079",
+     "2610.03137",
+     "2610.03154",
+     "2610.03234",
+     "2610.03356",
+     "2610.03374",
+     "2610.03516",
+     "2610.03587",
+     "2610.03713"
+    ],
+    "count": 28,
+    "trend": {
+     "label": "rising",
+     "n": 28,
+     "of": 675,
+     "per_1k": 41.48,
+     "baseline": {
+      "n": 936,
+      "papers": 36311,
+      "per_1k": 25.78,
+      "weeks": 12
+     },
+     "lift": 1.61,
+     "score": 6.475
+    }
+   },
+   {
+    "name": "在线策略蒸馏",
+    "about": "学生模型从教师rollout中学习，多教师和基于评分标准的变体保持能力。",
+    "terms": [
+     "On-Policy Distillation"
+    ],
+    "paper_ids": [
+     "2610.02381",
+     "2610.02781",
+     "2610.02324",
+     "2610.02359",
+     "2610.02858",
+     "2610.02678",
+     "2610.02700",
+     "2610.02703",
+     "2610.02740",
+     "2610.02832",
+     "2610.03185",
+     "2610.03372",
+     "2610.03515",
+     "2610.03529"
+    ],
+    "count": 14,
+    "trend": {
+     "label": "rising",
+     "n": 14,
+     "of": 675,
+     "per_1k": 20.74,
+     "baseline": {
+      "n": 289,
+      "papers": 36311,
+      "per_1k": 7.96,
+      "weeks": 12
+     },
+     "lift": 2.6,
+     "score": 6.245
+    }
+   },
+   {
+    "name": "类型化决策",
+    "about": "快速类型化分类器取代完整的LLM推理，用于路由、内容审核和智能体框架决策。",
+    "terms": [
+     "Typed Decisions",
+     "Decision Models",
+     "Jev"
+    ],
+    "paper_ids": [
+     "2610.02486",
+     "2610.02586",
+     "2610.02267",
+     "2610.03324",
+     "2610.02293",
+     "2610.02516",
+     "2610.03073",
+     "2610.03387"
+    ],
+    "count": 8,
+    "trend": {
+     "label": "rising",
+     "n": 8,
+     "of": 675,
+     "per_1k": 11.85,
+     "baseline": {
+      "n": 94,
+      "papers": 36311,
+      "per_1k": 2.59,
+      "weeks": 12
+     },
+     "lift": 4.55,
+     "score": 5.477
+    }
+   },
+   {
+    "name": "奖励黑客",
+    "about": "检测和缓解代码生成、rubric RL和图像后训练中的奖励黑客行为。",
+    "terms": [
+     "reward hacking"
+    ],
+    "paper_ids": [
+     "2610.03055",
+     "2610.03185",
+     "2610.02967",
+     "2610.02588",
+     "2610.02781",
+     "2610.03196",
+     "2610.03458",
+     "2610.03641"
+    ],
+    "count": 8,
+    "trend": {
+     "label": "rising",
+     "n": 8,
+     "of": 675,
+     "per_1k": 11.85,
+     "baseline": {
+      "n": 97,
+      "papers": 36311,
+      "per_1k": 2.67,
+      "weeks": 12
+     },
+     "lift": 4.41,
+     "score": 5.44
+    }
+   },
+   {
+    "name": "时间序列预测",
+    "about": "面向电力、EMG和气候序列的预测基准、共形预测和基础模型。",
+    "terms": [
+     "Time Series"
+    ],
+    "paper_ids": [
+     "2610.02255",
+     "2610.02256",
+     "2610.02357",
+     "2610.02497",
+     "2610.02515",
+     "2610.02608",
+     "2610.02704",
+     "2610.02763",
+     "2610.02865",
+     "2610.02866",
+     "2610.03065",
+     "2610.03128",
+     "2610.03147",
+     "2610.03282",
+     "2610.03452",
+     "2610.03491",
+     "2610.03494"
+    ],
+    "count": 17,
+    "trend": {
+     "label": "hot",
+     "n": 17,
+     "of": 675,
+     "per_1k": 25.19,
+     "baseline": {
+      "n": 625,
+      "papers": 36311,
+      "per_1k": 17.21,
+      "weeks": 12
+     },
+     "lift": 1.46,
+     "score": 5.184
+    }
+   },
+   {
+    "name": "文本到图像对齐",
+    "about": "文本到图像生成在提示对齐、多样性和世界锚定的视觉一致性上进行评分。",
+    "terms": [
+     "Text-to-Image"
+    ],
+    "paper_ids": [
+     "2610.03617",
+     "2610.02372",
+     "2610.02959",
+     "2610.02300",
+     "2610.02753",
+     "2610.02967",
+     "2610.03068",
+     "2610.03084",
+     "2610.03483",
+     "2610.03512"
+    ],
+    "count": 10,
+    "trend": {
+     "label": "rising",
+     "n": 10,
+     "of": 675,
+     "per_1k": 14.81,
+     "baseline": {
+      "n": 265,
+      "papers": 36311,
+      "per_1k": 7.3,
+      "weeks": 12
+     },
+     "lift": 2.03,
+     "score": 4.842
+    }
+   },
+   {
+    "name": "持续学习",
+    "about": "持续学习器在不发生遗忘的情况下适应LLM和策略，利用记忆和架构隔离。",
+    "terms": [
+     "Continual Learning"
+    ],
+    "paper_ids": [
+     "2610.02283",
+     "2610.02687",
+     "2610.02793",
+     "2610.02278",
+     "2610.02569",
+     "2610.03079",
+     "2610.03119",
+     "2610.03476",
+     "2610.03713"
+    ],
+    "count": 9,
+    "trend": {
+     "label": "rising",
+     "n": 9,
+     "of": 675,
+     "per_1k": 13.33,
+     "baseline": {
+      "n": 221,
+      "papers": 36311,
+      "per_1k": 6.09,
+      "weeks": 12
+     },
+     "lift": 2.19,
+     "score": 4.735
+    }
+   }
+  ],
   "themes": [
    {
     "name": "具身 AI 的世界-动作模型",
@@ -4117,6 +5050,11 @@
    "where": "highlight",
    "paper_id": "2610.03391",
    "reason": "numbers not in a verified passage: ['3']"
+  },
+  {
+   "where": "keyword System-1 Decision Models",
+   "label": "System-1 Decision Models",
+   "reason": "label not of its phrases or papers; first phrase used"
   }
  ],
  "disclosure": {
@@ -4140,5 +5078,738 @@
   },
   "cost_usd": 0.3765,
   "wall_s": 3222.0
+ },
+ "keywords": {
+  "rule": "Counts are papers whose title or abstract contains one of the keyword's phrases (porter-stemmed, as the theme trends); the baseline is the papers in scope first submitted in the 12 weeks before the issue, its own papers excluded. new: fewer than 5 baseline papers; rising: at least 5 papers and a rate at least 1.5 times the baseline rate; hot: at least 15 papers (and 1% of the issue) at a rate at least 0.67 times the baseline rate; steady: otherwise.",
+  "score": "log2(1 + n) · log2(1 + (n + 3) / (E + 3)), E = issue papers × (baseline papers with the phrase + 0.5) / baseline papers",
+  "issue_papers": 675,
+  "baseline": {
+   "since": "2026-07-13",
+   "until": "2026-10-05",
+   "papers": 36311,
+   "other_fields": 46230
+  },
+  "candidates": [
+   {
+    "phrase": "flow-matching",
+    "label": "rising",
+    "n": 24,
+    "of": 675,
+    "per_1k": 35.56,
+    "baseline": {
+     "n": 550,
+     "papers": 36311,
+     "per_1k": 15.15,
+     "weeks": 12
+    },
+    "lift": 2.35,
+    "score": 7.45
+   },
+   {
+    "phrase": "Few-Step",
+    "label": "rising",
+    "n": 11,
+    "of": 675,
+    "per_1k": 16.3,
+    "baseline": {
+     "n": 123,
+     "papers": 36311,
+     "per_1k": 3.39,
+     "weeks": 12
+    },
+    "lift": 4.79,
+    "score": 6.687
+   },
+   {
+    "phrase": "credit assignment",
+    "label": "rising",
+    "n": 13,
+    "of": 675,
+    "per_1k": 19.26,
+    "baseline": {
+     "n": 205,
+     "papers": 36311,
+     "per_1k": 5.65,
+     "weeks": 12
+    },
+    "lift": 3.4,
+    "score": 6.634
+   },
+   {
+    "phrase": "LIBERO",
+    "label": "rising",
+    "n": 15,
+    "of": 675,
+    "per_1k": 22.22,
+    "baseline": {
+     "n": 299,
+     "papers": 36311,
+     "per_1k": 8.23,
+     "weeks": 12
+    },
+    "lift": 2.69,
+    "score": 6.531
+   },
+   {
+    "phrase": "eviction",
+    "label": "rising",
+    "n": 10,
+    "of": 675,
+    "per_1k": 14.81,
+    "baseline": {
+     "n": 109,
+     "papers": 36311,
+     "per_1k": 3.0,
+     "weeks": 12
+    },
+    "lift": 4.91,
+    "score": 6.368
+   },
+   {
+    "phrase": "distribution shifts",
+    "label": "rising",
+    "n": 18,
+    "of": 675,
+    "per_1k": 26.67,
+    "baseline": {
+     "n": 459,
+     "papers": 36311,
+     "per_1k": 12.64,
+     "weeks": 12
+    },
+    "lift": 2.11,
+    "score": 6.352
+   },
+   {
+    "phrase": "On-Policy Distillation",
+    "label": "rising",
+    "n": 14,
+    "of": 675,
+    "per_1k": 20.74,
+    "baseline": {
+     "n": 289,
+     "papers": 36311,
+     "per_1k": 7.96,
+     "weeks": 12
+    },
+    "lift": 2.6,
+    "score": 6.245
+   },
+   {
+    "phrase": "KV Cache",
+    "label": "rising",
+    "n": 15,
+    "of": 675,
+    "per_1k": 22.22,
+    "baseline": {
+     "n": 364,
+     "papers": 36311,
+     "per_1k": 10.02,
+     "weeks": 12
+    },
+    "lift": 2.21,
+    "score": 6.026
+   },
+   {
+    "phrase": "robot control",
+    "label": "rising",
+    "n": 10,
+    "of": 675,
+    "per_1k": 14.81,
+    "baseline": {
+     "n": 145,
+     "papers": 36311,
+     "per_1k": 3.99,
+     "weeks": 12
+    },
+    "lift": 3.7,
+    "score": 5.927
+   },
+   {
+    "phrase": "model behavior",
+    "label": "rising",
+    "n": 11,
+    "of": 675,
+    "per_1k": 16.3,
+    "baseline": {
+     "n": 211,
+     "papers": 36311,
+     "per_1k": 5.81,
+     "weeks": 12
+    },
+    "lift": 2.8,
+    "score": 5.716
+   },
+   {
+    "phrase": "silent",
+    "label": "rising",
+    "n": 13,
+    "of": 675,
+    "per_1k": 19.26,
+    "baseline": {
+     "n": 322,
+     "papers": 36311,
+     "per_1k": 8.87,
+     "weeks": 12
+    },
+    "lift": 2.17,
+    "score": 5.614
+   },
+   {
+    "phrase": "success rate",
+    "label": "hot",
+    "n": 27,
+    "of": 675,
+    "per_1k": 40.0,
+    "baseline": {
+     "n": 1156,
+     "papers": 36311,
+     "per_1k": 31.84,
+     "weeks": 12
+    },
+    "lift": 1.26,
+    "score": 5.545
+   },
+   {
+    "phrase": "robot manipulation",
+    "label": "rising",
+    "n": 16,
+    "of": 675,
+    "per_1k": 23.7,
+    "baseline": {
+     "n": 502,
+     "papers": 36311,
+     "per_1k": 13.83,
+     "weeks": 12
+    },
+    "lift": 1.71,
+    "score": 5.496
+   },
+   {
+    "phrase": "faithfully",
+    "label": "rising",
+    "n": 11,
+    "of": 675,
+    "per_1k": 16.3,
+    "baseline": {
+     "n": 239,
+     "papers": 36311,
+     "per_1k": 6.58,
+     "weeks": 12
+    },
+    "lift": 2.47,
+    "score": 5.468
+   },
+   {
+    "phrase": "reward hacking",
+    "label": "rising",
+    "n": 8,
+    "of": 675,
+    "per_1k": 11.85,
+    "baseline": {
+     "n": 97,
+     "papers": 36311,
+     "per_1k": 2.67,
+     "weeks": 12
+    },
+    "lift": 4.41,
+    "score": 5.44
+   },
+   {
+    "phrase": "ground-truth",
+    "label": "hot",
+    "n": 24,
+    "of": 675,
+    "per_1k": 35.56,
+    "baseline": {
+     "n": 1031,
+     "papers": 36311,
+     "per_1k": 28.39,
+     "weeks": 12
+    },
+    "lift": 1.25,
+    "score": 5.336
+   },
+   {
+    "phrase": "failure mode",
+    "label": "hot",
+    "n": 21,
+    "of": 675,
+    "per_1k": 31.11,
+    "baseline": {
+     "n": 852,
+     "papers": 36311,
+     "per_1k": 23.46,
+     "weeks": 12
+    },
+    "lift": 1.33,
+    "score": 5.284
+   },
+   {
+    "phrase": "Typed Decisions",
+    "label": "rising",
+    "n": 6,
+    "of": 675,
+    "per_1k": 8.89,
+    "baseline": {
+     "n": 20,
+     "papers": 36311,
+     "per_1k": 0.55,
+     "weeks": 12
+    },
+    "lift": 15.74,
+    "score": 5.257
+   },
+   {
+    "phrase": "generative models",
+    "label": "hot",
+    "n": 24,
+    "of": 675,
+    "per_1k": 35.56,
+    "baseline": {
+     "n": 1058,
+     "papers": 36311,
+     "per_1k": 29.14,
+     "weeks": 12
+    },
+    "lift": 1.22,
+    "score": 5.254
+   },
+   {
+    "phrase": "Time Series",
+    "label": "hot",
+    "n": 17,
+    "of": 675,
+    "per_1k": 25.19,
+    "baseline": {
+     "n": 625,
+     "papers": 36311,
+     "per_1k": 17.21,
+     "weeks": 12
+    },
+    "lift": 1.46,
+    "score": 5.184
+   },
+   {
+    "phrase": "World Models",
+    "label": "hot",
+    "n": 19,
+    "of": 675,
+    "per_1k": 28.15,
+    "baseline": {
+     "n": 771,
+     "papers": 36311,
+     "per_1k": 21.23,
+     "weeks": 12
+    },
+    "lift": 1.32,
+    "score": 5.108
+   },
+   {
+    "phrase": "recompute",
+    "label": "rising",
+    "n": 9,
+    "of": 675,
+    "per_1k": 13.33,
+    "baseline": {
+     "n": 179,
+     "papers": 36311,
+     "per_1k": 4.93,
+     "weeks": 12
+    },
+    "lift": 2.7,
+    "score": 5.092
+   },
+   {
+    "phrase": "actor",
+    "label": "rising",
+    "n": 12,
+    "of": 675,
+    "per_1k": 17.78,
+    "baseline": {
+     "n": 357,
+     "papers": 36311,
+     "per_1k": 9.83,
+     "weeks": 12
+    },
+    "lift": 1.81,
+    "score": 5.008
+   },
+   {
+    "phrase": "denoising steps",
+    "label": "rising",
+    "n": 8,
+    "of": 675,
+    "per_1k": 11.85,
+    "baseline": {
+     "n": 139,
+     "papers": 36311,
+     "per_1k": 3.83,
+     "weeks": 12
+    },
+    "lift": 3.08,
+    "score": 4.973
+   },
+   {
+    "phrase": "models excel",
+    "label": "rising",
+    "n": 6,
+    "of": 675,
+    "per_1k": 8.89,
+    "baseline": {
+     "n": 39,
+     "papers": 36311,
+     "per_1k": 1.07,
+     "weeks": 12
+    },
+    "lift": 8.17,
+    "score": 4.968
+   },
+   {
+    "phrase": "vanilla",
+    "label": "rising",
+    "n": 10,
+    "of": 675,
+    "per_1k": 14.81,
+    "baseline": {
+     "n": 250,
+     "papers": 36311,
+     "per_1k": 6.88,
+     "weeks": 12
+    },
+    "lift": 2.15,
+    "score": 4.953
+   },
+   {
+    "phrase": "key-value",
+    "label": "rising",
+    "n": 9,
+    "of": 675,
+    "per_1k": 13.33,
+    "baseline": {
+     "n": 206,
+     "papers": 36311,
+     "per_1k": 5.67,
+     "weeks": 12
+    },
+    "lift": 2.34,
+    "score": 4.856
+   },
+   {
+    "phrase": "World-Action Model",
+    "label": "rising",
+    "n": 9,
+    "of": 675,
+    "per_1k": 13.33,
+    "baseline": {
+     "n": 206,
+     "papers": 36311,
+     "per_1k": 5.67,
+     "weeks": 12
+    },
+    "lift": 2.34,
+    "score": 4.856
+   },
+   {
+    "phrase": "intermediate states",
+    "label": "rising",
+    "n": 7,
+    "of": 675,
+    "per_1k": 10.37,
+    "baseline": {
+     "n": 99,
+     "papers": 36311,
+     "per_1k": 2.73,
+     "weeks": 12
+    },
+    "lift": 3.78,
+    "score": 4.843
+   },
+   {
+    "phrase": "Text-to-Image",
+    "label": "rising",
+    "n": 10,
+    "of": 675,
+    "per_1k": 14.81,
+    "baseline": {
+     "n": 265,
+     "papers": 36311,
+     "per_1k": 7.3,
+     "weeks": 12
+    },
+    "lift": 2.03,
+    "score": 4.842
+   },
+   {
+    "phrase": "Decision Models",
+    "label": "rising",
+    "n": 6,
+    "of": 675,
+    "per_1k": 8.89,
+    "baseline": {
+     "n": 51,
+     "papers": 36311,
+     "per_1k": 1.4,
+     "weeks": 12
+    },
+    "lift": 6.27,
+    "score": 4.804
+   },
+   {
+    "phrase": "model generates",
+    "label": "rising",
+    "n": 13,
+    "of": 675,
+    "per_1k": 19.26,
+    "baseline": {
+     "n": 455,
+     "papers": 36311,
+     "per_1k": 12.53,
+     "weeks": 12
+    },
+    "lift": 1.54,
+    "score": 4.798
+   },
+   {
+    "phrase": "AI agents",
+    "label": "rising",
+    "n": 13,
+    "of": 675,
+    "per_1k": 19.26,
+    "baseline": {
+     "n": 465,
+     "papers": 36311,
+     "per_1k": 12.81,
+     "weeks": 12
+    },
+    "lift": 1.5,
+    "score": 4.747
+   },
+   {
+    "phrase": "Continual Learning",
+    "label": "rising",
+    "n": 9,
+    "of": 675,
+    "per_1k": 13.33,
+    "baseline": {
+     "n": 221,
+     "papers": 36311,
+     "per_1k": 6.09,
+     "weeks": 12
+    },
+    "lift": 2.19,
+    "score": 4.735
+   },
+   {
+    "phrase": "WAM",
+    "label": "rising",
+    "n": 8,
+    "of": 675,
+    "per_1k": 11.85,
+    "baseline": {
+     "n": 173,
+     "papers": 36311,
+     "per_1k": 4.76,
+     "weeks": 12
+    },
+    "lift": 2.48,
+    "score": 4.654
+   },
+   {
+    "phrase": "headroom",
+    "label": "rising",
+    "n": 7,
+    "of": 675,
+    "per_1k": 10.37,
+    "baseline": {
+     "n": 117,
+     "papers": 36311,
+     "per_1k": 3.22,
+     "weeks": 12
+    },
+    "lift": 3.2,
+    "score": 4.651
+   },
+   {
+    "phrase": "Jev",
+    "label": "rising",
+    "n": 6,
+    "of": 675,
+    "per_1k": 8.89,
+    "baseline": {
+     "n": 65,
+     "papers": 36311,
+     "per_1k": 1.79,
+     "weeks": 12
+    },
+    "lift": 4.93,
+    "score": 4.626
+   },
+   {
+    "phrase": "cross-entropy",
+    "label": "rising",
+    "n": 8,
+    "of": 675,
+    "per_1k": 11.85,
+    "baseline": {
+     "n": 177,
+     "papers": 36311,
+     "per_1k": 4.87,
+     "weeks": 12
+    },
+    "lift": 2.42,
+    "score": 4.62
+   },
+   {
+    "phrase": "privileged",
+    "label": "rising",
+    "n": 11,
+    "of": 675,
+    "per_1k": 16.3,
+    "baseline": {
+     "n": 360,
+     "papers": 36311,
+     "per_1k": 9.91,
+     "weeks": 12
+    },
+    "lift": 1.64,
+    "score": 4.62
+   },
+   {
+    "phrase": "forward pass",
+    "label": "rising",
+    "n": 12,
+    "of": 675,
+    "per_1k": 17.78,
+    "baseline": {
+     "n": 428,
+     "papers": 36311,
+     "per_1k": 11.79,
+     "weeks": 12
+    },
+    "lift": 1.51,
+    "score": 4.602
+   }
+  ],
+  "left_out": [
+   {
+    "phrase": "credit assignment",
+    "count": 13,
+    "reason": "Scattered: mixes self-distillation, value estimation and multi-agent credit assignment."
+   },
+   {
+    "phrase": "distribution shifts",
+    "count": 18,
+    "reason": "Generic statistical framing that spans unrelated scientific and tabular domains."
+   },
+   {
+    "phrase": "model behavior",
+    "count": 11,
+    "reason": "Too vague; covers bias, explanations, distillation and temporal extraction."
+   },
+   {
+    "phrase": "silent",
+    "count": 13,
+    "reason": "Not a topic; a modifier appearing in unrelated unlearning, reliability and chess papers."
+   },
+   {
+    "phrase": "success rate",
+    "count": 27,
+    "reason": "Evaluation boilerplate, not a research topic."
+   },
+   {
+    "phrase": "faithfully",
+    "count": 11,
+    "reason": "Adverb used as evaluation boilerplate across unrelated papers."
+   },
+   {
+    "phrase": "ground-truth",
+    "count": 24,
+    "reason": "Generic evaluation term, not a topic."
+   },
+   {
+    "phrase": "failure mode",
+    "count": 21,
+    "reason": "Generic phrase spanning reliability, knowledge editing and routing papers."
+   },
+   {
+    "phrase": "generative models",
+    "count": 24,
+    "reason": "Field-wide umbrella covering nearly all generative work."
+   },
+   {
+    "phrase": "recompute",
+    "count": 9,
+    "reason": "Implementation detail spanning cache repair, agent cost and wireless computation."
+   },
+   {
+    "phrase": "actor",
+    "count": 12,
+    "reason": "Generic role word in RL and multi-agent titles."
+   },
+   {
+    "phrase": "models excel",
+    "count": 6,
+    "reason": "Phrase from result sentences, not a topic."
+   },
+   {
+    "phrase": "vanilla",
+    "count": 10,
+    "reason": "Baseline boilerplate, not a topic."
+   },
+   {
+    "phrase": "intermediate states",
+    "count": 7,
+    "reason": "Generic phrase across diffusion, video and agent papers."
+   },
+   {
+    "phrase": "model generates",
+    "count": 13,
+    "reason": "Vague phrasing that names no method or problem."
+   },
+   {
+    "phrase": "AI agents",
+    "count": 13,
+    "reason": "Near field-wide; most papers involve agents."
+   },
+   {
+    "phrase": "headroom",
+    "count": 7,
+    "reason": "Not a topic; a measurement word from evaluation sentences."
+   },
+   {
+    "phrase": "cross-entropy",
+    "count": 8,
+    "reason": "Generic loss term, not a research topic."
+   },
+   {
+    "phrase": "privileged",
+    "count": 11,
+    "reason": "Modifier, not a topic; its papers span sim-to-real, distillation and authorization."
+   },
+   {
+    "phrase": "forward pass",
+    "count": 12,
+    "reason": "Implementation vocabulary, not a topic."
+   }
+  ],
+  "added": "2026-10-08T09:14:43Z",
+  "usage": {
+   "calls": 3,
+   "tokens": 18398,
+   "by_model": {
+    "deepseek-flash": {
+     "input": 6988,
+     "cache_hit": 0,
+     "output": 6007
+    },
+    "deepseek-v4-pro": {
+     "input": 1460,
+     "cache_hit": 0,
+     "output": 3943
+    }
+   },
+   "cost_usd": 0.0134
+  }
  }
 }

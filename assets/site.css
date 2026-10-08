@@ -290,6 +290,56 @@ a.link-card:hover h3{color:var(--accent-text)}
 .note.synthesis p{margin:4px 0 0}
 .small{font-size:13px;margin:12px 0 0}
 .issue-nav{font:500 14px var(--sans);display:flex;flex-wrap:wrap;gap:8px}
+/* At a Glance: the issue's keywords (size = papers, colour = trend), one panel open at a time, then the top three */
+main section.glance-sec{padding:32px 0 0;border-bottom:0}
+.glance{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:22px 24px 20px}
+.glance-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 14px;margin-bottom:14px}
+.glance-head .eyebrow{margin:0}
+.glance-head h2{font-size:20px}
+.kw-cloud{display:flex;flex-wrap:wrap;gap:8px 8px;align-items:center}
+.kw{--s:.5;display:inline-flex;align-items:center;gap:7px;max-width:100%;font:500 calc(13px + 6px * var(--s))/1.25 var(--sans);
+  padding:calc(5px + 3px * var(--s)) calc(11px + 4px * var(--s));border-radius:999px;cursor:pointer;text-align:left;
+  border:1px solid var(--line);background:var(--bg);color:var(--ink);transition:transform .12s,box-shadow .12s}
+.kw:hover{box-shadow:0 1px 0 var(--line),0 2px 8px color-mix(in srgb,var(--ink) 10%,transparent)}
+.kw .kw-name{overflow-wrap:anywhere}
+.kw .kw-n{font:600 11.5px var(--mono);padding:1px 6px;border-radius:999px;background:color-mix(in srgb,currentColor 12%,transparent)}
+.kw.hot{background:var(--accent);border-color:var(--accent);color:#fff}
+.kw.hot .kw-n{background:rgba(255,255,255,.22)}
+.kw.rising{background:color-mix(in srgb,var(--accent) 13%,var(--bg));border-color:color-mix(in srgb,var(--accent) 50%,transparent);color:var(--accent-text)}
+.kw.new{background:color-mix(in srgb,var(--blue) 14%,var(--bg));border-color:color-mix(in srgb,var(--blue) 55%,transparent);color:var(--blue-text)}
+.kw.steady{color:var(--soft)}
+.kw[aria-expanded="true"]{outline:2px solid var(--ink);outline-offset:2px}
+.kw-panels{margin-top:4px}
+.kw-panel{margin-top:14px;padding:16px 18px;background:var(--bg);border:1px solid var(--line);border-radius:var(--r)}
+.glance:not(.js) .kw-panel{display:block}
+.kw-head{display:flex;flex-wrap:wrap;align-items:center;gap:6px 12px}
+.kw-head h3{font-size:17px}
+.kw-stats{font:12.5px var(--sans);color:var(--soft);margin-top:4px}
+.kw-about{margin:8px 0 4px;font-size:15px}
+.kw-panel .plist{margin-top:6px}
+.kw-more{margin:4px 0 0}
+.kw-more summary{cursor:pointer;font:500 12.5px var(--sans);color:var(--faint);width:max-content;max-width:100%}
+.kw-more summary:hover{color:var(--ink)}
+.kw-more p{font:12.5px var(--sans);margin:4px 0 0}
+.kw-panel .terms{margin-top:8px}
+.kw-legend{display:flex;flex-wrap:wrap;align-items:center;gap:4px 14px;margin-top:14px;font:12.5px var(--sans);color:var(--soft)}
+.kw-legend .lg{display:inline-flex;align-items:center;gap:6px;font-weight:500}
+.kw-legend .lg i{width:10px;height:10px;border-radius:999px;border:1px solid var(--line);background:var(--bg)}
+.kw-legend .lg.hot i{background:var(--accent);border-color:var(--accent)}
+.kw-legend .lg.rising i{background:color-mix(in srgb,var(--accent) 13%,var(--bg));border-color:var(--accent)}
+.kw-legend .lg.new i{background:color-mix(in srgb,var(--blue) 14%,var(--bg));border-color:var(--blue)}
+.glance-top{margin-top:18px;padding-top:14px;border-top:1px solid var(--line)}
+.glance-top ol{list-style:none;margin:6px 0 0;padding:0;font:500 15px/1.5 var(--sans)}
+.glance-top li{display:flex;gap:10px;align-items:baseline;margin:4px 0;min-width:0}
+.glance-top li .n{flex:none;width:20px;height:20px;border-radius:999px;background:var(--accent);color:#fff;font:600 11.5px/20px var(--sans);text-align:center}
+.glance-top a{text-decoration:none;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.glance-top a:hover{text-decoration:underline}
+.paper:target{box-shadow:inset 3px 0 0 var(--accent)}
+.issue-row .kws{display:flex;flex-wrap:wrap;gap:4px 6px;white-space:normal;overflow:visible}
+.kw-mini{font:500 12px/1.6 var(--sans);padding:0 8px;border-radius:999px;border:1px solid var(--line);color:var(--soft);background:var(--bg)}
+.kw-mini.hot{background:var(--accent);border-color:var(--accent);color:#fff}
+.kw-mini.rising{color:var(--accent-text);border-color:color-mix(in srgb,var(--accent) 50%,transparent)}
+.kw-mini.new{color:var(--blue-text);border-color:color-mix(in srgb,var(--blue) 55%,transparent)}
 @media (max-width:960px){
   .digest-grid{grid-template-columns:minmax(0,1fr);gap:28px}
   .digest-grid aside{position:static}
@@ -300,4 +350,13 @@ a.link-card:hover h3{color:var(--accent-text)}
   .issue-row{grid-template-columns:minmax(0,1fr) auto;padding:12px 14px}
   .issue-row .count{grid-column:1/-1}
   .theme,.paper,.news-item{padding:16px}
+  main section.glance-sec{padding-top:20px}
+  .glance{padding:16px 14px;border-radius:12px}
+  .glance-head h2{font-size:18px}
+  .kw{font-size:calc(12.5px + 2.5px * var(--s));gap:5px;padding:4px 10px}
+  .kw .kw-n{font-size:10.5px;padding:0 5px}
+  .kw-cloud{gap:6px}
+  .kw-panel{padding:14px}
+  .kw-panel .plist{font-size:13.5px}
+  .glance-top a{white-space:normal}
 }
