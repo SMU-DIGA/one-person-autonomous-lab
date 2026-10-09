@@ -20,21 +20,21 @@
   /* Widths: one system for every page; the manifesto pages mirror it (site/build.py, NOTE_STYLE).
      --page    the page column, gutters included: nav bar, headers, sections and footer share its edges
      --gutter  the side gutter (16px on phones)
-     --measure readable prose: ledes, section intros, notes and list text stop here (text inside a card fills the card), on the column's left edge;
-               at most about 80 Latin characters a line; in Chinese (below) about 36-40 characters
+     --measure prose: ledes, section intros, notes and list text stop here (text inside a card fills the card), on the
+               column's left edge. One width in both languages, the position note's body width (88ch of its 15.5px
+               serif, 880px), which the owner prefers: every page's prose has the homepage's edges
      --side    the digest's sidebar, --gap the space between it and the main column
      --wide    the digest's main column (the page column less the sidebar): the papers and news below the themes keep
                to it, so their cards line up with the theme cards
      Cards, lists, tables and boxes span their column; text inside a card fills it, so no card has a ragged empty strip on its right. */
   --page:1180px;
   --gutter:28px;
-  --measure:38rem;
+  --measure:55rem;
   --side:300px;
   --gap:44px;
   --wide:calc(100% - var(--side) - var(--gap));   /* used on a direct child of .wrap; the full column below 960px */
   color-scheme:light;
 }
-:root:lang(zh){--measure:36rem}
 @media (max-width:960px){:root{--wide:100%}}
 @media (max-width:640px){:root{--gutter:16px}}
 @media (prefers-color-scheme:dark){
