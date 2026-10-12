@@ -20,16 +20,15 @@
   /* Widths: one system for every page; the manifesto pages mirror it (site/build.py, NOTE_STYLE).
      --page    the page column, gutters included: nav bar, headers, sections and footer share its edges
      --gutter  the side gutter (16px on phones)
-     --measure prose: ledes, section intros, notes and list text stop here (text inside a card fills the card), on the
-               column's left edge. One width in both languages, the position note's body width (88ch of its 15.5px
-               serif, 880px), which the owner prefers: every page's prose has the homepage's edges
+     --measure prose (ledes, section intros, notes, list text): none, so text fills its column like the cards, tables and
+               figures beside it and every page's text has the same edges (the owner asked for one width, 2026-10-12)
      --side    the digest's sidebar, --gap the space between it and the main column
      --wide    the digest's main column (the page column less the sidebar): the papers and news below the themes keep
                to it, so their cards line up with the theme cards
      Cards, lists, tables and boxes span their column; text inside a card fills it, so no card has a ragged empty strip on its right. */
   --page:1180px;
   --gutter:28px;
-  --measure:55rem;
+  --measure:none;
   --side:300px;
   --gap:44px;
   --wide:calc(100% - var(--side) - var(--gap));   /* used on a direct child of .wrap; the full column below 960px */
@@ -111,7 +110,7 @@ html.lang-zh .en,html.lang-en .zh{display:none !important}
 /* sections */
 main section{padding:60px 0;border-bottom:1px solid var(--line)}
 main section:last-child{border-bottom:0}
-.head{margin-bottom:26px}   /* its heading runs free; its .lede keeps to the measure */
+.head{margin-bottom:26px}
 .head h2{font-size:27px}
 .head .eyebrow{margin:0 0 8px}
 .head .lede{margin:12px 0 0}
