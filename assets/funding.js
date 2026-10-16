@@ -60,7 +60,21 @@
   }
 
   // The lower list holds what was found in earlier weeks; this week's finds are in the block above it.
-  function earlier() { return data.rows.filter(function (r) { return !r.new; }); }
+  function earlier() { return data.rows.filter(function (r) { return !r.new && !r.recently_updated; }); }
+
+  // Times as the scan recorded them (UTC), shown in Singapore time, where the lab is.
+  function sgt(ts, withTime) {
+    var d = ts ? new Date(ts) : null;
+    if (!d || isNaN(d)) return "—";
+    var s = new Date(d.getTime() + 8 * 3600000).toISOString();
+    return s.slice(0, 10) + (withTime ? " " + s.slice(11, 16) + " SGT" : "");
+  }
+  var FIELD = { deadline: ["截止日期", "Deadline"], amount: ["金额", "Amount"], status_on_page: ["网页状态", "Status on Page"] };
+  var PAGE_STATE = { upcoming: ["即将开放", "upcoming"], open: ["开放", "open"], closed: ["已关闭", "closed"] };
+  function val(field, v) {
+    if (v == null || v === "") return "—";
+    return field === "status_on_page" && PAGE_STATE[v] ? bi(PAGE_STATE[v]) : esc(v);
+  }
 
   function chips() {
     var rows = earlier();
@@ -86,6 +100,20 @@
   }
 
   var NEW = '<span class="badge new">' + biRaw("本周新发现", "New This Week") + "</span>";
+  var UPDATED = '<span class="badge updated">' + biRaw("本周有更新", "Updated This Week") + "</span>";
+
+  // When the scout first found the call, last read it on its page, and last saw the page change what it states.
+  function seen(o) {
+    var h = '<div class="seen"><span>' + biRaw("首次发现 ", "first seen ") + sgt(o.first_seen) + "</span><span>" +
+      biRaw("最近核实 ", "last checked ") + sgt(o.last_seen) + "</span>";
+    if (o.updated) h += "<span><b>" + biRaw("信息更新 ", "updated ") + sgt(o.updated) + "</b></span>";
+    h += "</div>";
+    if (o.recently_updated) (o.changes || []).forEach(function (c) {
+      h += '<div class="change"><span class="label">' + bi(FIELD[c.field] || [c.field, c.field]) + "</span>" +
+        val(c.field, c.before) + " → " + val(c.field, c.after) + "</div>";
+    });
+    return h;
+  }
 
   function card(o) {
     var when;
@@ -100,15 +128,16 @@
     var fit = Math.max(0, Math.min(1, +o.fit || 0));
     var links = '<a href="' + safeUrl(o.url) + '" rel="noopener" target="_blank">' + biRaw("原网页", "Source") + " ↗</a>";
     if (o.apply_url && o.apply_url !== o.url) links += ' · <a href="' + safeUrl(o.apply_url) + '" rel="noopener" target="_blank">' + biRaw("申请入口", "Apply") + " ↗</a>";
-    var h = '<article class="opp' + (o.new ? " is-new" : "") + '">';
+    var h = '<article class="opp' + (o.new ? " is-new" : o.recently_updated ? " is-updated" : "") + '">';
     h += '<div class="title-cell"><div class="title"><h3>' + esc(o.program) + '</h3><span class="badge ' + esc(o.status) + '">' +
-      bi(T.status[o.status] || ["", o.status]) + "</span>" + (o.new ? NEW : "") + "</div>";
+      bi(T.status[o.status] || ["", o.status]) + "</span>" + (o.new ? NEW : o.recently_updated ? UPDATED : "") + "</div>";
     h += '<div class="funder">' + esc(o.funder) + " · " + bi(T.funder[o.funder_type] || T.funder.other) + " · " + bi(T.kind[o.kind] || T.kind.other) +
       (o.official ? "" : ' · <span class="warn">' + biRaw("非官方页面", "Unofficial Page") + "</span>") + " · " + links + "</div></div>";
     h += '<div class="cell"><span class="label">' + biRaw("截止日期", "Deadline") + "</span>" + when + "</div>";
     h += '<div class="cell"><span class="label">' + biRaw("金额", "Amount") + "</span>" + (o.amount ? esc(o.amount) : '<span class="left">' + biRaw("页面未写明", "Not stated") + "</span>") + "</div>";
     h += '<div class="cell"><span class="label">' + biRaw("契合度（解读）", "Fit (Interpretation)") + '</span><span class="fit"><span class="meter"><i style="width:' + Math.round(fit * 100) + '%"></i></span>' + fit.toFixed(2) + "</span></div>";
     if (o.summary) h += '<p class="sum">' + esc(o.summary) + "</p>";
+    h += seen(o);
     h += "<details><summary>" + biRaw("原文证据与解读", "Evidence and Interpretation") + "</summary><div class=\"evidence\">";
     h += quote(biRaw("截止日期原文", "Deadline (Quoted)"), o.deadline_quote && "“" + esc(o.deadline_quote) + "”");
     h += quote(biRaw("金额原文", "Amount (Quoted)"), o.amount_quote && "“" + esc(o.amount_quote) + "”");
@@ -122,8 +151,7 @@
       }).join("<br>"));
     }
     (o.flags || []).forEach(function (f) { h += '<div class="warnflag">⚠ ' + esc(f) + "</div>"; });
-    h += '<div class="prov">' + biRaw("存档网页文本 sha256 ", "stored page text sha256 ") + esc(o.page_sha) + " · " +
-      biRaw("首次发现 ", "first seen ") + esc((o.first_seen || "").slice(0, 10)) + "</div>";
+    h += '<div class="prov">' + biRaw("存档网页文本 sha256 ", "stored page text sha256 ") + esc(o.page_sha) + "</div>";
     h += "</div></details></article>";
     return h;
   }
@@ -194,7 +222,9 @@
   }
 
   function fresh() {
-    var rows = data.rows.filter(function (r) { return r.new; }).concat(data.results.filter(function (r) { return r.new; }));
+    // updates of known calls first: they are few and easy to miss among the new finds
+    var rows = data.rows.filter(function (r) { return r.recently_updated; }).concat(data.rows.filter(function (r) { return r.new; }))
+      .concat(data.results.filter(function (r) { return r.new; }));
     var block = document.getElementById("new-block");
     if (!block) return;
     block.hidden = !rows.length;
@@ -216,17 +246,19 @@
     var rows = data.rows, doc = data.doc;
     function n(s) { return rows.filter(function (r) { return r.status === s; }).length; }
     function stat(v, label) { return "<span><b>" + v + "</b>" + label + "</span>"; }
-    var scanned = doc.last_scan ? doc.last_scan.slice(0, 10) : "—";
+    var scanned = sgt(doc.last_scan, true), next = doc.next_scan ? sgt(doc.next_scan) : "—";
     var recorded = Object.keys(doc.counts || {}).reduce(function (a, k) { return a + doc.counts[k]; }, 0);
     document.getElementById("summary").innerHTML =
       stat(rows.filter(function (r) { return r.new; }).length + data.results.filter(function (r) { return r.new; }).length,
            biRaw("本周新发现", "New This Week")) +
+      stat(rows.filter(function (r) { return r.recently_updated; }).length, biRaw("本周有更新", "Updated This Week")) +
       stat(n("open") + n("tight"), biRaw("可申请", "Open Now")) +
       stat(n("tight"), biRaw("即将截止", "Closing Soon")) +
       stat(n("rolling"), biRaw("滚动申请", "Rolling")) +
       stat(data.results.length, biRaw("结果已公布", "Results Out")) +
       stat(recorded, biRaw("共记录", "Recorded")) +
-      '<span>' + biRaw("最近扫描 ", "Last Scan ") + '<span class="mono">' + esc(scanned) + "</span></span>";
+      '<span>' + biRaw("最近扫描 ", "Last Scan ") + '<span class="mono">' + esc(scanned) + "</span></span>" +
+      '<span>' + biRaw("下次扫描 ", "Next Scan ") + '<span class="mono">' + esc(next) + "</span></span>";
     var a = doc.applicant || {};
     document.getElementById("stamp").textContent = [a.institution, a.country].filter(Boolean).join(", ");
   }
