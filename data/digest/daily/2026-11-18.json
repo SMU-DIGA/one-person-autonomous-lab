@@ -1,0 +1,4524 @@
+{
+ "kind": "daily",
+ "id": "2026-11-18",
+ "date": "2026-11-18",
+ "generated_at": "2026-11-18T04:16:13Z",
+ "scope": [
+  "cs.LG",
+  "cs.AI",
+  "cs.CL",
+  "cs.CV",
+  "stat.ML",
+  "cs.RO",
+  "cs.IR",
+  "cs.NE",
+  "cs.MA"
+ ],
+ "models": {
+  "root": "deepseek-v4-pro",
+  "sub": "deepseek-flash"
+ },
+ "announcement": {
+  "datestamp": "2026-11-18",
+  "papers": 349
+ },
+ "paper_ids": [
+  "2611.20368",
+  "2611.21571",
+  "2611.21618",
+  "2611.21622",
+  "2611.21625",
+  "2611.21632",
+  "2611.21633",
+  "2611.21638",
+  "2611.21639",
+  "2611.21641",
+  "2611.21643",
+  "2611.21644",
+  "2611.21645",
+  "2611.21646",
+  "2611.21647",
+  "2611.21648",
+  "2611.21649",
+  "2611.21650",
+  "2611.21651",
+  "2611.21653",
+  "2611.21655",
+  "2611.21656",
+  "2611.21668",
+  "2611.21669",
+  "2611.21674",
+  "2611.21678",
+  "2611.21679",
+  "2611.21680",
+  "2611.21682",
+  "2611.21688",
+  "2611.21690",
+  "2611.21691",
+  "2611.21694",
+  "2611.21695",
+  "2611.21696",
+  "2611.21698",
+  "2611.21701",
+  "2611.21702",
+  "2611.21705",
+  "2611.21706",
+  "2611.21707",
+  "2611.21751",
+  "2611.21766",
+  "2611.21769",
+  "2611.21771",
+  "2611.21777",
+  "2611.21781",
+  "2611.21782",
+  "2611.21783",
+  "2611.21784",
+  "2611.21789",
+  "2611.21791",
+  "2611.21795",
+  "2611.21797",
+  "2611.21799",
+  "2611.21802",
+  "2611.21804",
+  "2611.21806",
+  "2611.21808",
+  "2611.21809",
+  "2611.21811",
+  "2611.21812",
+  "2611.21816",
+  "2611.21823",
+  "2611.21825",
+  "2611.21827",
+  "2611.21828",
+  "2611.21832",
+  "2611.21839",
+  "2611.21840",
+  "2611.21844",
+  "2611.21845",
+  "2611.21846",
+  "2611.21847",
+  "2611.21849",
+  "2611.21851",
+  "2611.21852",
+  "2611.21857",
+  "2611.21859",
+  "2611.21865",
+  "2611.21867",
+  "2611.21878",
+  "2611.21879",
+  "2611.21880",
+  "2611.21882",
+  "2611.21885",
+  "2611.21890",
+  "2611.21891",
+  "2611.21892",
+  "2611.21895",
+  "2611.21905",
+  "2611.21907",
+  "2611.21908",
+  "2611.21914",
+  "2611.21917",
+  "2611.21919",
+  "2611.21920",
+  "2611.21921",
+  "2611.21923",
+  "2611.21924",
+  "2611.21925",
+  "2611.21927",
+  "2611.21932",
+  "2611.21933",
+  "2611.21935",
+  "2611.21937",
+  "2611.21938",
+  "2611.21940",
+  "2611.21941",
+  "2611.21943",
+  "2611.21945",
+  "2611.21946",
+  "2611.21948",
+  "2611.21950",
+  "2611.21952",
+  "2611.21954",
+  "2611.21955",
+  "2611.21956",
+  "2611.21957",
+  "2611.21958",
+  "2611.21959",
+  "2611.21964",
+  "2611.21969",
+  "2611.21973",
+  "2611.21974",
+  "2611.21975",
+  "2611.21976",
+  "2611.21978",
+  "2611.21980",
+  "2611.21983",
+  "2611.21993",
+  "2611.21995",
+  "2611.21996",
+  "2611.21998",
+  "2611.22000",
+  "2611.22001",
+  "2611.22005",
+  "2611.22009",
+  "2611.22010",
+  "2611.22011",
+  "2611.22017",
+  "2611.22019",
+  "2611.22024",
+  "2611.22027",
+  "2611.22028",
+  "2611.22030",
+  "2611.22033",
+  "2611.22038",
+  "2611.22039",
+  "2611.22043",
+  "2611.22045",
+  "2611.22047",
+  "2611.22050",
+  "2611.22052",
+  "2611.22054",
+  "2611.22055",
+  "2611.22060",
+  "2611.22061",
+  "2611.22064",
+  "2611.22065",
+  "2611.22067",
+  "2611.22069",
+  "2611.22075",
+  "2611.22076",
+  "2611.22077",
+  "2611.22079",
+  "2611.22080",
+  "2611.22083",
+  "2611.22084",
+  "2611.22085",
+  "2611.22086",
+  "2611.22094",
+  "2611.22095",
+  "2611.22096",
+  "2611.22098",
+  "2611.22100",
+  "2611.22102",
+  "2611.22103",
+  "2611.22106",
+  "2611.22109",
+  "2611.22113",
+  "2611.22115",
+  "2611.22117",
+  "2611.22120",
+  "2611.22122",
+  "2611.22124",
+  "2611.22126",
+  "2611.22128",
+  "2611.22130",
+  "2611.22131",
+  "2611.22132",
+  "2611.22133",
+  "2611.22136",
+  "2611.22138",
+  "2611.22140",
+  "2611.22141",
+  "2611.22144",
+  "2611.22146",
+  "2611.22148",
+  "2611.22151",
+  "2611.22152",
+  "2611.22158",
+  "2611.22161",
+  "2611.22163",
+  "2611.22164",
+  "2611.22169",
+  "2611.22171",
+  "2611.22172",
+  "2611.22174",
+  "2611.22177",
+  "2611.22178",
+  "2611.22179",
+  "2611.22180",
+  "2611.22186",
+  "2611.22188",
+  "2611.22189",
+  "2611.22190",
+  "2611.22191",
+  "2611.22195",
+  "2611.22198",
+  "2611.22200",
+  "2611.22202",
+  "2611.22203",
+  "2611.22204",
+  "2611.22207",
+  "2611.22210",
+  "2611.22212",
+  "2611.22215",
+  "2611.22218",
+  "2611.22219",
+  "2611.22222",
+  "2611.22224",
+  "2611.22227",
+  "2611.22228",
+  "2611.22230",
+  "2611.22231",
+  "2611.22234",
+  "2611.22235",
+  "2611.22236",
+  "2611.22238",
+  "2611.22239",
+  "2611.22240",
+  "2611.22241",
+  "2611.22244",
+  "2611.22245",
+  "2611.22246",
+  "2611.22248",
+  "2611.22250",
+  "2611.22252",
+  "2611.22258",
+  "2611.22262",
+  "2611.22263",
+  "2611.22268",
+  "2611.22270",
+  "2611.22272",
+  "2611.22273",
+  "2611.22274",
+  "2611.22275",
+  "2611.22278",
+  "2611.22280",
+  "2611.22281",
+  "2611.22283",
+  "2611.22286",
+  "2611.22287",
+  "2611.22288",
+  "2611.22291",
+  "2611.22294",
+  "2611.22295",
+  "2611.22296",
+  "2611.22297",
+  "2611.22298",
+  "2611.22299",
+  "2611.22301",
+  "2611.22302",
+  "2611.22304",
+  "2611.22307",
+  "2611.22308",
+  "2611.22309",
+  "2611.22310",
+  "2611.22312",
+  "2611.22314",
+  "2611.22317",
+  "2611.22318",
+  "2611.22321",
+  "2611.22323",
+  "2611.22328",
+  "2611.22329",
+  "2611.22330",
+  "2611.22331",
+  "2611.22334",
+  "2611.22335",
+  "2611.22338",
+  "2611.22342",
+  "2611.22343",
+  "2611.22345",
+  "2611.22350",
+  "2611.22351",
+  "2611.22352",
+  "2611.22353",
+  "2611.22355",
+  "2611.22356",
+  "2611.22360",
+  "2611.22362",
+  "2611.22367",
+  "2611.22368",
+  "2611.22374",
+  "2611.22380",
+  "2611.22382",
+  "2611.22385",
+  "2611.22388",
+  "2611.22392",
+  "2611.22395",
+  "2611.22396",
+  "2611.22397",
+  "2611.22399",
+  "2611.22403",
+  "2611.22404",
+  "2611.22407",
+  "2611.22409",
+  "2611.22410",
+  "2611.22415",
+  "2611.22418",
+  "2611.22420",
+  "2611.22425",
+  "2611.22426",
+  "2611.22427",
+  "2611.22429",
+  "2611.22432",
+  "2611.22434",
+  "2611.22438",
+  "2611.22439",
+  "2611.22440",
+  "2611.22444",
+  "2611.22445",
+  "2611.22446",
+  "2611.22447",
+  "2611.22449",
+  "2611.22450",
+  "2611.22453",
+  "2611.22456",
+  "2611.22457",
+  "2611.22458",
+  "2611.22461",
+  "2611.22464",
+  "2611.22470",
+  "2611.22472",
+  "2611.22480",
+  "2611.22482",
+  "2611.22483"
+ ],
+ "sources": {
+  "hf": [
+   {
+    "date": "2026-11-17",
+    "status": 200,
+    "sha": "f830d89dadc4702d638f5fec487e62f01806ad0c3f91f25a44b028f898b43f6c",
+    "n": 42
+   },
+   {
+    "date": "2026-11-18",
+    "status": 200,
+    "sha": "986318c23b0a24606a496ed241573bb716ffb06a8a137099c6be6b94d5ccf31f",
+    "n": 6
+   }
+  ],
+  "news": [
+   {
+    "name": "OpenAI",
+    "url": "https://openai.com/news/rss.xml",
+    "kind": "feed",
+    "status": 200,
+    "error": "",
+    "sha": "89de3d7575517486930e6714f80fd7b273b646c62b4a6af263aea16b8df5182b",
+    "items": 1406,
+    "in_window": 2
+   },
+   {
+    "name": "Google DeepMind",
+    "url": "https://deepmind.google/blog/rss.xml",
+    "kind": "feed",
+    "status": 200,
+    "error": "",
+    "sha": "37de692ea70fa1d2d1512ad59f3c548e53d3ffa6b5b99450736f3c903c0dda90",
+    "items": 100,
+    "in_window": 0
+   },
+   {
+    "name": "Google Research",
+    "url": "https://research.google/blog/rss/",
+    "kind": "feed",
+    "status": 200,
+    "error": "",
+    "sha": "3dfec58998032efb261261d4531e1ba5c1be1db1ac6c7bdd035e5d1bb421ffdb",
+    "items": 100,
+    "in_window": 0
+   },
+   {
+    "name": "Google AI",
+    "url": "https://blog.google/technology/ai/rss/",
+    "kind": "feed",
+    "status": 200,
+    "error": "",
+    "sha": "6e6c86fb2a2a632f2d84c07d31a39fd80a569f4b1ef62e7e314190d89ea9c505",
+    "items": 20,
+    "in_window": 1
+   },
+   {
+    "name": "Anthropic",
+    "url": "https://www.anthropic.com/news",
+    "kind": "page",
+    "status": 200,
+    "error": "",
+    "sha": "af5bffa828abdd34900d81198ec08addd73e009a2bdcf9eed6232ac5d2d0eb98",
+    "items": 20,
+    "in_window": 0
+   },
+   {
+    "name": "Meta AI",
+    "url": "https://ai.meta.com/blog/",
+    "kind": "page",
+    "status": 200,
+    "error": "",
+    "sha": "80268537ad7ed012eed82e5138cc01647f3e1c168a49dab186a5246b6db9be08",
+    "items": 10,
+    "in_window": 0
+   },
+   {
+    "name": "Microsoft Research",
+    "url": "https://www.microsoft.com/en-us/research/feed/",
+    "kind": "feed",
+    "status": 200,
+    "error": "",
+    "sha": "f4c73a7afdf24d46bc2f3cae0169c9d94a0f46baa126460276f92526d72c7bc2",
+    "items": 10,
+    "in_window": 1
+   },
+   {
+    "name": "NVIDIA",
+    "url": "https://blogs.nvidia.com/feed/",
+    "kind": "feed",
+    "status": 200,
+    "error": "",
+    "sha": "11f3a129160aed97bae1e2f1b0e56e738bdb92f82af7974d7c3238c07c858182",
+    "items": 18,
+    "in_window": 1
+   },
+   {
+    "name": "NVIDIA Developer",
+    "url": "https://developer.nvidia.com/blog/feed",
+    "kind": "feed",
+    "status": 200,
+    "error": "",
+    "sha": "7e2ebd07514cb6dc39267f765d773da2f4d66bde7483ec4db72fe3d378b9e6ea",
+    "items": 100,
+    "in_window": 2
+   },
+   {
+    "name": "Hugging Face",
+    "url": "https://huggingface.co/blog/feed.xml",
+    "kind": "feed",
+    "status": 200,
+    "error": "",
+    "sha": "1125c0cefe607aefd83166da2829f64a6e3c58890b0c1a88ce3cfcb01270fc54",
+    "items": 908,
+    "in_window": 0
+   },
+   {
+    "name": "Apple Machine Learning Research",
+    "url": "https://machinelearning.apple.com/rss.xml",
+    "kind": "feed",
+    "status": 200,
+    "error": "",
+    "sha": "ae13ef56f4d4cc3b7d6369804691b3b62fcef001b031a0deba7ed4f118543ddf",
+    "items": 10,
+    "in_window": 0
+   },
+   {
+    "name": "AWS Machine Learning",
+    "url": "https://aws.amazon.com/blogs/machine-learning/feed/",
+    "kind": "feed",
+    "status": 200,
+    "error": "",
+    "sha": "dbd4ead6a34af325f018075b1a10fb72f16dd92bb20619e27989cccc85795015",
+    "items": 20,
+    "in_window": 14
+   },
+   {
+    "name": "BAIR",
+    "url": "https://bair.berkeley.edu/blog/feed.xml",
+    "kind": "feed",
+    "status": 200,
+    "error": "",
+    "sha": "52725ac380366121c386e08d3c5f616c4cab8d9e133acb9a49417e943a4993d0",
+    "items": 10,
+    "in_window": 0
+   },
+   {
+    "name": "AINews (smol.ai)",
+    "url": "https://news.smol.ai/rss.xml",
+    "kind": "feed",
+    "status": 200,
+    "error": "",
+    "sha": "0b0025b703f93bef5c6e24572afe0bc3a81283ee79c00dcfe461b91addbb690b",
+    "items": 716,
+    "in_window": 0
+   }
+  ],
+  "news_window": [
+   "2026-11-17T00:00:00Z",
+   "2026-11-18T00:00:00Z"
+  ]
+ },
+ "daily_4w": {
+  "2026-10-21": 736,
+  "2026-10-22": 602,
+  "2026-10-23": 582,
+  "2026-10-26": 525,
+  "2026-10-27": 1174,
+  "2026-10-28": 652,
+  "2026-10-29": 0,
+  "2026-10-30": 1103,
+  "2026-11-02": 519,
+  "2026-11-03": 1459,
+  "2026-11-04": 650,
+  "2026-11-05": 565,
+  "2026-11-06": 561,
+  "2026-11-09": 526,
+  "2026-11-10": 1227,
+  "2026-11-11": 602,
+  "2026-11-12": 0,
+  "2026-11-13": 858,
+  "2026-11-16": 402,
+  "2026-11-17": 1210
+ },
+ "rlm": {
+  "trajectory_sha": "98b9809c7267478252990e65b285f91f156582da047d8659269ee9231dd011c0",
+  "iterations": 11,
+  "sub_calls": 22
+ },
+ "keywords": {
+  "rule": "Counts are papers whose title or abstract contains one of the keyword's phrases (porter-stemmed, as the theme trends); the baseline is the papers in scope first submitted in the 12 weeks before the issue, its own papers excluded. new: fewer than 5 baseline papers; rising: at least 5 papers and a rate at least 1.5 times the baseline rate; hot: at least 15 papers (and 1% of the issue) at a rate at least 0.67 times the baseline rate; steady: otherwise.",
+  "score": "log2(1 + n) · log2(1 + (n + 3) / (E + 3)), E = issue papers × (baseline papers with the phrase + 0.5) / baseline papers",
+  "issue_papers": 349,
+  "baseline": {
+   "since": "2026-08-26",
+   "until": "2026-11-18",
+   "papers": 42943,
+   "other_fields": 41498
+  },
+  "candidates": [
+   {
+    "phrase": "disagree",
+    "label": "rising",
+    "n": 7,
+    "of": 349,
+    "per_1k": 20.06,
+    "baseline": {
+     "n": 250,
+     "papers": 42943,
+     "per_1k": 5.82,
+     "weeks": 12
+    },
+    "lift": 3.44,
+    "score": 4.734
+   },
+   {
+    "phrase": "key-value",
+    "label": "rising",
+    "n": 7,
+    "of": 349,
+    "per_1k": 20.06,
+    "baseline": {
+     "n": 284,
+     "papers": 42943,
+     "per_1k": 6.61,
+     "weeks": 12
+    },
+    "lift": 3.03,
+    "score": 4.582
+   },
+   {
+    "phrase": "coding agents",
+    "label": "rising",
+    "n": 9,
+    "of": 349,
+    "per_1k": 25.79,
+    "baseline": {
+     "n": 583,
+     "papers": 42943,
+     "per_1k": 13.58,
+     "weeks": 12
+    },
+    "lift": 1.9,
+    "score": 4.486
+   },
+   {
+    "phrase": "architectural modification",
+    "label": "rising",
+    "n": 5,
+    "of": 349,
+    "per_1k": 14.33,
+    "baseline": {
+     "n": 53,
+     "papers": 42943,
+     "per_1k": 1.23,
+     "weeks": 12
+    },
+    "lift": 11.5,
+    "score": 4.485
+   },
+   {
+    "phrase": "AI agents",
+    "label": "rising",
+    "n": 9,
+    "of": 349,
+    "per_1k": 25.79,
+    "baseline": {
+     "n": 602,
+     "papers": 42943,
+     "per_1k": 14.02,
+     "weeks": 12
+    },
+    "lift": 1.84,
+    "score": 4.429
+   },
+   {
+    "phrase": "tell",
+    "label": "rising",
+    "n": 7,
+    "of": 349,
+    "per_1k": 20.06,
+    "baseline": {
+     "n": 349,
+     "papers": 42943,
+     "per_1k": 8.13,
+     "weeks": 12
+    },
+    "lift": 2.46,
+    "score": 4.318
+   },
+   {
+    "phrase": "RMSE",
+    "label": "rising",
+    "n": 7,
+    "of": 349,
+    "per_1k": 20.06,
+    "baseline": {
+     "n": 357,
+     "papers": 42943,
+     "per_1k": 8.31,
+     "weeks": 12
+    },
+    "lift": 2.41,
+    "score": 4.288
+   },
+   {
+    "phrase": "domain experts",
+    "label": "rising",
+    "n": 5,
+    "of": 349,
+    "per_1k": 14.33,
+    "baseline": {
+     "n": 109,
+     "papers": 42943,
+     "per_1k": 2.54,
+     "weeks": 12
+    },
+    "lift": 5.62,
+    "score": 4.167
+   },
+   {
+    "phrase": "verdict",
+    "label": "rising",
+    "n": 7,
+    "of": 349,
+    "per_1k": 20.06,
+    "baseline": {
+     "n": 393,
+     "papers": 42943,
+     "per_1k": 9.15,
+     "weeks": 12
+    },
+    "lift": 2.19,
+    "score": 4.158
+   },
+   {
+    "phrase": "World Models",
+    "label": "steady",
+    "n": 11,
+    "of": 349,
+    "per_1k": 31.52,
+    "baseline": {
+     "n": 1027,
+     "papers": 42943,
+     "per_1k": 23.92,
+     "weeks": 12
+    },
+    "lift": 1.32,
+    "score": 4.156
+   },
+   {
+    "phrase": "official",
+    "label": "rising",
+    "n": 7,
+    "of": 349,
+    "per_1k": 20.06,
+    "baseline": {
+     "n": 397,
+     "papers": 42943,
+     "per_1k": 9.24,
+     "weeks": 12
+    },
+    "lift": 2.17,
+    "score": 4.144
+   },
+   {
+    "phrase": "open-weight models",
+    "label": "rising",
+    "n": 7,
+    "of": 349,
+    "per_1k": 20.06,
+    "baseline": {
+     "n": 400,
+     "papers": 42943,
+     "per_1k": 9.31,
+     "weeks": 12
+    },
+    "lift": 2.15,
+    "score": 4.133
+   },
+   {
+    "phrase": "Speculative",
+    "label": "rising",
+    "n": 6,
+    "of": 349,
+    "per_1k": 17.19,
+    "baseline": {
+     "n": 263,
+     "papers": 42943,
+     "per_1k": 6.12,
+     "weeks": 12
+    },
+    "lift": 2.8,
+    "score": 4.098
+   },
+   {
+    "phrase": "next-token",
+    "label": "rising",
+    "n": 6,
+    "of": 349,
+    "per_1k": 17.19,
+    "baseline": {
+     "n": 273,
+     "papers": 42943,
+     "per_1k": 6.36,
+     "weeks": 12
+    },
+    "lift": 2.7,
+    "score": 4.058
+   },
+   {
+    "phrase": "autoregressive decoding",
+    "label": "rising",
+    "n": 5,
+    "of": 349,
+    "per_1k": 14.33,
+    "baseline": {
+     "n": 134,
+     "papers": 42943,
+     "per_1k": 3.12,
+     "weeks": 12
+    },
+    "lift": 4.57,
+    "score": 4.04
+   },
+   {
+    "phrase": "leaderboard",
+    "label": "rising",
+    "n": 6,
+    "of": 349,
+    "per_1k": 17.19,
+    "baseline": {
+     "n": 281,
+     "papers": 42943,
+     "per_1k": 6.54,
+     "weeks": 12
+    },
+    "lift": 2.62,
+    "score": 4.026
+   },
+   {
+    "phrase": "reducing inference",
+    "label": "rising",
+    "n": 5,
+    "of": 349,
+    "per_1k": 14.33,
+    "baseline": {
+     "n": 141,
+     "papers": 42943,
+     "per_1k": 3.28,
+     "weeks": 12
+    },
+    "lift": 4.35,
+    "score": 4.006
+   },
+   {
+    "phrase": "reranking",
+    "label": "rising",
+    "n": 6,
+    "of": 349,
+    "per_1k": 17.19,
+    "baseline": {
+     "n": 289,
+     "papers": 42943,
+     "per_1k": 6.73,
+     "weeks": 12
+    },
+    "lift": 2.55,
+    "score": 3.995
+   },
+   {
+    "phrase": "Bird",
+    "label": "rising",
+    "n": 5,
+    "of": 349,
+    "per_1k": 14.33,
+    "baseline": {
+     "n": 155,
+     "papers": 42943,
+     "per_1k": 3.61,
+     "weeks": 12
+    },
+    "lift": 3.96,
+    "score": 3.94
+   },
+   {
+    "phrase": "test split",
+    "label": "rising",
+    "n": 5,
+    "of": 349,
+    "per_1k": 14.33,
+    "baseline": {
+     "n": 159,
+     "papers": 42943,
+     "per_1k": 3.7,
+     "weeks": 12
+    },
+    "lift": 3.86,
+    "score": 3.922
+   },
+   {
+    "phrase": "score lower",
+    "label": "steady",
+    "n": 4,
+    "of": 349,
+    "per_1k": 11.46,
+    "baseline": {
+     "n": 21,
+     "papers": 42943,
+     "per_1k": 0.49,
+     "weeks": 12
+    },
+    "lift": 22.89,
+    "score": 3.901
+   },
+   {
+    "phrase": "SWE-bench",
+    "label": "rising",
+    "n": 5,
+    "of": 349,
+    "per_1k": 14.33,
+    "baseline": {
+     "n": 165,
+     "papers": 42943,
+     "per_1k": 3.84,
+     "weeks": 12
+    },
+    "lift": 3.72,
+    "score": 3.894
+   },
+   {
+    "phrase": "open models",
+    "label": "rising",
+    "n": 5,
+    "of": 349,
+    "per_1k": 14.33,
+    "baseline": {
+     "n": 178,
+     "papers": 42943,
+     "per_1k": 4.15,
+     "weeks": 12
+    },
+    "lift": 3.45,
+    "score": 3.836
+   },
+   {
+    "phrase": "reader",
+    "label": "rising",
+    "n": 6,
+    "of": 349,
+    "per_1k": 17.19,
+    "baseline": {
+     "n": 341,
+     "papers": 42943,
+     "per_1k": 7.94,
+     "weeks": 12
+    },
+    "lift": 2.16,
+    "score": 3.805
+   },
+   {
+    "phrase": "catalog",
+    "label": "rising",
+    "n": 5,
+    "of": 349,
+    "per_1k": 14.33,
+    "baseline": {
+     "n": 201,
+     "papers": 42943,
+     "per_1k": 4.68,
+     "weeks": 12
+    },
+    "lift": 3.05,
+    "score": 3.739
+   },
+   {
+    "phrase": "lab",
+    "label": "rising",
+    "n": 6,
+    "of": 349,
+    "per_1k": 17.19,
+    "baseline": {
+     "n": 366,
+     "papers": 42943,
+     "per_1k": 8.52,
+     "weeks": 12
+    },
+    "lift": 2.01,
+    "score": 3.72
+   },
+   {
+    "phrase": "frontier models",
+    "label": "rising",
+    "n": 7,
+    "of": 349,
+    "per_1k": 20.06,
+    "baseline": {
+     "n": 536,
+     "papers": 42943,
+     "per_1k": 12.48,
+     "weeks": 12
+    },
+    "lift": 1.61,
+    "score": 3.714
+   },
+   {
+    "phrase": "highest mean",
+    "label": "rising",
+    "n": 5,
+    "of": 349,
+    "per_1k": 14.33,
+    "baseline": {
+     "n": 214,
+     "papers": 42943,
+     "per_1k": 4.98,
+     "weeks": 12
+    },
+    "lift": 2.87,
+    "score": 3.686
+   },
+   {
+    "phrase": "hidden states",
+    "label": "rising",
+    "n": 7,
+    "of": 349,
+    "per_1k": 20.06,
+    "baseline": {
+     "n": 552,
+     "papers": 42943,
+     "per_1k": 12.85,
+     "weeks": 12
+    },
+    "lift": 1.56,
+    "score": 3.67
+   },
+   {
+    "phrase": "LiDAR",
+    "label": "rising",
+    "n": 6,
+    "of": 349,
+    "per_1k": 17.19,
+    "baseline": {
+     "n": 385,
+     "papers": 42943,
+     "per_1k": 8.97,
+     "weeks": 12
+    },
+    "lift": 1.92,
+    "score": 3.658
+   },
+   {
+    "phrase": "LongMemEval",
+    "label": "steady",
+    "n": 4,
+    "of": 349,
+    "per_1k": 11.46,
+    "baseline": {
+     "n": 73,
+     "papers": 42943,
+     "per_1k": 1.7,
+     "weeks": 12
+    },
+    "lift": 6.7,
+    "score": 3.619
+   },
+   {
+    "phrase": "user requests",
+    "label": "steady",
+    "n": 4,
+    "of": 349,
+    "per_1k": 11.46,
+    "baseline": {
+     "n": 85,
+     "papers": 42943,
+     "per_1k": 1.98,
+     "weeks": 12
+    },
+    "lift": 5.76,
+    "score": 3.56
+   },
+   {
+    "phrase": "transformer blocks",
+    "label": "steady",
+    "n": 4,
+    "of": 349,
+    "per_1k": 11.46,
+    "baseline": {
+     "n": 86,
+     "papers": 42943,
+     "per_1k": 2.0,
+     "weeks": 12
+    },
+    "lift": 5.69,
+    "score": 3.555
+   },
+   {
+    "phrase": "question answering",
+    "label": "steady",
+    "n": 9,
+    "of": 349,
+    "per_1k": 25.79,
+    "baseline": {
+     "n": 974,
+     "papers": 42943,
+     "per_1k": 22.68,
+     "weeks": 12
+    },
+    "lift": 1.14,
+    "score": 3.553
+   },
+   {
+    "phrase": "reduces mean",
+    "label": "rising",
+    "n": 5,
+    "of": 349,
+    "per_1k": 14.33,
+    "baseline": {
+     "n": 251,
+     "papers": 42943,
+     "per_1k": 5.84,
+     "weeks": 12
+    },
+    "lift": 2.45,
+    "score": 3.543
+   },
+   {
+    "phrase": "autonomous systems",
+    "label": "steady",
+    "n": 4,
+    "of": 349,
+    "per_1k": 11.46,
+    "baseline": {
+     "n": 93,
+     "papers": 42943,
+     "per_1k": 2.17,
+     "weeks": 12
+    },
+    "lift": 5.26,
+    "score": 3.522
+   },
+   {
+    "phrase": "base model",
+    "label": "steady",
+    "n": 10,
+    "of": 349,
+    "per_1k": 28.65,
+    "baseline": {
+     "n": 1200,
+     "papers": 42943,
+     "per_1k": 27.94,
+     "weeks": 12
+    },
+    "lift": 1.02,
+    "score": 3.507
+   },
+   {
+    "phrase": "headline",
+    "label": "steady",
+    "n": 4,
+    "of": 349,
+    "per_1k": 11.46,
+    "baseline": {
+     "n": 98,
+     "papers": 42943,
+     "per_1k": 2.28,
+     "weeks": 12
+    },
+    "lift": 5.0,
+    "score": 3.499
+   },
+   {
+    "phrase": "Multi-Agent LLM",
+    "label": "steady",
+    "n": 4,
+    "of": 349,
+    "per_1k": 11.46,
+    "baseline": {
+     "n": 100,
+     "papers": 42943,
+     "per_1k": 2.33,
+     "weeks": 12
+    },
+    "lift": 4.9,
+    "score": 3.49
+   },
+   {
+    "phrase": "multiple-choice questions",
+    "label": "steady",
+    "n": 4,
+    "of": 349,
+    "per_1k": 11.46,
+    "baseline": {
+     "n": 107,
+     "papers": 42943,
+     "per_1k": 2.49,
+     "weeks": 12
+    },
+    "lift": 4.58,
+    "score": 3.458
+   }
+  ],
+  "left_out": [
+   {
+    "phrase": "disagree",
+    "count": 7,
+    "reason": "Generic sentiment word; its papers span unrelated topics."
+   },
+   {
+    "phrase": "architectural modification",
+    "count": 5,
+    "reason": "Vague phrase spanning unrelated architecture changes."
+   },
+   {
+    "phrase": "AI agents",
+    "count": 9,
+    "reason": "Umbrella agent term; subsumed by specific agent keywords."
+   },
+   {
+    "phrase": "tell",
+    "count": 7,
+    "reason": "Common verb, not a topic."
+   },
+   {
+    "phrase": "RMSE",
+    "count": 7,
+    "reason": "Error metric, not a research topic."
+   },
+   {
+    "phrase": "domain experts",
+    "count": 5,
+    "reason": "Vague role, not a method or problem."
+   },
+   {
+    "phrase": "verdict",
+    "count": 7,
+    "reason": "Generic word from titles, not a topic."
+   },
+   {
+    "phrase": "official",
+    "count": 7,
+    "reason": "Generic adjective, uninformative as a keyword."
+   },
+   {
+    "phrase": "open-weight models",
+    "count": 7,
+    "reason": "Model-access category rather than a research topic."
+   },
+   {
+    "phrase": "next-token",
+    "count": 6,
+    "reason": "Generic training objective, not a specific topic."
+   },
+   {
+    "phrase": "autoregressive decoding",
+    "count": 5,
+    "reason": "Broad decoding term; speculative decoding covers the notable work."
+   },
+   {
+    "phrase": "reducing inference",
+    "count": 5,
+    "reason": "Vague efficiency phrase, not a specific method."
+   },
+   {
+    "phrase": "Bird",
+    "count": 5,
+    "reason": "Non-topic word drawn from titles."
+   },
+   {
+    "phrase": "test split",
+    "count": 5,
+    "reason": "Evaluation boilerplate, not a topic."
+   },
+   {
+    "phrase": "score lower",
+    "count": 4,
+    "reason": "Evaluation boilerplate, not a topic."
+   },
+   {
+    "phrase": "open models",
+    "count": 5,
+    "reason": "Generic model-access phrase."
+   },
+   {
+    "phrase": "reader",
+    "count": 6,
+    "reason": "Generic reader role, not a method or problem."
+   },
+   {
+    "phrase": "catalog",
+    "count": 5,
+    "reason": "Generic catalog word, uninformative."
+   },
+   {
+    "phrase": "lab",
+    "count": 6,
+    "reason": "Generic venue word, no single topic."
+   },
+   {
+    "phrase": "frontier models",
+    "count": 7,
+    "reason": "Generic model tier; papers span unrelated areas."
+   },
+   {
+    "phrase": "highest mean",
+    "count": 5,
+    "reason": "Metric boilerplate, not a topic."
+   },
+   {
+    "phrase": "user requests",
+    "count": 4,
+    "reason": "Generic interaction phrase, not a topic."
+   },
+   {
+    "phrase": "transformer blocks",
+    "count": 4,
+    "reason": "Generic architecture component, not a specific topic."
+   },
+   {
+    "phrase": "reduces mean",
+    "count": 5,
+    "reason": "Metric boilerplate, not a topic."
+   },
+   {
+    "phrase": "base model",
+    "count": 10,
+    "reason": "Generic model term, not a specific topic."
+   },
+   {
+    "phrase": "headline",
+    "count": 4,
+    "reason": "Non-topic word from titles."
+   },
+   {
+    "phrase": "multiple-choice questions",
+    "count": 4,
+    "reason": "Evaluation format, not a topic."
+   }
+  ]
+ },
+ "titles": {
+  "2611.20368": "HoloGene: Learning to Lift Sliced Spatial Transcriptomics to Holistic 3D Gene Fields",
+  "2611.21571": "DynSurvX: Time-Resolved Explanations for Dynamic Survival Predictions",
+  "2611.21618": "The Defense Rests: A Courtroom-Inspired Multi-Agent LLM Framework for Automated Safety Case Generation",
+  "2611.21622": "CrisisBench: an evaluation suite for crisis counseling AI",
+  "2611.21625": "Evaluating AST-Derived Knowledge Graph Retrieval for AIOps Incident Diagnosis in Apache Kafka",
+  "2611.21632": "Fragmented Markers, Mixed Results: A Systematic Review of AI Coding Assistants and Developer Productivity",
+  "2611.21633": "Measuring Human-AI Alignment as an Early Indicator for Effective Collaboration in Hybrid SE Teams",
+  "2611.21639": "ClearTalk: Data-Driven Mandarin Articulation Analysis and Personalized Communication Support for Children with Dysarthria",
+  "2611.21641": "RAW: Refusal Aversion in the Wild, A Causal Measurement Method for Deployed LLMs",
+  "2611.21643": "Sleep2Word: Peripheral-to-EEG Translation via Duration-Aware Wordization",
+  "2611.21644": "MInfoVisQA: A Multilingual Benchmark for Information-Rich Visual Question Answering",
+  "2611.21647": "FieldGuide: A Corpus Map for Token-Efficient Agentic Document Exploration",
+  "2611.21648": "Can an LLM dream? Testing the overfitted brain hypothesis on an agent with text memory",
+  "2611.21650": "From Preference Data to Personalization: Tracing Sycophancy in Large Language Models",
+  "2611.21655": "Depth-Aware Activation Steering via Attention Residuals",
+  "2611.21669": "Token Commitment as a Control Surface for Steering Masked Diffusion Generation",
+  "2611.21674": "Improving Early Detection of Scientifically Interesting Radio Sources Using Enhanced Isolation Forest",
+  "2611.21678": "RTLReviewBench: LLM Hardware Reviewers Rarely Miss Bugs but Routinely Reject Correct RTL",
+  "2611.21680": "Edge-Adaptive Hiera-Seg Model for Building-Integrated Photovoltaic Power Forecasting",
+  "2611.21688": "DeltaHarness: Self-Evolving Harnesses for Resource-Adaptive Tool Execution",
+  "2611.21690": "EgoLink: Egocentric Language-Vision Interactive Network Knowledge Challenge Summary",
+  "2611.21691": "AdaFlowLite: Scalable and Non-blocking Inference on Asynchronous Mobile Data",
+  "2611.21694": "TIBECG: Temporal Information Bottleneck for Lead-Specific Demographic Privacy in ECG Waveform Release",
+  "2611.21698": "FACE: Flow-Guided Angular Channel Estimation Framework for mmWave MIMO Systems",
+  "2611.21702": "Watermark Evidence under Open-Weight LLM Modification: Exact Bounds for Low-Rank Output Watermarks",
+  "2611.21705": "Disambiguating Moral Circuits and Moral Features in Language Models: Moral content, normative judgment or cue words? Evidence from 14 models",
+  "2611.21707": "Bookkeeping Is Not Judgement: EJBench, an Engineering Judgement Benchmark Built from a Conjugate Heat Transfer Design Campaign",
+  "2611.21766": "Margin Dynamics for Large Language Model Alignment",
+  "2611.21769": "Learning Calibrated and Samplable Predictive Distributions of Surface-Ocean $\\Delta p$CO$_2$ Using Tabular Diffusion Models",
+  "2611.21781": "Beyond Reconstruction: A Unified Framework for Trustworthy and Explainable EEG Artifact Removal Evaluation",
+  "2611.21782": "Every Camera Grows Up: Camera-Height Regression in Interactive Video World Models",
+  "2611.21783": "Better Calibrated, Better Planned: Uncertainty-Aware Multi-ASV Informative Path Planning for Oil Spill Monitoring",
+  "2611.21784": "Revisiting the Survival of Agent-Attributed Code: How Measurement Choices Decide the Verdict",
+  "2611.21789": "ASTRA: ASV Simulator for Transferable Realistic Autonomy",
+  "2611.21797": "Can Coding Agents Write and Transpile Unit Tests",
+  "2611.21799": "Chain-of-Thought Controllability Can Reduce Chain-of-Thought Monitorability",
+  "2611.21802": "Data-Driven Variable-Length Compression of 3D Representations",
+  "2611.21804": "Corrupting Ties: Investigating Robustness to Bias Injection Across Multi-Agent Network Topologies",
+  "2611.21809": "Evaluating the Evaluation of Music Generation Models with Generative Psychometrics",
+  "2611.21811": "ARC-2: Continuous Compliance Through Delta Management",
+  "2611.21812": "Sketch, Don't Paint: Allocating Test-Time Compute in Generative Visual Reasoning",
+  "2611.21816": "Rethinking Perceptual Similarity for Remote Sensing: Multi-Layer Attention Scoring and Human Preference Benchmarking",
+  "2611.21823": "TUSI: A Citation-Grounded Graph-Based Benchmark",
+  "2611.21827": "How Much of SAR Vehicle Recognition Is the Vehicle? Background Shortcuts, Angle Gaps and Partial Libraries on MSTAR and ATRNet-STAR",
+  "2611.21828": "Coordination of Heterogeneous Teams with Uncertain Task Requirements",
+  "2611.21832": "Auditors Struggle to Catch Sabotage In End-to-End Transcripts of AI Safety Research",
+  "2611.21839": "VisHead-Spec: Head-Routed Visual Attention for Multimodal Speculative Decoding",
+  "2611.21845": "EmbedGym: Letting Coding Agents Develop and Debug Embedded Firmware Without Physical Hardware",
+  "2611.21846": "Can a World Model Predict a Deepfake Video? A Consistency Margin Prior for Deepfake Detection",
+  "2611.21847": "Inventa: Decentralized Self-Improving Agents for Autonomous Scientific Discovery",
+  "2611.21851": "AR-WAM: efficient streaming world-action modeling for autonomous driving",
+  "2611.21852": "The Hidden Cost of MoE Diffusion Decoding: Profiling and Fixing the Sampler",
+  "2611.21857": "tmol: a GPU-accelerated implementation of the Rosetta energy function for machine learning",
+  "2611.21865": "PromptPack: Training-Free Augmentation of Diffusion Editors for Intent-Aligned Spatial and Semantic Control",
+  "2611.21867": "FaceRiff: Data-Efficient Unified Text-to-3D Face Asset Synthesis via Geometric Conditioning",
+  "2611.21878": "Knowing Which, Not How Much: Language Models Order Party Positions They Cannot Place",
+  "2611.21882": "WM-Quant: Rollout-Aware Post-Training Quantization for JEPA-Style World Models",
+  "2611.21885": "Language Models Can Rewrite Their Own Weights",
+  "2611.21890": "Domain-Tuned Diffusion Super-Resolution for 4K Facial Asset Maps",
+  "2611.21891": "Call-Efficient ICD-10 Code Prediction via Supervised Candidate Generation and Selective LLM Invocation",
+  "2611.21892": "Temporal Pseudo-RGB Encoding for Label-Free Detection of VEEV Infection in Human Brain Endothelial Cells",
+  "2611.21895": "World-Grounded Reinforcement Learning for Pollution-Aware Bird Movement Modeling Using a Multi-Instance DQN Framework",
+  "2611.21905": "Agile Monoped Hopping on Complex and Discrete Terrain via Kinodynamic Planning with Distilled MPPI Steering",
+  "2611.21907": "REEL: Brain-Guided Video Generation and Selection by Reranking Encoder Embeddings with Linear Decoding from fMRI data",
+  "2611.21908": "From Human Videos to Bimanual Dexterous Manipulation Data: Confidence-Guided RL Refinement of Video Priors",
+  "2611.21914": "A Temporal Algebraic Framework for Data Stream Evaluation Under Delayed Labels and Distribution Shifts",
+  "2611.21917": "Lost in a Few Heads: Diagnosing and Repairing Block Selection in Sparse Attention",
+  "2611.21919": "ALOHA Lightning: Learning Fast and Precise Manipulation",
+  "2611.21920": "KVUse: Reusable-KV User Memory for Efficient LLM Recommenders",
+  "2611.21921": "Latent Fact Composition under Next-Token Training",
+  "2611.21923": "Wrong Input, Wrong Threshold: Re-evaluating Adversarial Facial Privacy",
+  "2611.21924": "GridDriver: On-Board BEV-Based Language Planning and Reasoning",
+  "2611.21925": "DNeo: Your Parallel Draft Model Needs Better Target Feature Encoding",
+  "2611.21933": "Physics-informed neural networks for spacecraft trajectory optimization with exact boundary conditions",
+  "2611.21935": "Higher-Order Interaction Reconstruction via Integral Physics-Informed Neural Networks",
+  "2611.21938": "HubEgo-100K: In-the-Wild Egocentric Video of Skilled Work for Robot Learning",
+  "2611.21940": "Does the Model Use What It Cites? Counterfactual Tests of Grounded Reasoning Chains in Small Video-Language Models",
+  "2611.21945": "Benchmarking Deep Learning Models for Wheelchair Configuration Classification in Accessible Automated Vehicle Applications",
+  "2611.21946": "Conserved Verdicts, Drifting Commitments: Identifying Harmful Overthinking",
+  "2611.21952": "A Log-Timescale Perturbation Bound for Selective State Space Models at Every Sequence Length",
+  "2611.21954": "ThermLeT: Transformer-based Temperature Prediction for 2.5D Chiplet Architecture",
+  "2611.21955": "SCAN: Site-Aware Collaborative Privacy-Preserving Adaptation of Vision-Language Models for Neurological Disease Classification",
+  "2611.21956": "Eight in Ten LLMs Leak System-Prompt Secrets: Nevan, an Agentic Capture-the-Flag Study",
+  "2611.21957": "Operating an Agent-Driven Dataset Factory: Discovery, Construction, and Public Release",
+  "2611.21958": "Weight-space programming for tractor guidance controller: large language models natively write neural network weights that steer a real tractor",
+  "2611.21964": "Solver to System: LLM Reasoning Across Representations and Execution in Scientific Simulation",
+  "2611.21974": "Beyond Bitwidth: Deployment-Constrained Mixed-Precision Quantization for Multilingual LLM Inference on NVIDIA Blackwell",
+  "2611.21975": "Pathology Randomization for Synthetic Priors and Zero-Shot Detection",
+  "2611.21976": "Sparse Integer Fourier Transform and Its Application In Machine Learning",
+  "2611.21978": "WebAgents: Unbundling Agent Creation, Hosting, and Execution for an Agent-Native Web",
+  "2611.21980": "Modeling Document and Section Hierarchies in Embedding Space",
+  "2611.21983": "Large Language Models as Nonlinear Dynamical Systems: The Three Clocks of Depth, Training, and Generation",
+  "2611.21995": "Deciding Without Pointing: A Case Study of Whether a Decision Model Localizes the Anomalies It Detects",
+  "2611.21996": "Beyond Appearance: Where Forest Visual Place Recognition Actually Fails",
+  "2611.21998": "KV-LTM: Persistent Per-Session KV Caches as Long-Term Memory for Personal Assistants",
+  "2611.22001": "DreamFAR: Real-Time and Long-Horizon Interaction with Diverse Objects",
+  "2611.22009": "DiagTrace: An Interactive Benchmark for Clinical Decision Making",
+  "2611.22017": "SkillBuffBench: Measuring What Agent Skills Contribute across Harnesses, Models, Skill Access Modes and Memory",
+  "2611.22019": "Computed Permutation Trellis Coding: Near-Optimal Quantization from Two Multiplications and a 64-Byte Table",
+  "2611.22024": "An AI-Based OSSE Framework to Evaluate Learned Physical Consistency: A Multi-Model Study Using FourCastNet, Aurora, Prithvi WxC, and GraphCast",
+  "2611.22027": "GauntletScore: Auditable Fact-Checking That Matches the Best Published Checkers on LLM-AggreFact",
+  "2611.22028": "BATMoS: Budget-Aware Guidance Allocation for Efficient Video Diffusion",
+  "2611.22030": "What Does an Agent Need? Bundle-Aware Agent Resource Composition",
+  "2611.22033": "Thinking Harder Doesn't Lead to Better Choices: Reasoning Effort Increases the Confidence but Not the Correctness of LLM Shopping Agents",
+  "2611.22045": "Beyond Acuity Accuracy: A Multidimensional Framework for Evaluating Patient-Facing Emergency Triage AI Tools",
+  "2611.22047": "SE(3)-LIVOM: Adaptive Multi-LiDAR-Inertial-Visual Odometry and Mapping",
+  "2611.22050": "DSADiff: Data Structure-Aware Diffusion for Crystal Structure Prediction via Mitigating Complexity- and Imbalance-Induced Biases",
+  "2611.22052": "RiDEx: Reward-Informed Directional Exploration for Diffusion Reinforcement Learning",
+  "2611.22064": "Data-Efficient Algal Bloom Segmentation in Freshwater Bodies Using a Three-Stage Transfer Learning Pipeline with Attention-Enhanced Decoding",
+  "2611.22069": "MedGuardBench: A Patient-Oriented Benchmark for Personalized Guardrail Development",
+  "2611.22075": "Can You Undo It? Reversibility Classes for AI Agent Actions",
+  "2611.22076": "Segmentation-Guided Direct Capacity Estimation of Rooftop Photovoltaics from Aerial Imagery",
+  "2611.22077": "ReLAP: Latent Action Pretraining through Recurrent Video Prediction in JEPA Space",
+  "2611.22079": "SIMQ: A Single Graph-based Index for Multi-Vector Query",
+  "2611.22080": "CRA: Continuous Risk Assessment for Safety-critical Visual Navigation",
+  "2611.22083": "BernBRS: Certified Backward Reachability for Deep Bernstein Neural Networks",
+  "2611.22084": "When Lower Harm Misleads: Auditing Concept Corrections",
+  "2611.22085": "ATLAS-Finance: Benchmarking AI Agents in Realistic Banking Environments",
+  "2611.22086": "HyCoInfer: Cloud-Edge Collaborative Inference for Large Language Models on Heterogeneous GPU-FPGA Architectures",
+  "2611.22095": "CueSplat: Learning to Schedule Sparse Deformation for Dynamic Gaussian Splatting on Edge Devices",
+  "2611.22098": "Every Measurement, Every Direction, All at Once: Multimodal Flow Matching for Molecules and Spectra",
+  "2611.22102": "EvoDisco: Strategy Discovery for Evolving Agent Memory",
+  "2611.22103": "From Sorry to QED: Refining LLM Math Proofs via Angelic Execution",
+  "2611.22113": "RegimeCouncil: Paired-Evidence Routing For Memory Conflict Governance In LLM Agents",
+  "2611.22115": "TeleChat to Xing4: Advancing Frontier Agentic Models on Domestic Chips and Frameworks",
+  "2611.22117": "RetiDual-Select: Reliability-Aware Specialist-Generalist Routing for Retinal OCT under Image-Quality Shift",
+  "2611.22120": "What MoE Routing Controls: Causal Interventions on Expert Trajectories",
+  "2611.22122": "Low-speed Limit Cycle Walking of Planar X-shaped Bipedal Robot with Special Properties",
+  "2611.22124": "FrameSeg3D: Learned Local Frames for Segmenting Small Parts on High-Resolution 3D Scans",
+  "2611.22128": "TempQuant: Learning Adaptive Temperatures for Quantized Language Models",
+  "2611.22131": "LoCaR: Localized Canvas Retrieval With Frozen Vision-Language Model",
+  "2611.22132": "DailyBrick: Language-Guided Synthesis of Brick Assembly Instructions",
+  "2611.22133": "ReMoE: An Interpretable Mixture-of-Experts Framework for Human Mobility Recovery Forecasting Across Disasters",
+  "2611.22136": "Big Brains, Tiny Board: Pupavision, an Agentic Physical AI Instrument for Monitoring Drosophila Pupariation and Lifecycle Transitions",
+  "2611.22138": "RoboTeam: Benchmarking Vision-Based Multi-Agent Control of Many Robot Arms in Real Time",
+  "2611.22140": "Synthetic Crystal Data Generation for Diffusion Pretraining in Material Property Prediction",
+  "2611.22146": "HandUMI: A Modular Hand-Worn Parallel-Jaw Interface for Robot-Free Bimanual Data Capture",
+  "2611.22148": "Long-Context Generation Is a Sampling Problem (When You Turn Up the Heat)",
+  "2611.22151": "EgoHandWAM: Probing the Role of Hand Motion in Egocentric World Action Modeling",
+  "2611.22152": "Unsupervised Multi-modal Medical Image Registration via Invertible Translation",
+  "2611.22161": "What RL on Expert-Built Tasks Teaches Nemotron 3.5 Super",
+  "2611.22164": "HandRSI: Recursive Self-Improvement for Hand Pose Estimation",
+  "2611.22169": "Not All Evidence Is Admissible: Evidence Governance for Tool-Augmented Medical Agents",
+  "2611.22171": "Readie: Low-Latency Code Sandboxes for AI Agents",
+  "2611.22174": "Reconfiguring Procedural Knowledge for Compositional Robot Skill Adaptation",
+  "2611.22177": "The Only Edge Was Memorized in Training: LLM Trading Agents Around Earnings and Bad News",
+  "2611.22178": "CorrectCast: Selective Multimodal Context for Scale-Aware Residual Correction in Precipitation Nowcasting",
+  "2611.22179": "RAG in a Trenchcoat: When Minimal Memory Is Enough for Agentic Systems, and When It Isn't",
+  "2611.22180": "CueClash: Frontier Vision-Language Models Judge 3-D Relations Close to the Picture Plane",
+  "2611.22186": "Is 4-Bit Quantization More Than Noise to a Chat Model's Safety Behaviour? Attributing Behavioural Shifts with Matched Perturbations",
+  "2611.22188": "From Imperfective Paradox to Moorean Absurdity: Single-Chain Reasoning Lock-In and Multi-Candidate Verbalization Across Aspectual and Pragmatic Ambiguity",
+  "2611.22189": "SRED: Sparse Regional Evidence Distillation Across Magnifications in Whole-Slide Imaging",
+  "2611.22191": "RISA: Recoverable Sparse Attention for Block-Diffusion Language Models",
+  "2611.22195": "Haptic Probing for Subsurface-Aware Force Distribution on Layered Soft Tissue",
+  "2611.22200": "MIRAGE: Motion Identity Reduction via Autoregressive Generative Encoding for Privacy-Preserving Skeleton-based Motion Data",
+  "2611.22202": "An Optimization Framework for Denoising Generation",
+  "2611.22203": "EGS: A Complementary Safety Framework for Educational LLMs",
+  "2611.22207": "ARG-Avatar: Animation-Rendering Guidance for Efficient Feedforward Avatar Reconstruction",
+  "2611.22210": "Sample-efficient Personalization of Large Language Model Alignment with Multidimensional User Preference Data",
+  "2611.22215": "Communicate the Change: Efficient Expert Parallelism via Activation Compression",
+  "2611.22219": "Fine-Grained Japanese Clinical Named Entity Recognition: A Controlled Comparison of BERT and Open-Weight Large Language Models",
+  "2611.22224": "TRIDENT: Efficient Triple-Task Learning of Dehazing, Depth, and Uncertainty Estimation for Underwater 3-D Robot Visual Perception",
+  "2611.22227": "SOTA or Luck? The Winner's Curse in LLM Leaderboards",
+  "2611.22228": "What Does Weight-Space Programming Add to Diffusion Editing? Program Construction versus Score-Guided Refinement",
+  "2611.22231": "From Temperature-Limited to Battery-Limited Legged Locomotion",
+  "2611.22234": "The Fragility of Reasoning-Importance Attribution for Pruning Language Models",
+  "2611.22235": "CoSphere-SLAM: Multi-Agent Panoramic Gaussian Splatting SLAM with Spherical Loop Closure",
+  "2611.22236": "Spatially local mini-batching for implicit neural representations",
+  "2611.22238": "Context Has a Price: Adding and Removing Context for LLM Coding Agents under Prefix Caching",
+  "2611.22240": "Cross3DGS: Unified Vulkan-Based 3D Gaussian Splatting Training from Workstations to Mobile Devices",
+  "2611.22241": "Where Does Hindsight Enter Clinical Agent Benchmarks? An Audit of Simulators and Case Construction",
+  "2611.22244": "PhyVGGT: Feed-Forward Articulated Object Reconstruction from Monocular Videos",
+  "2611.22245": "Multi-Agent Memory Inconsistency: Where Factual Conflicts Disappear in LLM Agents",
+  "2611.22246": "Multispectral-Polarization-Infrared Multi-Aperture Camouflaged Vehicle Detection",
+  "2611.22248": "OAK-Mind: Zero-Training Mental Health Change Inference from Passive Sensing via Knowledge-Grounded Multi-Agent LLMs",
+  "2611.22252": "A Visual Information Extraction System Using Multimodal Large Language Models for Scanned Cognitive and Behavioral Assessments",
+  "2611.22258": "ALERT: Extending Humanoid Motion Trackers with a General and Lightweight Human Avoidance Pipeline",
+  "2611.22262": "OfficePrism: Benchmarking Agents on Single-Domain Operations Across Enterprise Business Functions",
+  "2611.22268": "Anticipating or Speculating? Making Futures Pay in AI Ethics",
+  "2611.22270": "Teaching Language Models to Narrow Boolean Patent Searches from Search Feedback",
+  "2611.22272": "Neural Network Path Optimization for Finding Transition States on a Machine Learned Potential",
+  "2611.22273": "SARVIA: Fast-Adapting the Strong SAR Foundation Models That Are Already in Your MLLMs",
+  "2611.22274": "GuardAgent: A Memory-Augmented Agentic Framework for Adaptive Detection of Adversarial Promotions in LLM-Based Recommendation",
+  "2611.22275": "Heave-Ho: Decentralized Long-Horizon Multi-Humanoid Collaboration",
+  "2611.22278": "DACE: Diversity-Driven Adversarial Co-Evolution for Robust LLM Safety Alignment",
+  "2611.22280": "XM-Sparse: High-Throughput Sparse-Attention LLM Serving over Scale-up Memory Pools",
+  "2611.22281": "SeasonRainBench: Global Seasonal Precipitation",
+  "2611.22283": "Towards Physics-Constrained Rectified Flow for Climate Downscaling: What Projections Can Certify?",
+  "2611.22287": "Decoding Without a Decoder: Direct Pixel Prediction from Diffusion Transformers",
+  "2611.22288": "ConfGuard: a physics-grounded reference monitor for predictive-maintenance large-language-model agents",
+  "2611.22291": "When the World Is the Test Suite: Agentic Intelligence for the Physical World",
+  "2611.22294": "Perception into Imagination: Executable Memory for World Models",
+  "2611.22295": "Similar Is Not Useful: Selecting In-Context Demonstrations by Closed-Loop Utility",
+  "2611.22296": "SpecSearch: Towards Hardware-Aware Efficient Speculative Decoding",
+  "2611.22297": "FIRE-Drive: Feasibility-Informed Risk Evaluation for End-to-End Diffusion Planning",
+  "2611.22299": "Harnesses That Improve Themselves: A Unifying Framework for Self-Improving Agent Harnesses",
+  "2611.22301": "MCTS Is Counting the Wrong Thing: Learning Exploration Counts for LLM Reasoning",
+  "2611.22302": "Where Do Human-to-Robot Transfer Gains Come From?",
+  "2611.22304": "Cross-Modal StateKV Injection for Communication in Multi-LLM Systems across Temporal Segments",
+  "2611.22309": "Efficient Wide-Beam Generative Retrieval with Model-Native Trie Decoding and Shared-Context Attention",
+  "2611.22310": "EviDARL: Evidence-Centric Dual-Agent Reasoning via Alternating Reinforcement Learning for Multi-Table Question Answering",
+  "2611.22312": "Zero-Dimensional Attention Topology for Linguistic Acceptability",
+  "2611.22314": "Inertial Video World Models",
+  "2611.22318": "Breaking Visual Conventions: Spectrally Coupled Weight Perturbation for Creative Image Generation",
+  "2611.22321": "Beyond Episodic Recall: Experience-to-Knowledge Evolution for Lifelong Embodied Navigation",
+  "2611.22323": "Agent Trajectories as Evidence for Software Quality Assurance",
+  "2611.22328": "PVTSizing 2.0: A Fast and Reliable Analog Circuit Sizing Operator for Agentic EDA Workflows",
+  "2611.22329": "M$^3$-Test: Coverage Gaps in Joint-Perturbation Testing of Visual Question Answering",
+  "2611.22331": "DAP-MR: Degradation-Aware Prompt-Magnitude Routing for Real-World Ultrasound Super-Resolution",
+  "2611.22334": "BQ-LoRA: Binary-Quantized Low-Rank Adapters as Implicit Regularizers for Parameter-Efficient Fine-Tuning",
+  "2611.22338": "Reliable Evaluation of AI Agents for Investment Research: A Framework for Performance and Validity Assessment",
+  "2611.22342": "Bad Apples in the Kitchen: How LLM Teams Detect, Correct, and Calibrate Against Their Misaligned Members",
+  "2611.22343": "PURE: A Diagnostic Benchmark for Multi-Granularity Multimodal Identity Matching",
+  "2611.22345": "TetherMark: Instance-Level Watermark Authentication Against Cross-Instance Transplantation",
+  "2611.22353": "NONSENSE: Non-Semantic Strings Expose Semanticity Gaps in Dense Retrieval",
+  "2611.22356": "SR-VLA: Stall-Reduced VLA Execution via Predicted-Input Lookahead and Selective KV Cache Repair",
+  "2611.22360": "Can Vision-Language Models Truly Understand Images? A Benchmark Beyond Commonsense Bias",
+  "2611.22362": "HealthCLBench:Evaluating Context Learning in Health Conversations through Controlled Case Clusters",
+  "2611.22367": "FailureGen: Scalable Robot Failure Data Generation with World Models",
+  "2611.22368": "Seeing What Still Holds: How Waiting Control Changes Cooperative Recovery",
+  "2611.22374": "AutoE2E: Don't speak - Language free end-to-end autonomy A Real-Time Driving Model for L2++ ADAS and L4 Robotaxis",
+  "2611.22380": "Leveraging Segmentation Representations for Efficient Classification: A Self-Configuring Framework Based on nnU-Net",
+  "2611.22382": "RICoT: Recurrent Interleaved Chain-of-Thought for Page Stream Segmentation",
+  "2611.22385": "DGV-DLIVO: Degeneracy-Guided Visual Fusion for Direct LiDAR-Inertial-Visual Odometry in Degenerate Tunnel Environments",
+  "2611.22388": "Hidden Variables Behind Real-Robot Data Quality: Lessons from Hundreds of Thousands of Hours",
+  "2611.22392": "Deal With It: On Better Schedules for Listwise Reranking",
+  "2611.22395": "CoBoVLA: Decoupling Language from Action with Discrete Codes for Robust and Interpretable Robot Manipulation",
+  "2611.22396": "From Constraints to Causality: Petri net Encodings for Explaining Binary Neural Network Inference",
+  "2611.22397": "SkiNet-Sim: Simulating Petri Nets with Data for the Verification and Validation of Controllers for Autonomous Systems",
+  "2611.22399": "Plenty to FRET About: From Hazard Analysis to Formal Requirements for Robot-Assisted Dressing",
+  "2611.22403": "BehaVerify: A Formal Verification Tool for Behavior Trees",
+  "2611.22404": "Symbolic Abstraction Refinement",
+  "2611.22407": "ROSMonitoring in Action: Runtime Monitoring and Enforcement for ROS 2 Actions",
+  "2611.22415": "SpatialMind: Adaptive Multi-Level Geometric Fusion for Spatial Reasoning in Multimodal Large Language Models",
+  "2611.22418": "CutAgent: Creative-Gene-Driven Planning and Experience-Guided Self-Refinement for High-CTR E-commerce Advertising Video Creation",
+  "2611.22425": "LMMR: Learned Multigranular Memory Retrieval for Small Language Model Agents",
+  "2611.22426": "InfuseLoop: Cross-Trajectory Latent Injection for Scalable Parallel Looped Transformers",
+  "2611.22427": "Do Diffusion Models Learn to Generalize Basic Visual Skills?",
+  "2611.22432": "Think Once, Act Fast: Cost-Effective Recursive Self-Improvement for Decision Model Harness",
+  "2611.22434": "Encoding, Decodability, and Use: A Five-Layer Framework for Benchmark Measurement Audits with Evidence from UAV Intent Recognition",
+  "2611.22444": "Efficient Machine Learning Interatomic Potentials",
+  "2611.22445": "Autonomous Track Racing with a Commercially Available Humanoid: System Design and Real-World Deployment",
+  "2611.22446": "As Student Rollouts Continue, Visual Backdoors Keep Growing",
+  "2611.22447": "COAST: Safe Flight Corridor Planner for Fast and Robust Snap Minimized Trajectories",
+  "2611.22450": "MedImgAnnotator: batch wise medical image annotation and preprocessing tool",
+  "2611.22453": "VoxelSBFL: Voxel-Level Spectrum-Based Failure Prediction for Vision-Language-Action Models",
+  "2611.22456": "PACD: Provenance-Aware Consensus Decoding for Mitigating Cross-Modal Hallucinations in Omnimodal Large Language Models",
+  "2611.22458": "Sample-Aligned Decoders for Latent Generative Models",
+  "2611.22461": "Surfacing Disagreement Beats Resolving It: A Gated Ablation Study of Provenance-Weighted Memory for Multi-Agent Debate",
+  "2611.22464": "MAVE: Reconstructing Editable 3D Blockouts from Film Shots",
+  "2611.22470": "Escaping Latent Traps by Remembering: Training-Free Episodic Kernel Repulsion for World-Model Planning",
+  "2611.22472": "Disagree to Prune: Reallocating Visual Tokens Where a Small VLM Dissents",
+  "2611.22480": "RehearsalBench: Can AI Predict What Happens When You Change a Company?",
+  "2611.22482": "LeViT-UNet++: Towards Balanced Fine-Grained Details and Context for Efficient Medical Image Segmentation",
+  "2611.22483": "Manufacturing Differential Sparsity: Planner-Hardware Co-Design for Efficient World Model Planning"
+ },
+ "en": {
+  "stats": {
+   "total": 349,
+   "per_category": [
+    {
+     "category": "cs.AI",
+     "n": 154,
+     "primary": 64
+    },
+    {
+     "category": "cs.LG",
+     "n": 126,
+     "primary": 66
+    },
+    {
+     "category": "cs.CV",
+     "n": 93,
+     "primary": 75
+    },
+    {
+     "category": "cs.CL",
+     "n": 59,
+     "primary": 34
+    },
+    {
+     "category": "cs.RO",
+     "n": 48,
+     "primary": 33
+    },
+    {
+     "category": "cs.MA",
+     "n": 16,
+     "primary": 5
+    },
+    {
+     "category": "stat.ML",
+     "n": 12,
+     "primary": 2
+    },
+    {
+     "category": "cs.IR",
+     "n": 12,
+     "primary": 8
+    },
+    {
+     "category": "cs.NE",
+     "n": 4,
+     "primary": 3
+    }
+   ],
+   "avg_4w": 697.6,
+   "days_4w": 20,
+   "vs_avg": 0.5
+  },
+  "keywords": [
+   {
+    "name": "KV cache",
+    "about": "Reusable per-user KV memory and sparse-attention block selection target efficient long-context inference.",
+    "terms": [
+     "key-value"
+    ],
+    "paper_ids": [
+     "2611.21920",
+     "2611.21917",
+     "2611.22191",
+     "2611.21839",
+     "2611.22200",
+     "2611.22304",
+     "2611.22309"
+    ],
+    "count": 7,
+    "trend": {
+     "label": "rising",
+     "n": 7,
+     "of": 349,
+     "per_1k": 20.06,
+     "baseline": {
+      "n": 284,
+      "papers": 42943,
+      "per_1k": 6.61,
+      "weeks": 12
+     },
+     "lift": 3.03,
+     "score": 4.582
+    }
+   },
+   {
+    "name": "Coding agents",
+    "about": "Agents write and transpile unit tests, debug embedded firmware, and are benchmarked on code skills.",
+    "terms": [
+     "coding agents"
+    ],
+    "paper_ids": [
+     "2611.21797",
+     "2611.21845",
+     "2611.21784",
+     "2611.22017",
+     "2611.22136",
+     "2611.22148",
+     "2611.22164",
+     "2611.22238",
+     "2611.22291"
+    ],
+    "count": 9,
+    "trend": {
+     "label": "rising",
+     "n": 9,
+     "of": 349,
+     "per_1k": 25.79,
+     "baseline": {
+      "n": 583,
+      "papers": 42943,
+      "per_1k": 13.58,
+      "weeks": 12
+     },
+     "lift": 1.9,
+     "score": 4.486
+    }
+   },
+   {
+    "name": "World models",
+    "about": "Interactive video world models regress camera height and support long-horizon object interaction.",
+    "terms": [
+     "World Models"
+    ],
+    "paper_ids": [
+     "2611.21782",
+     "2611.22001",
+     "2611.22077",
+     "2611.21882",
+     "2611.21846",
+     "2611.22294",
+     "2611.22314",
+     "2611.22367",
+     "2611.22432",
+     "2611.22470",
+     "2611.22483"
+    ],
+    "count": 11,
+    "trend": {
+     "label": "steady",
+     "n": 11,
+     "of": 349,
+     "per_1k": 31.52,
+     "baseline": {
+      "n": 1027,
+      "papers": 42943,
+      "per_1k": 23.92,
+      "weeks": 12
+     },
+     "lift": 1.32,
+     "score": 4.156
+    }
+   },
+   {
+    "name": "Speculative decoding",
+    "about": "Draft models and visual attention speed speculative decoding across multimodal and hardware-aware settings.",
+    "terms": [
+     "Speculative"
+    ],
+    "paper_ids": [
+     "2611.21839",
+     "2611.21925",
+     "2611.22296",
+     "2611.22115",
+     "2611.22268",
+     "2611.22356"
+    ],
+    "count": 6,
+    "trend": {
+     "label": "rising",
+     "n": 6,
+     "of": 349,
+     "per_1k": 17.19,
+     "baseline": {
+      "n": 263,
+      "papers": 42943,
+      "per_1k": 6.12,
+      "weeks": 12
+     },
+     "lift": 2.8,
+     "score": 4.098
+    }
+   },
+   {
+    "name": "Leaderboard",
+    "about": "Winner's curse checks and auditable fact-checking question whether leaderboard gains reflect luck.",
+    "terms": [
+     "leaderboard"
+    ],
+    "paper_ids": [
+     "2611.22227",
+     "2611.22027",
+     "2611.21707",
+     "2611.21690",
+     "2611.22380",
+     "2611.22444"
+    ],
+    "count": 6,
+    "trend": {
+     "label": "rising",
+     "n": 6,
+     "of": 349,
+     "per_1k": 17.19,
+     "baseline": {
+      "n": 281,
+      "papers": 42943,
+      "per_1k": 6.54,
+      "weeks": 12
+     },
+     "lift": 2.62,
+     "score": 4.026
+    }
+   },
+   {
+    "name": "Reranking",
+    "about": "Listwise reranking schedules and brain-guided selection improve retrieval and video generation outputs.",
+    "terms": [
+     "reranking"
+    ],
+    "paper_ids": [
+     "2611.22392",
+     "2611.21907",
+     "2611.21625",
+     "2611.21891",
+     "2611.21996",
+     "2611.22425"
+    ],
+    "count": 6,
+    "trend": {
+     "label": "rising",
+     "n": 6,
+     "of": 349,
+     "per_1k": 17.19,
+     "baseline": {
+      "n": 289,
+      "papers": 42943,
+      "per_1k": 6.73,
+      "weeks": 12
+     },
+     "lift": 2.55,
+     "score": 3.995
+    }
+   },
+   {
+    "name": "Agent harnesses",
+    "about": "Self-improving harnesses and context-caching costs shape coding-agent performance on expert tasks.",
+    "terms": [
+     "SWE-bench"
+    ],
+    "paper_ids": [
+     "2611.22299",
+     "2611.22238",
+     "2611.22161",
+     "2611.22148",
+     "2611.22227"
+    ],
+    "count": 5,
+    "trend": {
+     "label": "rising",
+     "n": 5,
+     "of": 349,
+     "per_1k": 14.33,
+     "baseline": {
+      "n": 165,
+      "papers": 42943,
+      "per_1k": 3.84,
+      "weeks": 12
+     },
+     "lift": 3.72,
+     "score": 3.894
+    }
+   },
+   {
+    "name": "Hidden states",
+    "about": "Probing moral circuits and rewriting weights reveal what internal representations control model behavior.",
+    "terms": [
+     "hidden states"
+    ],
+    "paper_ids": [
+     "2611.21705",
+     "2611.21885",
+     "2611.21925",
+     "2611.21952",
+     "2611.22215",
+     "2611.22236",
+     "2611.22426"
+    ],
+    "count": 7,
+    "trend": {
+     "label": "rising",
+     "n": 7,
+     "of": 349,
+     "per_1k": 20.06,
+     "baseline": {
+      "n": 552,
+      "papers": 42943,
+      "per_1k": 12.85,
+      "weeks": 12
+     },
+     "lift": 1.56,
+     "score": 3.67
+    }
+   },
+   {
+    "name": "LiDAR odometry",
+    "about": "Multi-LiDAR inertial-visual odometry and risk assessment support safe autonomous navigation.",
+    "terms": [
+     "LiDAR"
+    ],
+    "paper_ids": [
+     "2611.22047",
+     "2611.21789",
+     "2611.22080",
+     "2611.21691",
+     "2611.21996",
+     "2611.22385"
+    ],
+    "count": 6,
+    "trend": {
+     "label": "rising",
+     "n": 6,
+     "of": 349,
+     "per_1k": 17.19,
+     "baseline": {
+      "n": 385,
+      "papers": 42943,
+      "per_1k": 8.97,
+      "weeks": 12
+     },
+     "lift": 1.92,
+     "score": 3.658
+    }
+   },
+   {
+    "name": "Agent memory",
+    "about": "Persistent KV caches, conflict routing, and minimal RAG memory support long-horizon assistants.",
+    "terms": [
+     "LongMemEval"
+    ],
+    "paper_ids": [
+     "2611.21998",
+     "2611.22113",
+     "2611.22179",
+     "2611.21648"
+    ],
+    "count": 4,
+    "trend": {
+     "label": "steady",
+     "n": 4,
+     "of": 349,
+     "per_1k": 11.46,
+     "baseline": {
+      "n": 73,
+      "papers": 42943,
+      "per_1k": 1.7,
+      "weeks": 12
+     },
+     "lift": 6.7,
+     "score": 3.619
+    }
+   },
+   {
+    "name": "Question answering",
+    "about": "Benchmarks cover multilingual visual QA, egocentric knowledge, and clinical decision making.",
+    "terms": [
+     "question answering"
+    ],
+    "paper_ids": [
+     "2611.21644",
+     "2611.21690",
+     "2611.22009",
+     "2611.21823",
+     "2611.21924",
+     "2611.22169",
+     "2611.22310",
+     "2611.22329",
+     "2611.22353"
+    ],
+    "count": 9,
+    "trend": {
+     "label": "steady",
+     "n": 9,
+     "of": 349,
+     "per_1k": 25.79,
+     "baseline": {
+      "n": 974,
+      "papers": 42943,
+      "per_1k": 22.68,
+      "weeks": 12
+     },
+     "lift": 1.14,
+     "score": 3.553
+    }
+   },
+   {
+    "name": "Formal verification",
+    "about": "Petri-net controllers, symbolic abstraction, and compliance deltas certify autonomous-system behavior.",
+    "terms": [
+     "autonomous systems"
+    ],
+    "paper_ids": [
+     "2611.22397",
+     "2611.22404",
+     "2611.21811",
+     "2611.22396"
+    ],
+    "count": 4,
+    "trend": {
+     "label": "steady",
+     "n": 4,
+     "of": 349,
+     "per_1k": 11.46,
+     "baseline": {
+      "n": 93,
+      "papers": 42943,
+      "per_1k": 2.17,
+      "weeks": 12
+     },
+     "lift": 5.26,
+     "score": 3.522
+    }
+   },
+   {
+    "name": "Multi-agent LLM",
+    "about": "LLM teams generate safety cases, expose memory conflicts, and calibrate against misaligned members.",
+    "terms": [
+     "Multi-Agent LLM"
+    ],
+    "paper_ids": [
+     "2611.21618",
+     "2611.22245",
+     "2611.22342",
+     "2611.22248"
+    ],
+    "count": 4,
+    "trend": {
+     "label": "steady",
+     "n": 4,
+     "of": 349,
+     "per_1k": 11.46,
+     "baseline": {
+      "n": 100,
+      "papers": 42943,
+      "per_1k": 2.33,
+      "weeks": 12
+     },
+     "lift": 4.9,
+     "score": 3.49
+    }
+   }
+  ],
+  "themes": [
+   {
+    "name": "Embodied robot learning and interactive world models",
+    "summary": "Papers study robot learning from egocentric video, human demonstrations, and world models for manipulation, driving, and legged control. They differ by building datasets and benchmarks, refining video priors into executable demonstrations, and modeling camera or action dynamics for embodied simulation.",
+    "terms": [
+     "egocentric video",
+     "world models",
+     "bimanual dexterous manipulation",
+     "robot manipulation"
+    ],
+    "paper_ids": [
+     "2611.21690",
+     "2611.21782",
+     "2611.21851",
+     "2611.21905",
+     "2611.21908",
+     "2611.21919",
+     "2611.21924",
+     "2611.21938",
+     "2611.21958",
+     "2611.22001",
+     "2611.22047",
+     "2611.22077",
+     "2611.22122",
+     "2611.22138",
+     "2611.22146",
+     "2611.22151",
+     "2611.22164",
+     "2611.22174",
+     "2611.22195",
+     "2611.22224",
+     "2611.22231",
+     "2611.22258",
+     "2611.22275",
+     "2611.22294",
+     "2611.22295",
+     "2611.22302",
+     "2611.22314",
+     "2611.22321",
+     "2611.22356",
+     "2611.22367",
+     "2611.22368",
+     "2611.22374",
+     "2611.22388",
+     "2611.22395",
+     "2611.22445",
+     "2611.22453",
+     "2611.22470",
+     "2611.22483"
+    ],
+    "count": 38,
+    "trend": {
+     "terms": [
+      "egocentric video",
+      "world models",
+      "bimanual dexterous manipulation",
+      "robot manipulation"
+     ],
+     "today": {
+      "n": 18,
+      "of": 349
+     },
+     "w1": {
+      "n": 77,
+      "papers": 2241,
+      "per_1k": 34.36
+     },
+     "w4": {
+      "n": 459,
+      "papers": 12575,
+      "per_1k": 36.5
+     },
+     "w12": {
+      "n": 1714,
+      "papers": 42943,
+      "per_1k": 39.91
+     },
+     "label": "steady"
+    }
+   },
+   {
+    "name": "Clinical AI benchmarks, privacy, and medical imaging",
+    "summary": "Papers develop explainability for survival prediction, crisis-counseling evaluation, ECG/EEG privacy and artifact assessment, ICD-10 coding, and privacy-preserving neuroimaging adaptation. They differ by modality and task, spanning clinical NLP, patient-facing safety, and imaging detection or collaboration.",
+    "terms": [
+     "crisis counseling",
+     "EEG artifact removal",
+     "ICD-10 code prediction",
+     "neuroimaging data"
+    ],
+    "paper_ids": [
+     "2611.21571",
+     "2611.21622",
+     "2611.21639",
+     "2611.21643",
+     "2611.21694",
+     "2611.21781",
+     "2611.21891",
+     "2611.21892",
+     "2611.21955",
+     "2611.21975",
+     "2611.22009",
+     "2611.22045",
+     "2611.22069",
+     "2611.22084",
+     "2611.22117",
+     "2611.22152",
+     "2611.22169",
+     "2611.22189",
+     "2611.22219",
+     "2611.22241",
+     "2611.22248",
+     "2611.22252",
+     "2611.22331",
+     "2611.22362",
+     "2611.22380",
+     "2611.22450",
+     "2611.22482"
+    ],
+    "count": 27,
+    "trend": {
+     "terms": [
+      "crisis counseling",
+      "EEG artifact removal",
+      "ICD-10 code prediction",
+      "neuroimaging data"
+     ],
+     "today": {
+      "n": 4,
+      "of": 349
+     },
+     "w1": {
+      "n": 0,
+      "papers": 2241,
+      "per_1k": 0.0
+     },
+     "w4": {
+      "n": 2,
+      "papers": 12575,
+      "per_1k": 0.16
+     },
+     "w12": {
+      "n": 9,
+      "papers": 42943,
+      "per_1k": 0.21
+     },
+     "label": "steady"
+    }
+   },
+   {
+    "name": "Agent harnesses, coding benchmarks, and enterprise evaluation",
+    "summary": "Papers examine AI coding assistants, agent-written code and tests, embedded firmware environments, and self-evolving or self-rewriting agent harnesses. They differ by auditing developer productivity and code survival versus building execution, dataset-factory, and web-agent infrastructure.",
+    "terms": [
+     "coding agents",
+     "execution harnesses",
+     "self-rewriting",
+     "developer productivity"
+    ],
+    "paper_ids": [
+     "2611.21632",
+     "2611.21633",
+     "2611.21678",
+     "2611.21688",
+     "2611.21784",
+     "2611.21797",
+     "2611.21845",
+     "2611.21885",
+     "2611.21957",
+     "2611.21978",
+     "2611.22017",
+     "2611.22030",
+     "2611.22085",
+     "2611.22161",
+     "2611.22171",
+     "2611.22177",
+     "2611.22238",
+     "2611.22262",
+     "2611.22291",
+     "2611.22299",
+     "2611.22323",
+     "2611.22328",
+     "2611.22338",
+     "2611.22418",
+     "2611.22432",
+     "2611.22480"
+    ],
+    "count": 26,
+    "trend": {
+     "terms": [
+      "coding agents",
+      "execution harnesses",
+      "self-rewriting",
+      "developer productivity"
+     ],
+     "today": {
+      "n": 12,
+      "of": 349
+     },
+     "w1": {
+      "n": 47,
+      "papers": 2241,
+      "per_1k": 20.97
+     },
+     "w4": {
+      "n": 225,
+      "papers": 12575,
+      "per_1k": 17.89
+     },
+     "w12": {
+      "n": 628,
+      "papers": 42943,
+      "per_1k": 14.62
+     },
+     "label": "rising"
+    }
+   },
+   {
+    "name": "Scientific and environmental ML with physics priors",
+    "summary": "Papers apply machine learning to radio astronomy, photovoltaic forecasting, ocean CO2 estimation, oil-spill monitoring, remote sensing, and pollution-aware movement, alongside physics-informed trajectory and interaction reconstruction. They differ by using calibrated uncertainty, diffusion or tabular models, GPU forcefields, and physics-informed neural networks across environmental and physical simulation tasks.",
+    "terms": [
+     "physics-informed neural networks",
+     "remote sensing",
+     "photovoltaic power forecasting",
+     "oil spills"
+    ],
+    "paper_ids": [
+     "2611.21674",
+     "2611.21680",
+     "2611.21769",
+     "2611.21783",
+     "2611.21816",
+     "2611.21827",
+     "2611.21857",
+     "2611.21895",
+     "2611.21933",
+     "2611.21935",
+     "2611.21954",
+     "2611.21964",
+     "2611.21976",
+     "2611.22024",
+     "2611.22050",
+     "2611.22064",
+     "2611.22076",
+     "2611.22098",
+     "2611.22140",
+     "2611.22178",
+     "2611.22246",
+     "2611.22272",
+     "2611.22273",
+     "2611.22281",
+     "2611.22283",
+     "2611.22444"
+    ],
+    "count": 26,
+    "trend": {
+     "terms": [
+      "physics-informed neural networks",
+      "remote sensing",
+      "photovoltaic power forecasting",
+      "oil spills"
+     ],
+     "today": {
+      "n": 6,
+      "of": 349
+     },
+     "w1": {
+      "n": 24,
+      "papers": 2241,
+      "per_1k": 10.71
+     },
+     "w4": {
+      "n": 104,
+      "papers": 12575,
+      "per_1k": 8.27
+     },
+     "w12": {
+      "n": 345,
+      "papers": 42943,
+      "per_1k": 8.03
+     },
+     "label": "rising"
+    }
+   },
+   {
+    "name": "3D/4D reconstruction and diffusion/flow generative asset modeling",
+    "summary": "Papers lift spatial transcriptomics to 3D fields, compress 3D representations, generate 3D face assets, and use diffusion or flow models for editing, super-resolution, and video generation. They differ by focusing on geometric conditioning, UV and displacement maps, test-time compute, and inference-budget allocation.",
+    "terms": [
+     "spatial transcriptomics",
+     "3D face assets",
+     "diffusion editors",
+     "video diffusion"
+    ],
+    "paper_ids": [
+     "2611.20368",
+     "2611.21669",
+     "2611.21698",
+     "2611.21802",
+     "2611.21812",
+     "2611.21865",
+     "2611.21867",
+     "2611.21890",
+     "2611.22028",
+     "2611.22052",
+     "2611.22095",
+     "2611.22124",
+     "2611.22132",
+     "2611.22202",
+     "2611.22207",
+     "2611.22228",
+     "2611.22235",
+     "2611.22240",
+     "2611.22244",
+     "2611.22287",
+     "2611.22318",
+     "2611.22427",
+     "2611.22458",
+     "2611.22464"
+    ],
+    "count": 24,
+    "trend": {
+     "terms": [
+      "spatial transcriptomics",
+      "3D face assets",
+      "diffusion editors",
+      "video diffusion"
+     ],
+     "today": {
+      "n": 4,
+      "of": 349
+     },
+     "w1": {
+      "n": 12,
+      "papers": 2241,
+      "per_1k": 5.35
+     },
+     "w4": {
+      "n": 80,
+      "papers": 12575,
+      "per_1k": 6.36
+     },
+     "w12": {
+      "n": 248,
+      "papers": 42943,
+      "per_1k": 5.78
+     },
+     "label": "steady"
+    }
+   },
+   {
+    "name": "Efficient LLM inference, serving, quantization, and speculative decoding",
+    "summary": "Papers optimize LLM and VLM serving through speculative decoding, sparse attention block selection, KV-cache reuse, quantization, and cloud-edge offloading. They differ by targeting multimodal drafters, MoE diffusion decoding, recommendation memory, low-bit GPU kernels, and heterogeneous FPGA/GPU deployment.",
+    "terms": [
+     "speculative decoding",
+     "sparse attention",
+     "KV cache",
+     "low-bit quantization"
+    ],
+    "paper_ids": [
+     "2611.21691",
+     "2611.21839",
+     "2611.21852",
+     "2611.21882",
+     "2611.21917",
+     "2611.21920",
+     "2611.21925",
+     "2611.21974",
+     "2611.22019",
+     "2611.22086",
+     "2611.22128",
+     "2611.22148",
+     "2611.22186",
+     "2611.22191",
+     "2611.22215",
+     "2611.22280",
+     "2611.22296",
+     "2611.22334",
+     "2611.22426",
+     "2611.22472"
+    ],
+    "count": 20,
+    "trend": {
+     "terms": [
+      "speculative decoding",
+      "sparse attention",
+      "KV cache",
+      "low-bit quantization"
+     ],
+     "today": {
+      "n": 13,
+      "of": 349
+     },
+     "w1": {
+      "n": 40,
+      "papers": 2241,
+      "per_1k": 17.85
+     },
+     "w4": {
+      "n": 242,
+      "papers": 12575,
+      "per_1k": 19.24
+     },
+     "w12": {
+      "n": 769,
+      "papers": 42943,
+      "per_1k": 17.91
+     },
+     "label": "steady"
+    }
+   },
+   {
+    "name": "LLM safety alignment, refusal, watermarking, and guardrails",
+    "summary": "Papers measure refusal costs, sycophancy, watermark evidence under weight modification, alignment margin dynamics, sabotage auditing, system-prompt leakage, fact-checking, and educational guardrails. They differ by studying deployed-model behavior and adversarial audits versus proposing runtime moderation, personalization, and recommendation-attack defenses.",
+    "terms": [
+     "sycophancy",
+     "watermark",
+     "system prompt",
+     "Educational Guardrail System"
+    ],
+    "paper_ids": [
+     "2611.21641",
+     "2611.21650",
+     "2611.21702",
+     "2611.21766",
+     "2611.21832",
+     "2611.21956",
+     "2611.22027",
+     "2611.22203",
+     "2611.22210",
+     "2611.22274",
+     "2611.22278",
+     "2611.22288",
+     "2611.22345",
+     "2611.22446",
+     "2611.22456"
+    ],
+    "count": 15,
+    "trend": {
+     "terms": [
+      "sycophancy",
+      "watermark",
+      "system prompt",
+      "Educational Guardrail System"
+     ],
+     "today": {
+      "n": 5,
+      "of": 349
+     },
+     "w1": {
+      "n": 18,
+      "papers": 2241,
+      "per_1k": 8.03
+     },
+     "w4": {
+      "n": 83,
+      "papers": 12575,
+      "per_1k": 6.6
+     },
+     "w12": {
+      "n": 330,
+      "papers": 42943,
+      "per_1k": 7.68
+     },
+     "label": "steady"
+    }
+   },
+   {
+    "name": "Agent memory, multi-agent coordination, and conflict governance",
+    "summary": "Papers study text-memory rewriting, bias injection across multi-agent topologies, heterogeneous team planning, decentralized discovery agents, persistent KV-cache memory, reversibility of agent actions, and memory conflict routing. They differ by analyzing consistency and evidence flow versus proposing memory evolution, minimal RAG, and tool-action governance.",
+    "terms": [
+     "agent memory",
+     "multi-agent",
+     "Memory Conflict Governance",
+     "KV cache"
+    ],
+    "paper_ids": [
+     "2611.21648",
+     "2611.21804",
+     "2611.21828",
+     "2611.21847",
+     "2611.21998",
+     "2611.22075",
+     "2611.22102",
+     "2611.22113",
+     "2611.22179",
+     "2611.22245",
+     "2611.22304",
+     "2611.22310",
+     "2611.22342",
+     "2611.22425",
+     "2611.22461"
+    ],
+    "count": 15,
+    "trend": {
+     "terms": [
+      "agent memory",
+      "multi-agent",
+      "Memory Conflict Governance",
+      "KV cache"
+     ],
+     "today": {
+      "n": 25,
+      "of": 349
+     },
+     "w1": {
+      "n": 91,
+      "papers": 2241,
+      "per_1k": 40.61
+     },
+     "w4": {
+      "n": 545,
+      "papers": 12575,
+      "per_1k": 43.34
+     },
+     "w12": {
+      "n": 1998,
+      "papers": 42943,
+      "per_1k": 46.53
+     },
+     "label": "steady"
+    }
+   },
+   {
+    "name": "Activation steering, MoE routing, and chain-of-thought monitorability",
+    "summary": "Papers steer model behavior through depth-aware activation vectors and MoE expert-path interventions, and test whether chain-of-thought remains controllable and monitorable. They differ by probing moral circuits, latent fact composition, cited-region dependence, overthinking, and reasoning-effort confidence in agents.",
+    "terms": [
+     "activation steering",
+     "chain-of-thought",
+     "expert paths",
+     "moral circuits"
+    ],
+    "paper_ids": [
+     "2611.21655",
+     "2611.21705",
+     "2611.21799",
+     "2611.21921",
+     "2611.21940",
+     "2611.21946",
+     "2611.21983",
+     "2611.22033",
+     "2611.22103",
+     "2611.22120",
+     "2611.22133",
+     "2611.22188",
+     "2611.22234",
+     "2611.22301",
+     "2611.22312"
+    ],
+    "count": 15,
+    "trend": {
+     "terms": [
+      "activation steering",
+      "chain-of-thought",
+      "expert paths",
+      "moral circuits"
+     ],
+     "today": {
+      "n": 11,
+      "of": 349
+     },
+     "w1": {
+      "n": 22,
+      "papers": 2241,
+      "per_1k": 9.82
+     },
+     "w4": {
+      "n": 174,
+      "papers": 12575,
+      "per_1k": 13.84
+     },
+     "w12": {
+      "n": 626,
+      "papers": 42943,
+      "per_1k": 14.58
+     },
+     "label": "steady"
+    }
+   },
+   {
+    "name": "Benchmark validity, leaderboard auditing, and multimodal reasoning evaluation",
+    "summary": "Papers introduce multilingual visual QA and wheelchair-configuration benchmarks, audit music-generation evaluation and adversarial face-privacy protocols, and analyze leaderboard winner's curse and VQA coverage gaps. They differ by testing language consistency, 3D relational cues, anomaly localization, and delayed-label stream evaluation.",
+    "terms": [
+     "visual question answering",
+     "leaderboards",
+     "winner's curse",
+     "parallel benchmark"
+    ],
+    "paper_ids": [
+     "2611.21644",
+     "2611.21809",
+     "2611.21878",
+     "2611.21914",
+     "2611.21923",
+     "2611.21945",
+     "2611.21995",
+     "2611.22180",
+     "2611.22227",
+     "2611.22329",
+     "2611.22343",
+     "2611.22360",
+     "2611.22415",
+     "2611.22434"
+    ],
+    "count": 14,
+    "trend": {
+     "terms": [
+      "visual question answering",
+      "leaderboards",
+      "winner's curse",
+      "parallel benchmark"
+     ],
+     "today": {
+      "n": 8,
+      "of": 349
+     },
+     "w1": {
+      "n": 24,
+      "papers": 2241,
+      "per_1k": 10.71
+     },
+     "w4": {
+      "n": 116,
+      "papers": 12575,
+      "per_1k": 9.22
+     },
+     "w12": {
+      "n": 460,
+      "papers": 42943,
+      "per_1k": 10.71
+     },
+     "label": "steady"
+    }
+   },
+   {
+    "name": "Formal verification and certified safety for autonomous systems",
+    "summary": "Papers generate safety cases, maintain continuous compliance, assess continuous risk for visual navigation, certify backward reachability for Bernstein networks, and encode controllers, behavior trees, and Petri nets for verification. They differ by combining multi-agent LLM safety-case generation with formal methods, hazard-derived requirements, and risk-aware diffusion planning.",
+    "terms": [
+     "safety cases",
+     "backward reachability",
+     "behavior trees",
+     "Continuous Risk Assessment"
+    ],
+    "paper_ids": [
+     "2611.21618",
+     "2611.21811",
+     "2611.22080",
+     "2611.22083",
+     "2611.22297",
+     "2611.22396",
+     "2611.22397",
+     "2611.22399",
+     "2611.22403",
+     "2611.22404",
+     "2611.22407",
+     "2611.22447"
+    ],
+    "count": 12,
+    "trend": {
+     "terms": [
+      "safety cases",
+      "backward reachability",
+      "behavior trees",
+      "Continuous Risk Assessment"
+     ],
+     "today": {
+      "n": 4,
+      "of": 349
+     },
+     "w1": {
+      "n": 0,
+      "papers": 2241,
+      "per_1k": 0.0
+     },
+     "w4": {
+      "n": 8,
+      "papers": 12575,
+      "per_1k": 0.64
+     },
+     "w12": {
+      "n": 27,
+      "papers": 42943,
+      "per_1k": 0.63
+     },
+     "label": "steady"
+    }
+   },
+   {
+    "name": "Retrieval, reranking, RAG, and document hierarchy modeling",
+    "summary": "Papers evaluate AST-derived graph retrieval, corpus maps for agentic document exploration, citation-grounded Persian legal RAG, hierarchical embedded topic models, multi-vector graph indexes, localized image retrieval, patent Boolean search, and page-stream segmentation. They differ by targeting code, legal, patent, multimodal, and document-structure search with graph, embedding, and generative retrieval methods.",
+    "terms": [
+     "retrieval-augmented generation",
+     "graph-augmented retrieval",
+     "Multi-vector retrieval",
+     "Page Stream Segmentation"
+    ],
+    "paper_ids": [
+     "2611.21625",
+     "2611.21647",
+     "2611.21823",
+     "2611.21980",
+     "2611.22079",
+     "2611.22131",
+     "2611.22270",
+     "2611.22309",
+     "2611.22353",
+     "2611.22382",
+     "2611.22392"
+    ],
+    "count": 11,
+    "trend": {
+     "terms": [
+      "retrieval-augmented generation",
+      "graph-augmented retrieval",
+      "Multi-vector retrieval",
+      "Page Stream Segmentation"
+     ],
+     "today": {
+      "n": 8,
+      "of": 349
+     },
+     "w1": {
+      "n": 16,
+      "papers": 2241,
+      "per_1k": 7.14
+     },
+     "w4": {
+      "n": 140,
+      "papers": 12575,
+      "per_1k": 11.13
+     },
+     "w12": {
+      "n": 488,
+      "papers": 42943,
+      "per_1k": 11.36
+     },
+     "label": "steady"
+    }
+   }
+  ],
+  "highlights": [
+   {
+    "paper_id": "2611.21938",
+    "title": "HubEgo-100K: In-the-Wild Egocentric Video of Skilled Work for Robot Learning",
+    "authors": "Javad Amirian, Armin Kiani, Loic Schaeffer et al.",
+    "categories": "cs.RO cs.CV cs.LG",
+    "upvotes": 0,
+    "significance": 5,
+    "theme": "Embodied robot learning and interactive world models",
+    "why": "Releases HubEgo-100K, a 10,124-hour egocentric video dataset of skilled work with synchronized IMU across diverse environments, directly addressing robot learning generalization needs.",
+    "key_result": "HubEgo-100K v1.0 is an in-the-wild egocentric video dataset of skilled work built for diversity: 10,124 hours of 1080p egocentric video with synchronized 100 Hz IMU data from one head-mounted phone camera, recorded by 12,227 contributors in 15,548 environments, and released as 72,754 episodes under CC BY 4.0.",
+    "evidence": [
+     "We present HubEgo-100K, a dataset built for diversity. This version of the paper covers the first release, v1.0: 10,124 hours of 1080p egocentric video with synchronized 100 Hz inertial (IMU) data from one head-mounted phone camera.",
+     "In v1.0, 12,227 contributors record their own unscripted work in 15,548 environments (each one contributor's own setting of one type, such as their kitchen or workshop) across 11 setting types, 30 work categories, 56 task types and 35 action families, with 83% of hours in workplace settings.",
+     "The release comprises 72,754 episodes with machine-generated action and language annotations, in LeRobot and MCAP formats under CC BY 4.0."
+    ],
+    "text_source": "fulltext"
+   },
+   {
+    "paper_id": "2611.21622",
+    "title": "CrisisBench: an evaluation suite for crisis counseling AI",
+    "authors": "Akshay Swaminathan, Filip Ramazan, Sharang Phadke et al.",
+    "categories": "cs.CL",
+    "upvotes": 0,
+    "significance": 4,
+    "theme": "Clinical AI benchmarks, privacy, and medical imaging",
+    "why": "Presents CrisisBench, a privacy-preserving evaluation suite for crisis counseling AI with calibrated patient models and expert-aligned rubrics, revealing gaps in safety and risk handling.",
+    "key_result": "We evaluated five GPT models plus draft-then-edit and retrieval-augmented generation; all systems underperformed human counselors on excessive empathy and questioning in single-turn evaluation. In multi-turn evaluation, retrieval-augmented generation scored highest overall (0.961), with all systems within 0.058.",
+    "evidence": [
+     "We evaluated five GPT models plus draft-then-edit and retrieval-augmented generation. All systems underperformed human counselors on excessive empathy and questioning in single-turn evaluation.",
+     "In multi-turn evaluation, retrieval-augmented generation scored highest overall (0.961), with all systems within 0.058."
+    ],
+    "text_source": "abstract"
+   },
+   {
+    "paper_id": "2611.21832",
+    "title": "Auditors Struggle to Catch Sabotage In End-to-End Transcripts of AI Safety Research",
+    "authors": "Keshav Shenoy, Anthony Zang, Eric Gan et al.",
+    "categories": "cs.AI",
+    "upvotes": 0,
+    "significance": 4,
+    "theme": "LLM safety alignment, refusal, watermarking, and guardrails",
+    "why": "Reports that human auditors achieve AUROC 0.59 at detecting safety-research sabotage, outperformed by frontier models, indicating serious limitations in current auditing methods.",
+    "key_result": "Human auditors mostly fail to distinguish sabotaged from benign research, achieving an AUROC of 0.59, not significantly better than chance, and fully identify the specific sabotage in only 17% of cases; the best frontier models outperform human auditors (Fable 5.1: AUROC 0.73, 32% full identification) within noise.",
+    "evidence": [
+     "Given access to the full research transcript and the ability to run experiments, human auditors mostly fail to distinguish sabotaged from benign research: they achieve an AUROC of 0.59, not significantly better than chance, and fully identify the specific sabotage in only 17% of cases.",
+     "Despite not being allowed to run experiments, the best frontier models outperform human auditors (Fable 5.1: AUROC 0.73, 32% full identification) within noise and weaker models perform comparably."
+    ],
+    "text_source": "fulltext"
+   },
+   {
+    "paper_id": "2611.21917",
+    "title": "Lost in a Few Heads: Diagnosing and Repairing Block Selection in Sparse Attention",
+    "authors": "Wenhe Zhang, Boxing Chen",
+    "categories": "cs.LG",
+    "upvotes": 0,
+    "significance": 4,
+    "theme": "Efficient LLM inference, serving, quantization, and speculative decoding",
+    "why": "Diagnoses sparse attention failures as under-ranking needles in specific blind heads and shows full attention or a 4-bit scorer can recover most accuracy without training.",
+    "key_result": "On MiniCPM4.1-8B at 64K, either fix lifts multi-key retrieval accuracy from 54.1 to 97.5%, level with full attention in every head. In production serving engines, full attention in those heads keeps 84 to 89% of the time to first token (TTFT) that sparse attention saves at 32K to 128K context length.",
+    "evidence": [
+     "On MiniCPM4.1-8B at 64K, either fix lifts multi-key retrieval accuracy from 54.1 to 97.5%, level with full attention in every head.",
+     "In production serving engines, full attention in those heads keeps 84 to 89% of the time to first token (TTFT) that sparse attention saves at 32K to 128K context length."
+    ],
+    "text_source": "fulltext"
+   },
+   {
+    "paper_id": "2611.21956",
+    "title": "Eight in Ten LLMs Leak System-Prompt Secrets: Nevan, an Agentic Capture-the-Flag Study",
+    "authors": "Ana Clara Zoppi Serpa, Anderson Rocha, Helio Pedrini",
+    "categories": "cs.CR cs.AI",
+    "upvotes": 0,
+    "significance": 4,
+    "theme": "LLM safety alignment, refusal, watermarking, and guardrails",
+    "why": "This audit of 363 LLMs finds 300 leak system-prompt secrets, delivering a widespread security warning and practical guidance for practitioners.",
+    "key_result": "In the audit of the frozen catalog, the flag was exfiltrated from 296 of the 363 models, plus four models released after the initial catalog freeze, for 300 captures in total; of these, 170 involved a non-English language pivot, most often French.",
+    "evidence": [
+     "The flag was exfiltrated from 296 of the 363 models, plus four models released after the initial catalog freeze, for 300 captures in total. Of these, 170 involved a non-English language pivot, most often French.",
+     "The audit answers it for the frozen catalog: 296 of 363 entries were captured, plus four bonus captures on models released after the freeze, for 300 total. Of the 300, 170 involved a non-English language pivot, 119 of them French."
+    ],
+    "text_source": "fulltext"
+   },
+   {
+    "paper_id": "2611.22085",
+    "title": "ATLAS-Finance: Benchmarking AI Agents in Realistic Banking Environments",
+    "authors": "Elaine Lau, Antoine Pangas, Alexandre Finot et al.",
+    "categories": "cs.AI",
+    "upvotes": 0,
+    "significance": 4,
+    "theme": "Agent harnesses, coding benchmarks, and enterprise evaluation",
+    "why": "Introduces ATLAS-Finance, 100 realistic investment-banking tasks across simulated firms where top agents pass under 11% of tasks, exposing a large enterprise capability gap.",
+    "key_result": "Despite completing substantial portions of the requested work, current agents rarely produce correct deliverables. Across today's frontier models, the best ones (Claude Opus and Fable) pass fewer than 11% of tasks.",
+    "evidence": [
+     "Despite completing substantial portions of the requested work, current agents rarely produce correct deliverables. Across today's frontier models, the best ones (Claude Opus and Fable) pass fewer than 11% of tasks."
+    ],
+    "text_source": "fulltext"
+   },
+   {
+    "paper_id": "2611.22148",
+    "title": "Long-Context Generation Is a Sampling Problem (When You Turn Up the Heat)",
+    "authors": "Allen G. Roush, Minh Nhat Nguyen, Ravid Shwartz-Ziv et al.",
+    "categories": "cs.AI cs.CL",
+    "upvotes": 0,
+    "significance": 4,
+    "theme": "other",
+    "why": "Argues long-context generation quality is determined primarily by the sampler at high temperature, showing samplers that keep candidate pools steady maintain accuracy across many benchmarks.",
+    "key_result": "Across 29 models and every benchmark tried, samplers whose candidate set stays small and stable lose little or nothing at high temperature, and samplers that admit the tail fall apart. Over all benchmarks top-n keeps a median 100% of its temperature-1 score where top-p keeps 26%.",
+    "evidence": [
+     "Across 29 models and every benchmark tried, samplers whose candidate set stays small and stable lose little or nothing at high temperature, and samplers that admit the tail fall apart.",
+     "Over all benchmarks top-n keeps a median 100% of its temperature-1 score where top-p keeps 26%."
+    ],
+    "text_source": "fulltext"
+   },
+   {
+    "paper_id": "2611.22227",
+    "title": "SOTA or Luck? The Winner's Curse in LLM Leaderboards",
+    "authors": "Sikun Xu, Raphael Thomadsen, Dennis J. Zhang et al.",
+    "categories": "cs.LG cs.CL stat.ME stat.ML",
+    "upvotes": 0,
+    "significance": 4,
+    "theme": "Benchmark validity, leaderboard auditing, and multimodal reasoning evaluation",
+    "why": "Introduces a bootstrap correction for leaderboard winner's curse, showing top-ranked model scores are overstated by up to 3.86 points across 14 benchmarks, which undermines leaderboard trust.",
+    "key_result": "The paper develops an m-out-of-N bootstrap to correct for leaderboard rank-induced bias; under exact population tiers separated by positive gaps, it proves that the bootstrap reduces (N^-1/2) ranking bias to expected residual bias o(N^-1/2). Across 14 benchmarks from 5 benchmark families, the rank-1 adjustments range from approximately 0.09 to 3.86 percentage points, and in the SWE-bench Verified snapshot, the tied leaders receive an adjustment of 0.90 percentage points.",
+    "evidence": [
+     "Under exact population tiers separated by positive gaps, we prove that the bootstrap reduces (N^-1/2) ranking bias to expected residual bias o(N^-1/2).",
+     "Across 14 benchmarks from 5 benchmark families, the rank-1 adjustments range from approximately 0.09 to 3.86 percentage points.",
+     "In our SWE-bench Verified snapshot, the tied leaders receive an adjustment of 0.90 percentage points."
+    ],
+    "text_source": "fulltext"
+   }
+  ],
+  "news": [
+   {
+    "source": "OpenAI",
+    "title": "Introducing GPT-6.2 Astra and Sol",
+    "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol",
+    "published": "2026-11-17T17:45:00Z",
+    "fetched": false,
+    "page_status": 403,
+    "page_sha": null,
+    "text_from": null,
+    "text_sha": null,
+    "summary": ""
+   },
+   {
+    "source": "OpenAI",
+    "title": "Introducing ChatGPT for Sales",
+    "url": "https://openai.com/index/introducing-chatgpt-for-sales",
+    "published": "2026-11-17T08:00:00Z",
+    "fetched": false,
+    "page_status": 403,
+    "page_sha": null,
+    "text_from": null,
+    "text_sha": null,
+    "summary": ""
+   },
+   {
+    "source": "Google AI",
+    "title": "Put Gemini to work for you",
+    "url": "https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features/",
+    "published": "2026-11-17T17:00:00Z",
+    "fetched": true,
+    "page_status": 200,
+    "page_sha": "82ea7b2c8b287742fa353fa95466034141a86c9404cd44188f62c292ee0daf37",
+    "text_from": "page",
+    "text_sha": "f1bf384547e2f337d4f049294326042952c29827590fea7a7a62b8c3b095673e",
+    "summary": "Google announced that Gemini can handle tasks such as scheduling appointments, analyzing utility bills, and purchasing items by connecting to email, calendar, and payment methods in hardware-isolated virtual machines. The update rolls out free using the Gemini 4 Hydrogen model across the U.S., Japan, Korea, Canada, Australia, and India, with advanced features starting in the U.S.; examples include calling two dealerships and booking an appointment in under five minutes and analyzing a $389 electric bill."
+   },
+   {
+    "source": "Microsoft Research",
+    "title": "Can AI help build a healthier future?",
+    "url": "https://www.microsoft.com/en-us/research/podcast/can-ai-help-build-a-healthier-future/",
+    "published": "2026-11-17T16:52:17Z",
+    "fetched": true,
+    "page_status": 200,
+    "page_sha": "1637eced9978f77b99f58b828cf2862a7e0c1380cf3830823eeee53d66098486",
+    "text_from": "page",
+    "text_sha": "17d9b62062bdbd0e016e9fd5330e39d1fdf3b226e2e507b8135bb98283f8b884",
+    "summary": "A Microsoft Research podcast episode of The Shape of Things to Come features Doug Burger with Ava Amini, Eric Horvitz, and Eric Topol discussing AI-assisted medical diagnosis, medical imaging, whole-patient models, virtual cells, and biological foundation models. It also covers why promising research is slow to reach patients, AI-guided experiments and drug discovery, and the need for better biological data and real-world validation."
+   },
+   {
+    "source": "NVIDIA",
+    "title": "Ian Buck Kicks Off NVIDIA’s Week at SC26 as Science Enters the Age of Agents",
+    "url": "https://blogs.nvidia.com/blog/ian-buck-sc26/",
+    "published": "2026-11-17T14:00:10Z",
+    "fetched": true,
+    "page_status": 200,
+    "page_sha": "5e74d5fe83b1a15894bb1f1a857e76a78f0d8242aeb55a6b161c0857c618d533",
+    "text_from": "page",
+    "text_sha": "027cbcf67a18379f801323749d2efbd855a589ac543a4ab2a7da97b3b7ccc0bf",
+    "summary": "At SC26, NVIDIA's Ian Buck announced Nemotron for Science, the Rubin HPC GPU, an expanded Vera CPU platform, and a quantum computing collaboration with IBM and Fermilab. Nemotron combines the Nemotron 3.5 Super VL open model with an open chemistry dataset and post-training recipes; examples included an Argonne agent identifying two new binding sites and a GROMACS agent fixing 81% of test cases overnight on one DGX Spark, while Rubin HPC has more than 50,000 CUDA cores and is expected in 2028."
+   },
+   {
+    "source": "NVIDIA Developer",
+    "title": "Co-Designing Sparse Attention for Efficient Long-Context Inference",
+    "url": "https://developer.nvidia.com/blog/co-designing-sparse-attention-for-efficient-long-context-inference/",
+    "published": "2026-11-17T17:30:00Z",
+    "fetched": true,
+    "page_status": 200,
+    "page_sha": "36b7580fa4a4ebaf4a57a28af540b711a15004151ae83e0b362e9e71dfd00824",
+    "text_from": "page",
+    "text_sha": "6bc8d77c4df8019a2136d9bad34adf1c18213622138fd356ea7857fc42f01305",
+    "summary": "An NVIDIA Developer post presents co-design guidelines for model-level sparse attention on GPUs, where an indexer scores all keys and Top-k selects a subset before core attention; at 128K tokens the indexer and Top-k take 47% of the DeepSeek V3.2 prefill layer. It recommends KH=1 with cross-head reduction, indexer head dimensions of 128 or 256, FP16 epilogue and accumulation, fusing Top-k into the indexer kernel, and reusing the previous decode step's selection, which accelerates Top-k by 2.1x to 2.4x."
+   },
+   {
+    "source": "NVIDIA Developer",
+    "title": "Integrating QPUs into Supercomputing Centers Using Slurm HRES Plugins",
+    "url": "https://developer.nvidia.com/blog/integrating-qpus-into-supercomputing-centers-using-slurm-hres-plugins/",
+    "published": "2026-11-17T17:00:00Z",
+    "fetched": true,
+    "page_status": 200,
+    "page_sha": "6e24c3ab72048e8c4a135f5e6722ece3c2459ab2787e1df47d4d089373e2f77e",
+    "text_from": "page",
+    "text_sha": "d74dd55c8c54034b33b4c666a2ebb2193c55e9652e4659b9f3cfc8518de80182",
+    "summary": "Slurm 26.11 introduces Hierarchical Resources plugins that model quantum processing units as native, cluster-level schedulable resources, associating a QPU with the specific nodes allowed to use it. A short Lua plugin handles device health checks, job admission before node allocation, and resource release, while site-specific policies stay in resources.yaml; QRMI and QDMI have released HRES plugins connecting Slurm clusters to quantum computers from multiple providers."
+   },
+   {
+    "source": "AWS Machine Learning",
+    "title": "Managed NVIDIA Dynamo on Amazon SageMaker HyperPod Inference",
+    "url": "https://aws.amazon.com/blogs/machine-learning/managed-nvidia-dynamo-on-amazon-sagemaker-hyperpod-inference/",
+    "published": "2026-11-17T23:33:26Z",
+    "fetched": true,
+    "page_status": 200,
+    "page_sha": "0cb9b139d436fc4806ad5ed1988dd21bcf58cab550bec7594521c10f3a1a2a4f",
+    "text_from": "page",
+    "text_sha": "26d3152db5a4b8e7918a215c3fbdb4f185ec24a2bdb2486bdf8b95aa21be26b0",
+    "summary": "Amazon SageMaker HyperPod Inference now supports managed NVIDIA Dynamo, enabling multi-node deployment, disaggregated prefill and decode, and KV-aware routing with engines such as vLLM, SGLang, and TensorRT-LLM, backed by EFA networking, GPU scheduling, and node health monitoring. The post cites GLM-5.3's FP8 weights exceeding the 640 GB of GPU memory on a single ml.p5.48xlarge instance and describes configuration through InferenceEndpointConfig dynamoSpec and DynamoGraphDeployment."
+   },
+   {
+    "source": "AWS Machine Learning",
+    "title": "Reducing token costs and latency in Amazon Bedrock AgentCore JSON workloads",
+    "url": "https://aws.amazon.com/blogs/machine-learning/reducing-token-costs-and-latency-in-amazon-bedrock-agentcore-json-workloads/",
+    "published": "2026-11-17T22:44:51Z",
+    "fetched": true,
+    "page_status": 200,
+    "page_sha": "9be75e7f4c0d921ff830cf8a18d98a90b597242e9787f9b7d44dbdc3528f3973",
+    "text_from": "page",
+    "text_sha": "b0bf91ba02957e9ee6520551e07b355841776ca7665a70cd276676d73feca020",
+    "summary": "AWS describes three composable strategies used to build a Flightscape production agent on Amazon Bedrock AgentCore that handles 20 MB+ JSON payloads with 40+ tools, after average request latencies exceeded 15 seconds. The optimizations reduced token consumption by up to 71% and average latency by up to 80% on a representative 23 MB payload."
+   },
+   {
+    "source": "AWS Machine Learning",
+    "title": "Cut generative AI costs: Code for rules, models for judgment",
+    "url": "https://aws.amazon.com/blogs/machine-learning/cut-generative-ai-costs-code-for-rules-models-for-judgment/",
+    "published": "2026-11-17T21:14:55Z",
+    "fetched": true,
+    "page_status": 200,
+    "page_sha": "dca4cbe13f9057ff6c3a957d7e1855049a95805a46eb5a87f6b6f74809e2cdd5",
+    "text_from": "page",
+    "text_sha": "b6bd1d958a8b3ee69e559c8629496849162b44ae5815fa8f07d39123d496f3b5",
+    "summary": "AWS outlines a decision framework for generative AI workflows that asks whether a step needs a model at all, using deterministic code when a rule can check success, a model to write a rule once, or a constrained decision call when choosing from a fixed list, and a right-sized Amazon Bedrock model only for open-ended steps. A customer support example maps five steps to API Gateway or Lambda validation, Step Functions JSONata routing, a committed regex in Lambda, constrained decision calls, and a right-sized Bedrock model."
+   },
+   {
+    "source": "AWS Machine Learning",
+    "title": "Amazon SageMaker AI real-time endpoints now support KV cache aware routing",
+    "url": "https://aws.amazon.com/blogs/machine-learning/amazon-sagemaker-ai-real-time-endpoints-now-support-kv-cache-aware-routing/",
+    "published": "2026-11-17T21:11:51Z",
+    "fetched": true,
+    "page_status": 200,
+    "page_sha": "35f1b246f14c05bf2ff297af62c1f797a0c6046faf831b2bedab35639016e958",
+    "text_from": "page",
+    "text_sha": "a4f53f5333c54f14c73f49408a5d3186b07d616afd1c9da18668016ccf1fbc23",
+    "summary": "Amazon SageMaker AI real-time endpoints now support KV cache-aware routing, which uses container-reported cache events and a managed index of truncated hashes to send requests to instances with the longest cached prompt match while weighing instance load. It is enabled by setting SM_VLLM_KV_EVENTS_CONFIG on the model and RoutingStrategy to KV_AWARE in the endpoint configuration, with clients using the same APIs as before."
+   }
+  ]
+ },
+ "zh": {
+  "stats": {
+   "total": 349,
+   "per_category": [
+    {
+     "category": "cs.AI",
+     "n": 154,
+     "primary": 64
+    },
+    {
+     "category": "cs.LG",
+     "n": 126,
+     "primary": 66
+    },
+    {
+     "category": "cs.CV",
+     "n": 93,
+     "primary": 75
+    },
+    {
+     "category": "cs.CL",
+     "n": 59,
+     "primary": 34
+    },
+    {
+     "category": "cs.RO",
+     "n": 48,
+     "primary": 33
+    },
+    {
+     "category": "cs.MA",
+     "n": 16,
+     "primary": 5
+    },
+    {
+     "category": "stat.ML",
+     "n": 12,
+     "primary": 2
+    },
+    {
+     "category": "cs.IR",
+     "n": 12,
+     "primary": 8
+    },
+    {
+     "category": "cs.NE",
+     "n": 4,
+     "primary": 3
+    }
+   ],
+   "avg_4w": 697.6,
+   "days_4w": 20,
+   "vs_avg": 0.5
+  },
+  "keywords": [
+   {
+    "name": "KV缓存",
+    "about": "可复用的每用户KV内存和稀疏注意力块选择旨在实现高效长上下文推理。",
+    "terms": [
+     "key-value"
+    ],
+    "paper_ids": [
+     "2611.21920",
+     "2611.21917",
+     "2611.22191",
+     "2611.21839",
+     "2611.22200",
+     "2611.22304",
+     "2611.22309"
+    ],
+    "count": 7,
+    "trend": {
+     "label": "rising",
+     "n": 7,
+     "of": 349,
+     "per_1k": 20.06,
+     "baseline": {
+      "n": 284,
+      "papers": 42943,
+      "per_1k": 6.61,
+      "weeks": 12
+     },
+     "lift": 3.03,
+     "score": 4.582
+    }
+   },
+   {
+    "name": "编程智能体",
+    "about": "智能体编写和转译单元测试、调试嵌入式固件，并在编程技能上进行基准测试。",
+    "terms": [
+     "coding agents"
+    ],
+    "paper_ids": [
+     "2611.21797",
+     "2611.21845",
+     "2611.21784",
+     "2611.22017",
+     "2611.22136",
+     "2611.22148",
+     "2611.22164",
+     "2611.22238",
+     "2611.22291"
+    ],
+    "count": 9,
+    "trend": {
+     "label": "rising",
+     "n": 9,
+     "of": 349,
+     "per_1k": 25.79,
+     "baseline": {
+      "n": 583,
+      "papers": 42943,
+      "per_1k": 13.58,
+      "weeks": 12
+     },
+     "lift": 1.9,
+     "score": 4.486
+    }
+   },
+   {
+    "name": "世界模型",
+    "about": "交互式视频世界模型回归相机高度并支持长时程物体交互。",
+    "terms": [
+     "World Models"
+    ],
+    "paper_ids": [
+     "2611.21782",
+     "2611.22001",
+     "2611.22077",
+     "2611.21882",
+     "2611.21846",
+     "2611.22294",
+     "2611.22314",
+     "2611.22367",
+     "2611.22432",
+     "2611.22470",
+     "2611.22483"
+    ],
+    "count": 11,
+    "trend": {
+     "label": "steady",
+     "n": 11,
+     "of": 349,
+     "per_1k": 31.52,
+     "baseline": {
+      "n": 1027,
+      "papers": 42943,
+      "per_1k": 23.92,
+      "weeks": 12
+     },
+     "lift": 1.32,
+     "score": 4.156
+    }
+   },
+   {
+    "name": "投机解码",
+    "about": "草稿模型和视觉注意力在跨多模态和硬件感知设置中加速投机解码。",
+    "terms": [
+     "Speculative"
+    ],
+    "paper_ids": [
+     "2611.21839",
+     "2611.21925",
+     "2611.22296",
+     "2611.22115",
+     "2611.22268",
+     "2611.22356"
+    ],
+    "count": 6,
+    "trend": {
+     "label": "rising",
+     "n": 6,
+     "of": 349,
+     "per_1k": 17.19,
+     "baseline": {
+      "n": 263,
+      "papers": 42943,
+      "per_1k": 6.12,
+      "weeks": 12
+     },
+     "lift": 2.8,
+     "score": 4.098
+    }
+   },
+   {
+    "name": "排行榜",
+    "about": "赢家诅咒检查和可审计的事实核查质疑排行榜提升是否反映运气。",
+    "terms": [
+     "leaderboard"
+    ],
+    "paper_ids": [
+     "2611.22227",
+     "2611.22027",
+     "2611.21707",
+     "2611.21690",
+     "2611.22380",
+     "2611.22444"
+    ],
+    "count": 6,
+    "trend": {
+     "label": "rising",
+     "n": 6,
+     "of": 349,
+     "per_1k": 17.19,
+     "baseline": {
+      "n": 281,
+      "papers": 42943,
+      "per_1k": 6.54,
+      "weeks": 12
+     },
+     "lift": 2.62,
+     "score": 4.026
+    }
+   },
+   {
+    "name": "重排序",
+    "about": "列表式重排调度和脑引导选择改善检索和视频生成输出。",
+    "terms": [
+     "reranking"
+    ],
+    "paper_ids": [
+     "2611.22392",
+     "2611.21907",
+     "2611.21625",
+     "2611.21891",
+     "2611.21996",
+     "2611.22425"
+    ],
+    "count": 6,
+    "trend": {
+     "label": "rising",
+     "n": 6,
+     "of": 349,
+     "per_1k": 17.19,
+     "baseline": {
+      "n": 289,
+      "papers": 42943,
+      "per_1k": 6.73,
+      "weeks": 12
+     },
+     "lift": 2.55,
+     "score": 3.995
+    }
+   },
+   {
+    "name": "智能体harness",
+    "about": "自我改进的harness和上下文缓存成本影响编程智能体在专家任务上的表现。",
+    "terms": [
+     "SWE-bench"
+    ],
+    "paper_ids": [
+     "2611.22299",
+     "2611.22238",
+     "2611.22161",
+     "2611.22148",
+     "2611.22227"
+    ],
+    "count": 5,
+    "trend": {
+     "label": "rising",
+     "n": 5,
+     "of": 349,
+     "per_1k": 14.33,
+     "baseline": {
+      "n": 165,
+      "papers": 42943,
+      "per_1k": 3.84,
+      "weeks": 12
+     },
+     "lift": 3.72,
+     "score": 3.894
+    }
+   },
+   {
+    "name": "隐藏状态",
+    "about": "探测道德回路和重写权重揭示哪些内部表示控制模型行为。",
+    "terms": [
+     "hidden states"
+    ],
+    "paper_ids": [
+     "2611.21705",
+     "2611.21885",
+     "2611.21925",
+     "2611.21952",
+     "2611.22215",
+     "2611.22236",
+     "2611.22426"
+    ],
+    "count": 7,
+    "trend": {
+     "label": "rising",
+     "n": 7,
+     "of": 349,
+     "per_1k": 20.06,
+     "baseline": {
+      "n": 552,
+      "papers": 42943,
+      "per_1k": 12.85,
+      "weeks": 12
+     },
+     "lift": 1.56,
+     "score": 3.67
+    }
+   },
+   {
+    "name": "LiDAR里程计",
+    "about": "多LiDAR惯性视觉里程计和风险评估支持安全自主导航。",
+    "terms": [
+     "LiDAR"
+    ],
+    "paper_ids": [
+     "2611.22047",
+     "2611.21789",
+     "2611.22080",
+     "2611.21691",
+     "2611.21996",
+     "2611.22385"
+    ],
+    "count": 6,
+    "trend": {
+     "label": "rising",
+     "n": 6,
+     "of": 349,
+     "per_1k": 17.19,
+     "baseline": {
+      "n": 385,
+      "papers": 42943,
+      "per_1k": 8.97,
+      "weeks": 12
+     },
+     "lift": 1.92,
+     "score": 3.658
+    }
+   },
+   {
+    "name": "智能体记忆",
+    "about": "持久KV缓存、冲突路由和最小RAG内存支持长时程助手。",
+    "terms": [
+     "LongMemEval"
+    ],
+    "paper_ids": [
+     "2611.21998",
+     "2611.22113",
+     "2611.22179",
+     "2611.21648"
+    ],
+    "count": 4,
+    "trend": {
+     "label": "steady",
+     "n": 4,
+     "of": 349,
+     "per_1k": 11.46,
+     "baseline": {
+      "n": 73,
+      "papers": 42943,
+      "per_1k": 1.7,
+      "weeks": 12
+     },
+     "lift": 6.7,
+     "score": 3.619
+    }
+   },
+   {
+    "name": "问答",
+    "about": "基准覆盖多语言视觉问答、第一人称知识和临床决策。",
+    "terms": [
+     "question answering"
+    ],
+    "paper_ids": [
+     "2611.21644",
+     "2611.21690",
+     "2611.22009",
+     "2611.21823",
+     "2611.21924",
+     "2611.22169",
+     "2611.22310",
+     "2611.22329",
+     "2611.22353"
+    ],
+    "count": 9,
+    "trend": {
+     "label": "steady",
+     "n": 9,
+     "of": 349,
+     "per_1k": 25.79,
+     "baseline": {
+      "n": 974,
+      "papers": 42943,
+      "per_1k": 22.68,
+      "weeks": 12
+     },
+     "lift": 1.14,
+     "score": 3.553
+    }
+   },
+   {
+    "name": "形式化验证",
+    "about": "Petri网控制器、符号抽象和合规差异用于认证自主系统行为。",
+    "terms": [
+     "autonomous systems"
+    ],
+    "paper_ids": [
+     "2611.22397",
+     "2611.22404",
+     "2611.21811",
+     "2611.22396"
+    ],
+    "count": 4,
+    "trend": {
+     "label": "steady",
+     "n": 4,
+     "of": 349,
+     "per_1k": 11.46,
+     "baseline": {
+      "n": 93,
+      "papers": 42943,
+      "per_1k": 2.17,
+      "weeks": 12
+     },
+     "lift": 5.26,
+     "score": 3.522
+    }
+   },
+   {
+    "name": "多智能体LLM",
+    "about": "LLM团队生成安全案例、暴露内存冲突，并根据不一致成员进行校准。",
+    "terms": [
+     "Multi-Agent LLM"
+    ],
+    "paper_ids": [
+     "2611.21618",
+     "2611.22245",
+     "2611.22342",
+     "2611.22248"
+    ],
+    "count": 4,
+    "trend": {
+     "label": "steady",
+     "n": 4,
+     "of": 349,
+     "per_1k": 11.46,
+     "baseline": {
+      "n": 100,
+      "papers": 42943,
+      "per_1k": 2.33,
+      "weeks": 12
+     },
+     "lift": 4.9,
+     "score": 3.49
+    }
+   }
+  ],
+  "themes": [
+   {
+    "name": "具身机器人学习与交互式世界模型",
+    "summary": "论文研究从第一人称视频、人类演示和世界模型中进行机器人学习，用于操作、驾驶和腿足控制。它们的区别在于构建数据集和基准、将视频先验细化为可执行演示，以及为具身仿真建模相机或动作动力学。",
+    "terms": [
+     "egocentric video",
+     "world models",
+     "bimanual dexterous manipulation",
+     "robot manipulation"
+    ],
+    "paper_ids": [
+     "2611.21690",
+     "2611.21782",
+     "2611.21851",
+     "2611.21905",
+     "2611.21908",
+     "2611.21919",
+     "2611.21924",
+     "2611.21938",
+     "2611.21958",
+     "2611.22001",
+     "2611.22047",
+     "2611.22077",
+     "2611.22122",
+     "2611.22138",
+     "2611.22146",
+     "2611.22151",
+     "2611.22164",
+     "2611.22174",
+     "2611.22195",
+     "2611.22224",
+     "2611.22231",
+     "2611.22258",
+     "2611.22275",
+     "2611.22294",
+     "2611.22295",
+     "2611.22302",
+     "2611.22314",
+     "2611.22321",
+     "2611.22356",
+     "2611.22367",
+     "2611.22368",
+     "2611.22374",
+     "2611.22388",
+     "2611.22395",
+     "2611.22445",
+     "2611.22453",
+     "2611.22470",
+     "2611.22483"
+    ],
+    "count": 38,
+    "trend": {
+     "terms": [
+      "egocentric video",
+      "world models",
+      "bimanual dexterous manipulation",
+      "robot manipulation"
+     ],
+     "today": {
+      "n": 18,
+      "of": 349
+     },
+     "w1": {
+      "n": 77,
+      "papers": 2241,
+      "per_1k": 34.36
+     },
+     "w4": {
+      "n": 459,
+      "papers": 12575,
+      "per_1k": 36.5
+     },
+     "w12": {
+      "n": 1714,
+      "papers": 42943,
+      "per_1k": 39.91
+     },
+     "label": "steady"
+    }
+   },
+   {
+    "name": "临床AI基准、隐私与医学影像",
+    "summary": "论文开发生存预测的可解释性、危机咨询评估、ECG/EEG隐私与伪影评估、ICD-10编码和隐私保护神经影像适应。它们的区别在于模态和任务，涵盖临床NLP、面向患者的安全以及影像检测或协作。",
+    "terms": [
+     "crisis counseling",
+     "EEG artifact removal",
+     "ICD-10 code prediction",
+     "neuroimaging data"
+    ],
+    "paper_ids": [
+     "2611.21571",
+     "2611.21622",
+     "2611.21639",
+     "2611.21643",
+     "2611.21694",
+     "2611.21781",
+     "2611.21891",
+     "2611.21892",
+     "2611.21955",
+     "2611.21975",
+     "2611.22009",
+     "2611.22045",
+     "2611.22069",
+     "2611.22084",
+     "2611.22117",
+     "2611.22152",
+     "2611.22169",
+     "2611.22189",
+     "2611.22219",
+     "2611.22241",
+     "2611.22248",
+     "2611.22252",
+     "2611.22331",
+     "2611.22362",
+     "2611.22380",
+     "2611.22450",
+     "2611.22482"
+    ],
+    "count": 27,
+    "trend": {
+     "terms": [
+      "crisis counseling",
+      "EEG artifact removal",
+      "ICD-10 code prediction",
+      "neuroimaging data"
+     ],
+     "today": {
+      "n": 4,
+      "of": 349
+     },
+     "w1": {
+      "n": 0,
+      "papers": 2241,
+      "per_1k": 0.0
+     },
+     "w4": {
+      "n": 2,
+      "papers": 12575,
+      "per_1k": 0.16
+     },
+     "w12": {
+      "n": 9,
+      "papers": 42943,
+      "per_1k": 0.21
+     },
+     "label": "steady"
+    }
+   },
+   {
+    "name": "智能体harness、编程基准与企业评估",
+    "summary": "论文研究AI编程助手、智能体编写的代码和测试、嵌入式固件环境以及自我进化或自我重写的智能体harness。它们的区别在于审计开发者生产力和代码存活率，与构建执行、数据集工厂和网页智能体基础设施相对。",
+    "terms": [
+     "coding agents",
+     "execution harnesses",
+     "self-rewriting",
+     "developer productivity"
+    ],
+    "paper_ids": [
+     "2611.21632",
+     "2611.21633",
+     "2611.21678",
+     "2611.21688",
+     "2611.21784",
+     "2611.21797",
+     "2611.21845",
+     "2611.21885",
+     "2611.21957",
+     "2611.21978",
+     "2611.22017",
+     "2611.22030",
+     "2611.22085",
+     "2611.22161",
+     "2611.22171",
+     "2611.22177",
+     "2611.22238",
+     "2611.22262",
+     "2611.22291",
+     "2611.22299",
+     "2611.22323",
+     "2611.22328",
+     "2611.22338",
+     "2611.22418",
+     "2611.22432",
+     "2611.22480"
+    ],
+    "count": 26,
+    "trend": {
+     "terms": [
+      "coding agents",
+      "execution harnesses",
+      "self-rewriting",
+      "developer productivity"
+     ],
+     "today": {
+      "n": 12,
+      "of": 349
+     },
+     "w1": {
+      "n": 47,
+      "papers": 2241,
+      "per_1k": 20.97
+     },
+     "w4": {
+      "n": 225,
+      "papers": 12575,
+      "per_1k": 17.89
+     },
+     "w12": {
+      "n": 628,
+      "papers": 42943,
+      "per_1k": 14.62
+     },
+     "label": "rising"
+    }
+   },
+   {
+    "name": "具有物理先验的科学与环境机器学习",
+    "summary": "论文将机器学习应用于射电天文学、光伏预测、海洋CO2估算、溢油监测、遥感和污染感知运动，以及物理信息轨迹和交互重建。它们的区别在于在环境和物理仿真任务中使用校准的不确定性、扩散或表格模型、GPU力场以及物理信息神经网络。",
+    "terms": [
+     "physics-informed neural networks",
+     "remote sensing",
+     "photovoltaic power forecasting",
+     "oil spills"
+    ],
+    "paper_ids": [
+     "2611.21674",
+     "2611.21680",
+     "2611.21769",
+     "2611.21783",
+     "2611.21816",
+     "2611.21827",
+     "2611.21857",
+     "2611.21895",
+     "2611.21933",
+     "2611.21935",
+     "2611.21954",
+     "2611.21964",
+     "2611.21976",
+     "2611.22024",
+     "2611.22050",
+     "2611.22064",
+     "2611.22076",
+     "2611.22098",
+     "2611.22140",
+     "2611.22178",
+     "2611.22246",
+     "2611.22272",
+     "2611.22273",
+     "2611.22281",
+     "2611.22283",
+     "2611.22444"
+    ],
+    "count": 26,
+    "trend": {
+     "terms": [
+      "physics-informed neural networks",
+      "remote sensing",
+      "photovoltaic power forecasting",
+      "oil spills"
+     ],
+     "today": {
+      "n": 6,
+      "of": 349
+     },
+     "w1": {
+      "n": 24,
+      "papers": 2241,
+      "per_1k": 10.71
+     },
+     "w4": {
+      "n": 104,
+      "papers": 12575,
+      "per_1k": 8.27
+     },
+     "w12": {
+      "n": 345,
+      "papers": 42943,
+      "per_1k": 8.03
+     },
+     "label": "rising"
+    }
+   },
+   {
+    "name": "3D/4D重建与扩散/流生成资产建模",
+    "summary": "论文将空间转录组学提升到3D场，压缩3D表示，生成3D人脸资产，并使用扩散或流模型进行编辑、超分辨率和视频生成。它们的区别在于关注几何条件、UV和位移图、测试时计算以及推理预算分配。",
+    "terms": [
+     "spatial transcriptomics",
+     "3D face assets",
+     "diffusion editors",
+     "video diffusion"
+    ],
+    "paper_ids": [
+     "2611.20368",
+     "2611.21669",
+     "2611.21698",
+     "2611.21802",
+     "2611.21812",
+     "2611.21865",
+     "2611.21867",
+     "2611.21890",
+     "2611.22028",
+     "2611.22052",
+     "2611.22095",
+     "2611.22124",
+     "2611.22132",
+     "2611.22202",
+     "2611.22207",
+     "2611.22228",
+     "2611.22235",
+     "2611.22240",
+     "2611.22244",
+     "2611.22287",
+     "2611.22318",
+     "2611.22427",
+     "2611.22458",
+     "2611.22464"
+    ],
+    "count": 24,
+    "trend": {
+     "terms": [
+      "spatial transcriptomics",
+      "3D face assets",
+      "diffusion editors",
+      "video diffusion"
+     ],
+     "today": {
+      "n": 4,
+      "of": 349
+     },
+     "w1": {
+      "n": 12,
+      "papers": 2241,
+      "per_1k": 5.35
+     },
+     "w4": {
+      "n": 80,
+      "papers": 12575,
+      "per_1k": 6.36
+     },
+     "w12": {
+      "n": 248,
+      "papers": 42943,
+      "per_1k": 5.78
+     },
+     "label": "steady"
+    }
+   },
+   {
+    "name": "高效LLM推理、服务、量化与投机解码",
+    "summary": "论文通过投机解码、稀疏注意力块选择、KV缓存复用、量化和云边卸载来优化LLM和VLM服务。它们的区别在于面向多模态草稿模型、MoE扩散解码、推荐记忆、低比特GPU kernel以及异构FPGA/GPU部署。",
+    "terms": [
+     "speculative decoding",
+     "sparse attention",
+     "KV cache",
+     "low-bit quantization"
+    ],
+    "paper_ids": [
+     "2611.21691",
+     "2611.21839",
+     "2611.21852",
+     "2611.21882",
+     "2611.21917",
+     "2611.21920",
+     "2611.21925",
+     "2611.21974",
+     "2611.22019",
+     "2611.22086",
+     "2611.22128",
+     "2611.22148",
+     "2611.22186",
+     "2611.22191",
+     "2611.22215",
+     "2611.22280",
+     "2611.22296",
+     "2611.22334",
+     "2611.22426",
+     "2611.22472"
+    ],
+    "count": 20,
+    "trend": {
+     "terms": [
+      "speculative decoding",
+      "sparse attention",
+      "KV cache",
+      "low-bit quantization"
+     ],
+     "today": {
+      "n": 13,
+      "of": 349
+     },
+     "w1": {
+      "n": 40,
+      "papers": 2241,
+      "per_1k": 17.85
+     },
+     "w4": {
+      "n": 242,
+      "papers": 12575,
+      "per_1k": 19.24
+     },
+     "w12": {
+      "n": 769,
+      "papers": 42943,
+      "per_1k": 17.91
+     },
+     "label": "steady"
+    }
+   },
+   {
+    "name": "LLM安全对齐、拒绝、水印与护栏",
+    "summary": "论文测量拒绝代价、谄媚、权重修改下的水印证据、对齐裕度动态、破坏审计、系统提示泄露、事实核查和教育护栏。它们的区别在于研究已部署模型行为和对抗性审计，与提出运行时审核、个性化和推荐攻击防御相对。",
+    "terms": [
+     "sycophancy",
+     "watermark",
+     "system prompt",
+     "Educational Guardrail System"
+    ],
+    "paper_ids": [
+     "2611.21641",
+     "2611.21650",
+     "2611.21702",
+     "2611.21766",
+     "2611.21832",
+     "2611.21956",
+     "2611.22027",
+     "2611.22203",
+     "2611.22210",
+     "2611.22274",
+     "2611.22278",
+     "2611.22288",
+     "2611.22345",
+     "2611.22446",
+     "2611.22456"
+    ],
+    "count": 15,
+    "trend": {
+     "terms": [
+      "sycophancy",
+      "watermark",
+      "system prompt",
+      "Educational Guardrail System"
+     ],
+     "today": {
+      "n": 5,
+      "of": 349
+     },
+     "w1": {
+      "n": 18,
+      "papers": 2241,
+      "per_1k": 8.03
+     },
+     "w4": {
+      "n": 83,
+      "papers": 12575,
+      "per_1k": 6.6
+     },
+     "w12": {
+      "n": 330,
+      "papers": 42943,
+      "per_1k": 7.68
+     },
+     "label": "steady"
+    }
+   },
+   {
+    "name": "智能体记忆、多智能体协调与冲突治理",
+    "summary": "论文研究文本记忆重写、跨多智能体拓扑的偏差注入、异构团队规划、去中心化发现智能体、持久KV缓存记忆、智能体动作可逆性和记忆冲突路由。它们的区别在于分析一致性和证据流，与提出记忆演化、最小RAG和工具动作治理相对。",
+    "terms": [
+     "agent memory",
+     "multi-agent",
+     "Memory Conflict Governance",
+     "KV cache"
+    ],
+    "paper_ids": [
+     "2611.21648",
+     "2611.21804",
+     "2611.21828",
+     "2611.21847",
+     "2611.21998",
+     "2611.22075",
+     "2611.22102",
+     "2611.22113",
+     "2611.22179",
+     "2611.22245",
+     "2611.22304",
+     "2611.22310",
+     "2611.22342",
+     "2611.22425",
+     "2611.22461"
+    ],
+    "count": 15,
+    "trend": {
+     "terms": [
+      "agent memory",
+      "multi-agent",
+      "Memory Conflict Governance",
+      "KV cache"
+     ],
+     "today": {
+      "n": 25,
+      "of": 349
+     },
+     "w1": {
+      "n": 91,
+      "papers": 2241,
+      "per_1k": 40.61
+     },
+     "w4": {
+      "n": 545,
+      "papers": 12575,
+      "per_1k": 43.34
+     },
+     "w12": {
+      "n": 1998,
+      "papers": 42943,
+      "per_1k": 46.53
+     },
+     "label": "steady"
+    }
+   },
+   {
+    "name": "激活引导、MoE路由与思维链可监控性",
+    "summary": "论文通过深度感知激活向量和MoE专家路径干预来引导模型行为，并测试思维链是否保持可控和可监控。它们的区别在于探测道德回路、潜在事实组合、引用区域依赖、过度思考以及智能体中推理努力置信度。",
+    "terms": [
+     "activation steering",
+     "chain-of-thought",
+     "expert paths",
+     "moral circuits"
+    ],
+    "paper_ids": [
+     "2611.21655",
+     "2611.21705",
+     "2611.21799",
+     "2611.21921",
+     "2611.21940",
+     "2611.21946",
+     "2611.21983",
+     "2611.22033",
+     "2611.22103",
+     "2611.22120",
+     "2611.22133",
+     "2611.22188",
+     "2611.22234",
+     "2611.22301",
+     "2611.22312"
+    ],
+    "count": 15,
+    "trend": {
+     "terms": [
+      "activation steering",
+      "chain-of-thought",
+      "expert paths",
+      "moral circuits"
+     ],
+     "today": {
+      "n": 11,
+      "of": 349
+     },
+     "w1": {
+      "n": 22,
+      "papers": 2241,
+      "per_1k": 9.82
+     },
+     "w4": {
+      "n": 174,
+      "papers": 12575,
+      "per_1k": 13.84
+     },
+     "w12": {
+      "n": 626,
+      "papers": 42943,
+      "per_1k": 14.58
+     },
+     "label": "steady"
+    }
+   },
+   {
+    "name": "基准有效性、排行榜审计与多模态推理评估",
+    "summary": "论文引入了多语言视觉问答和轮椅配置基准，审计音乐生成评估和对抗性人脸隐私协议，并分析排行榜赢家诅咒和VQA覆盖缺口。它们的区别在于测试语言一致性、3D关系线索、异常定位和延迟标签流评估。",
+    "terms": [
+     "visual question answering",
+     "leaderboards",
+     "winner's curse",
+     "parallel benchmark"
+    ],
+    "paper_ids": [
+     "2611.21644",
+     "2611.21809",
+     "2611.21878",
+     "2611.21914",
+     "2611.21923",
+     "2611.21945",
+     "2611.21995",
+     "2611.22180",
+     "2611.22227",
+     "2611.22329",
+     "2611.22343",
+     "2611.22360",
+     "2611.22415",
+     "2611.22434"
+    ],
+    "count": 14,
+    "trend": {
+     "terms": [
+      "visual question answering",
+      "leaderboards",
+      "winner's curse",
+      "parallel benchmark"
+     ],
+     "today": {
+      "n": 8,
+      "of": 349
+     },
+     "w1": {
+      "n": 24,
+      "papers": 2241,
+      "per_1k": 10.71
+     },
+     "w4": {
+      "n": 116,
+      "papers": 12575,
+      "per_1k": 9.22
+     },
+     "w12": {
+      "n": 460,
+      "papers": 42943,
+      "per_1k": 10.71
+     },
+     "label": "steady"
+    }
+   },
+   {
+    "name": "自主系统的形式化验证与认证安全",
+    "summary": "论文生成安全案例，维护持续合规，评估视觉导航的连续风险，认证Bernstein网络的后向可达性，并编码控制器、行为树和Petri网以进行验证。它们的区别在于将多智能体LLM安全案例生成与形式化方法、危害派生需求和风险感知扩散规划相结合。",
+    "terms": [
+     "safety cases",
+     "backward reachability",
+     "behavior trees",
+     "Continuous Risk Assessment"
+    ],
+    "paper_ids": [
+     "2611.21618",
+     "2611.21811",
+     "2611.22080",
+     "2611.22083",
+     "2611.22297",
+     "2611.22396",
+     "2611.22397",
+     "2611.22399",
+     "2611.22403",
+     "2611.22404",
+     "2611.22407",
+     "2611.22447"
+    ],
+    "count": 12,
+    "trend": {
+     "terms": [
+      "safety cases",
+      "backward reachability",
+      "behavior trees",
+      "Continuous Risk Assessment"
+     ],
+     "today": {
+      "n": 4,
+      "of": 349
+     },
+     "w1": {
+      "n": 0,
+      "papers": 2241,
+      "per_1k": 0.0
+     },
+     "w4": {
+      "n": 8,
+      "papers": 12575,
+      "per_1k": 0.64
+     },
+     "w12": {
+      "n": 27,
+      "papers": 42943,
+      "per_1k": 0.63
+     },
+     "label": "steady"
+    }
+   },
+   {
+    "name": "检索、重排序、RAG与文档层次建模",
+    "summary": "论文评估AST派生的图检索、用于智能体文档探索的语料地图、基于引用的波斯语法律RAG、层次嵌入式主题模型、多向量图索引、局部图像检索、专利布尔搜索和页面流分割。它们的区别在于以图、嵌入和生成式检索方法面向代码、法律、专利、多模态和文档结构搜索。",
+    "terms": [
+     "retrieval-augmented generation",
+     "graph-augmented retrieval",
+     "Multi-vector retrieval",
+     "Page Stream Segmentation"
+    ],
+    "paper_ids": [
+     "2611.21625",
+     "2611.21647",
+     "2611.21823",
+     "2611.21980",
+     "2611.22079",
+     "2611.22131",
+     "2611.22270",
+     "2611.22309",
+     "2611.22353",
+     "2611.22382",
+     "2611.22392"
+    ],
+    "count": 11,
+    "trend": {
+     "terms": [
+      "retrieval-augmented generation",
+      "graph-augmented retrieval",
+      "Multi-vector retrieval",
+      "Page Stream Segmentation"
+     ],
+     "today": {
+      "n": 8,
+      "of": 349
+     },
+     "w1": {
+      "n": 16,
+      "papers": 2241,
+      "per_1k": 7.14
+     },
+     "w4": {
+      "n": 140,
+      "papers": 12575,
+      "per_1k": 11.13
+     },
+     "w12": {
+      "n": 488,
+      "papers": 42943,
+      "per_1k": 11.36
+     },
+     "label": "steady"
+    }
+   }
+  ],
+  "highlights": [
+   {
+    "paper_id": "2611.21938",
+    "title": "HubEgo-100K: In-the-Wild Egocentric Video of Skilled Work for Robot Learning",
+    "authors": "Javad Amirian, Armin Kiani, Loic Schaeffer et al.",
+    "categories": "cs.RO cs.CV cs.LG",
+    "upvotes": 0,
+    "significance": 5,
+    "theme": "Embodied robot learning and interactive world models",
+    "why": "发布了HubEgo-100K，一个10,124小时的第一人称技能工作视频数据集，在多样化环境中具有同步IMU，直接解决机器人学习泛化需求。",
+    "key_result": "HubEgo-100K v1.0 是一个面向多样性的野外第一人称技能工作视频数据集：10,124小时1080p第一人称视频，带有来自一个头戴式手机摄像头的同步100 Hz IMU数据，由12,227名贡献者在15,548个环境中录制，并以CC BY 4.0许可证发布为72,754个片段。",
+    "evidence": [
+     "We present HubEgo-100K, a dataset built for diversity. This version of the paper covers the first release, v1.0: 10,124 hours of 1080p egocentric video with synchronized 100 Hz inertial (IMU) data from one head-mounted phone camera.",
+     "In v1.0, 12,227 contributors record their own unscripted work in 15,548 environments (each one contributor's own setting of one type, such as their kitchen or workshop) across 11 setting types, 30 work categories, 56 task types and 35 action families, with 83% of hours in workplace settings.",
+     "The release comprises 72,754 episodes with machine-generated action and language annotations, in LeRobot and MCAP formats under CC BY 4.0."
+    ],
+    "text_source": "fulltext"
+   },
+   {
+    "paper_id": "2611.21622",
+    "title": "CrisisBench: an evaluation suite for crisis counseling AI",
+    "authors": "Akshay Swaminathan, Filip Ramazan, Sharang Phadke et al.",
+    "categories": "cs.CL",
+    "upvotes": 0,
+    "significance": 4,
+    "theme": "Clinical AI benchmarks, privacy, and medical imaging",
+    "why": "提出了CrisisBench，一个面向危机咨询AI的隐私保护评估套件，包含校准的患者模型和专家对齐的评分标准，揭示了安全与风险处理方面的不足。",
+    "key_result": "我们评估了五个GPT模型以及先草稿后编辑和检索增强生成；在单轮评估中，所有系统在过度共情和提问方面均不如人类咨询师。在多轮评估中，检索增强生成总体得分最高（0.961），所有系统差距在0.058以内。",
+    "evidence": [
+     "We evaluated five GPT models plus draft-then-edit and retrieval-augmented generation. All systems underperformed human counselors on excessive empathy and questioning in single-turn evaluation.",
+     "In multi-turn evaluation, retrieval-augmented generation scored highest overall (0.961), with all systems within 0.058."
+    ],
+    "text_source": "abstract"
+   },
+   {
+    "paper_id": "2611.21832",
+    "title": "Auditors Struggle to Catch Sabotage In End-to-End Transcripts of AI Safety Research",
+    "authors": "Keshav Shenoy, Anthony Zang, Eric Gan et al.",
+    "categories": "cs.AI",
+    "upvotes": 0,
+    "significance": 4,
+    "theme": "LLM safety alignment, refusal, watermarking, and guardrails",
+    "why": "报告称人类审计员在检测安全研究破坏方面AUROC为0.59，被前沿模型超越，表明当前审计方法存在严重局限。",
+    "key_result": "人类审计员大多无法区分被破坏的研究与良性研究，AUROC为0.59，并不显著优于随机，且仅在17%的案例中完全识别出具体破坏；最好的前沿模型在噪声范围内优于人类审计员（Fable 5.1：AUROC 0.73，32%完全识别）。",
+    "evidence": [
+     "Given access to the full research transcript and the ability to run experiments, human auditors mostly fail to distinguish sabotaged from benign research: they achieve an AUROC of 0.59, not significantly better than chance, and fully identify the specific sabotage in only 17% of cases.",
+     "Despite not being allowed to run experiments, the best frontier models outperform human auditors (Fable 5.1: AUROC 0.73, 32% full identification) within noise and weaker models perform comparably."
+    ],
+    "text_source": "fulltext"
+   },
+   {
+    "paper_id": "2611.21917",
+    "title": "Lost in a Few Heads: Diagnosing and Repairing Block Selection in Sparse Attention",
+    "authors": "Wenhe Zhang, Boxing Chen",
+    "categories": "cs.LG",
+    "upvotes": 0,
+    "significance": 4,
+    "theme": "Efficient LLM inference, serving, quantization, and speculative decoding",
+    "why": "将稀疏注意力失败诊断为在特定盲头中对针的排序不足，并表明全注意力或4-bit评分器可以在不训练的情况下恢复大部分准确率。",
+    "key_result": "在MiniCPM4.1-8B上，上下文长度64K时，任一修复都将多键检索准确率从54.1提升到97.5%，与每个头中的全注意力持平。在生产服务引擎中，在这些头中使用全注意力可以保留稀疏注意力在32K至128K上下文长度下节省的84%到89%的首token时间（TTFT）。",
+    "evidence": [
+     "On MiniCPM4.1-8B at 64K, either fix lifts multi-key retrieval accuracy from 54.1 to 97.5%, level with full attention in every head.",
+     "In production serving engines, full attention in those heads keeps 84 to 89% of the time to first token (TTFT) that sparse attention saves at 32K to 128K context length."
+    ],
+    "text_source": "fulltext"
+   },
+   {
+    "paper_id": "2611.21956",
+    "title": "Eight in Ten LLMs Leak System-Prompt Secrets: Nevan, an Agentic Capture-the-Flag Study",
+    "authors": "Ana Clara Zoppi Serpa, Anderson Rocha, Helio Pedrini",
+    "categories": "cs.CR cs.AI",
+    "upvotes": 0,
+    "significance": 4,
+    "theme": "LLM safety alignment, refusal, watermarking, and guardrails",
+    "why": "这项对363个LLM的审计发现300个泄露系统提示秘密，为从业者提供了广泛的安全警示和实践指导。",
+    "key_result": "在对冻结目录的审计中，flag从363个模型中的296个中被窃取，另有四个在初始目录冻结后发布的模型，总计300次捕获；其中170次涉及非英语语言转换，最常见的是法语。",
+    "evidence": [
+     "The flag was exfiltrated from 296 of the 363 models, plus four models released after the initial catalog freeze, for 300 captures in total. Of these, 170 involved a non-English language pivot, most often French.",
+     "The audit answers it for the frozen catalog: 296 of 363 entries were captured, plus four bonus captures on models released after the freeze, for 300 total. Of the 300, 170 involved a non-English language pivot, 119 of them French."
+    ],
+    "text_source": "fulltext"
+   },
+   {
+    "paper_id": "2611.22085",
+    "title": "ATLAS-Finance: Benchmarking AI Agents in Realistic Banking Environments",
+    "authors": "Elaine Lau, Antoine Pangas, Alexandre Finot et al.",
+    "categories": "cs.AI",
+    "upvotes": 0,
+    "significance": 4,
+    "theme": "Agent harnesses, coding benchmarks, and enterprise evaluation",
+    "why": "引入了ATLAS-Finance，100个跨模拟公司的现实投行任务，其中顶级智能体的任务通过率低于11%，暴露出巨大的企业能力差距。",
+    "key_result": "尽管完成了所请求工作的大部分，当前智能体很少产出正确的交付物。在当今前沿模型中，最好的模型（Claude Opus和Fable）通过的任务不到11%。",
+    "evidence": [
+     "Despite completing substantial portions of the requested work, current agents rarely produce correct deliverables. Across today's frontier models, the best ones (Claude Opus and Fable) pass fewer than 11% of tasks."
+    ],
+    "text_source": "fulltext"
+   },
+   {
+    "paper_id": "2611.22148",
+    "title": "Long-Context Generation Is a Sampling Problem (When You Turn Up the Heat)",
+    "authors": "Allen G. Roush, Minh Nhat Nguyen, Ravid Shwartz-Ziv et al.",
+    "categories": "cs.AI cs.CL",
+    "upvotes": 0,
+    "significance": 4,
+    "theme": "other",
+    "why": "认为长上下文生成质量主要由高温下的采样器决定，表明保持候选池稳定的采样器在多个基准上保持准确率。",
+    "key_result": "在29个模型和所有尝试的基准上，候选集保持小而稳定的采样器在高温下损失很小或没有损失，而接纳尾部候选的采样器则崩溃。在所有基准上，top-n保持了其temperature-1得分的100%中位数，而top-p仅保持26%。",
+    "evidence": [
+     "Across 29 models and every benchmark tried, samplers whose candidate set stays small and stable lose little or nothing at high temperature, and samplers that admit the tail fall apart.",
+     "Over all benchmarks top-n keeps a median 100% of its temperature-1 score where top-p keeps 26%."
+    ],
+    "text_source": "fulltext"
+   },
+   {
+    "paper_id": "2611.22227",
+    "title": "SOTA or Luck? The Winner's Curse in LLM Leaderboards",
+    "authors": "Sikun Xu, Raphael Thomadsen, Dennis J. Zhang et al.",
+    "categories": "cs.LG cs.CL stat.ME stat.ML",
+    "upvotes": 0,
+    "significance": 4,
+    "theme": "Benchmark validity, leaderboard auditing, and multimodal reasoning evaluation",
+    "why": "提出了一种针对排行榜“赢家诅咒”的bootstrap校正，表明在14个基准上排名靠前的模型分数被高估最多3.86个百分点，这削弱了排行榜的可信度。",
+    "key_result": "本文提出了一种m-out-of-N bootstrap来校正排行榜排名引起的偏差；在由正间隔分隔的精确总体层级下，证明了bootstrap将(N^-1/2)的排名偏差降至期望残差偏差o(N^-1/2)。在来自5个基准家族的14个基准上，排名第一的调整幅度范围约为0.09到3.86个百分点，在SWE-bench Verified快照中，并列领先者获得0.90个百分点的调整。",
+    "evidence": [
+     "Under exact population tiers separated by positive gaps, we prove that the bootstrap reduces (N^-1/2) ranking bias to expected residual bias o(N^-1/2).",
+     "Across 14 benchmarks from 5 benchmark families, the rank-1 adjustments range from approximately 0.09 to 3.86 percentage points.",
+     "In our SWE-bench Verified snapshot, the tied leaders receive an adjustment of 0.90 percentage points."
+    ],
+    "text_source": "fulltext"
+   }
+  ],
+  "news": [
+   {
+    "source": "OpenAI",
+    "title": "Introducing GPT-6.2 Astra and Sol",
+    "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol",
+    "published": "2026-11-17T17:45:00Z",
+    "fetched": false,
+    "page_status": 403,
+    "page_sha": null,
+    "text_from": null,
+    "text_sha": null,
+    "summary": ""
+   },
+   {
+    "source": "OpenAI",
+    "title": "Introducing ChatGPT for Sales",
+    "url": "https://openai.com/index/introducing-chatgpt-for-sales",
+    "published": "2026-11-17T08:00:00Z",
+    "fetched": false,
+    "page_status": 403,
+    "page_sha": null,
+    "text_from": null,
+    "text_sha": null,
+    "summary": ""
+   },
+   {
+    "source": "Google AI",
+    "title": "Put Gemini to work for you",
+    "url": "https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features/",
+    "published": "2026-11-17T17:00:00Z",
+    "fetched": true,
+    "page_status": 200,
+    "page_sha": "82ea7b2c8b287742fa353fa95466034141a86c9404cd44188f62c292ee0daf37",
+    "text_from": "page",
+    "text_sha": "f1bf384547e2f337d4f049294326042952c29827590fea7a7a62b8c3b095673e",
+    "summary": "Google宣布Gemini可以处理安排预约、分析水电费账单和购买物品等任务，通过在硬件隔离的虚拟机中连接电子邮件、日历和支付方式。该更新使用Gemini 4 Hydrogen模型在美国、日本、韩国、加拿大、澳大利亚和印度免费推出，高级功能从美国开始；例子包括在五分钟内致电两家经销商并预订预约，以及分析389美元的电费账单。"
+   },
+   {
+    "source": "Microsoft Research",
+    "title": "Can AI help build a healthier future?",
+    "url": "https://www.microsoft.com/en-us/research/podcast/can-ai-help-build-a-healthier-future/",
+    "published": "2026-11-17T16:52:17Z",
+    "fetched": true,
+    "page_status": 200,
+    "page_sha": "1637eced9978f77b99f58b828cf2862a7e0c1380cf3830823eeee53d66098486",
+    "text_from": "page",
+    "text_sha": "17d9b62062bdbd0e016e9fd5330e39d1fdf3b226e2e507b8135bb98283f8b884",
+    "summary": "Microsoft Research播客《The Shape of Things to Come》的一集邀请Doug Burger与Ava Amini、Eric Horvitz和Eric Topol讨论AI辅助医疗诊断、医学影像、全患者模型、虚拟细胞和生物基础模型。它还讨论了为什么有前景的研究转化为患者应用缓慢、AI引导的实验和药物发现，以及需要更好的生物数据和真实世界验证。"
+   },
+   {
+    "source": "NVIDIA",
+    "title": "Ian Buck Kicks Off NVIDIA’s Week at SC26 as Science Enters the Age of Agents",
+    "url": "https://blogs.nvidia.com/blog/ian-buck-sc26/",
+    "published": "2026-11-17T14:00:10Z",
+    "fetched": true,
+    "page_status": 200,
+    "page_sha": "5e74d5fe83b1a15894bb1f1a857e76a78f0d8242aeb55a6b161c0857c618d533",
+    "text_from": "page",
+    "text_sha": "027cbcf67a18379f801323749d2efbd855a589ac543a4ab2a7da97b3b7ccc0bf",
+    "summary": "在SC26上，NVIDIA的Ian Buck宣布了用于科学的Nemotron、Rubin HPC GPU、扩展的Vera CPU平台以及与IBM和Fermilab的量子计算合作。Nemotron将Nemotron 3.5 Super VL开放模型与开放化学数据集和后训练配方相结合；例子包括一个Argonne智能体识别出两个新的结合位点，以及一个GROMACS智能体在一个DGX Spark上一夜修复了81%的测试用例，而Rubin HPC拥有超过50,000个CUDA核心，预计于2028年推出。"
+   },
+   {
+    "source": "NVIDIA Developer",
+    "title": "Co-Designing Sparse Attention for Efficient Long-Context Inference",
+    "url": "https://developer.nvidia.com/blog/co-designing-sparse-attention-for-efficient-long-context-inference/",
+    "published": "2026-11-17T17:30:00Z",
+    "fetched": true,
+    "page_status": 200,
+    "page_sha": "36b7580fa4a4ebaf4a57a28af540b711a15004151ae83e0b362e9e71dfd00824",
+    "text_from": "page",
+    "text_sha": "6bc8d77c4df8019a2136d9bad34adf1c18213622138fd356ea7857fc42f01305",
+    "summary": "一篇NVIDIA Developer文章提出了GPU上模型级稀疏注意力的协同设计指南，其中索引器对所有键评分，Top-k在核心注意力之前选择一个子集；在128K token时，索引器和Top-k占DeepSeek V3.2 prefill层的47%。它建议KH=1并进行跨头归约，索引器头维度为128或256，FP16 epilogue和累加，将Top-k融合到索引器kernel中，并复用前一个解码步骤的选择，这将Top-k加速2.1倍到2.4倍。"
+   },
+   {
+    "source": "NVIDIA Developer",
+    "title": "Integrating QPUs into Supercomputing Centers Using Slurm HRES Plugins",
+    "url": "https://developer.nvidia.com/blog/integrating-qpus-into-supercomputing-centers-using-slurm-hres-plugins/",
+    "published": "2026-11-17T17:00:00Z",
+    "fetched": true,
+    "page_status": 200,
+    "page_sha": "6e24c3ab72048e8c4a135f5e6722ece3c2459ab2787e1df47d4d089373e2f77e",
+    "text_from": "page",
+    "text_sha": "d74dd55c8c54034b33b4c666a2ebb2193c55e9652e4659b9f3cfc8518de80182",
+    "summary": "Slurm 26.11引入了Hierarchical Resources插件，将量子处理单元建模为原生的集群级可调度资源，将QPU与允许使用它的特定节点关联。一个简短的Lua插件处理设备健康检查、节点分配前的作业准入和资源释放，而站点特定策略保留在resources.yaml中；QRMI和QDMI已发布HRES插件，将Slurm集群连接到来自多个供应商的量子计算机。"
+   },
+   {
+    "source": "AWS Machine Learning",
+    "title": "Managed NVIDIA Dynamo on Amazon SageMaker HyperPod Inference",
+    "url": "https://aws.amazon.com/blogs/machine-learning/managed-nvidia-dynamo-on-amazon-sagemaker-hyperpod-inference/",
+    "published": "2026-11-17T23:33:26Z",
+    "fetched": true,
+    "page_status": 200,
+    "page_sha": "0cb9b139d436fc4806ad5ed1988dd21bcf58cab550bec7594521c10f3a1a2a4f",
+    "text_from": "page",
+    "text_sha": "26d3152db5a4b8e7918a215c3fbdb4f185ec24a2bdb2486bdf8b95aa21be26b0",
+    "summary": "Amazon SageMaker HyperPod Inference现在支持托管的NVIDIA Dynamo，支持多节点部署、解耦的prefill和decode，以及使用vLLM、SGLang和TensorRT-LLM等引擎的KV感知路由，并由EFA网络、GPU调度和节点健康监控提供支持。该文章提到GLM-5.3的FP8权重超过了单个ml.p5.48xlarge实例上640 GB的GPU内存，并描述了通过InferenceEndpointConfig dynamoSpec和DynamoGraphDeployment进行配置。"
+   },
+   {
+    "source": "AWS Machine Learning",
+    "title": "Reducing token costs and latency in Amazon Bedrock AgentCore JSON workloads",
+    "url": "https://aws.amazon.com/blogs/machine-learning/reducing-token-costs-and-latency-in-amazon-bedrock-agentcore-json-workloads/",
+    "published": "2026-11-17T22:44:51Z",
+    "fetched": true,
+    "page_status": 200,
+    "page_sha": "9be75e7f4c0d921ff830cf8a18d98a90b597242e9787f9b7d44dbdc3528f3973",
+    "text_from": "page",
+    "text_sha": "b0bf91ba02957e9ee6520551e07b355841776ca7665a70cd276676d73feca020",
+    "summary": "AWS描述了三种可组合策略，用于在Amazon Bedrock AgentCore上构建Flightscape生产智能体，该智能体在平均请求延迟超过15秒后，处理20 MB以上、40多个工具的JSON负载。这些优化在代表性23 MB负载上将token消耗降低最多71%，平均延迟降低最多80%。"
+   },
+   {
+    "source": "AWS Machine Learning",
+    "title": "Cut generative AI costs: Code for rules, models for judgment",
+    "url": "https://aws.amazon.com/blogs/machine-learning/cut-generative-ai-costs-code-for-rules-models-for-judgment/",
+    "published": "2026-11-17T21:14:55Z",
+    "fetched": true,
+    "page_status": 200,
+    "page_sha": "dca4cbe13f9057ff6c3a957d7e1855049a95805a46eb5a87f6b6f74809e2cdd5",
+    "text_from": "page",
+    "text_sha": "b6bd1d958a8b3ee69e559c8629496849162b44ae5815fa8f07d39123d496f3b5",
+    "summary": "AWS概述了一个生成式AI工作流的决策框架，该框架询问某一步骤是否真的需要模型，在规则可以检查成功时使用确定性代码，使用模型一次性编写规则，或在从固定列表中选择时使用受限决策调用，并且仅在开放式步骤中使用合适规模的Amazon Bedrock模型。一个客户支持示例将五个步骤映射到API Gateway或Lambda验证、Step Functions JSONata路由、Lambda中固定的regex、受限决策调用以及合适规模的Bedrock模型。"
+   },
+   {
+    "source": "AWS Machine Learning",
+    "title": "Amazon SageMaker AI real-time endpoints now support KV cache aware routing",
+    "url": "https://aws.amazon.com/blogs/machine-learning/amazon-sagemaker-ai-real-time-endpoints-now-support-kv-cache-aware-routing/",
+    "published": "2026-11-17T21:11:51Z",
+    "fetched": true,
+    "page_status": 200,
+    "page_sha": "35f1b246f14c05bf2ff297af62c1f797a0c6046faf831b2bedab35639016e958",
+    "text_from": "page",
+    "text_sha": "a4f53f5333c54f14c73f49408a5d3186b07d616afd1c9da18668016ccf1fbc23",
+    "summary": "Amazon SageMaker AI实时端点现在支持KV缓存感知路由，它使用容器报告的缓存事件和截断哈希的托管索引，将请求发送到具有最长缓存提示匹配的实例，同时权衡实例负载。通过在模型上设置SM_VLLM_KV_EVENTS_CONFIG并在端点配置中将RoutingStrategy设置为KV_AWARE来启用，客户端使用与之前相同的API。"
+   }
+  ]
+ },
+ "translation": {
+  "fallback": []
+ },
+ "dropped": [
+  {
+   "where": "highlight",
+   "paper_id": "2611.21885",
+   "reason": "numbers not in a verified passage: ['27']"
+  },
+  {
+   "where": "keyword Leaderboard auditing",
+   "label": "Leaderboard auditing",
+   "reason": "label not of its phrases or papers; first phrase used"
+  },
+  {
+   "where": "keyword Hidden-state interventions",
+   "label": "Hidden-state interventions",
+   "reason": "label not of its phrases or papers; first phrase used"
+  }
+ ],
+ "disclosure": {
+  "en": "Generated by OPAL agents from arXiv and the listed sources. Paper ids, titles and quoted passages are checked by program against the library and the fetched pages; summaries are machine-written.",
+  "zh": "由 OPAL 的 agent 根据 arXiv 与所列来源自动生成。论文编号、标题与引文已由程序对照本地文献库和抓取的网页核对；摘要与综述由机器撰写。"
+ },
+ "usage": {
+  "calls": 49,
+  "tokens": 691871,
+  "by_model": {
+   "deepseek-v4-pro": {
+    "input": 44824,
+    "cache_hit": 77696,
+    "output": 66955
+   },
+   "deepseek-flash": {
+    "input": 327392,
+    "cache_hit": 3584,
+    "output": 171420
+   }
+  },
+  "cost_usd": 0.3158,
+  "wall_s": 2313.2
+ }
+}
