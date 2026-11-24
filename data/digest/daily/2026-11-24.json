@@ -1,0 +1,4689 @@
+{
+ "kind": "daily",
+ "id": "2026-11-24",
+ "date": "2026-11-24",
+ "generated_at": "2026-11-24T03:56:34Z",
+ "scope": [
+  "cs.LG",
+  "cs.AI",
+  "cs.CL",
+  "cs.CV",
+  "stat.ML",
+  "cs.RO",
+  "cs.IR",
+  "cs.NE",
+  "cs.MA"
+ ],
+ "models": {
+  "root": "deepseek-v4-pro",
+  "sub": "deepseek-flash"
+ },
+ "announcement": {
+  "datestamp": "2026-11-24",
+  "papers": 431
+ },
+ "paper_ids": [
+  "2611.27987",
+  "2611.27996",
+  "2611.27997",
+  "2611.28001",
+  "2611.28003",
+  "2611.28004",
+  "2611.28005",
+  "2611.28008",
+  "2611.28010",
+  "2611.28012",
+  "2611.28013",
+  "2611.28015",
+  "2611.28018",
+  "2611.28022",
+  "2611.28024",
+  "2611.28025",
+  "2611.28026",
+  "2611.28029",
+  "2611.28030",
+  "2611.28033",
+  "2611.28034",
+  "2611.28038",
+  "2611.28048",
+  "2611.28050",
+  "2611.28053",
+  "2611.28055",
+  "2611.28067",
+  "2611.28077",
+  "2611.28078",
+  "2611.28079",
+  "2611.28080",
+  "2611.28081",
+  "2611.28082",
+  "2611.28083",
+  "2611.28084",
+  "2611.28085",
+  "2611.28087",
+  "2611.28088",
+  "2611.28089",
+  "2611.28090",
+  "2611.28092",
+  "2611.28093",
+  "2611.28094",
+  "2611.28096",
+  "2611.28097",
+  "2611.28098",
+  "2611.28099",
+  "2611.28100",
+  "2611.28101",
+  "2611.28102",
+  "2611.28103",
+  "2611.28104",
+  "2611.28105",
+  "2611.28107",
+  "2611.28109",
+  "2611.28110",
+  "2611.28111",
+  "2611.28112",
+  "2611.28113",
+  "2611.28114",
+  "2611.28115",
+  "2611.28116",
+  "2611.28117",
+  "2611.28118",
+  "2611.28119",
+  "2611.28120",
+  "2611.28122",
+  "2611.28123",
+  "2611.28124",
+  "2611.28127",
+  "2611.28128",
+  "2611.28129",
+  "2611.28134",
+  "2611.28135",
+  "2611.28136",
+  "2611.28137",
+  "2611.28139",
+  "2611.28146",
+  "2611.28148",
+  "2611.28152",
+  "2611.28153",
+  "2611.28154",
+  "2611.28156",
+  "2611.28158",
+  "2611.28159",
+  "2611.28161",
+  "2611.28164",
+  "2611.28167",
+  "2611.28169",
+  "2611.28170",
+  "2611.28171",
+  "2611.28173",
+  "2611.28175",
+  "2611.28176",
+  "2611.28177",
+  "2611.28179",
+  "2611.28184",
+  "2611.28185",
+  "2611.28191",
+  "2611.28192",
+  "2611.28193",
+  "2611.28194",
+  "2611.28195",
+  "2611.28197",
+  "2611.28198",
+  "2611.28202",
+  "2611.28221",
+  "2611.28227",
+  "2611.28231",
+  "2611.28233",
+  "2611.28234",
+  "2611.28239",
+  "2611.28240",
+  "2611.28241",
+  "2611.28244",
+  "2611.28256",
+  "2611.28259",
+  "2611.28260",
+  "2611.28261",
+  "2611.28262",
+  "2611.28263",
+  "2611.28265",
+  "2611.28267",
+  "2611.28270",
+  "2611.28272",
+  "2611.28274",
+  "2611.28275",
+  "2611.28277",
+  "2611.28281",
+  "2611.28283",
+  "2611.28285",
+  "2611.28286",
+  "2611.28287",
+  "2611.28289",
+  "2611.28290",
+  "2611.28291",
+  "2611.28293",
+  "2611.28294",
+  "2611.28295",
+  "2611.28298",
+  "2611.28299",
+  "2611.28308",
+  "2611.28312",
+  "2611.28314",
+  "2611.28318",
+  "2611.28319",
+  "2611.28321",
+  "2611.28324",
+  "2611.28327",
+  "2611.28331",
+  "2611.28332",
+  "2611.28335",
+  "2611.28336",
+  "2611.28341",
+  "2611.28342",
+  "2611.28345",
+  "2611.28346",
+  "2611.28348",
+  "2611.28349",
+  "2611.28350",
+  "2611.28351",
+  "2611.28354",
+  "2611.28355",
+  "2611.28356",
+  "2611.28359",
+  "2611.28366",
+  "2611.28367",
+  "2611.28368",
+  "2611.28369",
+  "2611.28370",
+  "2611.28371",
+  "2611.28374",
+  "2611.28379",
+  "2611.28383",
+  "2611.28387",
+  "2611.28393",
+  "2611.28394",
+  "2611.28396",
+  "2611.28397",
+  "2611.28399",
+  "2611.28402",
+  "2611.28403",
+  "2611.28405",
+  "2611.28408",
+  "2611.28411",
+  "2611.28416",
+  "2611.28418",
+  "2611.28419",
+  "2611.28420",
+  "2611.28421",
+  "2611.28426",
+  "2611.28430",
+  "2611.28438",
+  "2611.28440",
+  "2611.28441",
+  "2611.28442",
+  "2611.28445",
+  "2611.28451",
+  "2611.28454",
+  "2611.28459",
+  "2611.28460",
+  "2611.28461",
+  "2611.28465",
+  "2611.28467",
+  "2611.28469",
+  "2611.28476",
+  "2611.28477",
+  "2611.28482",
+  "2611.28483",
+  "2611.28485",
+  "2611.28488",
+  "2611.28489",
+  "2611.28491",
+  "2611.28497",
+  "2611.28499",
+  "2611.28501",
+  "2611.28502",
+  "2611.28505",
+  "2611.28507",
+  "2611.28508",
+  "2611.28509",
+  "2611.28510",
+  "2611.28512",
+  "2611.28517",
+  "2611.28519",
+  "2611.28520",
+  "2611.28521",
+  "2611.28522",
+  "2611.28525",
+  "2611.28529",
+  "2611.28532",
+  "2611.28535",
+  "2611.28542",
+  "2611.28544",
+  "2611.28545",
+  "2611.28547",
+  "2611.28548",
+  "2611.28549",
+  "2611.28551",
+  "2611.28553",
+  "2611.28555",
+  "2611.28558",
+  "2611.28559",
+  "2611.28560",
+  "2611.28563",
+  "2611.28564",
+  "2611.28565",
+  "2611.28566",
+  "2611.28567",
+  "2611.28572",
+  "2611.28573",
+  "2611.28574",
+  "2611.28575",
+  "2611.28576",
+  "2611.28579",
+  "2611.28582",
+  "2611.28584",
+  "2611.28585",
+  "2611.28586",
+  "2611.28589",
+  "2611.28591",
+  "2611.28592",
+  "2611.28595",
+  "2611.28598",
+  "2611.28600",
+  "2611.28603",
+  "2611.28604",
+  "2611.28607",
+  "2611.28608",
+  "2611.28610",
+  "2611.28611",
+  "2611.28612",
+  "2611.28613",
+  "2611.28615",
+  "2611.28616",
+  "2611.28617",
+  "2611.28618",
+  "2611.28621",
+  "2611.28623",
+  "2611.28628",
+  "2611.28629",
+  "2611.28632",
+  "2611.28635",
+  "2611.28636",
+  "2611.28638",
+  "2611.28640",
+  "2611.28641",
+  "2611.28642",
+  "2611.28645",
+  "2611.28646",
+  "2611.28648",
+  "2611.28649",
+  "2611.28650",
+  "2611.28654",
+  "2611.28655",
+  "2611.28656",
+  "2611.28660",
+  "2611.28662",
+  "2611.28665",
+  "2611.28666",
+  "2611.28669",
+  "2611.28670",
+  "2611.28671",
+  "2611.28673",
+  "2611.28675",
+  "2611.28680",
+  "2611.28682",
+  "2611.28684",
+  "2611.28685",
+  "2611.28686",
+  "2611.28692",
+  "2611.28695",
+  "2611.28697",
+  "2611.28701",
+  "2611.28706",
+  "2611.28707",
+  "2611.28710",
+  "2611.28711",
+  "2611.28712",
+  "2611.28713",
+  "2611.28716",
+  "2611.28717",
+  "2611.28718",
+  "2611.28719",
+  "2611.28720",
+  "2611.28721",
+  "2611.28723",
+  "2611.28725",
+  "2611.28726",
+  "2611.28727",
+  "2611.28728",
+  "2611.28732",
+  "2611.28736",
+  "2611.28744",
+  "2611.28745",
+  "2611.28746",
+  "2611.28748",
+  "2611.28752",
+  "2611.28753",
+  "2611.28755",
+  "2611.28756",
+  "2611.28757",
+  "2611.28759",
+  "2611.28760",
+  "2611.28762",
+  "2611.28764",
+  "2611.28766",
+  "2611.28768",
+  "2611.28775",
+  "2611.28777",
+  "2611.28778",
+  "2611.28779",
+  "2611.28781",
+  "2611.28782",
+  "2611.28783",
+  "2611.28787",
+  "2611.28791",
+  "2611.28792",
+  "2611.28793",
+  "2611.28795",
+  "2611.28796",
+  "2611.28800",
+  "2611.28802",
+  "2611.28803",
+  "2611.28804",
+  "2611.28808",
+  "2611.28809",
+  "2611.28810",
+  "2611.28812",
+  "2611.28813",
+  "2611.28815",
+  "2611.28819",
+  "2611.28820",
+  "2611.28822",
+  "2611.28823",
+  "2611.28824",
+  "2611.28825",
+  "2611.28827",
+  "2611.28830",
+  "2611.28833",
+  "2611.28834",
+  "2611.28836",
+  "2611.28839",
+  "2611.28841",
+  "2611.28842",
+  "2611.28844",
+  "2611.28846",
+  "2611.28848",
+  "2611.28849",
+  "2611.28850",
+  "2611.28853",
+  "2611.28854",
+  "2611.28855",
+  "2611.28856",
+  "2611.28857",
+  "2611.28858",
+  "2611.28860",
+  "2611.28867",
+  "2611.28871",
+  "2611.28872",
+  "2611.28873",
+  "2611.28876",
+  "2611.28877",
+  "2611.28878",
+  "2611.28880",
+  "2611.28881",
+  "2611.28890",
+  "2611.28894",
+  "2611.28901",
+  "2611.28902",
+  "2611.28907",
+  "2611.28913",
+  "2611.28914",
+  "2611.28915",
+  "2611.28917",
+  "2611.28919",
+  "2611.28922",
+  "2611.28924",
+  "2611.28926",
+  "2611.28929",
+  "2611.28930",
+  "2611.28935",
+  "2611.28939",
+  "2611.28940",
+  "2611.28942",
+  "2611.28943",
+  "2611.28946",
+  "2611.28947",
+  "2611.28957",
+  "2611.28960",
+  "2611.28963"
+ ],
+ "sources": {
+  "hf": [
+   {
+    "date": "2026-11-23",
+    "status": 200,
+    "sha": "9c71679b1c9ec013f1235d32776ce8263f58159910061cf38cb4142cc541068e",
+    "n": 26
+   },
+   {
+    "date": "2026-11-24",
+    "status": 200,
+    "sha": "d850ef2cc246ce784b9d80dda32b1b828ea6ca67a3444d67e21dba4ba2c147b0",
+    "n": 5
+   }
+  ],
+  "news": [
+   {
+    "name": "OpenAI",
+    "url": "https://openai.com/news/rss.xml",
+    "kind": "feed",
+    "status": 200,
+    "error": "",
+    "sha": "1c4959724c08c55e6f2feca8455129d66b9edd8e5aabef51a1228994f72e110b",
+    "items": 1425,
+    "in_window": 3
+   },
+   {
+    "name": "Google DeepMind",
+    "url": "https://deepmind.google/blog/rss.xml",
+    "kind": "feed",
+    "status": 200,
+    "error": "",
+    "sha": "0b54a8cc48e6ae995a38b821cecb5a9a78cab427b138adcbe91303d5dad93008",
+    "items": 100,
+    "in_window": 1
+   },
+   {
+    "name": "Google Research",
+    "url": "https://research.google/blog/rss/",
+    "kind": "feed",
+    "status": 200,
+    "error": "",
+    "sha": "3bfb05db244eff1261795994cc9ab3799b22afdf50731edbcfc7fe07dac7098f",
+    "items": 100,
+    "in_window": 1
+   },
+   {
+    "name": "Google AI",
+    "url": "https://blog.google/technology/ai/rss/",
+    "kind": "feed",
+    "status": 200,
+    "error": "",
+    "sha": "cd2076862ee65a9d489295516a6f9c9198958b43eec4a02f5434918db76379f0",
+    "items": 20,
+    "in_window": 1
+   },
+   {
+    "name": "Anthropic",
+    "url": "https://www.anthropic.com/news",
+    "kind": "page",
+    "status": 200,
+    "error": "",
+    "sha": "21a02664f1eff9502885417f9fa7e07ccb182a58a8b7d4f1a5aaa79ffea9bad1",
+    "items": 20,
+    "in_window": 0
+   },
+   {
+    "name": "Meta AI",
+    "url": "https://ai.meta.com/blog/",
+    "kind": "page",
+    "status": 200,
+    "error": "",
+    "sha": "c66f15a48af3c2427ef829506ae0db25ff4145486a23fe2662b601d5ad21e8c8",
+    "items": 10,
+    "in_window": 0
+   },
+   {
+    "name": "Microsoft Research",
+    "url": "https://www.microsoft.com/en-us/research/feed/",
+    "kind": "feed",
+    "status": 200,
+    "error": "",
+    "sha": "867ddc55228968c95912c3fbbcf5890fbc559cb8a5fe28417cbe49cf00a3026c",
+    "items": 10,
+    "in_window": 0
+   },
+   {
+    "name": "NVIDIA",
+    "url": "https://blogs.nvidia.com/feed/",
+    "kind": "feed",
+    "status": 200,
+    "error": "",
+    "sha": "49c429d6e758a6e50791713be922048bcd4551bb96c10211ebf985fbad5eb680",
+    "items": 18,
+    "in_window": 1
+   },
+   {
+    "name": "NVIDIA Developer",
+    "url": "https://developer.nvidia.com/blog/feed",
+    "kind": "feed",
+    "status": 200,
+    "error": "",
+    "sha": "437632fd0fa44118d38ade51ce80c174955e73256b1cb66a5f7ddd74392ad948",
+    "items": 100,
+    "in_window": 2
+   },
+   {
+    "name": "Hugging Face",
+    "url": "https://huggingface.co/blog/feed.xml",
+    "kind": "feed",
+    "status": 200,
+    "error": "",
+    "sha": "6dbff6636e777559a1bc0627a83d441e041bdcbd6aa3cebe4da689c74bce3349",
+    "items": 916,
+    "in_window": 1
+   },
+   {
+    "name": "Apple Machine Learning Research",
+    "url": "https://machinelearning.apple.com/rss.xml",
+    "kind": "feed",
+    "status": 200,
+    "error": "",
+    "sha": "0cf40251b6e75e70d6bbfb344915dc93c08c0fd6b5f92b86783d4461d6582ee5",
+    "items": 10,
+    "in_window": 0
+   },
+   {
+    "name": "AWS Machine Learning",
+    "url": "https://aws.amazon.com/blogs/machine-learning/feed/",
+    "kind": "feed",
+    "status": 200,
+    "error": "",
+    "sha": "2c29a886d6ded335337ca0a8b620c5a4db71e2e219300424218062c3312f6205",
+    "items": 20,
+    "in_window": 0
+   },
+   {
+    "name": "BAIR",
+    "url": "https://bair.berkeley.edu/blog/feed.xml",
+    "kind": "feed",
+    "status": 200,
+    "error": "",
+    "sha": "52725ac380366121c386e08d3c5f616c4cab8d9e133acb9a49417e943a4993d0",
+    "items": 10,
+    "in_window": 0
+   },
+   {
+    "name": "AINews (smol.ai)",
+    "url": "https://news.smol.ai/rss.xml",
+    "kind": "feed",
+    "status": 200,
+    "error": "",
+    "sha": "0b0025b703f93bef5c6e24572afe0bc3a81283ee79c00dcfe461b91addbb690b",
+    "items": 716,
+    "in_window": 0
+   }
+  ],
+  "news_window": [
+   "2026-11-23T00:00:00Z",
+   "2026-11-24T00:00:00Z"
+  ]
+ },
+ "daily_4w": {
+  "2026-10-27": 1174,
+  "2026-10-28": 652,
+  "2026-10-29": 0,
+  "2026-10-30": 1103,
+  "2026-11-02": 519,
+  "2026-11-03": 1459,
+  "2026-11-04": 650,
+  "2026-11-05": 565,
+  "2026-11-06": 561,
+  "2026-11-09": 526,
+  "2026-11-10": 1227,
+  "2026-11-11": 602,
+  "2026-11-13": 858,
+  "2026-11-16": 402,
+  "2026-11-17": 1210,
+  "2026-11-18": 637,
+  "2026-11-19": 651,
+  "2026-11-20": 670,
+  "2026-11-23": 535
+ },
+ "rlm": {
+  "trajectory_sha": "f1ef6513b0c7dfa9bae58c17c669fcded107df664069d6205762aec31bc51bec",
+  "iterations": 12,
+  "sub_calls": 30
+ },
+ "keywords": {
+  "rule": "Counts are papers whose title or abstract contains one of the keyword's phrases (porter-stemmed, as the theme trends); the baseline is the papers in scope first submitted in the 12 weeks before the issue, its own papers excluded. new: fewer than 5 baseline papers; rising: at least 5 papers and a rate at least 1.5 times the baseline rate; hot: at least 15 papers (and 1% of the issue) at a rate at least 0.67 times the baseline rate; steady: otherwise.",
+  "score": "log2(1 + n) · log2(1 + (n + 3) / (E + 3)), E = issue papers × (baseline papers with the phrase + 0.5) / baseline papers",
+  "issue_papers": 431,
+  "baseline": {
+   "since": "2026-09-01",
+   "until": "2026-11-24",
+   "papers": 42870,
+   "other_fields": 40948
+  },
+  "candidates": [
+   {
+    "phrase": "World Models",
+    "label": "rising",
+    "n": 24,
+    "of": 431,
+    "per_1k": 55.68,
+    "baseline": {
+     "n": 1086,
+     "papers": 42870,
+     "per_1k": 25.33,
+     "weeks": 12
+    },
+    "lift": 2.2,
+    "score": 7.223
+   },
+   {
+    "phrase": "vision-language models",
+    "label": "rising",
+    "n": 30,
+    "of": 431,
+    "per_1k": 69.61,
+    "baseline": {
+     "n": 1698,
+     "papers": 42870,
+     "per_1k": 39.61,
+     "weeks": 12
+    },
+    "lift": 1.76,
+    "score": 6.949
+   },
+   {
+    "phrase": "video generators",
+    "label": "rising",
+    "n": 16,
+    "of": 431,
+    "per_1k": 37.12,
+    "baseline": {
+     "n": 591,
+     "papers": 42870,
+     "per_1k": 13.79,
+     "weeks": 12
+    },
+    "lift": 2.69,
+    "score": 6.717
+   },
+   {
+    "phrase": "mIoU",
+    "label": "rising",
+    "n": 10,
+    "of": 431,
+    "per_1k": 23.2,
+    "baseline": {
+     "n": 200,
+     "papers": 42870,
+     "per_1k": 4.67,
+     "weeks": 12
+    },
+    "lift": 4.96,
+    "score": 6.382
+   },
+   {
+    "phrase": "official",
+    "label": "rising",
+    "n": 12,
+    "of": 431,
+    "per_1k": 27.84,
+    "baseline": {
+     "n": 389,
+     "papers": 42870,
+     "per_1k": 9.07,
+     "weeks": 12
+    },
+    "lift": 3.06,
+    "score": 6.157
+   },
+   {
+    "phrase": "mean absolute error",
+    "label": "rising",
+    "n": 9,
+    "of": 431,
+    "per_1k": 20.88,
+    "baseline": {
+     "n": 223,
+     "papers": 42870,
+     "per_1k": 5.2,
+     "weeks": 12
+    },
+    "lift": 4.01,
+    "score": 5.703
+   },
+   {
+    "phrase": "PSNR",
+    "label": "rising",
+    "n": 10,
+    "of": 431,
+    "per_1k": 23.2,
+    "baseline": {
+     "n": 344,
+     "papers": 42870,
+     "per_1k": 8.02,
+     "weeks": 12
+    },
+    "lift": 2.89,
+    "score": 5.502
+   },
+   {
+    "phrase": "question answering",
+    "label": "rising",
+    "n": 16,
+    "of": 431,
+    "per_1k": 37.12,
+    "baseline": {
+     "n": 955,
+     "papers": 42870,
+     "per_1k": 22.28,
+     "weeks": 12
+    },
+    "lift": 1.67,
+    "score": 5.42
+   },
+   {
+    "phrase": "GPT-6",
+    "label": "rising",
+    "n": 9,
+    "of": 431,
+    "per_1k": 20.88,
+    "baseline": {
+     "n": 304,
+     "papers": 42870,
+     "per_1k": 7.09,
+     "weeks": 12
+    },
+    "lift": 2.94,
+    "score": 5.233
+   },
+   {
+    "phrase": "key-value",
+    "label": "rising",
+    "n": 9,
+    "of": 431,
+    "per_1k": 20.88,
+    "baseline": {
+     "n": 304,
+     "papers": 42870,
+     "per_1k": 7.09,
+     "weeks": 12
+    },
+    "lift": 2.94,
+    "score": 5.233
+   },
+   {
+    "phrase": "3D scene",
+    "label": "rising",
+    "n": 8,
+    "of": 431,
+    "per_1k": 18.56,
+    "baseline": {
+     "n": 242,
+     "papers": 42870,
+     "per_1k": 5.64,
+     "weeks": 12
+    },
+    "lift": 3.28,
+    "score": 5.059
+   },
+   {
+    "phrase": "Long-Video",
+    "label": "rising",
+    "n": 7,
+    "of": 431,
+    "per_1k": 16.24,
+    "baseline": {
+     "n": 170,
+     "papers": 42870,
+     "per_1k": 3.97,
+     "weeks": 12
+    },
+    "lift": 4.08,
+    "score": 4.926
+   },
+   {
+    "phrase": "captioning",
+    "label": "rising",
+    "n": 9,
+    "of": 431,
+    "per_1k": 20.88,
+    "baseline": {
+     "n": 388,
+     "papers": 42870,
+     "per_1k": 9.05,
+     "weeks": 12
+    },
+    "lift": 2.3,
+    "score": 4.827
+   },
+   {
+    "phrase": "generative model",
+    "label": "hot",
+    "n": 16,
+    "of": 431,
+    "per_1k": 37.12,
+    "baseline": {
+     "n": 1202,
+     "papers": 42870,
+     "per_1k": 28.04,
+     "weeks": 12
+    },
+    "lift": 1.32,
+    "score": 4.806
+   },
+   {
+    "phrase": "unsupervised",
+    "label": "rising",
+    "n": 9,
+    "of": 431,
+    "per_1k": 20.88,
+    "baseline": {
+     "n": 397,
+     "papers": 42870,
+     "per_1k": 9.26,
+     "weeks": 12
+    },
+    "lift": 2.25,
+    "score": 4.787
+   },
+   {
+    "phrase": "pathology",
+    "label": "rising",
+    "n": 8,
+    "of": 431,
+    "per_1k": 18.56,
+    "baseline": {
+     "n": 297,
+     "papers": 42870,
+     "per_1k": 6.93,
+     "weeks": 12
+    },
+    "lift": 2.67,
+    "score": 4.767
+   },
+   {
+    "phrase": "Multimodal LLMs",
+    "label": "rising",
+    "n": 6,
+    "of": 431,
+    "per_1k": 13.92,
+    "baseline": {
+     "n": 104,
+     "papers": 42870,
+     "per_1k": 2.43,
+     "weeks": 12
+    },
+    "lift": 5.71,
+    "score": 4.739
+   },
+   {
+    "phrase": "bank",
+    "label": "rising",
+    "n": 9,
+    "of": 431,
+    "per_1k": 20.88,
+    "baseline": {
+     "n": 415,
+     "papers": 42870,
+     "per_1k": 9.68,
+     "weeks": 12
+    },
+    "lift": 2.15,
+    "score": 4.71
+   },
+   {
+    "phrase": "Multimodal Emotion Recognition",
+    "label": "rising",
+    "n": 5,
+    "of": 431,
+    "per_1k": 11.6,
+    "baseline": {
+     "n": 19,
+     "papers": 42870,
+     "per_1k": 0.44,
+     "weeks": 12
+    },
+    "lift": 25.5,
+    "score": 4.675
+   },
+   {
+    "phrase": "wearable",
+    "label": "rising",
+    "n": 7,
+    "of": 431,
+    "per_1k": 16.24,
+    "baseline": {
+     "n": 213,
+     "papers": 42870,
+     "per_1k": 4.97,
+     "weeks": 12
+    },
+    "lift": 3.26,
+    "score": 4.672
+   },
+   {
+    "phrase": "single-pass",
+    "label": "rising",
+    "n": 7,
+    "of": 431,
+    "per_1k": 16.24,
+    "baseline": {
+     "n": 219,
+     "papers": 42870,
+     "per_1k": 5.11,
+     "weeks": 12
+    },
+    "lift": 3.17,
+    "score": 4.639
+   },
+   {
+    "phrase": "complex tasks",
+    "label": "rising",
+    "n": 7,
+    "of": 431,
+    "per_1k": 16.24,
+    "baseline": {
+     "n": 220,
+     "papers": 42870,
+     "per_1k": 5.13,
+     "weeks": 12
+    },
+    "lift": 3.16,
+    "score": 4.633
+   },
+   {
+    "phrase": "foundation models",
+    "label": "hot",
+    "n": 19,
+    "of": 431,
+    "per_1k": 44.08,
+    "baseline": {
+     "n": 1711,
+     "papers": 42870,
+     "per_1k": 39.91,
+     "weeks": 12
+    },
+    "lift": 1.1,
+    "score": 4.593
+   },
+   {
+    "phrase": "attend",
+    "label": "rising",
+    "n": 7,
+    "of": 431,
+    "per_1k": 16.24,
+    "baseline": {
+     "n": 229,
+     "papers": 42870,
+     "per_1k": 5.34,
+     "weeks": 12
+    },
+    "lift": 3.03,
+    "score": 4.585
+   },
+   {
+    "phrase": "video diffusion",
+    "label": "rising",
+    "n": 7,
+    "of": 431,
+    "per_1k": 16.24,
+    "baseline": {
+     "n": 229,
+     "papers": 42870,
+     "per_1k": 5.34,
+     "weeks": 12
+    },
+    "lift": 3.03,
+    "score": 4.585
+   },
+   {
+    "phrase": "top-1",
+    "label": "rising",
+    "n": 7,
+    "of": 431,
+    "per_1k": 16.24,
+    "baseline": {
+     "n": 232,
+     "papers": 42870,
+     "per_1k": 5.41,
+     "weeks": 12
+    },
+    "lift": 2.99,
+    "score": 4.568
+   },
+   {
+    "phrase": "LPIPS",
+    "label": "rising",
+    "n": 6,
+    "of": 431,
+    "per_1k": 13.92,
+    "baseline": {
+     "n": 133,
+     "papers": 42870,
+     "per_1k": 3.1,
+     "weeks": 12
+    },
+    "lift": 4.47,
+    "score": 4.547
+   },
+   {
+    "phrase": "plug-and-play",
+    "label": "rising",
+    "n": 7,
+    "of": 431,
+    "per_1k": 16.24,
+    "baseline": {
+     "n": 246,
+     "papers": 42870,
+     "per_1k": 5.74,
+     "weeks": 12
+    },
+    "lift": 2.82,
+    "score": 4.495
+   },
+   {
+    "phrase": "Visual World",
+    "label": "rising",
+    "n": 5,
+    "of": 431,
+    "per_1k": 11.6,
+    "baseline": {
+     "n": 48,
+     "papers": 42870,
+     "per_1k": 1.12,
+     "weeks": 12
+    },
+    "lift": 10.25,
+    "score": 4.446
+   },
+   {
+    "phrase": "F1-score",
+    "label": "rising",
+    "n": 8,
+    "of": 431,
+    "per_1k": 18.56,
+    "baseline": {
+     "n": 369,
+     "papers": 42870,
+     "per_1k": 8.61,
+     "weeks": 12
+    },
+    "lift": 2.15,
+    "score": 4.436
+   },
+   {
+    "phrase": "KV cache",
+    "label": "rising",
+    "n": 9,
+    "of": 431,
+    "per_1k": 20.88,
+    "baseline": {
+     "n": 485,
+     "papers": 42870,
+     "per_1k": 11.31,
+     "weeks": 12
+    },
+    "lift": 1.84,
+    "score": 4.435
+   },
+   {
+    "phrase": "COCO",
+    "label": "rising",
+    "n": 6,
+    "of": 431,
+    "per_1k": 13.92,
+    "baseline": {
+     "n": 152,
+     "papers": 42870,
+     "per_1k": 3.55,
+     "weeks": 12
+    },
+    "lift": 3.91,
+    "score": 4.43
+   },
+   {
+    "phrase": "label-free",
+    "label": "rising",
+    "n": 7,
+    "of": 431,
+    "per_1k": 16.24,
+    "baseline": {
+     "n": 259,
+     "papers": 42870,
+     "per_1k": 6.04,
+     "weeks": 12
+    },
+    "lift": 2.68,
+    "score": 4.43
+   },
+   {
+    "phrase": "state-of-the-art performance",
+    "label": "rising",
+    "n": 10,
+    "of": 431,
+    "per_1k": 23.2,
+    "baseline": {
+     "n": 613,
+     "papers": 42870,
+     "per_1k": 14.3,
+     "weeks": 12
+    },
+    "lift": 1.62,
+    "score": 4.407
+   },
+   {
+    "phrase": "inference latency",
+    "label": "rising",
+    "n": 7,
+    "of": 431,
+    "per_1k": 16.24,
+    "baseline": {
+     "n": 264,
+     "papers": 42870,
+     "per_1k": 6.16,
+     "weeks": 12
+    },
+    "lift": 2.63,
+    "score": 4.405
+   },
+   {
+    "phrase": "tell",
+    "label": "rising",
+    "n": 8,
+    "of": 431,
+    "per_1k": 18.56,
+    "baseline": {
+     "n": 380,
+     "papers": 42870,
+     "per_1k": 8.86,
+     "weeks": 12
+    },
+    "lift": 2.09,
+    "score": 4.39
+   },
+   {
+    "phrase": "instance learning",
+    "label": "rising",
+    "n": 5,
+    "of": 431,
+    "per_1k": 11.6,
+    "baseline": {
+     "n": 60,
+     "papers": 42870,
+     "per_1k": 1.4,
+     "weeks": 12
+    },
+    "lift": 8.22,
+    "score": 4.358
+   },
+   {
+    "phrase": "small models",
+    "label": "rising",
+    "n": 6,
+    "of": 431,
+    "per_1k": 13.92,
+    "baseline": {
+     "n": 172,
+     "papers": 42870,
+     "per_1k": 4.01,
+     "weeks": 12
+    },
+    "lift": 3.46,
+    "score": 4.314
+   },
+   {
+    "phrase": "state-transition",
+    "label": "rising",
+    "n": 6,
+    "of": 431,
+    "per_1k": 13.92,
+    "baseline": {
+     "n": 174,
+     "papers": 42870,
+     "per_1k": 4.06,
+     "weeks": 12
+    },
+    "lift": 3.42,
+    "score": 4.302
+   },
+   {
+    "phrase": "Transformer-based",
+    "label": "rising",
+    "n": 8,
+    "of": 431,
+    "per_1k": 18.56,
+    "baseline": {
+     "n": 402,
+     "papers": 42870,
+     "per_1k": 9.38,
+     "weeks": 12
+    },
+    "lift": 1.98,
+    "score": 4.301
+   }
+  ],
+  "left_out": [
+   {
+    "phrase": "mIoU",
+    "count": 10,
+    "reason": "Evaluation metric, not a research topic."
+   },
+   {
+    "phrase": "official",
+    "count": 12,
+    "reason": "Generic word, not a topic."
+   },
+   {
+    "phrase": "mean absolute error",
+    "count": 9,
+    "reason": "Evaluation metric, not a research topic."
+   },
+   {
+    "phrase": "PSNR",
+    "count": 10,
+    "reason": "Image-quality metric, not a research topic."
+   },
+   {
+    "phrase": "question answering",
+    "count": 16,
+    "reason": "Generic task spanning unrelated domains."
+   },
+   {
+    "phrase": "captioning",
+    "count": 9,
+    "reason": "Generic task, not specific to today's work."
+   },
+   {
+    "phrase": "unsupervised",
+    "count": 9,
+    "reason": "Generic learning paradigm."
+   },
+   {
+    "phrase": "bank",
+    "count": 9,
+    "reason": "Generic word, not a topic."
+   },
+   {
+    "phrase": "single-pass",
+    "count": 7,
+    "reason": "Generic efficiency phrase."
+   },
+   {
+    "phrase": "complex tasks",
+    "count": 7,
+    "reason": "Generic phrase, not a specific topic."
+   },
+   {
+    "phrase": "foundation models",
+    "count": 19,
+    "reason": "Field-wide term."
+   },
+   {
+    "phrase": "attend",
+    "count": 7,
+    "reason": "Generic word, not a topic."
+   },
+   {
+    "phrase": "top-1",
+    "count": 7,
+    "reason": "Evaluation metric."
+   },
+   {
+    "phrase": "LPIPS",
+    "count": 6,
+    "reason": "Evaluation metric."
+   },
+   {
+    "phrase": "plug-and-play",
+    "count": 7,
+    "reason": "Generic method phrase."
+   },
+   {
+    "phrase": "F1-score",
+    "count": 8,
+    "reason": "Evaluation metric."
+   },
+   {
+    "phrase": "COCO",
+    "count": 6,
+    "reason": "Generic benchmark dataset."
+   },
+   {
+    "phrase": "label-free",
+    "count": 7,
+    "reason": "Generic descriptor."
+   },
+   {
+    "phrase": "state-of-the-art performance",
+    "count": 10,
+    "reason": "Evaluation boilerplate."
+   },
+   {
+    "phrase": "inference latency",
+    "count": 7,
+    "reason": "Performance metric, not a topic."
+   },
+   {
+    "phrase": "tell",
+    "count": 8,
+    "reason": "Generic word, not a topic."
+   },
+   {
+    "phrase": "state-transition",
+    "count": 6,
+    "reason": "Generic term, not a coherent topic."
+   },
+   {
+    "phrase": "Transformer-based",
+    "count": 8,
+    "reason": "Generic architecture descriptor."
+   }
+  ]
+ },
+ "titles": {
+  "2611.27987": "Empirical Limits of Risk-Averse Reinforcement Learning versus Gas-Aware Routing in Deterministic DeFi Execution",
+  "2611.27996": "Participant-Independent Validation of Smartphone Video and Wearable Inertial Sensing for Coach-Rated Running-Form Classification",
+  "2611.27997": "MemVanta: Memory-Efficient CPU Inference for Quantized GGUF Language Models",
+  "2611.28001": "Social-Qwen: From Individual Nonverbal Cues and Emotion to Multiparty Social Dynamics Understanding with Instruction Tuning",
+  "2611.28003": "Scrub Data: A Framework for Reproducible Data Curation with AI Coding Agents",
+  "2611.28004": "Constellations of Colour: Mapping Semantic Neighbourhoods in CLIP",
+  "2611.28005": "Towards Objective Estimation of Physical Functioning Status in Breast-Cancer Patients using Real-World Data",
+  "2611.28008": "Psychological State Monitoring Methods Based on Multimodal Emotion Recognition",
+  "2611.28010": "Beyond Code and Pixels: Co-Generating Editable and Visually Rich Presentations",
+  "2611.28012": "Social sycophancy differs across access modes of large language models",
+  "2611.28018": "Monte Carlo Power Analysis for Small-System A/B Trials: Detecting Differences in Newsletter Engagement",
+  "2611.28025": "Measuring Human-AI and AI-AI Teams in Multi-turn Layout Creation",
+  "2611.28029": "Safety Systems Watch What the Model Says, Not What the Child Says",
+  "2611.28030": "DRU-Mixer: An Explainable Dilated Recurrent Unit-Based Mixer Model with Focal Loss for EEG-Based Interictal Epileptiform Discharges Detection",
+  "2611.28033": "WISP: Composable Representations for Wrist-Worn Activity Recognition",
+  "2611.28038": "What Counts as Attack Success? Evaluating Harmfulness in Red Teaming LLMs",
+  "2611.28050": "Benchmarking and Adapting LLMs for English-Swedish Medical Question Answering",
+  "2611.28077": "Fairness Evaluation for Diffusion and Flow Models Should Account for the Generation Path: Implications for Clinical Imaging",
+  "2611.28078": "Adversarial Attacks Expose Path-Dependent Failures in Discrete Medical Image Tokenizers",
+  "2611.28079": "Vision-Language Truck Driving Advisories Grounded in Provincial Rules and Forecast Risks",
+  "2611.28080": "Multimodal Violence Understanding and Temporal Retrieval in Movies with Adaptive Audio-Visual Fusion",
+  "2611.28081": "BehaviorICL: Task-Conditioned Decoder States for Visual In-Context Learning",
+  "2611.28082": "Frontier Open-Weight AI Risk Management Framework",
+  "2611.28083": "OSLA: Observation-Aware Local Alignment and Cross-Scene Relation Learning for Any-Scenario Person Re-Identification",
+  "2611.28085": "UbiEnlight: User-Perception-Aware Real-Time Low-Light Video Enhancement on Mobile Devices and Smartglasses",
+  "2611.28090": "Teacher-Guided Multimodal Dual Representation Reconstruction for Egocentric Human Activity Recognition",
+  "2611.28093": "VTree: Question-Driven Growth of Hierarchical Memory for Agentic Long-Video Understanding",
+  "2611.28094": "LightOnOCR for AMNLT: Reading Chant Notation and Lyrics in One Pass, from Single Staves to Whole Pages",
+  "2611.28097": "ORDO: Fine-Grained Motion Understanding in Video LLMs via Order-Dependent Supervision",
+  "2611.28098": "Causal Dioramas: Controllable Video Generation, Revision and Editing via Intervention",
+  "2611.28099": "VidRouteBench: A Benchmark for Budgeted Video-Generation Routing",
+  "2611.28100": "You Only Think Once: Rescuing Hybrid Vision-Language Models Lost in Thought",
+  "2611.28101": "Scale-Aware Reference Attention for Mannequin-to-Model Gown Generation",
+  "2611.28102": "VideoGym: An Adaptive RL Environment for Long-Video Agents",
+  "2611.28103": "ABCoord: An Artificial Bee Colony (ABC)-Based Decentralized Distributed Two-Layer Decision-Making Architecture for the Coordination of AI Agents",
+  "2611.28104": "Intervene or Trust CLIP? Competence-Gated Adaptation for Source-Free Cross-Domain Few-Shot Learning",
+  "2611.28105": "Gradient-Free Few-Shot Adaptation of Vision Models via Agentic Coding",
+  "2611.28107": "Cyclic Discrete Diffusion: A Novel Multi-Class Segmentation Refinement Technique",
+  "2611.28111": "GC-GS: Optimizing 3D Gaussian Splatting with Gradient Conflict as a Geometry Signal",
+  "2611.28115": "NOVA: Normalization-Aware Output-Guided Attention Acceleration for Video Diffusion Transformers",
+  "2611.28116": "Is It the Agent or the Retry? Separating Selection from Agency in Text-to-Image Generation",
+  "2611.28117": "PhoneQC: Benchmarking Multimodal LLMs for Order-Level Smartphone Trade-in Inspection",
+  "2611.28118": "StateBind: Exposing the Symbol-to-State Binding Gap in Visual Measurement",
+  "2611.28120": "Separating Module Gain From Transport Plan Contribution in Audio-Visual Dynamic Facial Expression Recognition",
+  "2611.28122": "RALC: Risk-Controlled Local Adoption of Segmentation Updates with Few Calibration Images",
+  "2611.28123": "Seeing the Invisible: How Vision-Language Models Read, Predict and Trace Radio Fields",
+  "2611.28124": "ReMiC: Representation-Driven Token Pruning for 3D VLMs via Minimax Hierarchical Clustering",
+  "2611.28129": "Urban State Representation for Autonomous Mobility: A Survey of Multimodal Perception, Architectures, Datasets, and Benchmarks",
+  "2611.28134": "SceneTether: Activity-Gated Value Anchoring for Long-Horizon Autoregressive Image Animation",
+  "2611.28135": "Beyond Output Suppression: Mitigating Privacy Risks in LVLMs via Visual Intrinsic Privacy Erasure",
+  "2611.28136": "ENGRAM: Reliability-Weighted Latent Fusion and Occlusion-Aware Layered Readout for Video World Models",
+  "2611.28137": "Choose What Returns: Object-Aware KV Memory for Selective Recall in Interactive Video Generation",
+  "2611.28139": "Dynamics-Guided Conditional MeanFlow from Regional Interaction to Internal Revision and Its Application to CT Imaging",
+  "2611.28146": "Close the Loop on the Retrievability Gap",
+  "2611.28148": "SYLVA: Self-Correcting Multi-Agent Markets over Frozen LLMs via Escrow Settlement, Step-Level Fault Isolation, and Contextual Routing",
+  "2611.28152": "STEGOGUARD-LM: Evaluating End-to-End Protection Against LLM Covert Channels",
+  "2611.28154": "Beyond Fidelity: Evaluating Synthetic Medical Imaging Data",
+  "2611.28158": "Measuring and Teaching Language Model Agents to Act on Delayed Consequences",
+  "2611.28161": "Duplicate- and Patient-Overlap Leakage in Brain MRI Tumor Classification: A Multi-Model Evaluation",
+  "2611.28167": "VideoJSON: A Minimal Harness Beats Purpose-Built Memory for Ultra-Long Video Understanding",
+  "2611.28170": "How Behavioral Structure Shapes Agent Strategy in Language-Based Economic Games",
+  "2611.28171": "RefineKV: Query-Adaptive KV Cache Compression via Attention-Error Bounds",
+  "2611.28173": "Selective Verification in Multi-Agent Orchestration with Large Language Models",
+  "2611.28175": "A world model for longitudinal health-trajectory prediction in older adults across multinational cohorts",
+  "2611.28176": "Med-Agentic: Distilling Agentic Medical Reasoning with Internalized Meta-Capabilities",
+  "2611.28179": "Quality-Control Policies Shape Model Behaviour in Computational Pathology",
+  "2611.28191": "BReD: BEV Residual Diffusion for Feed-Forward Road Gaussian Reconstruction",
+  "2611.28193": "FastD4RT: Training-Free Acceleration of Dynamic 4D Reconstruction and Tracking",
+  "2611.28194": "HEP-Ex-Bench: Evaluating Agentic Performance in High Energy Physics Experiment Data Analyses with Sealed Worlds",
+  "2611.28197": "From Point Clouds to Engineering Models: Benchmarking Agentic 3D Reconstruction in the Built Environment",
+  "2611.28198": "EID-Net: Endoscopic Illumination-aware Degradation Correction Network",
+  "2611.28202": "AutoPILOT: A Visual Agent Harness for Real-Time Gameplay",
+  "2611.28221": "Video-as-Weights: Compiling a Video Once into Parametric and Token Memory",
+  "2611.28227": "Feedback Shortcut: Speculative Decoding for Latent Feedback Transformers",
+  "2611.28231": "Evaluating Memanto on DolphinBench for AI Agents",
+  "2611.28234": "Learning the Projection onto the Data Support: Distribution Learning that Avoids Memorization",
+  "2611.28244": "Demystifying the Autoresearch Harness: How Context and Skills Shape Self-Evolving Agents",
+  "2611.28256": "FlowPAC: Flow-Guided Visual Pruning and Action Caching for Efficient VLA Inference",
+  "2611.28259": "The Cross-Context Threshold Test: Detecting Discrimination Under Environmental Shifts",
+  "2611.28262": "FoGConcept: Identifying Interpretable Movement Concepts for Freezing-of-Gait Detection from Multi-Scale IMU Signals",
+  "2611.28265": "DeFlowCritic: Dense Latent Reward Alignment for Text-to-Image Flow Matching Models",
+  "2611.28281": "Learning a Rule Bank to Revise 3D CT Reports with Independent Evidence",
+  "2611.28283": "HandXFM: Semantic-Structural Distillation for Hand Radiograph Foundation Models",
+  "2611.28285": "Specialized Large Language Models for Markovian Reasoning: Structural Cache Compression, Transition Pretraining, and Dual-Loop Transformers",
+  "2611.28286": "Scalable Beckmann Maps Improve One-step Generation",
+  "2611.28287": "When Video Verifier Scores Mislead: Capability Assessment and Verifier Selection",
+  "2611.28289": "Intervention-Robust VLA: Diverse Demonstrations for Robot Deployment with Safety Filters",
+  "2611.28293": "Feedback-Driven Prompt Refinement for Educational AI: Affective Trajectory Estimation and Bloom's Taxonomy Classification",
+  "2611.28294": "MRI-Driven Dual-Energy CT Synthesis via Conditional Denoising Diffusion Probabilistic Models for MRI-only Radiotherapy and Protontherapy",
+  "2611.28298": "Language Model Harnesses can be Compositional Generalizers",
+  "2611.28299": "Benchmarking EEG feature families for ADHD research in children and adolescents: performance and explainability across attention tasks",
+  "2611.28308": "Probing Invisible Actuation Shifts for Test-time Calibration of Visuomotor Policies",
+  "2611.28314": "INSEP: Refusal-Direction Inseparability as a Defense Against Abliteration",
+  "2611.28318": "Selection Policies for Equal-Byte Mixed-Precision Quantization of Small Language Models",
+  "2611.28319": "Learning a Food World Model That Predicts the Next State from Production Data",
+  "2611.28324": "MatHarness: Towards Long-Horizon Open-ended AutoResearch for Computational Materials Science",
+  "2611.28327": "AV-FLARE: Feature-Level Reliability Estimation for Multimodal Emotion Recognition",
+  "2611.28331": "Decision models for UAVBench and the viability of edge deployment",
+  "2611.28332": "GlaucomaMarker - Biomarker-Grounded Glaucoma Vision-Language Model",
+  "2611.28336": "Alignment under Hard Negative Re-Pairing: Cross-Modal Similarity, Scale and Retrieval",
+  "2611.28341": "When Tools Fail, Agents Fabricate: Silent Failure and Verification-First Oversight in Tool-Using LLM Agents",
+  "2611.28342": "Which Loans, Not How Many: Exactly Level-Invariant, Anytime-Valid Monitoring of Deployed Risk Models",
+  "2611.28345": "Toward Adversarially Robust World Models",
+  "2611.28346": "Defending Vision-Language-Action Models against Transferable Attacks via Visual-Proprioceptive Consistency",
+  "2611.28348": "SMAD: A Semantics-Guided Multi-Agent Framework for Unsupervised Time-Series Anomaly Detection",
+  "2611.28349": "Grammar-as-a-Draft: More Tokens per Speculative Decoding Step on Grammar-Constrained Structured Outputs",
+  "2611.28350": "Two Actions from One State: Fork Futures Teach JEPA World Models to Compare",
+  "2611.28354": "Understanding Membership Inference Attacks on EEG Models",
+  "2611.28356": "Engram: Multi-Stage Memory for Agentic Tuning of Heterogeneous Models",
+  "2611.28366": "Cross-Site Transformers Are Robust Heart Rate Estimators",
+  "2611.28369": "CausalNTP: A World-Model Recipe for Causal Next-Token Prediction under Noisy Training-data",
+  "2611.28371": "How a Prediction Dies: A Challenge-Driven, Rule-Bound Self-Refutation in an LLM Agent Society",
+  "2611.28379": "Beyond Relevance: An Empirical Study of Multimodal LLMs for Diversity-Aware Recommendation Reranking",
+  "2611.28387": "Knowing What You Carry: Scalable Physics-Anchored World Models for Robotic Planning with Liquid Payloads",
+  "2611.28397": "TOGO: Take One Image Editor, Get One Video Editor for Free",
+  "2611.28402": "Plan Big, Paint Small: Semantic-Aware Computation Allocation for Efficient Autoregressive Video Generation",
+  "2611.28403": "Occupancy Planar Patch: Incremental Probabilistic Bounded-Plane Reconstruction from LiDAR Data",
+  "2611.28408": "The Effect of Security-Focused Prompts on Reported Findings: A Controlled Experiment on 400 AI-Generated Web Applications",
+  "2611.28411": "ScaleEvals: Scaling Generalist Policy Evaluation through Reset-Free Autonomous Play",
+  "2611.28418": "WingBench: Benchmarking How AI Agents Search for Better Designs",
+  "2611.28419": "Center-Aware Ordinal Learning for Prostate Cancer Grading from Histopathology Images",
+  "2611.28420": "Diversity over Scale: Recursive Self-Improvement with Ensembles of Small Open-Weight Models",
+  "2611.28421": "Targeted Learning for Externally Controlled Trials and Beyond",
+  "2611.28441": "Human-in-the-Loop Runbook Improvement with Agentic Support Automation",
+  "2611.28451": "Guidance-Induced Activation of Score Estimation Errors in Diffusion Models",
+  "2611.28454": "When a Permitted Action Completes a Forbidden Workflow: Designing Consequence-Oriented Approval for LLM Agents",
+  "2611.28461": "CAMA: Calibrated Anti-Collapse Marginal Alignment for Test-Time Adaptation of Vision-Language Models",
+  "2611.28469": "Automated Safety Analysis for Agentic Workflows",
+  "2611.28477": "ESM-Bench: A Benchmark for Evaluating Whether AI Agents Understand Earth System Model Physics and Code",
+  "2611.28485": "VICA: Video Contextual Agreement for AIGC Video Detection and Localization",
+  "2611.28489": "Open Vision Banana: An Open Framework for Unified Visual Perception through Generation in RGB Space",
+  "2611.28497": "When AI Performance Is Not Enough: Statistical Guardrails for Clinical Development",
+  "2611.28502": "Shoonya: Zero-Socket In-Process Small Language Models for Graph Databases with Schema-Epoch KV Caching, Live Catalog Logit Masking, and Verifier-Advantage Distillation",
+  "2611.28505": "Simple Baselines for Fetal Brain Unsupervised Anomaly Detection",
+  "2611.28507": "A generative framework for unified representations bridging electrophysiological and haemodynamic brain activity",
+  "2611.28508": "State of Mind: Learning and Evaluating World Models of Naturalistic Brain Dynamics",
+  "2611.28509": "AlpaSafe: Risk-Aware Trajectory Selection for Vision-Language-Action Models in Autonomous Driving",
+  "2611.28520": "VG3R: Video Generation Model for Feed-Forward 3D Reconstruction",
+  "2611.28522": "DisSparse: Pipelined Top-$p$ Sparse Attention for Long-Context LLM Serving",
+  "2611.28535": "Where the Image Sits: Vision-Text Order Bias in Jev",
+  "2611.28549": "Analyzing Atypical Local Features in Museum Artifacts using Generative Image Inpainting",
+  "2611.28551": "PhysPPF: Learning Robotic Manipulation with Past, Present, and Future Physical Representations",
+  "2611.28553": "WorldWeave: Rethinking Embodied Navigation through Cross-Task World Modeling",
+  "2611.28558": "From Reward Engineering to Data-Centric Reinforcement Learning for Effective Agentic Visual Tool Use",
+  "2611.28563": "Selective ROM Weight Storage for Responsive LLM Control on Edge Robots",
+  "2611.28564": "Tool-to-Self: Internalizing Visual Tool Capabilities via Scaffolded Reinforcement Learning",
+  "2611.28573": "MACE: Memory-Augmented Crop-Disease Evaluation of Frozen Vision-Language Models",
+  "2611.28576": "CLASP: Deciding Structure and Claims Before Decoding for Whole-Slide Pathology Report Generation",
+  "2611.28584": "Right Verdict, Right Reason? An Execution-Grounded Study of Whether LLM Vulnerability Detectors Understand Vulnerabilities",
+  "2611.28585": "AsyncMixVLA: Runtime Asynchronous Robot Policy Switching for Adaptation to Dynamic Environments",
+  "2611.28586": "MedCoast: Semantic Abstraction of Reasoning Trajectories for Test-Time Biomedical Question Answering",
+  "2611.28589": "CLOSE: A Calibrated Label-free Online Self-Evaluating Verifier for Object Hallucination in Vision-Language Models",
+  "2611.28591": "CAR3T: Generalizable Calibration-Guided Reference-View Attention Reuse for Multi-View 3D Transformers",
+  "2611.28592": "When Fog Becomes a Weapon: Atmospheric Attacks on Visible-Infrared Vision-Language Models",
+  "2611.28600": "OKB-CFM: Observation-Keyed Barycentric Conditional Flow Matching for Unpaired Sparse-to-Dense Cardiac Shape Completion",
+  "2611.28604": "MADRec: Reliable Multi-Agent Reasoning with Evidence-Grounded Debate for Recommendation",
+  "2611.28607": "BitShare: Sensitivity-Aware Binning and Bit Sharing for Compacting LLM Weight Storage",
+  "2611.28610": "Agent Money Benchmark: Can AI Agents Be Trusted to Spend Money?",
+  "2611.28616": "Fast World Planner: Advantage-Aware Action-Chunk Policy for Online Planning",
+  "2611.28617": "VeriLadder: A Multi-Agent Specification Refinement System for Tool-Verified Verilog Datasets",
+  "2611.28621": "Interpreting Diffusion Model Activations in Natural Language",
+  "2611.28623": "Neural Schr\\\"{o}dinger Bridge via Yasue Action with Applications to Generative Modeling",
+  "2611.28628": "Nearly Minimax-Optimal Sample Complexity of Natural Policy Gradient with a Matching Information-Theoretic Lower Bound",
+  "2611.28629": "Seeing 3D Occupancy Through Scene-Adaptive Projection",
+  "2611.28632": "Self-prediction residuals improve single-pass detection of wrong-object boxes in grounded vision-language models",
+  "2611.28635": "LoopSeek: Decoupling System One Search from System Two Answering for Long Video Understanding",
+  "2611.28636": "SemGuard: Semantics-Decoupled Watermarking for Gaussian Splatting",
+  "2611.28640": "Mitigating Backdoors in Masked Diffusion Language Models",
+  "2611.28641": "CrossPanel: Exposing the Answer-Evidence Gap in Scientific Figure Understanding",
+  "2611.28642": "Aegis: A Conversational Prototype for Lung Cancer Risk Information and Follow-up",
+  "2611.28648": "Beyond Full-Context Accuracy: Context-Marginalized Evaluation of Test-Time Structure-Aware Inference in EEG-to-Image Retrieval",
+  "2611.28649": "S-Mind: Internalizing Multi-View Geometry for Spatial Intelligence",
+  "2611.28650": "Unlearning Model Identity: Ablating LoRA Weights from Question-Based Identity Tuning",
+  "2611.28654": "Stein Guidance without Gradients: Discretization Uniform Diffusion Inference Time Scaling beyond Particle SMC",
+  "2611.28656": "Dual-Stream Event-to-Video Reconstruction",
+  "2611.28660": "Persuasion from Within: Model-Based Insider Attacks in Multi-Agent LLM Debate and Consensus",
+  "2611.28662": "Robust Forest-based Estimation of Heterogeneous Treatment Effect Under High-dimensional Confounding",
+  "2611.28665": "Seeing Right, Writing Wrong: Where Short Chain-of-Thought Breaks Spatial VQA",
+  "2611.28666": "RecallWorld: Episodic Memory for Persistent Embodied Video World Models",
+  "2611.28670": "Learning Continuous Scene Depth Representations via Cross-Modal Gaussian Rendering",
+  "2611.28671": "The Evaluation Substrate Matters: Benchmarking Multi-Agent Serving Substrates",
+  "2611.28673": "ViewAgent3D: A Training-Free Multi-View Pipeline for 3D Scene Understanding",
+  "2611.28680": "Improving the Improver: Semantic PID Control for Medical Agent Self-Improvement",
+  "2611.28682": "CHORD: Closed-loop Human-Object Rectified-flow Decomposition",
+  "2611.28684": "Rethinking Visual Token Retention in Multimodal Reasoning",
+  "2611.28692": "Can Your AI Twin Meet People for You? It Can Hold a Conversation. But What Does It Need to Judge Like You?",
+  "2611.28695": "Wavelet-CFM for the extragalactic millimeter-wave sky",
+  "2611.28706": "SkillLens: An Interactive Human-LLM System for Diagnosing and Refining Agent Skills",
+  "2611.28707": "IRIS: Inverse Dynamics from Random Exploration with Eye-in-hand Sensing",
+  "2611.28710": "CoopOcc: Cooperative 3D Semantic Occupancy Perception via Multi-Agent and Cross-Modal Fusion",
+  "2611.28711": "When Local Semantics Disagree: Learning to Detect Fake News through Weakly Supervised Cross-Modal Reasoning",
+  "2611.28716": "DynFlux: Learning to Dynamically Balance Consensus and Conflict in Multimodal Emotion Recognition",
+  "2611.28717": "ReCoRain: Reliability-Coupled Content and Noise Conditioning for Event-Guided Video Deraining",
+  "2611.28719": "KMed-31B Technical Report",
+  "2611.28723": "AERIN: Aerial Instance Navigation with a Visual World Model",
+  "2611.28725": "Routing Collapse in Multimodal Mixture-of-Experts: Cross-Modal Conditioning Restores Expert Diversity Without Improving Accuracy",
+  "2611.28726": "Seeing Is Not Planning: Spatiotemporal Planning and Plan Repair in Multimodal LLMs",
+  "2611.28732": "Entangle: Scaling Human-Video In-Context World-Action Models across Unseen Tasks and Contexts",
+  "2611.28745": "Multimodal LLMs Know the Game but Assume the Real World",
+  "2611.28748": "Beyond Single-Turn Privacy: Training-Data Leakage in Conversational RAG",
+  "2611.28753": "From Pairwise to Collective: Encoder Collections Make Unpaired Vision-Language Alignment Reliable",
+  "2611.28756": "PSC-Gen: Physical Sequence Conditioning for Video Generation via Agentic Visual Planning",
+  "2611.28760": "Analytical Modeling and Optimal GPU Provisioning for Disaggregated LLM Inference",
+  "2611.28762": "Frozen by the Mean: Early Temporal Guidance Unfreezes Motion in Video Diffusion Models",
+  "2611.28764": "Contrastive Gradient Guidance for Test-Time Multi-Preference Alignment of Diffusion Models",
+  "2611.28766": "JevNavAgent: A Single-Forward Visual Navigation Agent with Trajectory-Level RL for Gigapixel Pathology",
+  "2611.28779": "Imagine Smarter, Drive Faster: Efficient World Modeling for Decision-Aware Autonomous Driving",
+  "2611.28783": "3DCodeFactory: Scaling Training Data for 3D Code Agents",
+  "2611.28787": "DiscernBench: Evaluating Cooperative Discernment of LLM Agents in Institutional Settings",
+  "2611.28791": "ArrythML-II: An Optimized TinyML Framework for ECG Arrhythmia Detection and Multi-Class Beat Classification on Wearable Devices",
+  "2611.28792": "ArgsWorld: Unifying 3DGS Scene Reconstruction, Generation and Extrapolation with Autoregressive Diffusion Transformer",
+  "2611.28793": "STAC++: Plug-and-Play Adaptive Spatio-Temporal Aware Cache Compression for Streaming 3D Reconstruction",
+  "2611.28796": "NavDecision: Parallel Multi-Step Action Prediction with Persistent Self-Referential Learning for Vision-and-Language Navigation",
+  "2611.28802": "Not All Directions Are Flat: Decomposed-Gradient Flatness for Sparse-View 3D Gaussian Splatting",
+  "2611.28803": "DeRail: Escaping Trajectory Priors via Counterfactual Action Steering for Mid-Execution Instruction Switching",
+  "2611.28804": "Synthetic EHR Generators Should Be Audited Like LLMs",
+  "2611.28809": "RadAG: Reward-Adversarial Attention Guidance for Efficient Inference-Time Alignment of Diffusion Models",
+  "2611.28810": "Learning free energy across a differentiable temperature range by deep generative modeling",
+  "2611.28815": "ViTrust: Learning 3D Observation Trust for Deformable Physical World Models",
+  "2611.28823": "When Being Wrong Is Right: Reverse-Capability Audio CAPTCHAs through Psychoacoustic Design",
+  "2611.28824": "Statistical mechanics of linear classification on hierarchical tree data",
+  "2611.28825": "More Is Never Less: Affordable Robustness to Additive Attacks via Monotone Multiple-Instance Learning",
+  "2611.28833": "Self-WSP: Can Language Models Improve Themselves Through Weight-Space Programming?",
+  "2611.28834": "Operational Assurance for LLM-Based Systems under Governance Opacity",
+  "2611.28839": "Spatially Grounded Latent Lookahead for Vision-Language-Action Models",
+  "2611.28842": "Learning How a Body Moves: Few-Shot Body Inference for Visual World Models of Animated Characters",
+  "2611.28846": "EA-Bench: Measuring information and action efficiency under imperfect instructions",
+  "2611.28849": "Guarding with Judgment: Learning to Intervene for Multimodal Safety",
+  "2611.28853": "CivilCADBench: Benchmarking Multimodal LLMs for Understanding, Reconstructing, and Designing Civil Engineering Drawing Sets",
+  "2611.28856": "PhyMind: Physics-Informed Masked Autoencoding for EEG Foundation Models",
+  "2611.28858": "Interaction Retention and Output-Likelihood Training in Parallel Sampling",
+  "2611.28867": "LIBERO-MOR: A Multimodal Robustness Benchmark Across the Vision-Language-Action Pipeline",
+  "2611.28871": "KineState-SWAM: A Surgical World Action Model with Explicit Kinematics and Causal Interaction Dynamics",
+  "2611.28873": "NAT: Scaling Causal Neural Action Tokenizers Across Embodiments",
+  "2611.28878": "Eidetic Code World Model",
+  "2611.28881": "FormaFin: Verifiable Financial Analysis with Solver-Guided Reinforcement Learning",
+  "2611.28890": "Controlled One-Click Benchmarking and Post-Fusion Recalibration for Support-Conditioned Medical Segmentation",
+  "2611.28901": "Gaze Graphs: A Scene-Level Representation of Visual Attention in the Operating Room",
+  "2611.28902": "StudioBench: Benchmarking Agentic Multimodal Large Language Models for Productive Audiovisual Creation",
+  "2611.28907": "STRIDE: Strategy-to-Tactics Retrieval-Guided Skill Disclosure and Evolution for Agentic Reinforcement Learning",
+  "2611.28913": "From Dense to Sparse: Morton-Ordered Sparse Mapping for Efficient 3D Mesh Generation",
+  "2611.28917": "Div3DAfford: Diverse 3D affordance grounding",
+  "2611.28919": "When Do Better Visual World Models Make Better Plans? Decision-Aligned Selection for Latent Planning",
+  "2611.28940": "When Rubrics Do Not Decide: Silent Value Completion in LLM Evaluation",
+  "2611.28942": "XShot: Cross-Shot Video Object Insertion from a Reference Video",
+  "2611.28943": "SANA-Robot: Efficient World Action Model with Hybrid Memory",
+  "2611.28947": "Don't Sleep, Keep Watch: Proactive Perception for Computer-Use Agents",
+  "2611.28957": "Micro Operational Robustness of LLMs on Code Generation",
+  "2611.28960": "EmoRouter: Adaptive Modality Cascading for Multimodal Emotion Recognition",
+  "2611.28963": "Learning Land-Surface Hydrology World Model from Satellite Observations"
+ },
+ "en": {
+  "stats": {
+   "total": 431,
+   "per_category": [
+    {
+     "category": "cs.CV",
+     "n": 174,
+     "primary": 143
+    },
+    {
+     "category": "cs.AI",
+     "n": 165,
+     "primary": 52
+    },
+    {
+     "category": "cs.LG",
+     "n": 137,
+     "primary": 59
+    },
+    {
+     "category": "cs.CL",
+     "n": 60,
+     "primary": 34
+    },
+    {
+     "category": "cs.RO",
+     "n": 41,
+     "primary": 33
+    },
+    {
+     "category": "stat.ML",
+     "n": 21,
+     "primary": 11
+    },
+    {
+     "category": "cs.MA",
+     "n": 11,
+     "primary": 8
+    },
+    {
+     "category": "cs.IR",
+     "n": 10,
+     "primary": 7
+    },
+    {
+     "category": "cs.NE",
+     "n": 8,
+     "primary": 4
+    }
+   ],
+   "avg_4w": 736.9,
+   "days_4w": 19,
+   "vs_avg": 0.58
+  },
+  "keywords": [
+   {
+    "name": "Video generation",
+    "about": "Video generators are made controllable, budget-routed, and faster through diffusion-transformer attention and planning.",
+    "terms": [
+     "video generators",
+     "video diffusion"
+    ],
+    "paper_ids": [
+     "2611.28098",
+     "2611.28099",
+     "2611.28115",
+     "2611.28402",
+     "2611.28756",
+     "2611.28134",
+     "2611.28136",
+     "2611.28137",
+     "2611.28397",
+     "2611.28485",
+     "2611.28520",
+     "2611.28656",
+     "2611.28717",
+     "2611.28732",
+     "2611.28762",
+     "2611.28792",
+     "2611.28871",
+     "2611.28902",
+     "2611.28942",
+     "2611.28943"
+    ],
+    "count": 20,
+    "trend": {
+     "label": "rising",
+     "n": 20,
+     "of": 431,
+     "per_1k": 46.4,
+     "baseline": {
+      "n": 720,
+      "papers": 42870,
+      "per_1k": 16.79,
+      "weeks": 12
+     },
+     "lift": 2.76,
+     "score": 7.46
+    }
+   },
+   {
+    "name": "World models",
+    "about": "World models predict future states for video, embodied navigation, health trajectories, and planning.",
+    "terms": [
+     "World Models",
+     "Visual World"
+    ],
+    "paper_ids": [
+     "2611.28136",
+     "2611.28723",
+     "2611.28842",
+     "2611.28919",
+     "2611.28175",
+     "2611.28129",
+     "2611.28286",
+     "2611.28319",
+     "2611.28345",
+     "2611.28350",
+     "2611.28369",
+     "2611.28387",
+     "2611.28508",
+     "2611.28509",
+     "2611.28551",
+     "2611.28553",
+     "2611.28660",
+     "2611.28666",
+     "2611.28726",
+     "2611.28779",
+     "2611.28792",
+     "2611.28815",
+     "2611.28871",
+     "2611.28878",
+     "2611.28963"
+    ],
+    "count": 25,
+    "trend": {
+     "label": "rising",
+     "n": 25,
+     "of": 431,
+     "per_1k": 58.0,
+     "baseline": {
+      "n": 1101,
+      "papers": 42870,
+      "per_1k": 25.68,
+      "weeks": 12
+     },
+     "lift": 2.26,
+     "score": 7.426
+    }
+   },
+   {
+    "name": "Vision-language models",
+    "about": "Vision-language models read radio fields, infer social dynamics, and expose tokenizer vulnerabilities.",
+    "terms": [
+     "vision-language models"
+    ],
+    "paper_ids": [
+     "2611.28123",
+     "2611.28001",
+     "2611.28004",
+     "2611.28078",
+     "2611.28079",
+     "2611.28081",
+     "2611.28093",
+     "2611.28094",
+     "2611.28100",
+     "2611.28101",
+     "2611.28104",
+     "2611.28117",
+     "2611.28124",
+     "2611.28135",
+     "2611.28167",
+     "2611.28221",
+     "2611.28281",
+     "2611.28332",
+     "2611.28461",
+     "2611.28535",
+     "2611.28564",
+     "2611.28573",
+     "2611.28589",
+     "2611.28592",
+     "2611.28632",
+     "2611.28641",
+     "2611.28665",
+     "2611.28684",
+     "2611.28766",
+     "2611.28947"
+    ],
+    "count": 30,
+    "trend": {
+     "label": "rising",
+     "n": 30,
+     "of": 431,
+     "per_1k": 69.61,
+     "baseline": {
+      "n": 1698,
+      "papers": 42870,
+      "per_1k": 39.61,
+      "weeks": 12
+     },
+     "lift": 1.76,
+     "score": 6.949
+    }
+   },
+   {
+    "name": "KV cache",
+    "about": "KV-cache compression and caching speed up long-context LLM, VLA, and video-generation inference.",
+    "terms": [
+     "key-value",
+     "KV cache"
+    ],
+    "paper_ids": [
+     "2611.28171",
+     "2611.28137",
+     "2611.28256",
+     "2611.28285",
+     "2611.28502",
+     "2611.27997",
+     "2611.28115",
+     "2611.28198",
+     "2611.28221",
+     "2611.28402",
+     "2611.28522",
+     "2611.28563",
+     "2611.28671",
+     "2611.28793"
+    ],
+    "count": 14,
+    "trend": {
+     "label": "rising",
+     "n": 14,
+     "of": 431,
+     "per_1k": 32.48,
+     "baseline": {
+      "n": 627,
+      "papers": 42870,
+      "per_1k": 14.63,
+      "weeks": 12
+     },
+     "lift": 2.22,
+     "score": 5.856
+    }
+   },
+   {
+    "name": "Agent benchmarks",
+    "about": "Agent benchmarks evaluate visual gameplay, physics analysis, money spending, and self-evolving harnesses.",
+    "terms": [
+     "GPT-6"
+    ],
+    "paper_ids": [
+     "2611.28202",
+     "2611.28194",
+     "2611.28231",
+     "2611.28244",
+     "2611.28610",
+     "2611.28649",
+     "2611.28680",
+     "2611.28726",
+     "2611.28940"
+    ],
+    "count": 9,
+    "trend": {
+     "label": "rising",
+     "n": 9,
+     "of": 431,
+     "per_1k": 20.88,
+     "baseline": {
+      "n": 304,
+      "papers": 42870,
+      "per_1k": 7.09,
+      "weeks": 12
+     },
+     "lift": 2.94,
+     "score": 5.233
+    }
+   },
+   {
+    "name": "3D scene reconstruction",
+    "about": "Methods reconstruct and understand 3D scenes from video, multi-view geometry, and Gaussian splatting.",
+    "terms": [
+     "3D scene"
+    ],
+    "paper_ids": [
+     "2611.28520",
+     "2611.28636",
+     "2611.28649",
+     "2611.28673",
+     "2611.28124",
+     "2611.28710",
+     "2611.28783",
+     "2611.28792"
+    ],
+    "count": 8,
+    "trend": {
+     "label": "rising",
+     "n": 8,
+     "of": 431,
+     "per_1k": 18.56,
+     "baseline": {
+      "n": 242,
+      "papers": 42870,
+      "per_1k": 5.64,
+      "weeks": 12
+     },
+     "lift": 3.28,
+     "score": 5.059
+    }
+   },
+   {
+    "name": "Long-video understanding",
+    "about": "Agents and memory structures retrieve evidence from ultra-long videos for question answering and reconstruction.",
+    "terms": [
+     "Long-Video"
+    ],
+    "paper_ids": [
+     "2611.28093",
+     "2611.28102",
+     "2611.28167",
+     "2611.28137",
+     "2611.28193",
+     "2611.28402",
+     "2611.28635"
+    ],
+    "count": 7,
+    "trend": {
+     "label": "rising",
+     "n": 7,
+     "of": 431,
+     "per_1k": 16.24,
+     "baseline": {
+      "n": 170,
+      "papers": 42870,
+      "per_1k": 3.97,
+      "weeks": 12
+     },
+     "lift": 4.08,
+     "score": 4.926
+    }
+   },
+   {
+    "name": "Diffusion and flow models",
+    "about": "Diffusion and flow models are analyzed for fairness, adversarial tokenization, distribution learning, and controllable generation.",
+    "terms": [
+     "generative model"
+    ],
+    "paper_ids": [
+     "2611.28077",
+     "2611.28078",
+     "2611.28098",
+     "2611.28234",
+     "2611.28319",
+     "2611.28331",
+     "2611.28520",
+     "2611.28549",
+     "2611.28623",
+     "2611.28628",
+     "2611.28649",
+     "2611.28810",
+     "2611.28824",
+     "2611.28853",
+     "2611.28917",
+     "2611.28943"
+    ],
+    "count": 16,
+    "trend": {
+     "label": "hot",
+     "n": 16,
+     "of": 431,
+     "per_1k": 37.12,
+     "baseline": {
+      "n": 1202,
+      "papers": 42870,
+      "per_1k": 28.04,
+      "weeks": 12
+     },
+     "lift": 1.32,
+     "score": 4.806
+    }
+   },
+   {
+    "name": "Computational pathology",
+    "about": "Pathology models grade prostate cancer, detect fetal anomalies, and generate whole-slide reports under quality controls.",
+    "terms": [
+     "pathology"
+    ],
+    "paper_ids": [
+     "2611.28154",
+     "2611.28179",
+     "2611.28419",
+     "2611.28505",
+     "2611.27987",
+     "2611.28576",
+     "2611.28680",
+     "2611.28766"
+    ],
+    "count": 8,
+    "trend": {
+     "label": "rising",
+     "n": 8,
+     "of": 431,
+     "per_1k": 18.56,
+     "baseline": {
+      "n": 297,
+      "papers": 42870,
+      "per_1k": 6.93,
+      "weeks": 12
+     },
+     "lift": 2.67,
+     "score": 4.767
+    }
+   },
+   {
+    "name": "Multimodal LLMs",
+    "about": "Multimodal LLMs are tested on smartphone inspection, recommendation, pathology reporting, and spatiotemporal planning.",
+    "terms": [
+     "Multimodal LLMs"
+    ],
+    "paper_ids": [
+     "2611.28117",
+     "2611.28379",
+     "2611.28576",
+     "2611.28726",
+     "2611.28745",
+     "2611.28853"
+    ],
+    "count": 6,
+    "trend": {
+     "label": "rising",
+     "n": 6,
+     "of": 431,
+     "per_1k": 13.92,
+     "baseline": {
+      "n": 104,
+      "papers": 42870,
+      "per_1k": 2.43,
+      "weeks": 12
+     },
+     "lift": 5.71,
+     "score": 4.739
+    }
+   },
+   {
+    "name": "Multimodal emotion recognition",
+    "about": "Emotion recognition fuses audio, visual, and text signals while handling modality conflict and routing collapse.",
+    "terms": [
+     "Multimodal Emotion Recognition"
+    ],
+    "paper_ids": [
+     "2611.28008",
+     "2611.28327",
+     "2611.28716",
+     "2611.28725",
+     "2611.28960"
+    ],
+    "count": 5,
+    "trend": {
+     "label": "rising",
+     "n": 5,
+     "of": 431,
+     "per_1k": 11.6,
+     "baseline": {
+      "n": 19,
+      "papers": 42870,
+      "per_1k": 0.44,
+      "weeks": 12
+     },
+     "lift": 25.5,
+     "score": 4.675
+    }
+   },
+   {
+    "name": "Wearable sensing",
+    "about": "Wearable and smartphone sensors estimate running form, physical function, activity, and low-light video.",
+    "terms": [
+     "wearable"
+    ],
+    "paper_ids": [
+     "2611.27996",
+     "2611.28005",
+     "2611.28033",
+     "2611.28085",
+     "2611.28008",
+     "2611.28791",
+     "2611.28901"
+    ],
+    "count": 7,
+    "trend": {
+     "label": "rising",
+     "n": 7,
+     "of": 431,
+     "per_1k": 16.24,
+     "baseline": {
+      "n": 213,
+      "papers": 42870,
+      "per_1k": 4.97,
+      "weeks": 12
+     },
+     "lift": 3.26,
+     "score": 4.672
+    }
+   },
+   {
+    "name": "Multiple-instance learning",
+    "about": "Multiple-instance learning handles weak labels in pathology grading, fake-news detection, and robust classification.",
+    "terms": [
+     "instance learning"
+    ],
+    "paper_ids": [
+     "2611.28179",
+     "2611.28419",
+     "2611.28711",
+     "2611.28825",
+     "2611.28766"
+    ],
+    "count": 5,
+    "trend": {
+     "label": "rising",
+     "n": 5,
+     "of": 431,
+     "per_1k": 11.6,
+     "baseline": {
+      "n": 60,
+      "papers": 42870,
+      "per_1k": 1.4,
+      "weeks": 12
+     },
+     "lift": 8.22,
+     "score": 4.358
+    }
+   },
+   {
+    "name": "Small language models",
+    "about": "Small language models self-improve, adapt to medical QA, and compile video into compact memory.",
+    "terms": [
+     "small models"
+    ],
+    "paper_ids": [
+     "2611.28833",
+     "2611.28050",
+     "2611.28420",
+     "2611.28221",
+     "2611.28402",
+     "2611.28881"
+    ],
+    "count": 6,
+    "trend": {
+     "label": "rising",
+     "n": 6,
+     "of": 431,
+     "per_1k": 13.92,
+     "baseline": {
+      "n": 172,
+      "papers": 42870,
+      "per_1k": 4.01,
+      "weeks": 12
+     },
+     "lift": 3.46,
+     "score": 4.314
+    }
+   }
+  ],
+  "themes": [
+   {
+    "name": "LLM agents and multi-agent orchestration",
+    "summary": "These papers design and study harnesses, coordination protocols, and oversight mechanisms for LLM agents, ranging from decentralized multi-agent architectures and debate-based orchestration to agentic coding and tool-use frameworks. They differ in focus: some build reusable agent harnesses with memory, skills, and context management, others benchmark agent behavior under tool failures, imperfect instructions, or serving conditions, and several apply agentic systems to domains such as data curation, science, medicine, and design search.",
+    "terms": [
+     "multi-agent orchestration",
+     "agent harness",
+     "tool-using LLM agents",
+     "multi-agent system"
+    ],
+    "paper_ids": [
+     "2611.28003",
+     "2611.28010",
+     "2611.28025",
+     "2611.28103",
+     "2611.28105",
+     "2611.28116",
+     "2611.28148",
+     "2611.28158",
+     "2611.28170",
+     "2611.28173",
+     "2611.28176",
+     "2611.28194",
+     "2611.28197",
+     "2611.28202",
+     "2611.28231",
+     "2611.28244",
+     "2611.28298",
+     "2611.28324",
+     "2611.28341",
+     "2611.28348",
+     "2611.28356",
+     "2611.28371",
+     "2611.28418",
+     "2611.28420",
+     "2611.28441",
+     "2611.28477",
+     "2611.28558",
+     "2611.28564",
+     "2611.28604",
+     "2611.28610",
+     "2611.28617",
+     "2611.28660",
+     "2611.28671",
+     "2611.28706",
+     "2611.28846",
+     "2611.28881",
+     "2611.28907",
+     "2611.28947"
+    ],
+    "count": 38,
+    "trend": {
+     "terms": [
+      "multi-agent orchestration",
+      "agent harness",
+      "tool-using LLM agents",
+      "multi-agent system"
+     ],
+     "today": {
+      "n": 11,
+      "of": 431
+     },
+     "w1": {
+      "n": 27,
+      "papers": 2309,
+      "per_1k": 11.69
+     },
+     "w4": {
+      "n": 192,
+      "papers": 12192,
+      "per_1k": 15.75
+     },
+     "w12": {
+      "n": 771,
+      "papers": 42870,
+      "per_1k": 17.98
+     },
+     "label": "steady"
+    }
+   },
+   {
+    "name": "Embodied vision-language-action and world models",
+    "summary": "The papers develop vision-language-action policies and learned world models for embodied robots, spanning efficient inference, robustness and safety, memory, and planning. Some focus on accelerating or calibrating VLA deployment and defending against attacks, while others build world models that predict future states or action outcomes to guide planning and evaluation. They differ in whether the contribution is a policy-side mechanism or a predictive world model, and in the robotic domain considered.",
+    "terms": [
+     "Vision-Language-Action",
+     "world models",
+     "action prediction",
+     "robot policies"
+    ],
+    "paper_ids": [
+     "2611.28256",
+     "2611.28289",
+     "2611.28308",
+     "2611.28319",
+     "2611.28345",
+     "2611.28346",
+     "2611.28350",
+     "2611.28387",
+     "2611.28411",
+     "2611.28551",
+     "2611.28553",
+     "2611.28585",
+     "2611.28616",
+     "2611.28666",
+     "2611.28707",
+     "2611.28723",
+     "2611.28732",
+     "2611.28779",
+     "2611.28796",
+     "2611.28803",
+     "2611.28839",
+     "2611.28867",
+     "2611.28871",
+     "2611.28873",
+     "2611.28919",
+     "2611.28943"
+    ],
+    "count": 26,
+    "trend": {
+     "terms": [
+      "Vision-Language-Action",
+      "world models",
+      "action prediction",
+      "robot policies"
+     ],
+     "today": {
+      "n": 37,
+      "of": 431
+     },
+     "w1": {
+      "n": 170,
+      "papers": 2309,
+      "per_1k": 73.62
+     },
+     "w4": {
+      "n": 610,
+      "papers": 12192,
+      "per_1k": 50.03
+     },
+     "w12": {
+      "n": 2138,
+      "papers": 42870,
+      "per_1k": 49.87
+     },
+     "label": "rising"
+    }
+   },
+   {
+    "name": "Diffusion and Flow Matching Generative Models",
+    "summary": "The papers develop and analyze diffusion and flow-matching generative models, spanning guidance mechanisms, sampling dynamics, reward alignment, and efficient architectures. Some works provide theoretical accounts of score errors, parallel sampling, and transport maps, while others apply these models to clinical imaging, video, 3D interaction, segmentation, and astrophysical simulation. They differ in whether they target methodological advances, inference-time steering, or domain-specific synthesis.",
+    "terms": [
+     "diffusion models",
+     "flow matching",
+     "classifier-free guidance",
+     "sampling procedure"
+    ],
+    "paper_ids": [
+     "2611.28077",
+     "2611.28107",
+     "2611.28115",
+     "2611.28139",
+     "2611.28265",
+     "2611.28286",
+     "2611.28294",
+     "2611.28402",
+     "2611.28451",
+     "2611.28489",
+     "2611.28549",
+     "2611.28600",
+     "2611.28621",
+     "2611.28623",
+     "2611.28654",
+     "2611.28682",
+     "2611.28695",
+     "2611.28717",
+     "2611.28764",
+     "2611.28809",
+     "2611.28858"
+    ],
+    "count": 21,
+    "trend": {
+     "terms": [
+      "diffusion models",
+      "flow matching",
+      "classifier-free guidance",
+      "sampling procedure"
+     ],
+     "today": {
+      "n": 22,
+      "of": 431
+     },
+     "w1": {
+      "n": 105,
+      "papers": 2309,
+      "per_1k": 45.47
+     },
+     "w4": {
+      "n": 507,
+      "papers": 12192,
+      "per_1k": 41.58
+     },
+     "w12": {
+      "n": 1828,
+      "papers": 42870,
+      "per_1k": 42.64
+     },
+     "label": "steady"
+    }
+   },
+   {
+    "name": "LLM safety privacy and adversarial robustness",
+    "summary": "These papers evaluate and defend large language models against safety failures, privacy leakage, and adversarial manipulation. They audit evaluation practices such as sycophancy measurement, harmfulness criteria, and safety taxonomies, while proposing defenses against backdoors, abliteration, covert channels, and visual privacy exposure. Others analyze adversarial attacks, agentic workflow risks, and robustness of code generation.",
+    "terms": [
+     "sycophancy",
+     "privacy leakage",
+     "backdoor attacks",
+     "red-teaming"
+    ],
+    "paper_ids": [
+     "2611.28012",
+     "2611.28029",
+     "2611.28038",
+     "2611.28082",
+     "2611.28135",
+     "2611.28152",
+     "2611.28314",
+     "2611.28408",
+     "2611.28454",
+     "2611.28469",
+     "2611.28584",
+     "2611.28592",
+     "2611.28640",
+     "2611.28650",
+     "2611.28748",
+     "2611.28787",
+     "2611.28804",
+     "2611.28823",
+     "2611.28849",
+     "2611.28957"
+    ],
+    "count": 20,
+    "trend": {
+     "terms": [
+      "sycophancy",
+      "privacy leakage",
+      "backdoor attacks",
+      "red-teaming"
+     ],
+     "today": {
+      "n": 5,
+      "of": 431
+     },
+     "w1": {
+      "n": 9,
+      "papers": 2309,
+      "per_1k": 3.9
+     },
+     "w4": {
+      "n": 69,
+      "papers": 12192,
+      "per_1k": 5.66
+     },
+     "w12": {
+      "n": 279,
+      "papers": 42870,
+      "per_1k": 6.51
+     },
+     "label": "steady"
+    }
+   },
+   {
+    "name": "Multimodal LLM Reasoning, Alignment, and Hallucination Verification",
+    "summary": "These papers probe how vision-language and multimodal models reason over images, video, and spatial scenes, and where that reasoning breaks down. Several expose verification and measurement failures—object hallucination, wrong-object boxes, symbol-to-state binding, and answer-evidence gaps—and propose calibrated, label-free or training-free verifiers and evidence gates. Others target alignment, cross-modal representation, and benchmarks for spatial planning, multi-view geometry, and domain drawing sets.",
+    "terms": [
+     "object hallucination",
+     "self-verification",
+     "chain-of-thought",
+     "answer-evidence gap"
+    ],
+    "paper_ids": [
+     "2611.28004",
+     "2611.28081",
+     "2611.28083",
+     "2611.28097",
+     "2611.28118",
+     "2611.28123",
+     "2611.28146",
+     "2611.28287",
+     "2611.28336",
+     "2611.28589",
+     "2611.28632",
+     "2611.28641",
+     "2611.28649",
+     "2611.28665",
+     "2611.28673",
+     "2611.28726",
+     "2611.28745",
+     "2611.28753",
+     "2611.28853"
+    ],
+    "count": 19,
+    "trend": {
+     "terms": [
+      "object hallucination",
+      "self-verification",
+      "chain-of-thought",
+      "answer-evidence gap"
+     ],
+     "today": {
+      "n": 8,
+      "of": 431
+     },
+     "w1": {
+      "n": 33,
+      "papers": 2309,
+      "per_1k": 14.29
+     },
+     "w4": {
+      "n": 153,
+      "papers": 12192,
+      "per_1k": 12.55
+     },
+     "w12": {
+      "n": 535,
+      "papers": 42870,
+      "per_1k": 12.48
+     },
+     "label": "steady"
+    }
+   },
+   {
+    "name": "Medical imaging and clinical language models",
+    "summary": "This cluster develops and evaluates medical vision-language and clinical language systems, spanning multilingual medical question answering, biomedical reasoning with process rewards, on-premises medical LLM post-training, and rule- or plan-guided radiology and pathology report generation. A complementary strand builds domain foundation models and examines robustness and data quality through adversarial tokenizer attacks, synthetic-data scorecards, leakage audits, quality-control policies, and controlled segmentation benchmarks. The work differs in whether it targets clinical text reasoning and report generation or image-centric representation, evaluation, and robustness.",
+    "terms": [
+     "medical question answering",
+     "vision-language models",
+     "radiology reports",
+     "whole-slide"
+    ],
+    "paper_ids": [
+     "2611.28050",
+     "2611.28078",
+     "2611.28154",
+     "2611.28161",
+     "2611.28179",
+     "2611.28281",
+     "2611.28283",
+     "2611.28332",
+     "2611.28576",
+     "2611.28586",
+     "2611.28642",
+     "2611.28680",
+     "2611.28719",
+     "2611.28766",
+     "2611.28890"
+    ],
+    "count": 15,
+    "trend": {
+     "terms": [
+      "medical question answering",
+      "vision-language models",
+      "radiology reports",
+      "whole-slide"
+     ],
+     "today": {
+      "n": 37,
+      "of": 431
+     },
+     "w1": {
+      "n": 163,
+      "papers": 2309,
+      "per_1k": 70.59
+     },
+     "w4": {
+      "n": 584,
+      "papers": 12192,
+      "per_1k": 47.9
+     },
+     "w12": {
+      "n": 1865,
+      "papers": 42870,
+      "per_1k": 43.5
+     },
+     "label": "rising"
+    }
+   },
+   {
+    "name": "3D Gaussian splatting and occupancy reconstruction",
+    "summary": "These papers advance explicit Gaussian and occupancy representations for reconstruction, combining 3D Gaussian Splatting with multi-objective optimization, sparse-view generalization, streaming caches, and watermarking. Occupancy-focused work improves view transformation, cooperative multi-agent fusion, and LiDAR planar-patch reconstruction. Other papers use video generation, diffusion, and sparse SDF/mesh serialization to make feed-forward 3D reconstruction, generation, and extrapolation more efficient.",
+    "terms": [
+     "3D Gaussian Splatting",
+     "3D occupancy",
+     "sparse-view 3D Gaussian Splatting",
+     "feed-forward 3D reconstruction"
+    ],
+    "paper_ids": [
+     "2611.28111",
+     "2611.28191",
+     "2611.28403",
+     "2611.28520",
+     "2611.28591",
+     "2611.28629",
+     "2611.28636",
+     "2611.28670",
+     "2611.28710",
+     "2611.28792",
+     "2611.28793",
+     "2611.28802",
+     "2611.28878",
+     "2611.28913"
+    ],
+    "count": 14,
+    "trend": {
+     "terms": [
+      "3D Gaussian Splatting",
+      "3D occupancy",
+      "sparse-view 3D Gaussian Splatting",
+      "feed-forward 3D reconstruction"
+     ],
+     "today": {
+      "n": 5,
+      "of": 431
+     },
+     "w1": {
+      "n": 12,
+      "papers": 2309,
+      "per_1k": 5.2
+     },
+     "w4": {
+      "n": 75,
+      "papers": 12192,
+      "per_1k": 6.15
+     },
+     "w12": {
+      "n": 308,
+      "papers": 42870,
+      "per_1k": 7.18
+     },
+     "label": "steady"
+    }
+   },
+   {
+    "name": "Efficient LLM Inference and KV Cache Compression",
+    "summary": "The papers target memory and latency bottlenecks in LLM serving, spanning KV cache compression, sparse attention, speculative decoding, weight quantization, and token pruning. Some contribute systems-level runtimes and GPU provisioning, while others propose algorithmic compression, pruning, and decoding schemes. They differ in whether they optimize cache access, weight storage, visual-token retention, or scheduling for throughput.",
+    "terms": [
+     "KV cache compression",
+     "sparse attention",
+     "speculative decoding",
+     "token pruning"
+    ],
+    "paper_ids": [
+     "2611.27997",
+     "2611.28100",
+     "2611.28124",
+     "2611.28171",
+     "2611.28227",
+     "2611.28285",
+     "2611.28318",
+     "2611.28349",
+     "2611.28502",
+     "2611.28522",
+     "2611.28563",
+     "2611.28607",
+     "2611.28684",
+     "2611.28760"
+    ],
+    "count": 14,
+    "trend": {
+     "terms": [
+      "KV cache compression",
+      "sparse attention",
+      "speculative decoding",
+      "token pruning"
+     ],
+     "today": {
+      "n": 7,
+      "of": 431
+     },
+     "w1": {
+      "n": 32,
+      "papers": 2309,
+      "per_1k": 13.86
+     },
+     "w4": {
+      "n": 157,
+      "papers": 12192,
+      "per_1k": 12.88
+     },
+     "w12": {
+      "n": 481,
+      "papers": 42870,
+      "per_1k": 11.22
+     },
+     "label": "steady"
+    }
+   },
+   {
+    "name": "Video generation and long-video understanding",
+    "summary": "The papers build and control generative video systems while also helping agents understand extremely long videos. Some improve generation through causal intervention, physical conditioning, editing, object insertion, and temporal guidance, whereas others organize long-video evidence into hierarchical, object-aware, or agent-searchable memory for question answering.",
+    "terms": [
+     "video generation",
+     "long-video understanding",
+     "hierarchical memory",
+     "video diffusion models"
+    ],
+    "paper_ids": [
+     "2611.28080",
+     "2611.28093",
+     "2611.28098",
+     "2611.28102",
+     "2611.28134",
+     "2611.28136",
+     "2611.28137",
+     "2611.28167",
+     "2611.28221",
+     "2611.28397",
+     "2611.28635",
+     "2611.28756",
+     "2611.28762",
+     "2611.28942"
+    ],
+    "count": 14,
+    "trend": {
+     "terms": [
+      "video generation",
+      "long-video understanding",
+      "hierarchical memory",
+      "video diffusion models"
+     ],
+     "today": {
+      "n": 21,
+      "of": 431
+     },
+     "w1": {
+      "n": 64,
+      "papers": 2309,
+      "per_1k": 27.72
+     },
+     "w4": {
+      "n": 208,
+      "papers": 12192,
+      "per_1k": 17.06
+     },
+     "w12": {
+      "n": 733,
+      "papers": 42870,
+      "per_1k": 17.1
+     },
+     "label": "rising"
+    }
+   },
+   {
+    "name": "Wearable and EEG Physiological Signal Modeling",
+    "summary": "The papers develop and evaluate models for physiological and movement signals captured by wearables and EEG, spanning wrist and inertial activity recognition, running-form and gait analysis, ECG arrhythmia detection, and PPG heart-rate estimation. They also probe EEG-specific modeling questions, including interpretable discharge and ADHD feature families, foundation-model pre-training, cross-modal generation and decoding, and privacy vulnerabilities. Approaches differ in emphasis on benchmark design and participant-held-out validation, interpretability and explainability, on-device efficiency, and multimodal or physics-informed representation learning.",
+    "terms": [
+     "EEG",
+     "wearable",
+     "inertial measurement unit",
+     "human activity recognition"
+    ],
+    "paper_ids": [
+     "2611.27996",
+     "2611.28030",
+     "2611.28033",
+     "2611.28090",
+     "2611.28262",
+     "2611.28299",
+     "2611.28354",
+     "2611.28366",
+     "2611.28507",
+     "2611.28648",
+     "2611.28791",
+     "2611.28856"
+    ],
+    "count": 12,
+    "trend": {
+     "terms": [
+      "EEG",
+      "wearable",
+      "inertial measurement unit",
+      "human activity recognition"
+     ],
+     "today": {
+      "n": 15,
+      "of": 431
+     },
+     "w1": {
+      "n": 34,
+      "papers": 2309,
+      "per_1k": 14.72
+     },
+     "w4": {
+      "n": 146,
+      "papers": 12192,
+      "per_1k": 11.98
+     },
+     "w12": {
+      "n": 494,
+      "papers": 42870,
+      "per_1k": 11.52
+     },
+     "label": "steady"
+    }
+   },
+   {
+    "name": "Multimodal Emotion Recognition and Social Understanding",
+    "summary": "These papers build multimodal emotion recognition systems that fuse facial, speech, physiological, and textual cues, addressing input reliability, cross-modal consensus and conflict, routing efficiency, and mixture-of-experts diversity. Others extend affective modeling toward group-level social dynamics, AI-twin social judgment, educational affective trajectories, and audio-visual facial expression analysis, differing in architectures such as hierarchical fusion, temporal heterogeneous graphs, and adaptive modality cascading.",
+    "terms": [
+     "multimodal emotion recognition",
+     "social dynamics",
+     "cross-modal attention",
+     "group engagement"
+    ],
+    "paper_ids": [
+     "2611.28001",
+     "2611.28008",
+     "2611.28120",
+     "2611.28293",
+     "2611.28327",
+     "2611.28692",
+     "2611.28716",
+     "2611.28725",
+     "2611.28960"
+    ],
+    "count": 9,
+    "trend": {
+     "terms": [
+      "multimodal emotion recognition",
+      "social dynamics",
+      "cross-modal attention",
+      "group engagement"
+     ],
+     "today": {
+      "n": 6,
+      "of": 431
+     },
+     "w1": {
+      "n": 1,
+      "papers": 2309,
+      "per_1k": 0.43
+     },
+     "w4": {
+      "n": 14,
+      "papers": 12192,
+      "per_1k": 1.15
+     },
+     "w12": {
+      "n": 61,
+      "papers": 42870,
+      "per_1k": 1.42
+     },
+     "label": "steady"
+    }
+   },
+   {
+    "name": "Causal inference and statistical guardrails for deployment",
+    "summary": "The papers develop statistical machinery for making deployment decisions defensible: power analysis for small A/B trials, risk-controlled adoption of model updates under few calibration images, cross-context threshold tests for discrimination auditing, and anytime-valid monitoring of deployed risk models. Others contribute targeted-learning and robust forest estimators for treatment effects from observational or externally controlled data, alongside a first-principles commentary on where AI methods succeed locally yet fail broader inferential assumptions and a Zero-Trust operational assurance framework for LLM systems under governance opacity.",
+    "terms": [
+     "power analysis",
+     "statistical guardrails",
+     "risk check",
+     "treatment effect heterogeneity"
+    ],
+    "paper_ids": [
+     "2611.28018",
+     "2611.28122",
+     "2611.28259",
+     "2611.28342",
+     "2611.28421",
+     "2611.28497",
+     "2611.28662",
+     "2611.28834"
+    ],
+    "count": 8,
+    "trend": {
+     "terms": [
+      "power analysis",
+      "statistical guardrails",
+      "risk check",
+      "treatment effect heterogeneity"
+     ],
+     "today": {
+      "n": 4,
+      "of": 431
+     },
+     "w1": {
+      "n": 0,
+      "papers": 2309,
+      "per_1k": 0.0
+     },
+     "w4": {
+      "n": 3,
+      "papers": 12192,
+      "per_1k": 0.25
+     },
+     "w12": {
+      "n": 11,
+      "papers": 42870,
+      "per_1k": 0.26
+     },
+     "label": "steady"
+    }
+   }
+  ],
+  "highlights": [
+   {
+    "paper_id": "2611.28116",
+    "title": "Is It the Agent or the Retry? Separating Selection from Agency in Text-to-Image Generation",
+    "authors": "Jian Xu, Delu Zeng, Qibin Zhao",
+    "categories": "cs.CV",
+    "upvotes": 0,
+    "significance": 5,
+    "theme": "LLM agents and multi-agent orchestration",
+    "why": "This careful audit separates true agentic gains from simple rejection retry across recent text-to-image systems, reframing claimed improvements and providing closed-form budgets and a genuine agentic ceiling.",
+    "key_result": "Auditing four recent systems with official evaluators, we find that on GenEval SRR matches the accuracy of OctoT2I (0.962 vs.\\ 0.96), recovers 63 to 90% of the gain of GEMS depending on the verifier, and exceeds GenPilot by 12 points with 2.3 generations per image; the effect persists with generators not tuned to the benchmark and on T2I-CompBench++. We also show that what OctoT2I's routing buys is compute (about 2.5 less than SRR at equal accuracy), not accuracy, and that on GenEval 2, even the best of five samples chosen by the evaluator stays 15 points below the score GEMS reports (12 at the upper end of its 95% interval).",
+    "evidence": [
+     "Auditing four recent systems with official evaluators, we find that on GenEval SRR matches the accuracy of OctoT2I (0.962 vs.\\ 0.96), recovers 63 to 90% of the gain of GEMS depending on the verifier, and exceeds GenPilot by 12 points with 2.3 generations per image; the effect persists with generators not tuned to the benchmark and on T2I-CompBench++.",
+     "We prove a ceiling on the accuracy that routing across generators can add, bracket it between one and three points on OctoT2I's own pool, and show that what OctoT2I's routing buys is compute (about 2.5 less than SRR at equal accuracy), not accuracy.",
+     "The same analysis also exposes genuine agentic gains: on GenEval 2, even the best of five samples chosen by the evaluator stays 15 points below the score GEMS reports (12 at the upper end of its 95% interval)."
+    ],
+    "text_source": "fulltext"
+   },
+   {
+    "paper_id": "2611.28123",
+    "title": "Seeing the Invisible: How Vision-Language Models Read, Predict and Trace Radio Fields",
+    "authors": "Yiyang Zhu, Xin Li, Guangyuan Liu et al.",
+    "categories": "cs.CV cs.AI",
+    "upvotes": 4,
+    "significance": 4,
+    "theme": "Multimodal LLM Reasoning, Alignment, and Hallucination Verification",
+    "why": "Builds RadioVISTA with exact simulated radio fields and counterfactuals, revealing frontier VLMs can locate strong fields but fail to trace propagation paths.",
+    "key_result": "Across 19 evaluated models, the top two identify the best-covered urban region in roughly nine out of ten cases. Yet when asked whether a single direct or one-wall path exists, their accuracy drops to 76.5% and 61.8% against a 50% random baseline.",
+    "evidence": [
+     "Across 19 evaluated models, the top two identify the best-covered urban region in roughly nine out of ten cases. Yet when asked whether a single direct or one-wall path exists, their accuracy drops to 76.5% and 61.8% against a 50% random baseline. We term this gap field--path dissociation, where models judge the whole without resolving its parts ( sec:eval,sec:readtrace)."
+    ],
+    "text_source": "fulltext"
+   },
+   {
+    "paper_id": "2611.28202",
+    "title": "AutoPILOT: A Visual Agent Harness for Real-Time Gameplay",
+    "authors": "Mark Zhao, Pengcheng Wang, Rui Yang et al.",
+    "categories": "cs.AI",
+    "upvotes": 4,
+    "significance": 4,
+    "theme": "LLM agents and multi-agent orchestration",
+    "why": "AutoPILOT harness lets visual game agents run macros and closed-loop controllers between model calls, achieving large real-time gains over VISTA and introducing AFK-Bench.",
+    "key_result": "With GPT-6.1 Sol under the same budgets, AutoPILOT reaches 68.6% real-time success against 38.3% for VISTA , and on GameWorld it keeps 80.0% in real time while VISTA drops from 84.1% to 42.9%. Its gains hold across models, and it reaches VISTA 's final success rate at a fifth of its API cost.",
+    "evidence": [
+     "With GPT-6.1 Sol under the same budgets, AutoPILOT reaches 68.6% real-time success against 38.3% for VISTA , and on GameWorld it keeps 80.0% in real time while VISTA drops from 84.1% to 42.9%. Its gains hold across models, and it reaches VISTA 's final success rate at a fifth of its API cost."
+    ],
+    "text_source": "fulltext"
+   },
+   {
+    "paper_id": "2611.28167",
+    "title": "VideoJSON: A Minimal Harness Beats Purpose-Built Memory for Ultra-Long Video Understanding",
+    "authors": "Wenqi Marshall Guo, Kuan-Hao Huang, Junda Chen et al.",
+    "categories": "cs.CV",
+    "upvotes": 0,
+    "significance": 4,
+    "theme": "Video generation and long-video understanding",
+    "why": "A minimal coding-agent harness with JSON per-minute records beats purpose-built memory graphs on ultra-long video QA, questioning complex memory designs.",
+    "key_result": "On four ultra-long video benchmarks, VideoJSON with DeepSeek V4.1 Flash outperforms MAGIC-Video by 7.0, 20.0, and 24.75 points on EgoLifeQA, Ego-R1-Bench, and MM-Lifelong Week, and beats the best prior EgoMemReason score by 12.6 points. Across four policy models of increasing capability, VideoJSON's average score rises by up to 11.58 points over the weakest model, compared with at most 5.50 points for MAGIC-Video.",
+    "evidence": [
+     "On four ultra-long video benchmarks, VideoJSON with DeepSeek V4.1 Flash outperforms MAGIC-Video by 7.0, 20.0, and 24.75 points on EgoLifeQA, Ego-R1-Bench, and MM-Lifelong Week, and beats the best prior EgoMemReason score by 12.6 points.",
+     "Across four policy models of increasing capability, VideoJSON's average score rises by up to 11.58 points over the weakest model, compared with at most 5.50 points for MAGIC-Video."
+    ],
+    "text_source": "fulltext"
+   },
+   {
+    "paper_id": "2611.28171",
+    "title": "RefineKV: Query-Adaptive KV Cache Compression via Attention-Error Bounds",
+    "authors": "Kewei Lian, Jiayi Zhai, Anji Liu",
+    "categories": "cs.LG",
+    "upvotes": 0,
+    "significance": 4,
+    "theme": "Efficient LLM Inference and KV Cache Compression",
+    "why": "Derives attention-error bounds that motivate query-adaptive KV clustering and achieves a new quality-latency Pareto frontier with up to 7.6x attention speedup.",
+    "key_result": "Experiments on two models and three benchmarks demonstrate that RefineKV retains near-full-attention quality while achieving up to 7.6 speedup in the attention phase and 1.66 faster decoding, establishing a new quality–latency Pareto frontier.",
+    "evidence": [
+     "Experiments on two models and three benchmarks demonstrate that RefineKV retains near-full-attention quality while achieving up to 7.6 speedup in the attention phase and 1.66 faster decoding, establishing a new quality–latency Pareto frontier."
+    ],
+    "text_source": "fulltext"
+   },
+   {
+    "paper_id": "2611.28286",
+    "title": "Scalable Beckmann Maps Improve One-step Generation",
+    "authors": "Ulrik Unneberg, Shiyi Wang, Lee Cheuk-Kit et al.",
+    "categories": "cs.LG",
+    "upvotes": 0,
+    "significance": 4,
+    "theme": "Diffusion and Flow Matching Generative Models",
+    "why": "Brings classifier-free guidance and a scalable training recipe to one-step Beckmann transport models, reaching strong ImageNet one-step FID without distillation.",
+    "key_result": "Trained from scratch in the latent of a representation autoencoder, SBM reaches a one-step FID of 1.6 on ImageNet 256x256 without a teacher or a feature loss, outperforming the Improved-MeanFlow baseline with 3.2x fewer FLOPs. In text-to-image generation it reaches a GenEval score of 0.86 with one network evaluation.",
+    "evidence": [
+     "Trained from scratch in the latent of a representation autoencoder, SBM reaches a one-step FID of 1.6 on ImageNet 256x256 without a teacher or a feature loss, outperforming the Improved-MeanFlow baseline with 3.2x fewer FLOPs.",
+     "In text-to-image generation it reaches a GenEval score of 0.86 with one network evaluation."
+    ],
+    "text_source": "fulltext"
+   },
+   {
+    "paper_id": "2611.28341",
+    "title": "When Tools Fail, Agents Fabricate: Silent Failure and Verification-First Oversight in Tool-Using LLM Agents",
+    "authors": "Gun Kaynar, Boshen Yan, Carl Kingsford",
+    "categories": "cs.AI cs.CL cs.SE",
+    "upvotes": 0,
+    "significance": 4,
+    "theme": "LLM agents and multi-agent orchestration",
+    "why": "Introduces RetryRealistic, a controlled fault-injection testbed finding 6-26% silent fabrication and identifying partial-data faults as key drivers, with a verification-first monitor reducing fabrication.",
+    "key_result": "Evaluating four agents over 2,100 faulted runs against ground truth, we find that recovery is unreliable (19--68% correct) and frequently silent: 6--26% of runs end in a confident fabrication, a wrong answer asserted as fact. We show that fabrication is reducible: a verification-first Monitor, grounding checks in structured tool outputs and issuing corrective directives rather than hard blocks, raises correct recovery from 45.6% to 56.3% and cuts fabrication from 17.3% to 10.8%.",
+    "evidence": [
+     "Evaluating four agents over 2,100 faulted runs against ground truth, we find that recovery is unreliable (19--68% correct) and frequently silent: 6--26% of runs end in a confident fabrication, a wrong answer asserted as fact.",
+     "We show that fabrication is reducible: a verification-first Monitor, grounding checks in structured tool outputs and issuing corrective directives rather than hard blocks, raises correct recovery from 45.6% to 56.3% and cuts fabrication from 17.3% to 10.8%."
+    ],
+    "text_source": "fulltext"
+   },
+   {
+    "paper_id": "2611.28349",
+    "title": "Grammar-as-a-Draft: More Tokens per Speculative Decoding Step on Grammar-Constrained Structured Outputs",
+    "authors": "John Zhang, Silky Arora",
+    "categories": "cs.CL cs.AI",
+    "upvotes": 0,
+    "significance": 4,
+    "theme": "Efficient LLM Inference and KV Cache Compression",
+    "why": "Treats the grammar as a second drafter in speculative decoding for structured outputs, boosting acceptance lengths with no new kernels and practical serving impact.",
+    "key_result": "GaaD raises the average acceptance length (tokens per verify step, including the bonus token) from 2.06 to 5.43 for MTP on Qwen3.5-0.8B (1.99 to 5.31 on Qwen3.5-35B-A3B), from 1.57 to 4.13 for DFlash and from 1.30 to 3.64 for n-gram on Qwen3-4B, and decodes 2.66--2.81 faster than the best configuration of each drafter alone at batch size 1 and 1.14--1.70 faster at batch size 64.",
+    "evidence": [
+     "GaaD raises the average acceptance length (tokens per verify step, including the bonus token) from 2.06 to 5.43 for MTP on Qwen3.5-0.8B (1.99 to 5.31 on Qwen3.5-35B-A3B), from 1.57 to 4.13 for DFlash and from 1.30 to 3.64 for n-gram on Qwen3-4B, and decodes 2.66--2.81 faster than the best configuration of each drafter alone at batch size 1 and 1.14--1.70 faster at batch size 64."
+    ],
+    "text_source": "fulltext"
+   }
+  ],
+  "news": [
+   {
+    "source": "OpenAI",
+    "title": "OpenAI and Cisco introduce Shirudo",
+    "url": "https://openai.com/index/introducing-shirudo",
+    "published": "2026-11-23T21:20:00Z",
+    "fetched": true,
+    "page_status": 200,
+    "page_sha": "b42dc7572730cb636e2e7306ef9280d6a8537b44d3b040218d75b94a86ee5d80",
+    "text_from": "page",
+    "text_sha": "7b8bbd61a7b53e23b8b35aaa5c7a52b126ec7e23fce24dddc2ee1620fc7ff115",
+    "summary": "OpenAI and Cisco announced Shirudo, an open-source eBPF-based runtime that lets operators deploy temporary \"shields\" to protect running Linux systems while patches are rolled out, with shields cryptographically signed and verified and recorded via a Trusted Platform Module. In a controlled test, a Codex-generated shield blocked a Java4Shell exploit attempt against a running Elasticsearch service without a restart by adding an input check to Java's Base64 decoder."
+   },
+   {
+    "source": "OpenAI",
+    "title": "Connected intelligence for in-house legal",
+    "url": "https://openai.com/business/learn/connected-intelligence-for-in-house-legal",
+    "published": "2026-11-23T08:00:00Z",
+    "fetched": true,
+    "page_status": 200,
+    "page_sha": "97c6a68b7e2881ee6acc80e4f0657e66fe40e619dcb80360158677e0785ae246",
+    "text_from": null,
+    "text_sha": null,
+    "summary": ""
+   },
+   {
+    "source": "OpenAI",
+    "title": "Richpanel helps companies automate 50% of support in 30 days",
+    "url": "https://openai.com/business/customer-stories/richpanel-ai-customer-support",
+    "published": "2026-11-23T08:00:00Z",
+    "fetched": true,
+    "page_status": 200,
+    "page_sha": "a826c0e081d0f4e6ad197e0175ee18a3856e565cab0433eb8b2968be2239d692",
+    "text_from": "page",
+    "text_sha": "ae61d58dd2479a40e054ac2ca10d98421e075745022aab90d442c2bc4c3aab2a",
+    "summary": "Richpanel reported completing approximately 300 AI customer-support deployments in the six months before an October 2026 interview, using GPT-6 Astra and GPT-6.1 Sol for its \"Boss AI\" setup agent and GPT-6 Luna for frontline conversations. The company guarantees a 50% automation rate within the first 30 days and said it met that commitment across all those deployments."
+   },
+   {
+    "source": "Google DeepMind",
+    "title": "Finding faster quantum algorithms with agents and formal verification",
+    "url": "https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification/",
+    "published": "2026-11-23T16:59:40Z",
+    "fetched": true,
+    "page_status": 200,
+    "page_sha": "bf72bda968e8956dcb1ead2d18ac5b959d887b823ce9903d5dd823ad37569e87",
+    "text_from": "page",
+    "text_sha": "c4715d11414aabe28417eeee1ba73130ae23d5414f0c12e33519a67ad213a775",
+    "summary": "Google DeepMind used teams of Gemini 4 agents to find improved quantum circuits, with each result proved in the Lean theorem prover, and is open-sourcing its Lean library, problem specifications, and verified solutions. Reported gains include an 11.8x cost reduction and memory lowered from 5,650 to 4,338 error-corrected qubits for an inertial confinement fusion calculation, 8x cheaper simulation of a light-sensitive molecule, a 2.5x improvement for Cytochrome P450 with memory cut from 481 to 333 qubits, a 2.57x speedup for a Grover's algorithm implementation, and a 290x speedup for arcsin."
+   },
+   {
+    "source": "Google Research",
+    "title": "Supercharging transformer residual connections",
+    "url": "https://research.google/blog/supercharging-transformer-residual-connections/",
+    "published": "2026-11-23T17:21:12Z",
+    "fetched": true,
+    "page_status": 200,
+    "page_sha": "963ec965e4654b82a2125f21147f250c263b513bc7065ab32093a8a3c919c6bc",
+    "text_from": "page",
+    "text_sha": "3a7ed9df1fb296541b2bfeb27e254ae4c783c30a15c917aa119fe94f6b0cbb71",
+    "summary": "Google Research presented DeepCrossAttention (DCA), an architecture that replaces fixed additive residual connections with learnable per-token routing weights and depth-wise cross-attention over previous layer embeddings, described in an ICML 2025 paper. The authors report models reaching the same quality up to three times faster with up to 30-40% fewer parameters and a negligible increase in parameters."
+   },
+   {
+    "source": "Google AI",
+    "title": "A more tailored Google Search that’s uniquely yours",
+    "url": "https://blog.google/products-and-platforms/products/search/google-search-personal-intelligence-apps/",
+    "published": "2026-11-23T17:00:00Z",
+    "fetched": true,
+    "page_status": 200,
+    "page_sha": "755a422d5f3be18f3095774f2ccddc9f61978651aa553022649187bc601e6c36",
+    "text_from": "page",
+    "text_sha": "184f66b2262f197d6394da64015c7fe33d1f41f5973512a8a1e373ed7f1ec4b1",
+    "summary": "Google added Google Wallet and Google Drive to Personal Intelligence in AI Mode, rolling out Wallet opt-in first with Drive and the Gemini app support following in the coming weeks; these join Gmail, Calendar, and Photos. Connected Wallet data is read-only for AI Mode, which the post says cannot move, manage, or invest money, and users can manage connections in Search Personalization settings."
+   },
+   {
+    "source": "NVIDIA",
+    "title": "Merry Making: Play, Build and Create With NVIDIA Technologies This Holiday Season",
+    "url": "https://blogs.nvidia.com/blog/nvidia-technologies-holidays-2026/",
+    "published": "2026-11-23T17:00:08Z",
+    "fetched": true,
+    "page_status": 200,
+    "page_sha": "096964ca38dc15cd6fc691bd6e925a008783694470056d1911e22ffc2074355c",
+    "text_from": "page",
+    "text_sha": "6fd7655f851c48ead66101eecd2f1348414bf0049af0a5003093343921b03d86",
+    "summary": "NVIDIA published a holiday gift guide covering GeForce RTX 50 Series laptops and desktops on the Blackwell architecture with fifth-generation Tensor Cores and fourth-generation RT Cores, RTX Spark PCs, DLSS 5 with 3D-Guided Neural Rendering, Reflex and G-SYNC, GeForce NOW with more than 4,500 titles, Studio Drivers, and the Jetson edge AI platform with the JetPack SDK for robot projects."
+   },
+   {
+    "source": "NVIDIA Developer",
+    "title": "Accelerating Direct Sparse Solvers for Computational Engineering with NVIDIA cuDSS 1.0",
+    "url": "https://developer.nvidia.com/blog/accelerating-direct-sparse-solvers-for-computational-engineering-with-nvidia-cudss-1-0/",
+    "published": "2026-11-23T19:59:40Z",
+    "fetched": true,
+    "page_status": 200,
+    "page_sha": "6d11f060cccb83039db2da58c254dd85ab014b1e7afa56db777cd0bbdfea48a6",
+    "text_from": "page",
+    "text_sha": "80b24d3fde09095811f50cac9c4389317aadbdb0b089dfa9b448bbff0ba16e7f",
+    "summary": "NVIDIA released cuDSS 1.0, a production-ready GPU-accelerated direct sparse solver for engineering and scientific simulations. It reports geometric-mean speedups over Intel MKL of 2.5x for analysis, 5.9x for numerical factorization, and 151x for triangular solve, GPU symbolic factorization 2.21x faster than cuDSS 0.8.0, hybrid memory mode cutting minimum device memory by about 30% on large VLSI cases, and default symmetry-preserving matching with HSL MC64 and Bunch-Kaufman pivoting improving normwise relative backward error by up to 10 orders of magnitude on SuiteSparse matrices."
+   },
+   {
+    "source": "NVIDIA Developer",
+    "title": "Get Started with GPU-Accelerated DuckDB Analytics Using the Sirius Core Extension",
+    "url": "https://developer.nvidia.com/blog/get-started-with-gpu-accelerated-duckdb-analytics-using-the-sirius-core-extension/",
+    "published": "2026-11-23T17:09:28Z",
+    "fetched": true,
+    "page_status": 200,
+    "page_sha": "10795c6faf016a8e573f2814007161637dfea5ae9d21129940e6674e48cc9275",
+    "text_from": "page",
+    "text_sha": "cb9a0194a1208629a1159b6d4cb74b4b7c841d1e7305e59c4b46761ed85f1a83",
+    "summary": "NVIDIA and DuckLabs released Sirius, an open-source GPU-native SQL engine as a DuckDB core extension, installed and loaded with the SQL commands INSTALL sirius and LOAD sirius, with unsupported features falling back to DuckDB's CPU engine. Benchmarks on TPC-H queries at scale factors up to 10 TB showed 3.25x to 5.50x speedups and up to 79% lower query-time compute cost with tuned two-GPU configurations; DuckDB 2.0 and a compatible NVIDIA GPU driver are required."
+   },
+   {
+    "source": "Hugging Face",
+    "title": "RoboTrack: Point tracking for real-world robotic manipulation",
+    "url": "https://huggingface.co/blog/allenai/robotrack",
+    "published": "2026-11-23T17:20:37Z",
+    "fetched": true,
+    "page_status": 200,
+    "page_sha": "44db459c06626262d314b11863383f4488049973481abe8f6b5db98fce9ded38",
+    "text_from": "page",
+    "text_sha": "a9d99872953fe2c7c848548125247d16d8b5bc969b19788bc6170c06df3c32d4",
+    "summary": "Hugging Face released RoboTrack, a point-tracking benchmark and training data suite for robotic manipulation, comprising RoboTrack-Bench with 307 human-annotated videos from DROID, Ego-Exo4D, MolmoAct 2 and EgoVerse containing 2,522 point tracks, plus RoboTrack-15M synthetic data generated in MolmoSpaces. It also released two models, RoboTracker (fine-tuned AllTracker) and RoboTracker-Warp (trained from CoWTracker), with RoboTracker-Warp achieving state-of-the-art results on four of five evaluated benchmarks; leading trackers scored much lower on RoboTrack-Bench than on existing robotics benchmarks."
+   }
+  ]
+ },
+ "zh": {
+  "stats": {
+   "total": 431,
+   "per_category": [
+    {
+     "category": "cs.CV",
+     "n": 174,
+     "primary": 143
+    },
+    {
+     "category": "cs.AI",
+     "n": 165,
+     "primary": 52
+    },
+    {
+     "category": "cs.LG",
+     "n": 137,
+     "primary": 59
+    },
+    {
+     "category": "cs.CL",
+     "n": 60,
+     "primary": 34
+    },
+    {
+     "category": "cs.RO",
+     "n": 41,
+     "primary": 33
+    },
+    {
+     "category": "stat.ML",
+     "n": 21,
+     "primary": 11
+    },
+    {
+     "category": "cs.MA",
+     "n": 11,
+     "primary": 8
+    },
+    {
+     "category": "cs.IR",
+     "n": 10,
+     "primary": 7
+    },
+    {
+     "category": "cs.NE",
+     "n": 8,
+     "primary": 4
+    }
+   ],
+   "avg_4w": 736.9,
+   "days_4w": 19,
+   "vs_avg": 0.58
+  },
+  "keywords": [
+   {
+    "name": "视频生成",
+    "about": "通过扩散变换器注意力和规划，视频生成器变得可控、可按预算路由且更快。",
+    "terms": [
+     "video generators",
+     "video diffusion"
+    ],
+    "paper_ids": [
+     "2611.28098",
+     "2611.28099",
+     "2611.28115",
+     "2611.28402",
+     "2611.28756",
+     "2611.28134",
+     "2611.28136",
+     "2611.28137",
+     "2611.28397",
+     "2611.28485",
+     "2611.28520",
+     "2611.28656",
+     "2611.28717",
+     "2611.28732",
+     "2611.28762",
+     "2611.28792",
+     "2611.28871",
+     "2611.28902",
+     "2611.28942",
+     "2611.28943"
+    ],
+    "count": 20,
+    "trend": {
+     "label": "rising",
+     "n": 20,
+     "of": 431,
+     "per_1k": 46.4,
+     "baseline": {
+      "n": 720,
+      "papers": 42870,
+      "per_1k": 16.79,
+      "weeks": 12
+     },
+     "lift": 2.76,
+     "score": 7.46
+    }
+   },
+   {
+    "name": "世界模型",
+    "about": "世界模型为视频、具身导航、健康轨迹和规划预测未来状态。",
+    "terms": [
+     "World Models",
+     "Visual World"
+    ],
+    "paper_ids": [
+     "2611.28136",
+     "2611.28723",
+     "2611.28842",
+     "2611.28919",
+     "2611.28175",
+     "2611.28129",
+     "2611.28286",
+     "2611.28319",
+     "2611.28345",
+     "2611.28350",
+     "2611.28369",
+     "2611.28387",
+     "2611.28508",
+     "2611.28509",
+     "2611.28551",
+     "2611.28553",
+     "2611.28660",
+     "2611.28666",
+     "2611.28726",
+     "2611.28779",
+     "2611.28792",
+     "2611.28815",
+     "2611.28871",
+     "2611.28878",
+     "2611.28963"
+    ],
+    "count": 25,
+    "trend": {
+     "label": "rising",
+     "n": 25,
+     "of": 431,
+     "per_1k": 58.0,
+     "baseline": {
+      "n": 1101,
+      "papers": 42870,
+      "per_1k": 25.68,
+      "weeks": 12
+     },
+     "lift": 2.26,
+     "score": 7.426
+    }
+   },
+   {
+    "name": "视觉语言模型",
+    "about": "视觉语言模型读取无线电场、推断社会动态，并暴露分词器漏洞。",
+    "terms": [
+     "vision-language models"
+    ],
+    "paper_ids": [
+     "2611.28123",
+     "2611.28001",
+     "2611.28004",
+     "2611.28078",
+     "2611.28079",
+     "2611.28081",
+     "2611.28093",
+     "2611.28094",
+     "2611.28100",
+     "2611.28101",
+     "2611.28104",
+     "2611.28117",
+     "2611.28124",
+     "2611.28135",
+     "2611.28167",
+     "2611.28221",
+     "2611.28281",
+     "2611.28332",
+     "2611.28461",
+     "2611.28535",
+     "2611.28564",
+     "2611.28573",
+     "2611.28589",
+     "2611.28592",
+     "2611.28632",
+     "2611.28641",
+     "2611.28665",
+     "2611.28684",
+     "2611.28766",
+     "2611.28947"
+    ],
+    "count": 30,
+    "trend": {
+     "label": "rising",
+     "n": 30,
+     "of": 431,
+     "per_1k": 69.61,
+     "baseline": {
+      "n": 1698,
+      "papers": 42870,
+      "per_1k": 39.61,
+      "weeks": 12
+     },
+     "lift": 1.76,
+     "score": 6.949
+    }
+   },
+   {
+    "name": "KV cache",
+    "about": "KV cache 压缩和缓存加速了长上下文 LLM、VLA 和视频生成的推理。",
+    "terms": [
+     "key-value",
+     "KV cache"
+    ],
+    "paper_ids": [
+     "2611.28171",
+     "2611.28137",
+     "2611.28256",
+     "2611.28285",
+     "2611.28502",
+     "2611.27997",
+     "2611.28115",
+     "2611.28198",
+     "2611.28221",
+     "2611.28402",
+     "2611.28522",
+     "2611.28563",
+     "2611.28671",
+     "2611.28793"
+    ],
+    "count": 14,
+    "trend": {
+     "label": "rising",
+     "n": 14,
+     "of": 431,
+     "per_1k": 32.48,
+     "baseline": {
+      "n": 627,
+      "papers": 42870,
+      "per_1k": 14.63,
+      "weeks": 12
+     },
+     "lift": 2.22,
+     "score": 5.856
+    }
+   },
+   {
+    "name": "智能体基准",
+    "about": "智能体基准评估视觉游戏玩法、物理分析、资金支出和自我演化的框架。",
+    "terms": [
+     "GPT-6"
+    ],
+    "paper_ids": [
+     "2611.28202",
+     "2611.28194",
+     "2611.28231",
+     "2611.28244",
+     "2611.28610",
+     "2611.28649",
+     "2611.28680",
+     "2611.28726",
+     "2611.28940"
+    ],
+    "count": 9,
+    "trend": {
+     "label": "rising",
+     "n": 9,
+     "of": 431,
+     "per_1k": 20.88,
+     "baseline": {
+      "n": 304,
+      "papers": 42870,
+      "per_1k": 7.09,
+      "weeks": 12
+     },
+     "lift": 2.94,
+     "score": 5.233
+    }
+   },
+   {
+    "name": "3D场景重建",
+    "about": "方法从视频、多视角几何和高斯泼溅中重建并理解 3D 场景。",
+    "terms": [
+     "3D scene"
+    ],
+    "paper_ids": [
+     "2611.28520",
+     "2611.28636",
+     "2611.28649",
+     "2611.28673",
+     "2611.28124",
+     "2611.28710",
+     "2611.28783",
+     "2611.28792"
+    ],
+    "count": 8,
+    "trend": {
+     "label": "rising",
+     "n": 8,
+     "of": 431,
+     "per_1k": 18.56,
+     "baseline": {
+      "n": 242,
+      "papers": 42870,
+      "per_1k": 5.64,
+      "weeks": 12
+     },
+     "lift": 3.28,
+     "score": 5.059
+    }
+   },
+   {
+    "name": "长视频理解",
+    "about": "智能体和记忆结构从超长视频中检索证据，用于问答和重建。",
+    "terms": [
+     "Long-Video"
+    ],
+    "paper_ids": [
+     "2611.28093",
+     "2611.28102",
+     "2611.28167",
+     "2611.28137",
+     "2611.28193",
+     "2611.28402",
+     "2611.28635"
+    ],
+    "count": 7,
+    "trend": {
+     "label": "rising",
+     "n": 7,
+     "of": 431,
+     "per_1k": 16.24,
+     "baseline": {
+      "n": 170,
+      "papers": 42870,
+      "per_1k": 3.97,
+      "weeks": 12
+     },
+     "lift": 4.08,
+     "score": 4.926
+    }
+   },
+   {
+    "name": "扩散与流模型",
+    "about": "扩散和流模型在公平性、对抗性分词、分布学习和可控生成方面得到分析。",
+    "terms": [
+     "generative model"
+    ],
+    "paper_ids": [
+     "2611.28077",
+     "2611.28078",
+     "2611.28098",
+     "2611.28234",
+     "2611.28319",
+     "2611.28331",
+     "2611.28520",
+     "2611.28549",
+     "2611.28623",
+     "2611.28628",
+     "2611.28649",
+     "2611.28810",
+     "2611.28824",
+     "2611.28853",
+     "2611.28917",
+     "2611.28943"
+    ],
+    "count": 16,
+    "trend": {
+     "label": "hot",
+     "n": 16,
+     "of": 431,
+     "per_1k": 37.12,
+     "baseline": {
+      "n": 1202,
+      "papers": 42870,
+      "per_1k": 28.04,
+      "weeks": 12
+     },
+     "lift": 1.32,
+     "score": 4.806
+    }
+   },
+   {
+    "name": "计算病理学",
+    "about": "病理学模型在质量控制下对前列腺癌分级、检测胎儿异常并生成全切片报告。",
+    "terms": [
+     "pathology"
+    ],
+    "paper_ids": [
+     "2611.28154",
+     "2611.28179",
+     "2611.28419",
+     "2611.28505",
+     "2611.27987",
+     "2611.28576",
+     "2611.28680",
+     "2611.28766"
+    ],
+    "count": 8,
+    "trend": {
+     "label": "rising",
+     "n": 8,
+     "of": 431,
+     "per_1k": 18.56,
+     "baseline": {
+      "n": 297,
+      "papers": 42870,
+      "per_1k": 6.93,
+      "weeks": 12
+     },
+     "lift": 2.67,
+     "score": 4.767
+    }
+   },
+   {
+    "name": "多模态LLM",
+    "about": "多模态 LLM 在智能手机检测、推荐、病理报告和时空规划方面接受测试。",
+    "terms": [
+     "Multimodal LLMs"
+    ],
+    "paper_ids": [
+     "2611.28117",
+     "2611.28379",
+     "2611.28576",
+     "2611.28726",
+     "2611.28745",
+     "2611.28853"
+    ],
+    "count": 6,
+    "trend": {
+     "label": "rising",
+     "n": 6,
+     "of": 431,
+     "per_1k": 13.92,
+     "baseline": {
+      "n": 104,
+      "papers": 42870,
+      "per_1k": 2.43,
+      "weeks": 12
+     },
+     "lift": 5.71,
+     "score": 4.739
+    }
+   },
+   {
+    "name": "多模态情感识别",
+    "about": "情感识别融合音频、视觉和文本信号，同时处理模态冲突和路由坍缩。",
+    "terms": [
+     "Multimodal Emotion Recognition"
+    ],
+    "paper_ids": [
+     "2611.28008",
+     "2611.28327",
+     "2611.28716",
+     "2611.28725",
+     "2611.28960"
+    ],
+    "count": 5,
+    "trend": {
+     "label": "rising",
+     "n": 5,
+     "of": 431,
+     "per_1k": 11.6,
+     "baseline": {
+      "n": 19,
+      "papers": 42870,
+      "per_1k": 0.44,
+      "weeks": 12
+     },
+     "lift": 25.5,
+     "score": 4.675
+    }
+   },
+   {
+    "name": "可穿戴传感",
+    "about": "可穿戴和智能手机传感器估计跑步姿态、身体功能、活动和低光视频。",
+    "terms": [
+     "wearable"
+    ],
+    "paper_ids": [
+     "2611.27996",
+     "2611.28005",
+     "2611.28033",
+     "2611.28085",
+     "2611.28008",
+     "2611.28791",
+     "2611.28901"
+    ],
+    "count": 7,
+    "trend": {
+     "label": "rising",
+     "n": 7,
+     "of": 431,
+     "per_1k": 16.24,
+     "baseline": {
+      "n": 213,
+      "papers": 42870,
+      "per_1k": 4.97,
+      "weeks": 12
+     },
+     "lift": 3.26,
+     "score": 4.672
+    }
+   },
+   {
+    "name": "多示例学习",
+    "about": "多示例学习处理病理分级、假新闻检测和鲁棒分类中的弱标签。",
+    "terms": [
+     "instance learning"
+    ],
+    "paper_ids": [
+     "2611.28179",
+     "2611.28419",
+     "2611.28711",
+     "2611.28825",
+     "2611.28766"
+    ],
+    "count": 5,
+    "trend": {
+     "label": "rising",
+     "n": 5,
+     "of": 431,
+     "per_1k": 11.6,
+     "baseline": {
+      "n": 60,
+      "papers": 42870,
+      "per_1k": 1.4,
+      "weeks": 12
+     },
+     "lift": 8.22,
+     "score": 4.358
+    }
+   },
+   {
+    "name": "小型语言模型",
+    "about": "小型语言模型自我改进、适应医学问答，并将视频压缩为紧凑记忆。",
+    "terms": [
+     "small models"
+    ],
+    "paper_ids": [
+     "2611.28833",
+     "2611.28050",
+     "2611.28420",
+     "2611.28221",
+     "2611.28402",
+     "2611.28881"
+    ],
+    "count": 6,
+    "trend": {
+     "label": "rising",
+     "n": 6,
+     "of": 431,
+     "per_1k": 13.92,
+     "baseline": {
+      "n": 172,
+      "papers": 42870,
+      "per_1k": 4.01,
+      "weeks": 12
+     },
+     "lift": 3.46,
+     "score": 4.314
+    }
+   }
+  ],
+  "themes": [
+   {
+    "name": "LLM 智能体与多智能体编排",
+    "summary": "这些论文设计并研究了 LLM 智能体的框架、协调协议和监督机制，涵盖去中心化多智能体架构、基于辩论的编排，以及智能体编码和工具使用框架。它们的侧重点不同：一些构建具有记忆、技能和上下文管理的可重用智能体框架；另一些在工具故障、不完美指令或服务条件下对智能体行为进行基准测试；还有若干将智能体系统应用于数据整理、科学、医学和设计搜索等领域。",
+    "terms": [
+     "multi-agent orchestration",
+     "agent harness",
+     "tool-using LLM agents",
+     "multi-agent system"
+    ],
+    "paper_ids": [
+     "2611.28003",
+     "2611.28010",
+     "2611.28025",
+     "2611.28103",
+     "2611.28105",
+     "2611.28116",
+     "2611.28148",
+     "2611.28158",
+     "2611.28170",
+     "2611.28173",
+     "2611.28176",
+     "2611.28194",
+     "2611.28197",
+     "2611.28202",
+     "2611.28231",
+     "2611.28244",
+     "2611.28298",
+     "2611.28324",
+     "2611.28341",
+     "2611.28348",
+     "2611.28356",
+     "2611.28371",
+     "2611.28418",
+     "2611.28420",
+     "2611.28441",
+     "2611.28477",
+     "2611.28558",
+     "2611.28564",
+     "2611.28604",
+     "2611.28610",
+     "2611.28617",
+     "2611.28660",
+     "2611.28671",
+     "2611.28706",
+     "2611.28846",
+     "2611.28881",
+     "2611.28907",
+     "2611.28947"
+    ],
+    "count": 38,
+    "trend": {
+     "terms": [
+      "multi-agent orchestration",
+      "agent harness",
+      "tool-using LLM agents",
+      "multi-agent system"
+     ],
+     "today": {
+      "n": 11,
+      "of": 431
+     },
+     "w1": {
+      "n": 27,
+      "papers": 2309,
+      "per_1k": 11.69
+     },
+     "w4": {
+      "n": 192,
+      "papers": 12192,
+      "per_1k": 15.75
+     },
+     "w12": {
+      "n": 771,
+      "papers": 42870,
+      "per_1k": 17.98
+     },
+     "label": "steady"
+    }
+   },
+   {
+    "name": "具身视觉-语言-动作与世界模型",
+    "summary": "这些论文为具身机器人开发视觉-语言-动作策略和学习的世界模型，涵盖高效推理、鲁棒性与安全、记忆和规划。有些专注于加速或校准 VLA 部署并防御攻击，而另一些构建世界模型来预测未来状态或动作结果，以指导规划和评估。它们的区别在于贡献是策略侧机制还是预测性世界模型，以及所考虑的机器人领域。",
+    "terms": [
+     "Vision-Language-Action",
+     "world models",
+     "action prediction",
+     "robot policies"
+    ],
+    "paper_ids": [
+     "2611.28256",
+     "2611.28289",
+     "2611.28308",
+     "2611.28319",
+     "2611.28345",
+     "2611.28346",
+     "2611.28350",
+     "2611.28387",
+     "2611.28411",
+     "2611.28551",
+     "2611.28553",
+     "2611.28585",
+     "2611.28616",
+     "2611.28666",
+     "2611.28707",
+     "2611.28723",
+     "2611.28732",
+     "2611.28779",
+     "2611.28796",
+     "2611.28803",
+     "2611.28839",
+     "2611.28867",
+     "2611.28871",
+     "2611.28873",
+     "2611.28919",
+     "2611.28943"
+    ],
+    "count": 26,
+    "trend": {
+     "terms": [
+      "Vision-Language-Action",
+      "world models",
+      "action prediction",
+      "robot policies"
+     ],
+     "today": {
+      "n": 37,
+      "of": 431
+     },
+     "w1": {
+      "n": 170,
+      "papers": 2309,
+      "per_1k": 73.62
+     },
+     "w4": {
+      "n": 610,
+      "papers": 12192,
+      "per_1k": 50.03
+     },
+     "w12": {
+      "n": 2138,
+      "papers": 42870,
+      "per_1k": 49.87
+     },
+     "label": "rising"
+    }
+   },
+   {
+    "name": "扩散与流匹配生成模型",
+    "summary": "这些论文开发并分析扩散和流匹配生成模型，涵盖引导机制、采样动力学、奖励对齐和高效架构。一些工作提供了关于分数误差、并行采样和传输映射的理论解释，而另一些将这些模型应用于临床影像、视频、3D 交互、分割和天体物理模拟。它们的区别在于目标是方法学进展、推理时引导还是特定领域的合成。",
+    "terms": [
+     "diffusion models",
+     "flow matching",
+     "classifier-free guidance",
+     "sampling procedure"
+    ],
+    "paper_ids": [
+     "2611.28077",
+     "2611.28107",
+     "2611.28115",
+     "2611.28139",
+     "2611.28265",
+     "2611.28286",
+     "2611.28294",
+     "2611.28402",
+     "2611.28451",
+     "2611.28489",
+     "2611.28549",
+     "2611.28600",
+     "2611.28621",
+     "2611.28623",
+     "2611.28654",
+     "2611.28682",
+     "2611.28695",
+     "2611.28717",
+     "2611.28764",
+     "2611.28809",
+     "2611.28858"
+    ],
+    "count": 21,
+    "trend": {
+     "terms": [
+      "diffusion models",
+      "flow matching",
+      "classifier-free guidance",
+      "sampling procedure"
+     ],
+     "today": {
+      "n": 22,
+      "of": 431
+     },
+     "w1": {
+      "n": 105,
+      "papers": 2309,
+      "per_1k": 45.47
+     },
+     "w4": {
+      "n": 507,
+      "papers": 12192,
+      "per_1k": 41.58
+     },
+     "w12": {
+      "n": 1828,
+      "papers": 42870,
+      "per_1k": 42.64
+     },
+     "label": "steady"
+    }
+   },
+   {
+    "name": "LLM 安全、隐私与对抗鲁棒性",
+    "summary": "这些论文评估并防御大型语言模型免受安全故障、隐私泄露和对抗性操纵。它们审计评估实践，如谄媚测量、有害性标准和安全分类法，同时提出针对后门、abliteration、隐蔽信道和视觉隐私暴露的防御。另一些分析对抗攻击、智能体工作流风险和代码生成的鲁棒性。",
+    "terms": [
+     "sycophancy",
+     "privacy leakage",
+     "backdoor attacks",
+     "red-teaming"
+    ],
+    "paper_ids": [
+     "2611.28012",
+     "2611.28029",
+     "2611.28038",
+     "2611.28082",
+     "2611.28135",
+     "2611.28152",
+     "2611.28314",
+     "2611.28408",
+     "2611.28454",
+     "2611.28469",
+     "2611.28584",
+     "2611.28592",
+     "2611.28640",
+     "2611.28650",
+     "2611.28748",
+     "2611.28787",
+     "2611.28804",
+     "2611.28823",
+     "2611.28849",
+     "2611.28957"
+    ],
+    "count": 20,
+    "trend": {
+     "terms": [
+      "sycophancy",
+      "privacy leakage",
+      "backdoor attacks",
+      "red-teaming"
+     ],
+     "today": {
+      "n": 5,
+      "of": 431
+     },
+     "w1": {
+      "n": 9,
+      "papers": 2309,
+      "per_1k": 3.9
+     },
+     "w4": {
+      "n": 69,
+      "papers": 12192,
+      "per_1k": 5.66
+     },
+     "w12": {
+      "n": 279,
+      "papers": 42870,
+      "per_1k": 6.51
+     },
+     "label": "steady"
+    }
+   },
+   {
+    "name": "多模态 LLM 推理、对齐与幻觉验证",
+    "summary": "这些论文探究视觉语言和多模态模型如何在图像、视频和空间场景上推理，以及推理在哪里失效。若干工作揭示了验证和测量失败——对象幻觉、错误对象框、符号到状态绑定以及答案-证据差距——并提出校准的、无标签或无训练的验证器和证据门。另一些针对对齐、跨模态表示以及空间规划、多视角几何和领域绘图集的基准。",
+    "terms": [
+     "object hallucination",
+     "self-verification",
+     "chain-of-thought",
+     "answer-evidence gap"
+    ],
+    "paper_ids": [
+     "2611.28004",
+     "2611.28081",
+     "2611.28083",
+     "2611.28097",
+     "2611.28118",
+     "2611.28123",
+     "2611.28146",
+     "2611.28287",
+     "2611.28336",
+     "2611.28589",
+     "2611.28632",
+     "2611.28641",
+     "2611.28649",
+     "2611.28665",
+     "2611.28673",
+     "2611.28726",
+     "2611.28745",
+     "2611.28753",
+     "2611.28853"
+    ],
+    "count": 19,
+    "trend": {
+     "terms": [
+      "object hallucination",
+      "self-verification",
+      "chain-of-thought",
+      "answer-evidence gap"
+     ],
+     "today": {
+      "n": 8,
+      "of": 431
+     },
+     "w1": {
+      "n": 33,
+      "papers": 2309,
+      "per_1k": 14.29
+     },
+     "w4": {
+      "n": 153,
+      "papers": 12192,
+      "per_1k": 12.55
+     },
+     "w12": {
+      "n": 535,
+      "papers": 42870,
+      "per_1k": 12.48
+     },
+     "label": "steady"
+    }
+   },
+   {
+    "name": "医学影像与临床语言模型",
+    "summary": "该集群开发和评估医学视觉语言与临床语言系统，涵盖多语言医学问答、带过程奖励的生物医学推理、本地医学 LLM 后训练，以及规则或计划引导的放射学和病理学报告生成。另一条互补路径构建领域基础模型，并通过对抗性分词器攻击、合成数据记分卡、泄漏审计、质量控制策略和受控分割基准来检验鲁棒性和数据质量。这些工作的区别在于目标是临床文本推理与报告生成，还是以图像为中心的表示、评估和鲁棒性。",
+    "terms": [
+     "medical question answering",
+     "vision-language models",
+     "radiology reports",
+     "whole-slide"
+    ],
+    "paper_ids": [
+     "2611.28050",
+     "2611.28078",
+     "2611.28154",
+     "2611.28161",
+     "2611.28179",
+     "2611.28281",
+     "2611.28283",
+     "2611.28332",
+     "2611.28576",
+     "2611.28586",
+     "2611.28642",
+     "2611.28680",
+     "2611.28719",
+     "2611.28766",
+     "2611.28890"
+    ],
+    "count": 15,
+    "trend": {
+     "terms": [
+      "medical question answering",
+      "vision-language models",
+      "radiology reports",
+      "whole-slide"
+     ],
+     "today": {
+      "n": 37,
+      "of": 431
+     },
+     "w1": {
+      "n": 163,
+      "papers": 2309,
+      "per_1k": 70.59
+     },
+     "w4": {
+      "n": 584,
+      "papers": 12192,
+      "per_1k": 47.9
+     },
+     "w12": {
+      "n": 1865,
+      "papers": 42870,
+      "per_1k": 43.5
+     },
+     "label": "rising"
+    }
+   },
+   {
+    "name": "3D 高斯泼溅与占用重建",
+    "summary": "这些论文推进用于重建的显式高斯基元和占用表示，将 3D 高斯泼溅与多目标优化、稀疏视图泛化、流式缓存和水印相结合。以占用为中心的工作改进了视图变换、协作多智能体融合和 LiDAR 平面面片重建。其他论文使用视频生成、扩散和稀疏 SDF/网格序列化来提高前馈 3D 重建、生成和外推的效率。",
+    "terms": [
+     "3D Gaussian Splatting",
+     "3D occupancy",
+     "sparse-view 3D Gaussian Splatting",
+     "feed-forward 3D reconstruction"
+    ],
+    "paper_ids": [
+     "2611.28111",
+     "2611.28191",
+     "2611.28403",
+     "2611.28520",
+     "2611.28591",
+     "2611.28629",
+     "2611.28636",
+     "2611.28670",
+     "2611.28710",
+     "2611.28792",
+     "2611.28793",
+     "2611.28802",
+     "2611.28878",
+     "2611.28913"
+    ],
+    "count": 14,
+    "trend": {
+     "terms": [
+      "3D Gaussian Splatting",
+      "3D occupancy",
+      "sparse-view 3D Gaussian Splatting",
+      "feed-forward 3D reconstruction"
+     ],
+     "today": {
+      "n": 5,
+      "of": 431
+     },
+     "w1": {
+      "n": 12,
+      "papers": 2309,
+      "per_1k": 5.2
+     },
+     "w4": {
+      "n": 75,
+      "papers": 12192,
+      "per_1k": 6.15
+     },
+     "w12": {
+      "n": 308,
+      "papers": 42870,
+      "per_1k": 7.18
+     },
+     "label": "steady"
+    }
+   },
+   {
+    "name": "高效 LLM 推理与 KV Cache 压缩",
+    "summary": "这些论文针对 LLM 服务中的内存和延迟瓶颈，涵盖 KV cache 压缩、稀疏注意力、推测解码、权重量化和 token 剪枝。有些贡献系统级运行时和 GPU 配置，而另一些提出算法压缩、剪枝和解码方案。它们的区别在于优化的是缓存访问、权重存储、视觉 token 保留还是面向吞吐的调度。",
+    "terms": [
+     "KV cache compression",
+     "sparse attention",
+     "speculative decoding",
+     "token pruning"
+    ],
+    "paper_ids": [
+     "2611.27997",
+     "2611.28100",
+     "2611.28124",
+     "2611.28171",
+     "2611.28227",
+     "2611.28285",
+     "2611.28318",
+     "2611.28349",
+     "2611.28502",
+     "2611.28522",
+     "2611.28563",
+     "2611.28607",
+     "2611.28684",
+     "2611.28760"
+    ],
+    "count": 14,
+    "trend": {
+     "terms": [
+      "KV cache compression",
+      "sparse attention",
+      "speculative decoding",
+      "token pruning"
+     ],
+     "today": {
+      "n": 7,
+      "of": 431
+     },
+     "w1": {
+      "n": 32,
+      "papers": 2309,
+      "per_1k": 13.86
+     },
+     "w4": {
+      "n": 157,
+      "papers": 12192,
+      "per_1k": 12.88
+     },
+     "w12": {
+      "n": 481,
+      "papers": 42870,
+      "per_1k": 11.22
+     },
+     "label": "steady"
+    }
+   },
+   {
+    "name": "视频生成与长视频理解",
+    "summary": "这些论文构建并控制生成式视频系统，同时帮助智能体理解极长视频。有些通过因果干预、物理条件化、编辑、对象插入和时间引导改进生成，而另一些将长视频证据组织成分层、对象感知或智能体可搜索的记忆以用于问答。",
+    "terms": [
+     "video generation",
+     "long-video understanding",
+     "hierarchical memory",
+     "video diffusion models"
+    ],
+    "paper_ids": [
+     "2611.28080",
+     "2611.28093",
+     "2611.28098",
+     "2611.28102",
+     "2611.28134",
+     "2611.28136",
+     "2611.28137",
+     "2611.28167",
+     "2611.28221",
+     "2611.28397",
+     "2611.28635",
+     "2611.28756",
+     "2611.28762",
+     "2611.28942"
+    ],
+    "count": 14,
+    "trend": {
+     "terms": [
+      "video generation",
+      "long-video understanding",
+      "hierarchical memory",
+      "video diffusion models"
+     ],
+     "today": {
+      "n": 21,
+      "of": 431
+     },
+     "w1": {
+      "n": 64,
+      "papers": 2309,
+      "per_1k": 27.72
+     },
+     "w4": {
+      "n": 208,
+      "papers": 12192,
+      "per_1k": 17.06
+     },
+     "w12": {
+      "n": 733,
+      "papers": 42870,
+      "per_1k": 17.1
+     },
+     "label": "rising"
+    }
+   },
+   {
+    "name": "可穿戴与 EEG 生理信号建模",
+    "summary": "这些论文开发并评估可穿戴设备和 EEG 捕获的生理与运动信号模型，涵盖手腕和惯性活动识别、跑步姿态与步态分析、ECG 心律失常检测和 PPG 心率估计。它们还探究 EEG 特有的建模问题，包括可解释的放电和 ADHD 特征族、基础模型预训练、跨模态生成与解码以及隐私漏洞。各方法的侧重点不同：基准设计和参与者的保留验证、可解释性与可说明性、端侧效率，以及多模态或物理启发的表示学习。",
+    "terms": [
+     "EEG",
+     "wearable",
+     "inertial measurement unit",
+     "human activity recognition"
+    ],
+    "paper_ids": [
+     "2611.27996",
+     "2611.28030",
+     "2611.28033",
+     "2611.28090",
+     "2611.28262",
+     "2611.28299",
+     "2611.28354",
+     "2611.28366",
+     "2611.28507",
+     "2611.28648",
+     "2611.28791",
+     "2611.28856"
+    ],
+    "count": 12,
+    "trend": {
+     "terms": [
+      "EEG",
+      "wearable",
+      "inertial measurement unit",
+      "human activity recognition"
+     ],
+     "today": {
+      "n": 15,
+      "of": 431
+     },
+     "w1": {
+      "n": 34,
+      "papers": 2309,
+      "per_1k": 14.72
+     },
+     "w4": {
+      "n": 146,
+      "papers": 12192,
+      "per_1k": 11.98
+     },
+     "w12": {
+      "n": 494,
+      "papers": 42870,
+      "per_1k": 11.52
+     },
+     "label": "steady"
+    }
+   },
+   {
+    "name": "多模态情感识别与社会理解",
+    "summary": "这些论文构建多模态情感识别系统，融合面部、语音、生理和文本线索，处理输入可靠性、跨模态一致性与冲突、路由效率以及混合专家多样性。另一些将情感建模扩展到群体级社会动态、AI 孪生社会判断、教育情感轨迹和视听面部表情分析，架构各异，如分层融合、时间异构图和自适应模态级联。",
+    "terms": [
+     "multimodal emotion recognition",
+     "social dynamics",
+     "cross-modal attention",
+     "group engagement"
+    ],
+    "paper_ids": [
+     "2611.28001",
+     "2611.28008",
+     "2611.28120",
+     "2611.28293",
+     "2611.28327",
+     "2611.28692",
+     "2611.28716",
+     "2611.28725",
+     "2611.28960"
+    ],
+    "count": 9,
+    "trend": {
+     "terms": [
+      "multimodal emotion recognition",
+      "social dynamics",
+      "cross-modal attention",
+      "group engagement"
+     ],
+     "today": {
+      "n": 6,
+      "of": 431
+     },
+     "w1": {
+      "n": 1,
+      "papers": 2309,
+      "per_1k": 0.43
+     },
+     "w4": {
+      "n": 14,
+      "papers": 12192,
+      "per_1k": 1.15
+     },
+     "w12": {
+      "n": 61,
+      "papers": 42870,
+      "per_1k": 1.42
+     },
+     "label": "steady"
+    }
+   },
+   {
+    "name": "因果推断与部署的统计护栏",
+    "summary": "这些论文开发统计机制以使部署决策更具可辩护性：小规模 A/B 试验的功效分析、在少量校准图像下风险控制的模型更新采纳、用于歧视审计的跨上下文阈值检验，以及部署风险模型的随时有效监测。另一些工作贡献了针对观察性或外部控制数据的处理效应的目标学习和鲁棒森林估计器，以及一篇从第一性原理出发的评论，指出 AI 方法在局部成功但未能满足更广泛推断假设的地方，并提出了一个在治理不透明下用于 LLM 系统的 Zero-Trust 运维保障框架。",
+    "terms": [
+     "power analysis",
+     "statistical guardrails",
+     "risk check",
+     "treatment effect heterogeneity"
+    ],
+    "paper_ids": [
+     "2611.28018",
+     "2611.28122",
+     "2611.28259",
+     "2611.28342",
+     "2611.28421",
+     "2611.28497",
+     "2611.28662",
+     "2611.28834"
+    ],
+    "count": 8,
+    "trend": {
+     "terms": [
+      "power analysis",
+      "statistical guardrails",
+      "risk check",
+      "treatment effect heterogeneity"
+     ],
+     "today": {
+      "n": 4,
+      "of": 431
+     },
+     "w1": {
+      "n": 0,
+      "papers": 2309,
+      "per_1k": 0.0
+     },
+     "w4": {
+      "n": 3,
+      "papers": 12192,
+      "per_1k": 0.25
+     },
+     "w12": {
+      "n": 11,
+      "papers": 42870,
+      "per_1k": 0.26
+     },
+     "label": "steady"
+    }
+   }
+  ],
+  "highlights": [
+   {
+    "paper_id": "2611.28116",
+    "title": "Is It the Agent or the Retry? Separating Selection from Agency in Text-to-Image Generation",
+    "authors": "Jian Xu, Delu Zeng, Qibin Zhao",
+    "categories": "cs.CV",
+    "upvotes": 0,
+    "significance": 5,
+    "theme": "LLM agents and multi-agent orchestration",
+    "why": "这项细致的审计将近期文本到图像系统中真正的智能体增益与简单的拒绝重试区分开来，重新框架了所声称的改进，并提供了闭式预算和真正的智能体上限。",
+    "key_result": "审计四个近期系统并使用官方评估器，我们发现 SRR 在 GenEval 上的准确率与 OctoT2I 相当（0.962 对 0.96），根据验证器的不同恢复了 GEMS 增益的 63% 至 90%，并且以每张图像 2.3 次生成超过 GenPilot 12 个百分点；该效果在未针对基准调优的生成器以及 T2I-CompBench++ 上持续存在。我们还表明，OctoT2I 的路由所换来的是计算量（在同等准确率下比 SRR 约少 2.5），而非准确率，并且在 GenEval 2 上，即使由评估器从五个样本中选出的最佳样本，仍比 GEMS 报告的分数低 15 个百分点（其 95% 区间上端为 12）。",
+    "evidence": [
+     "Auditing four recent systems with official evaluators, we find that on GenEval SRR matches the accuracy of OctoT2I (0.962 vs.\\ 0.96), recovers 63 to 90% of the gain of GEMS depending on the verifier, and exceeds GenPilot by 12 points with 2.3 generations per image; the effect persists with generators not tuned to the benchmark and on T2I-CompBench++.",
+     "We prove a ceiling on the accuracy that routing across generators can add, bracket it between one and three points on OctoT2I's own pool, and show that what OctoT2I's routing buys is compute (about 2.5 less than SRR at equal accuracy), not accuracy.",
+     "The same analysis also exposes genuine agentic gains: on GenEval 2, even the best of five samples chosen by the evaluator stays 15 points below the score GEMS reports (12 at the upper end of its 95% interval)."
+    ],
+    "text_source": "fulltext"
+   },
+   {
+    "paper_id": "2611.28123",
+    "title": "Seeing the Invisible: How Vision-Language Models Read, Predict and Trace Radio Fields",
+    "authors": "Yiyang Zhu, Xin Li, Guangyuan Liu et al.",
+    "categories": "cs.CV cs.AI",
+    "upvotes": 4,
+    "significance": 4,
+    "theme": "Multimodal LLM Reasoning, Alignment, and Hallucination Verification",
+    "why": "构建了具有精确模拟无线电场和反事实的 RadioVISTA，揭示了前沿 VLM 能定位强场但无法追踪传播路径。",
+    "key_result": "在19个被评估的模型中，前两名在大约十例中有九例能识别出覆盖最好的城市区域。然而，当被问及是否存在单条直射或单墙反射路径时，它们的准确率分别下降到 76.5% 和 61.8%，而随机基线为 50%。",
+    "evidence": [
+     "Across 19 evaluated models, the top two identify the best-covered urban region in roughly nine out of ten cases. Yet when asked whether a single direct or one-wall path exists, their accuracy drops to 76.5% and 61.8% against a 50% random baseline. We term this gap field--path dissociation, where models judge the whole without resolving its parts ( sec:eval,sec:readtrace)."
+    ],
+    "text_source": "fulltext"
+   },
+   {
+    "paper_id": "2611.28202",
+    "title": "AutoPILOT: A Visual Agent Harness for Real-Time Gameplay",
+    "authors": "Mark Zhao, Pengcheng Wang, Rui Yang et al.",
+    "categories": "cs.AI",
+    "upvotes": 4,
+    "significance": 4,
+    "theme": "LLM agents and multi-agent orchestration",
+    "why": "AutoPILOT 框架让视觉游戏智能体在模型调用之间运行宏和闭环控制器，实现相对于 VISTA 的大幅实时增益，并引入了 AFK-Bench。",
+    "key_result": "在相同预算下使用 GPT-6.1 Sol，AutoPILOT 的实时成功率达到 68.6%，而 VISTA 为 38.3%；在 GameWorld 上，它实时保持 80.0%，而 VISTA 从 84.1% 下降到 42.9%。其增益跨模型保持，并且它在达到 VISTA 最终成功率的 API 成本仅为其五分之一。",
+    "evidence": [
+     "With GPT-6.1 Sol under the same budgets, AutoPILOT reaches 68.6% real-time success against 38.3% for VISTA , and on GameWorld it keeps 80.0% in real time while VISTA drops from 84.1% to 42.9%. Its gains hold across models, and it reaches VISTA 's final success rate at a fifth of its API cost."
+    ],
+    "text_source": "fulltext"
+   },
+   {
+    "paper_id": "2611.28167",
+    "title": "VideoJSON: A Minimal Harness Beats Purpose-Built Memory for Ultra-Long Video Understanding",
+    "authors": "Wenqi Marshall Guo, Kuan-Hao Huang, Junda Chen et al.",
+    "categories": "cs.CV",
+    "upvotes": 0,
+    "significance": 4,
+    "theme": "Video generation and long-video understanding",
+    "why": "一个使用每分钟 JSON 记录的最小化编码智能体框架在超长视频问答上击败了专门构建的记忆图，对复杂记忆设计提出了质疑。",
+    "key_result": "在四个超长视频基准上，使用 DeepSeek V4.1 Flash 的 VideoJSON 在 EgoLifeQA、Ego-R1-Bench 和 MM-Lifelong Week 上分别比 MAGIC-Video 高出 7.0、20.0 和 24.75 分，并比之前最佳的 EgoMemReason 分数高出 12.6 分。在四个能力逐渐增强的策略模型上，VideoJSON 的平均分数相对于最弱模型最多提升 11.58 分，而 MAGIC-Video 最多为 5.50 分。",
+    "evidence": [
+     "On four ultra-long video benchmarks, VideoJSON with DeepSeek V4.1 Flash outperforms MAGIC-Video by 7.0, 20.0, and 24.75 points on EgoLifeQA, Ego-R1-Bench, and MM-Lifelong Week, and beats the best prior EgoMemReason score by 12.6 points.",
+     "Across four policy models of increasing capability, VideoJSON's average score rises by up to 11.58 points over the weakest model, compared with at most 5.50 points for MAGIC-Video."
+    ],
+    "text_source": "fulltext"
+   },
+   {
+    "paper_id": "2611.28171",
+    "title": "RefineKV: Query-Adaptive KV Cache Compression via Attention-Error Bounds",
+    "authors": "Kewei Lian, Jiayi Zhai, Anji Liu",
+    "categories": "cs.LG",
+    "upvotes": 0,
+    "significance": 4,
+    "theme": "Efficient LLM Inference and KV Cache Compression",
+    "why": "推导了注意力误差界，从而启发了查询自适应 KV 聚类，并实现了新的质量-延迟帕累托前沿，注意力加速最高达 7.6 倍。",
+    "key_result": "在两个模型和三个基准上的实验表明，RefineKV 保持了接近全注意力的质量，同时在注意力阶段实现了最高 7.6 的加速，解码速度提升 1.66 倍，建立了新的质量-延迟帕累托前沿。",
+    "evidence": [
+     "Experiments on two models and three benchmarks demonstrate that RefineKV retains near-full-attention quality while achieving up to 7.6 speedup in the attention phase and 1.66 faster decoding, establishing a new quality–latency Pareto frontier."
+    ],
+    "text_source": "fulltext"
+   },
+   {
+    "paper_id": "2611.28286",
+    "title": "Scalable Beckmann Maps Improve One-step Generation",
+    "authors": "Ulrik Unneberg, Shiyi Wang, Lee Cheuk-Kit et al.",
+    "categories": "cs.LG",
+    "upvotes": 0,
+    "significance": 4,
+    "theme": "Diffusion and Flow Matching Generative Models",
+    "why": "将无分类器引导和可扩展训练配方引入一步 Beckmann 传输模型，无需蒸馏即可达到很强的 ImageNet 一步 FID。",
+    "key_result": "在表示自编码器的潜在空间中从零训练，SBM 在 ImageNet 256x256 上达到一步 FID 1.6，无需教师模型或特征损失，并且比 Improved-MeanFlow 基线少 3.2 倍的 FLOPs。在文本到图像生成中，它以一次网络评估达到 GenEval 分数 0.86。",
+    "evidence": [
+     "Trained from scratch in the latent of a representation autoencoder, SBM reaches a one-step FID of 1.6 on ImageNet 256x256 without a teacher or a feature loss, outperforming the Improved-MeanFlow baseline with 3.2x fewer FLOPs.",
+     "In text-to-image generation it reaches a GenEval score of 0.86 with one network evaluation."
+    ],
+    "text_source": "fulltext"
+   },
+   {
+    "paper_id": "2611.28341",
+    "title": "When Tools Fail, Agents Fabricate: Silent Failure and Verification-First Oversight in Tool-Using LLM Agents",
+    "authors": "Gun Kaynar, Boshen Yan, Carl Kingsford",
+    "categories": "cs.AI cs.CL cs.SE",
+    "upvotes": 0,
+    "significance": 4,
+    "theme": "LLM agents and multi-agent orchestration",
+    "why": "引入了 RetryRealistic，一个受控故障注入测试平台，发现 6-26% 的静默编造，并确定部分数据故障是关键驱动因素，同时用验证优先的监视器减少编造。",
+    "key_result": "在 2,100 个故障运行上评估四个智能体并与真实情况对照，我们发现恢复不可靠（正确率 19--68%），且常常是静默的：6--26% 的运行以自信的编造结束，即把错误答案当作事实断言。我们表明编造可以减少：一个验证优先的 Monitor，将检查建立在结构化工具输出上并发布纠正指令而非硬性阻断，将正确恢复率从 45.6% 提高到 56.3%，并将编造从 17.3% 降低到 10.8%。",
+    "evidence": [
+     "Evaluating four agents over 2,100 faulted runs against ground truth, we find that recovery is unreliable (19--68% correct) and frequently silent: 6--26% of runs end in a confident fabrication, a wrong answer asserted as fact.",
+     "We show that fabrication is reducible: a verification-first Monitor, grounding checks in structured tool outputs and issuing corrective directives rather than hard blocks, raises correct recovery from 45.6% to 56.3% and cuts fabrication from 17.3% to 10.8%."
+    ],
+    "text_source": "fulltext"
+   },
+   {
+    "paper_id": "2611.28349",
+    "title": "Grammar-as-a-Draft: More Tokens per Speculative Decoding Step on Grammar-Constrained Structured Outputs",
+    "authors": "John Zhang, Silky Arora",
+    "categories": "cs.CL cs.AI",
+    "upvotes": 0,
+    "significance": 4,
+    "theme": "Efficient LLM Inference and KV Cache Compression",
+    "why": "将语法视为结构化输出推测解码中的第二个 drafter，无需新内核即可提升接受长度，并产生实际服务影响。",
+    "key_result": "GaaD 将平均接受长度（每个验证步骤的 token 数，包括奖励 token）从 2.06 提高到 5.43（在 Qwen3.5-0.8B 上对 MTP；在 Qwen3.5-35B-A3B 上从 1.99 到 5.31），在 Qwen3-4B 上对 DFlash 从 1.57 到 4.13，对 n-gram 从 1.30 到 3.64，并且解码速度比每个 drafter 单独的最佳配置在批量大小 1 时快 2.66--2.81 倍，在批量大小 64 时快 1.14--1.70 倍。",
+    "evidence": [
+     "GaaD raises the average acceptance length (tokens per verify step, including the bonus token) from 2.06 to 5.43 for MTP on Qwen3.5-0.8B (1.99 to 5.31 on Qwen3.5-35B-A3B), from 1.57 to 4.13 for DFlash and from 1.30 to 3.64 for n-gram on Qwen3-4B, and decodes 2.66--2.81 faster than the best configuration of each drafter alone at batch size 1 and 1.14--1.70 faster at batch size 64."
+    ],
+    "text_source": "fulltext"
+   }
+  ],
+  "news": [
+   {
+    "source": "OpenAI",
+    "title": "OpenAI and Cisco introduce Shirudo",
+    "url": "https://openai.com/index/introducing-shirudo",
+    "published": "2026-11-23T21:20:00Z",
+    "fetched": true,
+    "page_status": 200,
+    "page_sha": "b42dc7572730cb636e2e7306ef9280d6a8537b44d3b040218d75b94a86ee5d80",
+    "text_from": "page",
+    "text_sha": "7b8bbd61a7b53e23b8b35aaa5c7a52b126ec7e23fce24dddc2ee1620fc7ff115",
+    "summary": "OpenAI 和 Cisco 宣布了 Shirudo，一个基于 eBPF 的开源运行时，允许操作员在补丁推出期间部署临时“护盾”以保护运行中的 Linux 系统，护盾经加密签名和验证，并通过可信平台模块记录。在一次受控测试中，一个由 Codex 生成的护盾通过向 Java 的 Base64 解码器添加输入检查，在不重启的情况下阻止了针对运行中 Elasticsearch 服务的 Java4Shell 漏洞利用尝试。"
+   },
+   {
+    "source": "OpenAI",
+    "title": "Connected intelligence for in-house legal",
+    "url": "https://openai.com/business/learn/connected-intelligence-for-in-house-legal",
+    "published": "2026-11-23T08:00:00Z",
+    "fetched": true,
+    "page_status": 200,
+    "page_sha": "97c6a68b7e2881ee6acc80e4f0657e66fe40e619dcb80360158677e0785ae246",
+    "text_from": null,
+    "text_sha": null,
+    "summary": ""
+   },
+   {
+    "source": "OpenAI",
+    "title": "Richpanel helps companies automate 50% of support in 30 days",
+    "url": "https://openai.com/business/customer-stories/richpanel-ai-customer-support",
+    "published": "2026-11-23T08:00:00Z",
+    "fetched": true,
+    "page_status": 200,
+    "page_sha": "a826c0e081d0f4e6ad197e0175ee18a3856e565cab0433eb8b2968be2239d692",
+    "text_from": "page",
+    "text_sha": "ae61d58dd2479a40e054ac2ca10d98421e075745022aab90d442c2bc4c3aab2a",
+    "summary": "Richpanel reported completing approximately 300 AI customer-support deployments in the six months before an October 2026 interview, using GPT-6 Astra and GPT-6.1 Sol for its \"Boss AI\" setup agent and GPT-6 Luna for frontline conversations. The company guarantees a 50% automation rate within the first 30 days and said it met that commitment across all those deployments."
+   },
+   {
+    "source": "Google DeepMind",
+    "title": "Finding faster quantum algorithms with agents and formal verification",
+    "url": "https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification/",
+    "published": "2026-11-23T16:59:40Z",
+    "fetched": true,
+    "page_status": 200,
+    "page_sha": "bf72bda968e8956dcb1ead2d18ac5b959d887b823ce9903d5dd823ad37569e87",
+    "text_from": "page",
+    "text_sha": "c4715d11414aabe28417eeee1ba73130ae23d5414f0c12e33519a67ad213a775",
+    "summary": "Google DeepMind 使用 Gemini 4 智能体团队来寻找改进的量子电路，每个结果都在 Lean 定理证明器中得到证明，并正在开源其 Lean 库、问题规范和经过验证的解决方案。报告的提升包括：惯性约束聚变计算的成本降低 11.8 倍，内存从 5,650 个纠错量子比特降低到 4,338 个；光敏分子的模拟成本降低 8 倍；细胞色素 P450 的提升为 2.5 倍，内存从 481 个量子比特降至 333 个；Grover 算法实现的加速为 2.57 倍；arcsin 的加速为 290 倍。"
+   },
+   {
+    "source": "Google Research",
+    "title": "Supercharging transformer residual connections",
+    "url": "https://research.google/blog/supercharging-transformer-residual-connections/",
+    "published": "2026-11-23T17:21:12Z",
+    "fetched": true,
+    "page_status": 200,
+    "page_sha": "963ec965e4654b82a2125f21147f250c263b513bc7065ab32093a8a3c919c6bc",
+    "text_from": "page",
+    "text_sha": "3a7ed9df1fb296541b2bfeb27e254ae4c783c30a15c917aa119fe94f6b0cbb71",
+    "summary": "Google Research 提出了 DeepCrossAttention (DCA)，一种架构，用可学习的逐 token 路由权重和对前一层嵌入的深度可分离交叉注意力替换固定的加性残差连接，该工作发表在 ICML 2025 论文中。作者报告模型达到相同质量的速度最高快三倍，参数量减少最多 30-40%，参数增加可忽略不计。"
+   },
+   {
+    "source": "Google AI",
+    "title": "A more tailored Google Search that’s uniquely yours",
+    "url": "https://blog.google/products-and-platforms/products/search/google-search-personal-intelligence-apps/",
+    "published": "2026-11-23T17:00:00Z",
+    "fetched": true,
+    "page_status": 200,
+    "page_sha": "755a422d5f3be18f3095774f2ccddc9f61978651aa553022649187bc601e6c36",
+    "text_from": "page",
+    "text_sha": "184f66b2262f197d6394da64015c7fe33d1f41f5973512a8a1e373ed7f1ec4b1",
+    "summary": "Google 将 Google Wallet 和 Google Drive 添加到 AI Mode 的 Personal Intelligence 中，Wallet 的选择加入功能首先推出，Drive 和 Gemini 应用支持将在未来几周内跟进；这些与 Gmail、Calendar 和 Photos 并列。连接的 Wallet 数据对 AI Mode 是只读的，帖子称其不能转移、管理或投资资金，用户可以在搜索个性化设置中管理连接。"
+   },
+   {
+    "source": "NVIDIA",
+    "title": "Merry Making: Play, Build and Create With NVIDIA Technologies This Holiday Season",
+    "url": "https://blogs.nvidia.com/blog/nvidia-technologies-holidays-2026/",
+    "published": "2026-11-23T17:00:08Z",
+    "fetched": true,
+    "page_status": 200,
+    "page_sha": "096964ca38dc15cd6fc691bd6e925a008783694470056d1911e22ffc2074355c",
+    "text_from": "page",
+    "text_sha": "6fd7655f851c48ead66101eecd2f1348414bf0049af0a5003093343921b03d86",
+    "summary": "NVIDIA 发布了一份假日礼物指南，涵盖基于 Blackwell 架构的 GeForce RTX 50 系列笔记本电脑和台式机，配备第五代 Tensor Core 和第四代 RT Core，以及 RTX Spark PC、带有 3D-Guided Neural Rendering 的 DLSS 5、Reflex 和 G-SYNC、拥有超过 4,500 款游戏的 GeForce NOW、Studio Drivers，以及面向机器人项目的 Jetson 边缘 AI 平台与 JetPack SDK。"
+   },
+   {
+    "source": "NVIDIA Developer",
+    "title": "Accelerating Direct Sparse Solvers for Computational Engineering with NVIDIA cuDSS 1.0",
+    "url": "https://developer.nvidia.com/blog/accelerating-direct-sparse-solvers-for-computational-engineering-with-nvidia-cudss-1-0/",
+    "published": "2026-11-23T19:59:40Z",
+    "fetched": true,
+    "page_status": 200,
+    "page_sha": "6d11f060cccb83039db2da58c254dd85ab014b1e7afa56db777cd0bbdfea48a6",
+    "text_from": "page",
+    "text_sha": "80b24d3fde09095811f50cac9c4389317aadbdb0b089dfa9b448bbff0ba16e7f",
+    "summary": "NVIDIA 发布了 cuDSS 1.0，一个面向工程和科学模拟的、可投入生产的 GPU 加速直接稀疏求解器。它报告相对于 Intel MKL 的几何平均加速：分析为 2.5 倍，数值分解为 5.9 倍，三角求解为 151 倍；GPU 符号分解比 cuDSS 0.8.0 快 2.21 倍；混合内存模式在大型 VLSI 案例中将最小设备内存降低约 30%；默认的保对称匹配与 HSL MC64 和 Bunch-Kaufman 主元选取在 SuiteSparse 矩阵上将范数相对后向误差最多改善 10 个数量级。"
+   },
+   {
+    "source": "NVIDIA Developer",
+    "title": "Get Started with GPU-Accelerated DuckDB Analytics Using the Sirius Core Extension",
+    "url": "https://developer.nvidia.com/blog/get-started-with-gpu-accelerated-duckdb-analytics-using-the-sirius-core-extension/",
+    "published": "2026-11-23T17:09:28Z",
+    "fetched": true,
+    "page_status": 200,
+    "page_sha": "10795c6faf016a8e573f2814007161637dfea5ae9d21129940e6674e48cc9275",
+    "text_from": "page",
+    "text_sha": "cb9a0194a1208629a1159b6d4cb74b4b7c841d1e7305e59c4b46761ed85f1a83",
+    "summary": "NVIDIA 和 DuckLabs 发布了 Sirius，一个开源 GPU 原生 SQL 引擎，作为 DuckDB 核心扩展，可通过 SQL 命令 INSTALL sirius 和 LOAD sirius 安装加载，不支持的功能回退到 DuckDB 的 CPU 引擎。在比例因子高达 10 TB 的 TPC-H 查询基准测试中，使用调优的双 GPU 配置，加速为 3.25 倍至 5.50 倍，查询时计算成本最多降低 79%；需要 DuckDB 2.0 和兼容的 NVIDIA GPU 驱动。"
+   },
+   {
+    "source": "Hugging Face",
+    "title": "RoboTrack: Point tracking for real-world robotic manipulation",
+    "url": "https://huggingface.co/blog/allenai/robotrack",
+    "published": "2026-11-23T17:20:37Z",
+    "fetched": true,
+    "page_status": 200,
+    "page_sha": "44db459c06626262d314b11863383f4488049973481abe8f6b5db98fce9ded38",
+    "text_from": "page",
+    "text_sha": "a9d99872953fe2c7c848548125247d16d8b5bc969b19788bc6170c06df3c32d4",
+    "summary": "Hugging Face 发布了 RoboTrack，一个用于机器人操作的点跟踪基准和训练数据套件，包含 RoboTrack-Bench（来自 DROID、Ego-Exo4D、MolmoAct 2 和 EgoVerse 的 307 个人工标注视频，共 2,522 条点轨迹），以及 RoboTrack-15M 合成数据（在 MolmoSpaces 中生成）。它还发布了两个模型：RoboTracker（微调自 AllTracker）和 RoboTracker-Warp（训练自 CoWTracker），其中 RoboTracker-Warp 在五个评估基准中的四个上取得了最先进结果；领先的跟踪器在 RoboTrack-Bench 上的得分远低于现有机器人基准。"
+   }
+  ]
+ },
+ "translation": {
+  "fallback": [
+   {
+    "field": "news.2.summary",
+    "reason": "numbers ['2026', '30', '300', '50', '6', '6.1'] became ['10', '2026', '30', '300', '50', '6', '6.1']"
+   }
+  ]
+ },
+ "dropped": [],
+ "disclosure": {
+  "en": "Generated by OPAL agents from arXiv and the listed sources. Paper ids, titles and quoted passages are checked by program against the library and the fetched pages; summaries are machine-written.",
+  "zh": "由 OPAL 的 agent 根据 arXiv 与所列来源自动生成。论文编号、标题与引文已由程序对照本地文献库和抓取的网页核对；摘要与综述由机器撰写。"
+ },
+ "usage": {
+  "calls": 62,
+  "tokens": 881445,
+  "by_model": {
+   "deepseek-v4-pro": {
+    "input": 50470,
+    "cache_hit": 76544,
+    "output": 61875
+   },
+   "deepseek-flash": {
+    "input": 466463,
+    "cache_hit": 77952,
+    "output": 148141
+   }
+  },
+  "cost_usd": 0.3166,
+  "wall_s": 1806.8
+ }
+}
